@@ -964,7 +964,7 @@ This chapter becomes the **pivot** between:
 
 Pseudo-symmetry functions by **re-weighting attributes** to make them comparable within a value-frame: **□ (frame: contextual constraint)** is used as comparison-and-status accounting rather than praxis coordination. The central operation is not the creation of new differences, but the recoding of already available **Δ (difference: minimal distinction)** into a single metric that can be “equalized” rhetorically.
 
-### 9.2.1 Attribute classes (PMS–EDEN compatible)
+#### 9.2.1 Attribute classes (PMS–EDEN compatible)
 
 Let “attributes” mean **structural capacities and exposures** (operatorially describable surfaces under **Ω (asymmetry)**), not essences.
 
@@ -993,7 +993,7 @@ Let “attributes” mean **structural capacities and exposures** (operatorially
    * ability to self-limit leverage under **Ω (asymmetry)** through **Χ (distance: reflective inhibition)**
      (dignity-in-practice **D (dignity-in-practice: restrained handling of asymmetry) = Ψ (self-binding) ∘ Χ (distance) ∘ Ω (asymmetry)**, i.e., Ψ and Χ constrain Ω-handling)
 
-### 9.2.2 What pseudo-symmetry does to attributes
+#### 9.2.2 What pseudo-symmetry does to attributes
 
 Pseudo-symmetry forces a single value-metric by using **□ (frame)** as comparison surface, then:
 
@@ -1006,12 +1006,12 @@ Pseudo-symmetry forces a single value-metric by using **□ (frame)** as compari
 
 This is a structural substitution: a claim of sameness inside **□ (frame: value-relation)** stands in for actual synthesis via **Σ (integration: coherence synthesis)** and durable commitment via **Ψ (self-binding: durable commitment)** under real **Ω (asymmetry)**.
 
-## 9.3 Positive vs. Negative Uses (two faces of the same mechanism)
+### 9.3 Positive vs. Negative Uses (two faces of the same mechanism)
 
 Pseudo-symmetry can appear as a **protective buffer** or as a **drift weapon**.
 The difference is not moral; it is structural: **does PS reopen Σ (integration) and Ψ (self-binding) under named Ω (asymmetry), or does PS replace them?**
 
-### 9.3.1 Positive use (bounded, transitional)
+#### 9.3.1 Positive use (bounded, transitional)
 
 Pseudo-symmetry is temporarily admissible as a **de-escalation buffer** if:
 
@@ -1026,7 +1026,7 @@ Pseudo-symmetry is temporarily admissible as a **de-escalation buffer** if:
 
 Here **Χ (distance)** functions as an escalation brake that preserves reversibility; it does not claim that **Ω (asymmetry)** disappears, and it does not forbid Ω being named later for Σ-work.
 
-### 9.3.2 Negative use (regime formation)
+#### 9.3.2 Negative use (regime formation)
 
 Pseudo-symmetry becomes a **dominant drift** when:
 
@@ -1043,11 +1043,11 @@ Pseudo-symmetry becomes a **dominant drift** when:
 
 This describes a **structural consequence**, not a moral judgement, intention, or blame attribution.
 
-## 9.4 Misreinforcement Signals (warnings: when PS becomes drift)
+### 9.4 Misreinforcement Signals (warnings: when PS becomes drift)
 
 These are **structural warning flags** that pseudo-symmetry is no longer buffering but stabilizing a drift regime.
 
-### 9.4.1 Signal group S1 — Ω denial becomes taboo
+#### 9.4.1 Signal group S1 — Ω denial becomes taboo
 
 * Naming **Ω (asymmetry: structural capacity/exposure/obligation gradient)** is treated as an offense regardless of intent.
 * Functional gradients are forced into moralized language by **□ (frame: value-relation)** (“power” becomes “wrong” inside the frame).
@@ -1055,7 +1055,7 @@ These are **structural warning flags** that pseudo-symmetry is no longer bufferi
 
 **Operator readout:** **□ (frame: value-relation)** prohibits functional Ω-legibility (Ω cannot be named as gradient).
 
-### 9.4.2 Signal group S2 — Σ substitution (integration replaced by rhetoric)
+#### 9.4.2 Signal group S2 — Σ substitution (integration replaced by rhetoric)
 
 * Conflicts end via “agreement statements,” not via coordinated praxis changes (no **Σ (integration: coherence synthesis)** enacted).
 * “We are equal” is used as closure while obligations remain mismatched under real **Ω (asymmetry)**.
@@ -1063,7 +1063,7 @@ These are **structural warning flags** that pseudo-symmetry is no longer bufferi
 
 **Operator readout:** **Φ (recontextualization)** high, **Σ (integration)** low (coherence talk increases while coordination outputs remain unchanged).
 
-### 9.4.3 Signal group S3 — Λ leverage (non-closure becomes control)
+#### 9.4.3 Signal group S3 — Λ leverage (non-closure becomes control)
 
 * Unresolved residues are kept alive as implicit debt (**Λ (non-event: structured absence / non-closure)** maintained rather than converted into Σ-work).
 * “You still haven’t…” becomes the stable control surface (Λ is operationalized as standing claim).
@@ -1071,7 +1071,7 @@ These are **structural warning flags** that pseudo-symmetry is no longer bufferi
 
 **Operator readout:** **Λ (non-event)** shifts from remainder to instrument (Λ becomes a control surface inside □).
 
-### 9.4.4 Signal group S4 — Α protocolization (the regime locks in)
+#### 9.4.4 Signal group S4 — Α protocolization (the regime locks in)
 
 * Predictable scripts stabilize (accusation → denial → parity claim → silence → repeat) as **Α (attractor: pattern stabilization)**.
 * Explicit clarification reliably triggers escalation (naming **Δ (difference: minimal distinction)** or **Ω (asymmetry)** is punished by **□ (frame)**).
@@ -1079,20 +1079,20 @@ These are **structural warning flags** that pseudo-symmetry is no longer bufferi
 
 **Operator readout:** **Α (attractor)** stabilizes **PS⁻**; **Ψ (self-binding)** re-binds away from Σ-work.
 
-## 9.5 Counter-Measures (model-conform, non-moral, praxis-first)
+### 9.5 Counter-Measures (model-conform, non-moral, praxis-first)
 
 Goal (descriptive): identify **operator-readable viability constraints** that tend to re-establish **functional coordination** under real **Ω (asymmetry)** without weaponizing Ω and without forcing equivalence inside **□ (frame)**.
 
 **Validity reminder (non-prescriptive):** The items below are **structural viability constraints** (descriptive signatures). They are not person-evaluations and not moral injunctions. If enacted as guidance, the PMS entry condition applies: **Χ (distance: reflective inhibition) + reversibility + D (dignity-in-practice: [Ψ, Χ] applied to Ω-handling)**.
 
-### 9.5.1 Counter-measure CM1 — Re-open Δ without ranking
+#### 9.5.1 Counter-measure CM1 — Re-open Δ without ranking
 
 * Make differences legible as differences (**Δ (difference: minimal distinction)**).
 * Prevent converting **Δ (difference)** into worth-rank inside **□ (frame: value-relation)**.
 
 **Constraint (descriptive):** *Δ (difference) remains visible even when Ω (asymmetry) is sensitive (difference-legibility without rank-conversion inside □).*
 
-### 9.5.2 Counter-measure CM2 — Frame split: value-frame vs praxis-frame
+#### 9.5.2 Counter-measure CM2 — Frame split: value-frame vs praxis-frame
 
 Introduce two explicit uses of **□ (frame: contextual constraint)**, distinguished by function (not by new operators):
 
@@ -1103,7 +1103,7 @@ Introduce two explicit uses of **□ (frame: contextual constraint)**, distingui
 
 This is not the introduction of new operators; it is disciplined frame usage of **□ (frame)**.
 
-### 9.5.3 Counter-measure CM3 — Minimal Σ protocol (integration micro-steps)
+#### 9.5.3 Counter-measure CM3 — Minimal Σ protocol (integration micro-steps)
 
 If **Σ (integration)** is low, viability tends to increase when integration is rebuilt via **micro-steps** that are legible and reversible, rather than by attempting immediate full synthesis:
 
@@ -1114,7 +1114,7 @@ If **Σ (integration)** is low, viability tends to increase when integration is 
 
 **Operator target:** **Σ (integration)** is incremented via small coordination interfaces that can be revised (preserving reversibility and D).
 
-### 9.5.4 Counter-measure CM4 — Θ-bounding of parity claims (anti-regime clause)
+#### 9.5.4 Counter-measure CM4 — Θ-bounding of parity claims (anti-regime clause)
 
 Any “we’re equal” statement must be tagged as:
 
@@ -1124,7 +1124,7 @@ Any “we’re equal” statement must be tagged as:
 
 **Constraint (descriptive):** *PS is viable only as reversible buffer, not as ontology (scope-limited, time-limited under Θ, and revision-conditioned to preserve Χ).*
 
-### 9.5.5 Counter-measure CM5 — Dignity-in-practice constraint (D = Ψ ∘ Χ ∘ Ω)
+#### 9.5.5 Counter-measure CM5 — Dignity-in-practice constraint (D = Ψ ∘ Χ ∘ Ω)
 
 Pseudo-symmetry often masks dignity violations via narrative equality.
 The counter is not moralizing; it is structural restraint:
@@ -1142,7 +1142,7 @@ This describes a **structural constraint**, not a moral judgement, intention, or
 Pseudo-symmetry tends to persist when control is attempted **via the other** (frame coercion, narrative domination, obligation externalization).
 Structural recovery tends to require **Ψ (self-binding: durable commitment)** anchored to self-control rather than Ψ→Other binding demands.
 
-### 9.6.1 Why other-control is structurally unstable
+#### 9.6.1 Why other-control is structurally unstable
 
 * It recruits **Λ (non-event: structured absence / residue)** as leverage (unclosed remainder becomes debt).
 * It recruits **Φ (recontextualization: narrative embedding)** as dominance tool (repair talk replaces coordination).
@@ -1151,7 +1151,7 @@ Structural recovery tends to require **Ψ (self-binding: durable commitment)** a
 
 **Operator consequence:** drift becomes self-feeding (□/Φ/Λ/Α substitute Σ/Ψ under Ω).
 
-### 9.6.2 Definition: Self-control (PMS-conform)
+#### 9.6.2 Definition: Self-control (PMS-conform)
 
 **Self-control** = binding one’s own leverage use under **Ω (asymmetry: structural gradients)** with reflective distance (**Χ (distance: reflective inhibition)**), producing stable commitments (**Ψ (self-binding: durable commitment)**) that protect coordination and dignity.
 
@@ -1159,7 +1159,7 @@ Structural recovery tends to require **Ψ (self-binding: durable commitment)** a
 
 * **Self-control = (Ψ (self-binding) ∘ Χ (distance)) applied to Ω (asymmetry)-handling inside □ᵖ (praxis frame), constrained by D (dignity-in-practice)**
 
-### 9.6.3 Minimal self-control commitments (practical)
+#### 9.6.3 Minimal self-control commitments (practical)
 
 * “I will not use unresolved residues (**Λ (non-event: non-closure)**) as leverage.”
 * “I will not forbid naming **Ω (asymmetry)** as a functional gradient; I will forbid weaponizing Ω as verdict.”
