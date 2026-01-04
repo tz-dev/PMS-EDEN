@@ -96,7 +96,7 @@ To ensure full compatibility with **PMS_1.1**, the following clarifications appl
 
 No deviation from these definitions occurs anywhere in PMS–EDEN.
 
-### Operator Reference Table (PMS–EDEN)
+#### Operator Reference Table (PMS–EDEN)
 
 | Symbol | Operator            | Core Meaning                                         | Function in PMS–EDEN                                                        |
 | -----: | ------------------- | ---------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -1209,7 +1209,7 @@ Here, *postfeminist override* is treated as a **stabilizing meta-frame** that ma
 No ideology critique is required for this description. The regime is defined **only by operator behavior**.
 The analysis applies independently of political self-identification.
 
-## 10.1 Structural Diagnosis (not ideological)
+### 10.1 Structural Diagnosis (not ideological)
 
 **Postfeminist Override (PFO)** is a **frame configuration** with the following structural aims:
 
@@ -1236,7 +1236,7 @@ The analysis applies independently of political self-identification.
 
 * **Over-ordering with simultaneous denial of asymmetry**: regulation occurs, but it must remain **unacknowledged** as regulation (because **Ω (asymmetry)** is unspeakable inside the dominant **□ (frame)**).
 
-## 10.2 Mechanism: How the Regime Generates “Over-ordering with Denial”
+### 10.2 Mechanism: How the Regime Generates “Over-ordering with Denial”
 
 PFO produces a characteristic control structure:
 
@@ -1259,13 +1259,13 @@ This yields a stable pattern:
 * **□ (frame: Ω-taboo + comparison) → Φ (recontextualization: rewrite) → Λ (non-event: open remainder) → Α (attractor: protocolization)**
   with **Σ (integration: coherence synthesis)** low and **Ψ (self-binding: durable commitment)** misbound/displaced as the coupling point (coordination cannot consolidate as reciprocity).
 
-## 10.3 Why Devaluation Remains as Structural Residue
+### 10.3 Why Devaluation Remains as Structural Residue
 
 In PMS–EDEN, **humiliation** is a paper-internal structural term: **status regulation via devaluation** as a residual stabilization mode when **Ω (asymmetry: structural imbalance of capacity/exposure/obligation gradients)** cannot be coordinated through **Σ (integration: coherence synthesis into coordinated praxis)** and **Ψ (self-binding: durable commitment across time)**.
 
 This describes a **structural consequence**, not a moral judgement, intention, or blame attribution.
 
-### 10.3.1 The structural necessity claim (not moral, not psychological)
+#### 10.3.1 The structural necessity claim (not moral, not psychological)
 
 If the regime imposes:
 
@@ -1299,11 +1299,11 @@ then the system has only a small set of stabilization options:
 
 This describes a **structural consequence**, not a moral judgement, intention, or blame attribution.
 
-## 10.4 Why the Man is the Typical Target (structural, not blame)
+### 10.4 Why the Man is the Typical Target (structural, not blame)
 
 This is not “fault assignment.” It is a **visibility claim** about where **Ω (asymmetry: capacity/exposure/obligation gradients)** becomes most legible under the regime.
 
-### 10.4.1 Three structural reasons
+#### 10.4.1 Three structural reasons
 
 1. **He is a salient carrier of Ω**
 
@@ -1320,7 +1320,7 @@ This is not “fault assignment.” It is a **visibility claim** about where **�
    * PFO is a frame regime: whoever operates the prevailing interpretive grammar can steer **Φ (recontextualization: frame shift / narrative embedding)** and operationalize **Λ (non-event: residue / non-closure)**.
    * If he is outside that grammar, his attempts at explicitness (naming **Δ (difference)** or **Ω (asymmetry)**) are penalized as “power talk” by the dominant **□ (frame)**.
 
-### 10.4.2 Resulting pattern
+#### 10.4.2 Resulting pattern
 
 * The system reduces coordination pressure by **making the salient Ω-carrier the problem object** (status operations substitute coordination).
 * This is compatible with the earlier pseudo-symmetry logic:
@@ -1330,34 +1330,34 @@ This is not “fault assignment.” It is a **visibility claim** about where **�
 
 This describes a **structural consequence**, not a moral judgement, intention, or blame attribution.
 
-## 10.5 The Tragic Transition
+### 10.5 The Tragic Transition
 
 Once **Ω (asymmetry: capacity/exposure/obligation gradients)** cannot be named and reciprocity (Σ/Ψ under Ω) cannot be established, the system enters a **tragic mode**.
 
 This describes a **structural consequence**, not a moral judgement, intention, or blame attribution.
 
-### 10.5.1 Λ becomes permanently open
+#### 10.5.1 Λ becomes permanently open
 
 * **Λ (non-event: non-closure / structured absence)** is no longer a temporary remainder after rupture.
 * it becomes an instrument and a standing background: “never enough,” “still not resolved.”
 
 **Form:** **Λ-high (non-event: chronic remainder-field)**.
 
-### 10.5.2 Θ becomes a cumulative erosion trajectory
+#### 10.5.2 Θ becomes a cumulative erosion trajectory
 
 * **Θ (temporality: trajectory / time)** no longer supports repair accumulation via **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment)**.
 * it supports **debt accumulation and erosion**: the longer the regime holds, the more irreversible the drift becomes.
 
 **Form:** **Θ (temporality)** shifts from development to **cumulative erosion across time**.
 
-### 10.5.3 Α stabilizes devaluation as routine
+#### 10.5.3 Α stabilizes devaluation as routine
 
 * repeated cycles of indirect control (**□ (frame: contextual constraint)** / **Φ (recontextualization: frame shift)** / **Λ (non-event: residue)**) and status correction stabilize into scripts.
 * **Α (attractor: pattern stabilization / script formation)** makes the regime self-feeding: each episode trains the next.
 
 **Form:** **Α (attractor)** = protocolization of devaluation.
 
-### 10.5.4 Tragedy clause
+#### 10.5.4 Tragedy clause
 
 This is not moral desert. It is structural probability:
 
@@ -1371,7 +1371,7 @@ This is not moral desert. It is structural probability:
 
 This describes a **structural consequence**, not a moral judgement, intention, or blame attribution.
 
-## 10.6 Boundary Markers
+### 10.6 Boundary Markers
 
 This regime description applies **only if** the following operator constraints hold:
 
@@ -1382,7 +1382,7 @@ This regime description applies **only if** the following operator constraints h
 
 If these constraints are absent, “PFO” (as defined here) does not apply, or applies only partially.
 
-## 10.7 Compact Formalization
+### 10.7 Compact Formalization
 
 * **PFO (regime):**
   **□ (frame: contextual constraint)** enforces Ω-taboo + comparison metric, **Φ (recontextualization: frame shift / narrative embedding)** repairs narratives continuously, **Λ (non-event: structured absence / non-closure)** remains open, **Σ (integration: coherence synthesis)** is suppressed, **Ψ (self-binding: durable commitment across time)** binds to appearance-management rather than explicit coordination.
