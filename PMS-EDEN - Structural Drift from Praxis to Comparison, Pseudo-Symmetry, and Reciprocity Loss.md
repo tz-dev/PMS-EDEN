@@ -308,7 +308,7 @@ Thus, the apple functions as a **threshold marker of option explicitness**, not 
 
 The relevance of this move is methodological: it prevents the common collapse of categories (epistemology ↔ transgression) and keeps the analysis operator-clean. Eden already contains the structural resources for mature praxis; the threshold merely makes the negative option legible as an option—setting up the later claim that the breach “teaches nothing” because the consequence field was structurally anticipable under **A (awareness: [Θ, □, Δ])** before enactment.
 
-## 2.4 Chapter Closure — Eden as a complete ground state (so the breach cannot be “maturity begins”)
+### 2.4 Chapter Closure — Eden as a complete ground state (so the breach cannot be “maturity begins”)
 
 **What we needed (baseline):**
 If the breach is not to be smuggled in as “epistemic awakening,” we needed a formal account of Eden in which the operators required for maturity (in the paper’s strict sense) are already available—especially **A = [Θ, □, Δ]** under non-deficit conditions.
@@ -380,7 +380,7 @@ Therefore:
 
 The act yields **evidence of consequence**, not **epistemic surplus**. It converts a legible possibility into an irreversible trajectory.
 
-## 3.5 Chapter Closure — Breach as chain interruption (why the act “teaches nothing”)
+### 3.5 Chapter Closure — Breach as chain interruption (why the act “teaches nothing”)
 
 **What we needed (formal event definition):**
 To prevent a collapse back into moral or epistemic storytelling, we needed a minimal event-definition that: (i) stays within PMS operators, (ii) keeps **E (action)** distinct from mere realization/enactment, and (iii) explains why consequences become trajectory-bearing under Θ without positing “new knowledge.”
@@ -2761,5 +2761,6 @@ PMS–EDEN drift claims apply most strongly when:
 * **Α (attractor)** stabilizes repeatable scripts
 
 Where these constraints do not hold, PMS–EDEN applies weakly or only as partial analogy.
+
 
 
