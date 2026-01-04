@@ -234,7 +234,7 @@ The decisive post-breach drift is a reframing of the scene:
 
 In short: PMS–EDEN does not say “knowledge ruined Eden.” It says: **a conscious breach under A (awareness: [Θ, □, Δ]) activates Λ (non-event) / Ω (asymmetry) / Θ (temporality), after which comparison-driven □ (frame) destabilizes coordination and pushes the system toward pseudo-symmetry drift and reciprocity loss unless Σ (integration) / Ψ (self-binding) are established.**
 
-## 1.3 Chapter Closure — Misreadings as category errors (and why reframing is necessary)
+### 1.3 Chapter Closure — Misreadings as category errors (and why reframing is necessary)
 
 **What we needed (problem):**
 To use Eden as a minimal test scene, we needed to remove interpretive moves that replace PMS operators with non-PMS primitives—especially: “Eden = immaturity,” “sin = knowledge gain,” “sin = mere norm violation,” “sex difference = essence,” and “reciprocity loss = intent.”
@@ -2761,4 +2761,5 @@ PMS–EDEN drift claims apply most strongly when:
 * **Α (attractor)** stabilizes repeatable scripts
 
 Where these constraints do not hold, PMS–EDEN applies weakly or only as partial analogy.
+
 
