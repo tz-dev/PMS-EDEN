@@ -498,7 +498,7 @@ This matters because it shows how the post-breach world becomes durable: not mer
 
 **Summary of the section:** the fig leaves do not signify epistemic awakening. They signify that, after mis-enactment, **Λ (non-event: meaningful absence / non-closure)** becomes remainder, **Ω (asymmetry: structural imbalance of capacity/exposure/obligation)** becomes instrumentally legible, and **Θ (temporality: trajectory / time)** makes the new condition irreversible—prompting a shift in **□ (frame: contextual constraint / role space)**, the appearance of reactive **Χ (distance: reflective inhibition)**, and the stabilization of concealment as **Α (attractor: pattern stabilization)**.
 
-## 4.4 Chapter Closure — Fig leaves as legibility management (not shame, not new information)
+### 4.4 Chapter Closure — Fig leaves as legibility management (not shame, not new information)
 
 **What we needed (post-breach readability without psychology):**
 The narrative shows an immediate behavioral shift after the breach. We needed an operator-readable account that explains this shift without asserting new bodily knowledge, new moral faculty, or inner-state claims—and that fits the already-established consequence field (Ω/Θ/Λ).
@@ -615,7 +615,7 @@ NRK is a kernel; kernels can appear in variants depending on how the frame (**�
 
 **Operational summary:** NRK names the upstream breach type that converts a mature, option-visible frame (****A (awareness: [Θ, □, Δ])**** high inside **□ (frame)**) into a consequence field where **Λ (non-event: meaningful absence / non-closure)**, **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)**, and **Θ (temporality: trajectory / time)** become increasingly and irreversibly legible—while **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment across time)** fail to carry reciprocity.
 
-## 5.5 Chapter Closure — Why NRK must be introduced early (and what it now licenses methodologically)
+### 5.5 Chapter Closure — Why NRK must be introduced early (and what it now licenses methodologically)
 
 **What we needed (a portable kernel):**
 To scale from Eden into modern drift patterns, we needed a minimal, stable descriptor for the breach that (i) remains PMS-conform, (ii) avoids theology and diagnosis, and (iii) preserves the E-discipline: enactment/realization is not automatically **E (action)**.
@@ -683,7 +683,7 @@ Once **□ (frame: contextual constraint / relevance structuring)** is dominated
 
 ➡️ **Comparison (□ (frame) as value-relation) replaces coordination (Σ (integration) and Ψ (self-binding) as reciprocity carriers).**
 
-## 6.4 Chapter Closure — Why false comparison becomes the decisive drift pivot
+### 6.4 Chapter Closure — Why false comparison becomes the decisive drift pivot
 
 **What we needed (problem):**
 After formalizing **NRK** as the upstream breach-type, we still needed to explain *how* structurally available differences (**Δ (difference: minimal structural distinction)**) become transformed into **persistent relational instability**. In particular, we needed to show why post-breach asymmetry **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** does not automatically lead to coordination, but instead tends toward chronic conflict patterns—*without* invoking intent, ideology, or psychology.
@@ -943,7 +943,7 @@ Rename the chapter to make the control logic explicit and review-stable:
 This chapter becomes the **pivot** between:
 **comparison-dominant □ (frame: contextual constraint as value-relation)** → **pseudo-symmetry (denial/taboo of Ω (asymmetry: structural imbalance))** → **devaluation protocol (Α (attractor: pattern stabilization) / Λ (non-event: structured absence / non-closure))** → **reciprocity loss (failure of Σ (integration: coherence synthesis) and Ψ (self-binding: durable commitment) under real Ω (asymmetry))**.
 
-## 9.1 Definition (formal, PMS-internal)
+### 9.1 Definition (formal, PMS-internal)
 
 **Pseudo-Symmetry (PS)** = **rhetorical equality** under **real Ω (asymmetry: structural capacity/exposure/obligation gradients)** such that:
 
@@ -960,7 +960,7 @@ This chapter becomes the **pivot** between:
 * **PS = [□ (frame: value-relation / comparison metric), Ω (asymmetry: real gradient), Σ (integration: low/blocked), Ψ (self-binding: misbound to appearance-management)]**
 * Typical companions (not additional operators): **[Φ (recontextualization: narrative repair surface), Λ (non-event: residue / non-closure), Α (attractor: protocol lock / repeatable script)]**
 
-## 9.2 Weighted Attributes Under Ω (what is being equalized, and why it fails)
+### 9.2 Weighted Attributes Under Ω (what is being equalized, and why it fails)
 
 Pseudo-symmetry functions by **re-weighting attributes** to make them comparable within a value-frame: **□ (frame: contextual constraint)** is used as comparison-and-status accounting rather than praxis coordination. The central operation is not the creation of new differences, but the recoding of already available **Δ (difference: minimal distinction)** into a single metric that can be “equalized” rhetorically.
 
@@ -1137,7 +1137,7 @@ The counter is not moralizing; it is structural restraint:
 
 This describes a **structural constraint**, not a moral judgement, intention, or blame attribution.
 
-## 9.6 Self-Control > Other-Control (the central pivot)
+### 9.6 Self-Control > Other-Control (the central pivot)
 
 Pseudo-symmetry tends to persist when control is attempted **via the other** (frame coercion, narrative domination, obligation externalization).
 Structural recovery tends to require **Ψ (self-binding: durable commitment)** anchored to self-control rather than Ψ→Other binding demands.
@@ -1167,7 +1167,7 @@ Structural recovery tends to require **Ψ (self-binding: durable commitment)** a
 
 These are **structural moves**, not virtues.
 
-## 9.7 Summary
+### 9.7 Summary
 
 Pseudo-symmetry is not “lying,” but a **structural replacement**: it substitutes rhetorical parity inside **□ (frame: value-relation)** for functional coordination under real **Ω (asymmetry: structural capacity/exposure/obligation gradients)**. As a temporary buffer, PS can lower immediate conflict costs if it preserves Δ (difference) visibility and reopens Σ-work under reversibility. As a regime, PS denies Ω-legibility, replaces **Σ (integration)** with **Φ (recontextualization)**, operationalizes **Λ (non-event)** as residue leverage, and stabilizes as **Α (attractor)**—thereby binding **Ψ (self-binding)** to appearance-management rather than to coordinated praxis. The model-conform exit is not moral accusation but a controlled reopening of **Δ (difference)**, a disciplined split of frames (**□ᵥ/□ᵖ**), micro-Σ integration steps under **Θ (temporality)**, dignity constraints (**D (dignity-in-practice) = Ψ ∘ Χ ∘ Ω**), and a strict pivot from other-control to self-binding self-control.
 
