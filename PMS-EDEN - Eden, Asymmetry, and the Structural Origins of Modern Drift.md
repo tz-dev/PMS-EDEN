@@ -1,6 +1,6 @@
 # **PMS–EDEN**
 
-## *Eden, Asymmetry, and the Structural Origins of Modern Drift*
+## *Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss*
 
 ## 0. Frontmatter (formal, concise)
 
@@ -2761,3 +2761,4 @@ PMS–EDEN drift claims apply most strongly when:
 * **Α (attractor)** stabilizes repeatable scripts
 
 Where these constraints do not hold, PMS–EDEN applies weakly or only as partial analogy.
+
