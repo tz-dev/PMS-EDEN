@@ -10,7 +10,7 @@ Building explicitly on PMS as its structural foundation, this project does **not
 
 * why “loss of Eden” is not an epistemic event but a **praxis breach under available awareness (A)**,
 * how a **comparison-dominant frame (□)** turns difference (Δ) and asymmetry (Ω) into ranking tokens,
-* why **false equivalence** yields compulsive monitoring (Dauervergleich / Dauerjustierung / Dauerunzufriedenheit),
+* why false equivalence yields compulsive monitoring (continuous comparison, continuous correction, and chronic dissatisfaction
 * how **Pseudo-Symmetry (PS)** stabilizes drift by substituting **Φ/Λ/Α** for **Σ/Ψ** under real **Ω**,
 * and how reciprocity collapses as **coordinated asymmetry** fails under **Θ**-extended residue fields (Λ).
 
