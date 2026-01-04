@@ -2762,5 +2762,3 @@ PMS–EDEN drift claims apply most strongly when:
 
 Where these constraints do not hold, PMS–EDEN applies weakly or only as partial analogy.
 
-
-
