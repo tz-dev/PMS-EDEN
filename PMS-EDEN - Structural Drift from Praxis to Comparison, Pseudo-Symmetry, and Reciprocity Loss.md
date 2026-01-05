@@ -874,6 +874,70 @@ What follows next is therefore not moral critique but a cost analysis: how a val
 
 ---
 
+## 7. Dissatisfaction as a Compulsion Effect of False Equivalence
+
+### 7.1 Clarification (central)
+
+> **What is structurally different (Δ (difference: minimal structural distinction)) cannot be treated as equivalent inside a frame (□ (frame: contextual constraint)) without producing permanent observation, correction, and comparison.**
+
+A false equivalence is not merely a semantic mistake. It is a **frame decision**: **□ (frame: contextual constraint / relevance structuring)** is set to *equivalence-as-value-relation* rather than *difference-as-praxis-relation*. Once this occurs under **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** and **Θ (temporality: trajectory / time)**, the system becomes expensive by design.
+
+#### 7.1.1 Mechanism: Why equivalence produces compulsion
+
+If **Δ (difference: minimal structural distinction)** is denied or flattened inside **□ (frame: contextual constraint / relevance structuring)**, praxis loses the ability to coordinate differences directly. The only remaining method to maintain the equivalence claim is **continuous compensatory work**:
+
+- **Permanent comparison:** **Δ (difference)** keeps reappearing in outcomes, exposures, capacities, desires, and vulnerabilities. The equivalence-claim forces the system to watch for “violations.”
+- **Permanent correction:** Because **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** is structurally legible post-breach, differences show up as gradients in leverage, burden, risk, or reward. The equivalence-frame must constantly intervene to re-level what keeps re-emerging.
+- **Permanent justification:** To stabilize the equivalence-claim across time (**Θ (temporality: trajectory / time)**), **Φ (recontextualization: frame shift / embedding into a new frame)** is repeatedly invoked to narrate each discrepancy as anomaly, injustice, sabotage, or proof of hidden oppression—regardless of whether the discrepancy is structurally generated.
+- **Permanent vigilance across Θ (temporality):** Under **Θ (temporality: trajectory / time)**, small gradients accumulate. What could have been locally coordinated becomes historically accounted-for, remembered, and aggregated into a running balance.
+
+This yields a stable compulsion profile:
+
+- **Dauervergleich** (continuous comparison)
+- **Dauerjustierung** (continuous adjustment)
+- **Dauerunzufriedenheit** (continuous dissatisfaction)
+
+➡️ **Dissatisfaction is not a defect here. It is the system cost of maintaining a false equivalence under ongoing asymmetry.**
+
+#### 7.1.2 Operator summary (minimal chain)
+
+A compact operatorial trace of the compulsion loop:
+
+- **Δ (difference: minimal structural distinction)** persists as structural contrast.
+- **□ (frame: contextual constraint / relevance structuring)** enforces equivalence-as-value-relation.
+- **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** renders gradients legible (exposure/leverage/obligation).
+- **Θ (temporality: trajectory / time)** accumulates discrepancies into trajectories.
+- **Φ (recontextualization: frame shift / embedding)** supplies recurring narrative repairs.
+- **Α (attractor: pattern stabilization / script formation)** stabilizes the loop as a reliable script.
+- **Σ (integration: coherence synthesis into coordinated praxis)** remains low (no coherent coordination synthesis).
+- **Ψ (self-binding: durable commitment across time)** remains weak/absent (no stable self-binding to Σ-supported coordination under real Ω).
+
+The loop does not require bad intent. It requires only the frame choice plus the post-breach consequence field.
+
+### 7.2 Dissatisfaction is not lack
+
+> **Dissatisfaction arises from relational Ω-legibility (Ω (asymmetry: structural imbalance)) inside a comparison-frame (□ (frame) as value-relation), not from objective deficit.**
+
+In PMS terms, dissatisfaction here is a **structural signal of frame mismatch**, not an indicator of material scarcity or intrinsic inadequacy.
+
+#### 7.2.1 Why it feels like lack (without being lack)
+
+Under **□ (frame: value-relation)**, any visible **Ω-gradient (Ω (asymmetry) as capacity/exposure/responsibility imbalance)** is interpreted as a *ranking difference*. Because rankings imply deficiency by definition, the system experiences discrepancy as “someone is shorted.” But the causal source is not deficit:
+
+- The system is responding to **Ω (asymmetry)** being made **readable** and **action-relevant** post-breach under **Θ (temporality)**.
+- The system is forced into **comparative accounting** because **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment)** are not carrying coordination.
+
+#### 7.2.2 Structural diagnostic (non-clinical, praxeological)
+
+A practical PMS check (still non-normative):
+
+- If dissatisfaction decreases when **□ (frame)** shifts from value-relation to praxis-relation, then dissatisfaction was primarily a **frame-cost**, not a deficit signal.
+- If dissatisfaction persists independent of frame and is tied to genuine non-availability of options (Δ (difference) not opening options inside □ (frame) across Θ (temporality)), then deficit dynamics may be present (but this is not assumed by PMS–EDEN).
+
+Within PMS–EDEN, the default claim is narrower:
+
+➡️ **Dissatisfaction is the expected cost profile of false equivalence under Ω (asymmetry) and Θ (temporality) once Σ (integration) and Ψ (self-binding) are not performing coordination.**
+
 ### 7.3 Chapter Closure — Dissatisfaction as System Cost, Not Deficit
 
 #### (1) Structural Result (Condensation)
