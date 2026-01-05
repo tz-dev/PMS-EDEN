@@ -118,6 +118,8 @@ Absent these conditions, the analysis may still describe the situation, but any 
 From this configuration, a clear structural consequence follows:
 once equality rhetoric replaces coordination under real **Ω (asymmetry)** across **Θ (temporality)**, the system no longer negotiates costs—it redistributes them invisibly.
 
+This stabilization follows the same loss-avoidance logic described in NRK (§5): once coordination under real Ω would require irreversible re-internalization of costs under Θ, maintaining the post-breach configuration becomes structurally cheaper than repair.
+
 Pseudo-symmetry does not resolve asymmetry; it stabilizes it by relocating consequences from explicit interfaces into durable relational load.
 What appears as fairness maintenance functions structurally as a **cost-masking attractor (Α)**.
 

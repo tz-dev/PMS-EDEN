@@ -135,6 +135,8 @@ What presents as commitment to repair increasingly operates as a **carry-demand 
 costs are no longer negotiated, but accumulated by the continuity-proximal role.
 Mediation, once a coordination practice, mutates into an endurance requirement.
 
+This stabilization follows the same breach logic formalized as NRK (§5): once mediation continues after the repair window has closed under Θ, reopening coordination under real Ω becomes structurally more expensive than maintaining the post-breach configuration.
+
 At this stage, terminating mediation is not a breakdown of responsibility.
 It is a structurally coherent response to cost saturation where further mediation no longer changes the consequence field.
 Conversely, insisting on mediation under these conditions tends to suppress **Χ (distance)** and externalize binding as obligation.

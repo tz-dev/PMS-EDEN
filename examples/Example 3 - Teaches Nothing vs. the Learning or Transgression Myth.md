@@ -152,6 +152,10 @@ What persists is not insight, but a transformed consequence field:
 reversibility is closed by **Θ**, exposure gradients harden under **Ω**,
 and the system must reorganize itself around a remainder **Λ** that cannot be undone.
 
+This configuration follows the same breach logic formalized as NRK (§5): enactment occurs 
+under available differentiation without Σ/Ψ carriage, producing consequence-legibility 
+without epistemic expansion.
+
 “Learning” appears here as a secondary stabilization device.
 Through **Φ (recontextualization)**, endurance, adaptation, or loss management
 are narrated as epistemic gain.
