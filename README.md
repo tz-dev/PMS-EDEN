@@ -200,5 +200,52 @@ It explains how drift becomes structurally stable when:
 * scripts repeat (Α),
 * and coordination/binding (Σ/Ψ) are replaced by substitutes.
 
-> Eden is not repaired by verdicts —
+> Eden is not repaired by verdicts — 
 > it is repaired, if at all, by reopening coordination under real asymmetry.
+
+---
+
+## 🔗 Links & Resources
+
+PMS–EDEN is embedded in a broader **praxeological ecosystem** spanning formal operator theory, applied anthropology, structural drift analysis, and executable model specifications.
+
+The resources below provide different **points of access** to this ecosystem: from the canonical PMS operator grammar and foundational theory, to applied books, architectural explorations, and related structural papers. Together, they form a coherent reference space that situates PMS–EDEN as a focused application rather than an isolated artifact.
+
+| Category        | Resource                                                                                                                                                                                                                     | Description                                                                           |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Model website   | [https://pms-theory.netlify.app](https://pms-theory.netlify.app)                                                                                                                                                             | PMS theory reference                                                                  |
+| Book websites   | [https://maturity-in-practice.netlify.app](https://maturity-in-practice.netlify.app)                                                                                                                                         | Praxeological Anthropology — English edition                                          |
+|                 | [https://reife-im-vollzug.netlify.app](https://reife-im-vollzug.netlify.app)                                                                                                                                                 | Praxeologische Anthropologie — Deutsche Ausgabe                                       |
+|                 | [https://pms-stack.netlify.app](https://pms-stack.netlify.app)                                                                                                                                                               | PMS-STACK reference architecture                                                      |
+| Amazon          | [https://www.amazon.com/dp/B0G4XBKNNR](https://www.amazon.com/dp/B0G4XBKNNR)                                                                                                                                                 | *Maturity in Practice: A Praxeological Anthropology* — English edition                |
+|                 | [https://www.amazon.de/dp/B0G4SPBDQD](https://www.amazon.de/dp/B0G4SPBDQD)                                                                                                                                                   | *Reife im Vollzug: Eine praxeologische Anthropologie* — Deutsche Ausgabe              |
+|                 | [https://www.amazon.com/dp/B0G6G7V38P](https://www.amazon.com/dp/B0G6G7V38P)                                                                                                                                                 | *PMS-STACK — A Praxeological Operating System Architecture*                           |
+| GitHub (papers) | [https://github.com/tz-dev/Praxeological-Meta-Structure-Theory](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)                                                                                               | Canonical PMS grammar, theory & YAML definitions                                      |
+|                 | [https://github.com/tz-dev/Maturity-in-Practice](https://github.com/tz-dev/Maturity-in-Practice)                                                                                                                             | Book sources, applied praxeological anthropology                                      |
+|                 | [https://github.com/tz-dev/PMS-QC](https://github.com/tz-dev/PMS-QC)                                                                                                                                                         | PMS-QC — Praxeological Meta-Structure for Quantum Computing                           |
+|                 | [https://github.com/tz-dev/PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC)                                                                                                                                                   | PMS-LOGIC — Structural Responsibility, Logical Limits, and Post-Moral Effects         |
+|                 | [https://github.com/tz-dev/PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION)                                                                                                                                     | PMS–ANTICIPATION — Structural Conditions, Risks, and Viability of Anticipatory Praxis |
+|                 | [https://github.com/tz-dev/PMS-EDEN](https://github.com/tz-dev/PMS-EDEN)                                                                                                                                                     | **PMS–EDEN — Structural Drift from Praxis to Comparison and Reciprocity Loss**        |
+| Custom GPTs     | [https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)                                                                 | Interactive PMS.yaml exploration & validation                                         |
+|                 | [https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology](https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant                                          |
+
+
+---
+
+## 🤝 Contributing
+
+Contributions, critiques, and theoretical extensions are welcome.  
+Please open an issue or submit a pull request.
+
+---
+
+## 📜 License
+
+* The **paper** is released under **CC BY 4.0** (`LICENSE-CC-BY-4.0`).
+
+---
+
+## 📬 Contact
+
+Maintained by **tz-dev**.
+For discussions or questions, please use GitHub issues.
