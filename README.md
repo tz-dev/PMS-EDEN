@@ -1,6 +1,6 @@
 # PMS–EDEN
 
-**Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss**
+## Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss
 
 **PMS–EDEN is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, and self-binding.
 
