@@ -654,10 +654,8 @@ NRK provides a precise descriptor for a specific **negative praxis form**:
 
 NRK is not a “moral concept.” It is a **praxeological kernel**: a minimal pattern that can generate downstream structures.
 
-**Separation from PMS–LOGIC (if used elsewhere in the ecosystem):**
-
-* **NRK** explains the **enactment type**: *what kind of realization occurs* under **∇ (impulse: directed tension)** inside **□ (frame: contextual constraint)**, when **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment)** do not carry the act.
-* **PMS–LOGIC** (where applicable) explains **post-hoc readability**: how moralized or normative interpretation becomes legible **after** the field has shifted and stabilized, i.e., after **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)**, **Θ (temporality: trajectory / time)**, and **Λ (non-event: meaningful absence / non-closure)** have become structurally active surfaces.
+- **NRK** explains the **enactment type**: the structural form of realization that occurs under **∇** within **□** when **Σ** and **Ψ** do not carry integration and binding.  
+- It does not explain moral interpretation or normative judgment. These become legible only *after* asymmetry, temporality, and non-event have stabilized the field.
 
 Thus, NRK is upstream: it names the mechanism that produces the consequence field in which later readability becomes possible.
 
