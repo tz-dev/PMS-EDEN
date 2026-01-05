@@ -1130,7 +1130,7 @@ None of these moves imply innocence or guilt; they are adaptations to an environ
 
 #### (4) Reader-Guard (Misreading Prevention)
 
-This closure does not claim female primacy, male passivity, intentional harm, or psychological disposition. It does not infer character, essence, or moral hierarchy. “Her share” and “his share” name **tendency-weighted structural contributions** under a specific post-breach operator configuration. Genesis-asymmetry refers only to **where the first stable deviation typically appears**, not to total responsibility, inevitability, or exclusive causation. The chapter describes how drift becomes directional and durable without invoking blame logic or
+This closure does not claim female primacy, male passivity, intentional harm, or psychological disposition. It does not infer character, essence, or moral hierarchy. “Her share” and “his share” name **tendency-weighted structural contributions** under a specific post-breach operator configuration. Genesis-asymmetry refers only to **where the first stable deviation typically appears**, not to total responsibility, inevitability, or exclusive causation. The chapter describes how drift becomes directional and durable **without invoking blame logic, moral equivalence, or compensatory symmetry narratives**.
 
 ---
 
