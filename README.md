@@ -10,7 +10,7 @@ Building explicitly on PMS as its structural foundation, this project does **not
 
 * why “loss of Eden” is not an epistemic event but a **praxis breach under available awareness (A)**,
 * how a **comparison-dominant frame (□)** turns difference (Δ) and asymmetry (Ω) into ranking tokens,
-* why false equivalence yields compulsive monitoring (continuous comparison, continuous correction, and chronic dissatisfaction
+* why false equivalence yields compulsive monitoring (continuous comparison, continuous correction, and chronic dissatisfaction),
 * how **Pseudo-Symmetry (PS)** stabilizes drift by substituting **Φ/Λ/Α** for **Σ/Ψ** under real **Ω**,
 * and how reciprocity collapses as **coordinated asymmetry** fails under **Θ**-extended residue fields (Λ).
 
@@ -35,7 +35,7 @@ PMS–EDEN is:
   * the stabilizing roles (and misuse risks) of **Φ**, **Α**
   * the failure modes of **integration (Σ)** and **self-binding (Ψ)** under **Θ**
 * A viability model that evaluates drift by:
-  * **operator carriage** (what carries coordination vs what substitutes for it)
+  * **operator carriage** (what carries coordination vs. what substitutes for it)
   * **reversibility and restraint** (Χ / D constraints when applied)
   * **structural costs** (comparison load, residue accumulation, reciprocity decay)
   * rather than moral “who is right”
@@ -103,89 +103,72 @@ PMS–EDEN shows what follows when that grammar is applied to:
 
 ---
 
-## Repository Layout
+## Example Suite (Structural Stress Tests)
 
-This repository ships the PMS–EDEN paper in multiple formats (Markdown / HTML / PDF), plus shared assets (CSS + figures).
+The repository includes a dedicated **Example Suite** (`/examples`) consisting of five structurally uniform case mappings.
+
+These examples are **not illustrations, prescriptions, or moral applications**.  
+They function as **structural stress tests** for the PMS–EDEN drift logic.
+
+Each example:
+
+* models a **high-misread-risk situation** (where readers typically moralize or psychologize),
+* applies the **same operator discipline** used in the paper,
+* explicitly separates **roles, costs, frames, and trajectories** from persons or character,
+* and enforces the **PMS application gate (Χ + reversibility + D)**.
+
+Included examples:
+
+1. **Pseudo-Symmetry under Real Cost Asymmetry**  
+   *Equality rhetoric as frame substitution under Ω and Θ.*
+
+2. **Mediation Termination vs. Mediation Compulsion**  
+   *Why mediation collapse can be cost-rational rather than a character failure.*
+
+3. **“Teaches Nothing” vs. the Learning / Transgression Myth**  
+   *Threshold acts as consequence-legibility without epistemic gain.*
+
+4. **Fig Leaves / Legibility Management Without Psychology**  
+   *Exposure management and script stabilization without shame or guilt models.*
+
+5. **“Who Goes First?” as Trajectory Origin, Not Moral Rank**  
+   *Sequence effects, origin asymmetry, and irreversibility without blame.*
+
+The Example Suite is designed to **train structural reading discipline**:
+how to keep Λ, Ω, and Θ visible without collapsing into verdicts.
+
+---
+
+## Repository Layout
 
 ```text
 PMS–EDEN/
 ├── README.md
 ├── LICENSE
-├── PMS–EDEN.md
-├── PMS–EDEN.html
-├── PMS–EDEN.pdf
+├── PMS–EDEN - Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss.md
+├── PMS–EDEN - Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss.html
+├── PMS–EDEN - Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss.pdf
 ├── css/
 │   └── main.css
-└── img/
-    ├── diagram01.png
-    ├── diagram02.png
-    └── diagram03.png
+├── img/
+│   ├── cover.png
+│   ├── diagram01.png
+│   ├── diagram02.png
+│   └── diagram03.png
+└── examples/
+    ├── Example 1 - Pseudo-Symmetry under Real Cost Asymmetry.md
+    ├── Example 1 - Pseudo-Symmetry under Real Cost Asymmetry.html
+    ├── Example 2 - Mediation Termination vs Mediation.md
+    ├── Example 2 - Mediation Termination vs Mediation.html
+    ├── Example 3 - Teaches Nothing vs. the Learning or Transgression Myth.md
+    ├── Example 3 - Teaches Nothing vs. the Learning or Transgression Myth.html
+    ├── Example 4 - Legibility Management Without Psychology.md
+    ├── Example 4 - Legibility Management Without Psychology.html
+    ├── Example 5 - Who Goes First as Trajectory Origin, Not Moral Rank.md
+    └── Example 5 - Who Goes First as Trajectory Origin, Not Moral Rank.html
 ````
 
-The **canonical source** is `PMS–EDEN.md`.
-
-### What’s where
-
-* **`PMS–EDEN.md`** — canonical source (human-readable Markdown)
-* **`PMS–EDEN.html`** — rendered web version (uses `css/main.css` and `img/*`)
-* **`PMS–EDEN.pdf`** — print/PDF version
-* **`css/main.css`** — styling for the HTML artefacts
-* **`img/*`** — figures referenced by the paper
-
----
-
-## Structural Contributions
-
-### 1. Eden as a Praxis Frame (Δ without Ranking)
-
-Eden is modelled as a mature configuration where:
-
-* **Δ (difference)** is structurally available,
-* **□ (frame)** remains praxis-oriented (coordination-first),
-* **Θ (temporality)** does not yet force consequence cascades into status accounting.
-
-Distinction is functional — not comparative.
-
-### 2. The Breach as Operator-Carriage Failure (Σ/Ψ)
-
-The breach is defined structurally:
-
-* **A = [Θ, □, Δ]** is available (options are visible),
-* but **Σ (integration)** and/or **Ψ (self-binding)** do not carry enactment,
-* yielding an irreversible consequence field under **Θ**.
-
-### 3. False Equivalence as Compulsion Engine
-
-Once **□** becomes comparison-dominant, flattening Δ into equivalence produces:
-
-* continuous observation (Dauervergleich),
-* continuous correction (Dauerjustierung),
-* continuous dissatisfaction (Dauerunzufriedenheit),
-
-as a **maintenance cost** of sustaining equivalence under legible **Ω** and accumulating **Θ**.
-
-### 4. Pseudo-Symmetry (PS) as Drift Stabilizer
-
-PS is formalized as rhetorical parity under real **Ω**, where:
-
-* **Ω** becomes taboo as a coordination object,
-* **Σ** is replaced by **Φ** (narrative repair substitutes interface change),
-* **Ψ** binds to appearance-management,
-* **Λ** remains open as remainder/leverage,
-* **Α** locks the protocol into repeatable scripts.
-
-### 5. Reciprocity Loss as Channel Erosion (Tragedy, not Guilt)
-
-Reciprocity is defined as:
-
-* **Σ under real Ω, bound by Ψ, limited by Χ**,
-
-and its loss is modelled as predictable erosion when:
-
-* **□comparison** dominates,
-* **Ω** is taboo/weaponized,
-* **Λ** becomes chronic,
-* **Α** stabilizes indirect control and devaluation substitutes.
+The **canonical source** of the paper remains the Markdown file.
 
 ---
 
@@ -196,61 +179,12 @@ PMS–EDEN is intended for:
 * Structural theorists modelling drift from coordination to comparison
 * Analysts studying asymmetry, residues, and non-closure fields (Ω/Λ/Θ)
 * Governance and accountability designers working under irreversibility
-* Readers who want a **non-moral, non-clinical** vocabulary for regime-like relationship drift
+* Readers seeking a **non-moral, non-clinical** vocabulary for regime-like relational drift
 
 It is **not** intended for coercive application, person-ranking, or prescriptive enforcement.
-Any use as guidance must respect the paper’s application gate (Χ + reversibility + D).
 
----
-
-*PMS–EDEN* is embedded in a broader **praxeological ecosystem** spanning
-formal operator theory, applied anthropology, structural ethics, and executable model specifications.
-
-The resources below are organized by **structural role** within that ecosystem.
-
-| Category        | Resource                                                                                                                                                                                                                     | Description                                                                           |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| Model website   | [https://pms-theory.netlify.app](https://pms-theory.netlify.app)                                                                                                                                                             | PMS theory reference                                                                  |
-| Book websites   | [https://maturity-in-practice.netlify.app](https://maturity-in-practice.netlify.app)                                                                                                                                         | Praxeological Anthropology — English edition                                          |
-|                 | [https://reife-im-vollzug.netlify.app](https://reife-im-vollzug.netlify.app)                                                                                                                                                 | Praxeologische Anthropologie — Deutsche Ausgabe                                       |
-|                 | [https://pms-stack.netlify.app](https://pms-stack.netlify.app)                                                                                                                                                               | PMS-STACK reference architecture                                                      |
-| Amazon          | [https://www.amazon.com/dp/B0G4XBKNNR](https://www.amazon.com/dp/B0G4XBKNNR)                                                                                                                                                 | *Maturity in Practice: A Praxeological Anthropology* — English edition                |
-|                 | [https://www.amazon.de/dp/B0G4SPBDQD](https://www.amazon.de/dp/B0G4SPBDQD)                                                                                                                                                   | *Reife im Vollzug: Eine praxeologische Anthropologie* — Deutsche Ausgabe              |
-|                 | [https://www.amazon.com/dp/B0G6G7V38P](https://www.amazon.com/dp/B0G6G7V38P)                                                                                                                                                 | *PMS-STACK — A Praxeological Operating System Architecture*                           |
-| GitHub (papers) | [https://github.com/tz-dev/Praxeological-Meta-Structure-Theory](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)                                                                                               | Canonical PMS grammar, theory & YAML definitions                                      |
-|                 | [https://github.com/tz-dev/Maturity-in-Practice](https://github.com/tz-dev/Maturity-in-Practice)                                                                                                                             | Book sources, applied praxeological anthropology                                      |
-|                 | [https://github.com/tz-dev/PMS-QC](https://github.com/tz-dev/PMS-QC)                                                                                                                                                         | PMS-QC — Praxeological Meta-Structure for Quantum Computing                           |
-|                 | [https://github.com/tz-dev/PMS-LOGIC](https://github.com/tz-dev/PMS-LOGIC)                                                                                                                                                   | PMS-LOGIC — Structural Responsibility, Logical Limits, and Post-Moral Effects         |
-|                 | [https://github.com/tz-dev/PMS-ANTICIPATION](https://github.com/tz-dev/PMS-ANTICIPATION)                                                                                                                                     | PMS–ANTICIPATION — Structural Conditions, Risks, and Viability of Anticipatory Praxis |
-|                 | [https://github.com/tz-dev/PMS-EDEN](https://github.com/tz-dev/PMS-EDEN)                                                                                                                                                     | **PMS–EDEN — Structural Drift from Praxis to Comparison and Reciprocity Loss**        |
-| Custom GPTs     | [https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant](https://chatgpt.com/g/g-69358a2a4980819183da6a97893389cf-pms-model-assistant)                                                                 | Interactive PMS.yaml exploration & validation                                         |
-|                 | [https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology](https://chat.openai.com/g/g-693460d3def48191ad08647301645a2e-maturity-in-action-a-praxeological-anthropology) | Applied praxeological anthropology assistant                                          |
-
----
-
-## Citation
-
-When referencing PMS–EDEN, please cite both the paper and PMS:
-
-**PMS–EDEN**
-
-> T. Zöller (2026): *PMS–EDEN — Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss.*
-
-**PMS Framework**
-
-> T. Zöller (2025): *Towards a Praxeological Meta-Structure Theory.*
-> *PMS.yaml — Axiomatic Operator Schema (PMS_1.1).*
-
----
-
-## License
-
-Unless otherwise stated, all documentation in this repository is licensed under:
-
-**Creative Commons Attribution 4.0 International (CC BY 4.0)**
-
-You are free to share, adapt, and build upon the material,
-provided appropriate attribution is given.
+Any use of PMS–EDEN as guidance must respect the **application gate**:
+**Χ (distance) + reversibility + D (dignity-in-practice)**.
 
 ---
 
@@ -267,4 +201,4 @@ It explains how drift becomes structurally stable when:
 * and coordination/binding (Σ/Ψ) are replaced by substitutes.
 
 > Eden is not repaired by verdicts —
-> it is repaired (if at all) by re-opening coordination under real asymmetry.
+> it is repaired, if at all, by reopening coordination under real asymmetry.
