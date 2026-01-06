@@ -1,4 +1,4 @@
-# **PMS–EDEN**
+# PMS–EDEN
 
 ## *Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss*
 
@@ -99,7 +99,7 @@ No deviation from these definitions occurs anywhere in PMS–EDEN.
 #### Operator Reference Table (PMS–EDEN)
 
 | Symbol | Operator            | Core Meaning                                         | Function in PMS–EDEN                                                        |
-| --: | - | - |  |
+| :--: | - | - |  |
 |      Δ | Difference          | Minimal distinction                                  | Enables minimal contrast and option differentiation without valuation        |
 |      ∇ | Impulse             | Directed tension                                     | Activates movement/pressure without requiring deficit compulsion            |
 |      □ | Frame               | Contextual constraint                                | Structures Eden as non-scarcity praxis; later enables comparison            |
@@ -117,34 +117,37 @@ If the paper uses terms like “loss,” “degradation,” or “tragedy,” th
 of operator configurations (e.g., **Σ (integration) / Ψ (self-binding)** failure under **Ω (asymmetry)**), not as moral judgements,
 intentions, or blame attributions.
 
-### 0.6 ACRED/IA Box (PMS_1.1)
+### 0.6 ACRED (PMS_1.1)
 
 This paper uses **ACRED** as shorthand for the five **derived axes**:
 **A (awareness), C (coherence), R (responsibility), E (action/enactment), D (dignity-in-practice)**.
-These axes are **structural projections** of operator compositions; they are not person-diagnostic labels.
+These axes are **structural projections** of operator availability and operator compositions; they are not person-diagnostic labels.
 
-**IA patterns (Interpretation-/Imbalance-Axis patterns)** are **structural signatures** describing characteristic axis-skews that may occur in scenes, roles, scripts, or regimes.
-IA patterns are **not traits**, not clinical categories, and not global labels about persons.
+#### ACRED — paper-wide reference definitions (operator-conform)
 
-#### IA_A>>E — Excessive gap between Awareness and Enactment
-* **Code:** `IA_A>>E`
-* **Name:** Excessive gap between Awareness and Enactment
-* **Structural basis (schema):** **Ω (asymmetry: evaluative/positional gradient) + Α (attractor: stabilized evaluative script) + Φ (recontextualization: frame shifts reinforcing evaluation over enactment)**
-* **Axis effect (plain language):**
-  Awareness/option visibility expands while integrated enactment (**E (action) = Σ (integration: coherence synthesis) + Θ (temporality: trajectory/time) + ∇ (impulse: directed tension)**) is suppressed or chronically delayed.
-* **Non-diagnostic clause:**
-  This pattern is a praxeological configuration (scene/role/script level), not a personality or clinical label.
+* **Awareness A (awareness: sustained, framed differentiation across time):**  
+  **A = [Θ (temporality: trajectory/time), □ (frame: contextual constraint), Δ (difference: minimal distinction)]**.  
+  Awareness denotes operator availability (sustained framed differentiation), not phenomenology.
 
-#### IA_Sigma_low — Fragmented integration
-* **Code:** `IA_Sigma_low`
-* **Name:** Fragmented integration
-* **Structural basis (schema):** **high Φ (recontextualization: frequent frame shifts) + low Σ (integration: weak consolidation)**
-* **Axis effect (plain language):**
-  Frequent frame shifts occur without consolidation; trajectories become unstable, coordination remains fragmented.
-* **Non-diagnostic clause:**
-  This pattern describes structural volatility in integration, not inner states, traits, or diagnoses.
+* **Coherence C (coherence: temporally stabilized impulse/expectation structuring within a frame):**  
+  **C = [Θ (temporality: trajectory/time), Λ (non-event: structured absence), □ (frame: contextual constraint), ∇ (impulse: directed tension)]**.  
+  Coherence is a structural stability notion, not a psychological “state.”
 
-**Method firewall:** IA identification is descriptive and analytic.
+* **Responsibility R (responsibility: self-binding orientation toward asymmetry across time and recontextualization):**  
+  **R = [Ψ (self-binding: durable commitment), Φ (recontextualization: frame shift), Θ (temporality: trajectory/time), Ω (asymmetry: structural imbalance)]**.  
+  Responsibility is modeled structurally (position/time/binding), not as moral judgement or trait inference.
+
+* **Action / Enactment E (action: integrated enactment):**  
+  **E = [Σ (integration: coherence synthesis), Θ (temporality: trajectory/time), ∇ (impulse: directed tension)]**.  
+  Enactment without Σ/Ψ carriage is treated as realization/enactment, not E (action) in the strict PMS sense.
+
+* **Dignity-in-practice D (restrained handling of asymmetry):**  
+  **D = (Ψ ∘ Χ) applied to Ω-handling** (i.e., self-bound reflective restraint in asymmetrical relations).  
+  D is not a metaphysical worth claim; it is a structural constraint on enacted restraint and protection under asymmetry.
+
+#### Method firewall (description vs. application)
+
+ACRED-based readings in this paper are **descriptive and analytic**.  
 Any prescriptive use remains subject to the PMS entry condition:
 **Χ (distance) + reversibility + D (dignity-in-practice)**.
 
@@ -312,25 +315,25 @@ Eden is introduced here as a **structurally complete** configuration of praxis: 
 
 Structurally:
 
-* **Δ (difference: minimal distinction)** is present: distinctions exist and are salient (including sexed attributes as differences, not valuations).
+* **Δ (difference: minimal distinction)** is present: distinctions exist and are salient (including sexed attributes as differences, not valuations).  
   **Δ (difference)** is not produced by the “Fall”; it is already part of the ground state.
 
-* **□ (frame: contextual constraint / relevance structuring)** is stable: the scene is structured as a coherent context of praxis without scarcity compulsion.
+* **□ (frame: contextual constraint / relevance structuring)** is stable: the scene is structured as a coherent context of praxis without scarcity compulsion.  
   **□ (frame)** constrains and orients **∇ (impulse: directed tension)** without forcing optimization-by-need.
 
-* **Θ (temporality: trajectory / time)** is present but not punitive: time exists as trajectory, continuity, and development, but not yet as a binding cascade of accumulated remainder **Λ (non-event)**.
+* **Θ (temporality: trajectory / time)** is present but not punitive: time exists as trajectory, continuity, and development, but not yet as a binding cascade of accumulated remainder **Λ (non-event)**.  
   **Θ (temporality)** does not yet function as an irreversible moral ledger; it functions as continuity without punitive accumulation.
 
-* **A (awareness: [Θ (temporality), □ (frame), Δ (difference)])** is realizable and sustainable: framed distinctions persist across time such that alternatives and consequences are structurally visible.
+* **A (awareness: [Θ (temporality), □ (frame), Δ (difference)])** is realizable and sustainable: framed distinctions persist across time such that alternatives and consequences are structurally visible.  
   In PMS–EDEN, this is the formal sense of “maturity”: not psychology, but **A (awareness) availability within □ (frame) across Θ (temporality)**.
 
-* **∇ (impulse: directed tension)** exists without dominating as deficit compulsion: directed tension can arise from **Δ (difference)**, but it is not forced into optimization loops by scarcity.
+* **∇ (impulse: directed tension)** exists without dominating as deficit compulsion: directed tension can arise from **Δ (difference)**, but it is not forced into optimization loops by scarcity.  
   **∇ (impulse)** is not absent; it is simply not structurally hijacked by lack.
 
-* **Ω (asymmetry: structural imbalance of capacity/exposure/obligation)** is latent but non-escalated: gradients of capacity, exposure, or responsibility may exist, but they are not yet conflict-dominant, weaponized, or comparison-coded inside **□ (frame)**.
+* **Ω (asymmetry: structural imbalance of capacity/exposure/obligation)** is latent but non-escalated: gradients of capacity, exposure, or responsibility may exist, but they are not yet conflict-dominant, weaponized, or comparison-coded inside **□ (frame)**.  
   **Ω (asymmetry)** exists as a structural possibility, not as a relational crisis.
 
-* **Λ (non-event: meaningful absence / non-closure)** is not the central engine: structured absence is not yet the primary tension mechanism of the frame.
+* **Λ (non-event: meaningful absence / non-closure)** is not the central engine: structured absence is not yet the primary tension mechanism of the frame.  
   **Λ (non-event)** does not yet function as an unrecoverable remainder that governs the scene.
 
 **Therefore:** Eden is **praxis completeness without tragedy pressure**, but **not** without maturity. Here “tragedy” denotes a **structural consequence profile** (e.g., chronic Λ (non-event) + Σ/Ψ failure under Ω), not a moral judgement, intention, or blame attribution. Maturity is present precisely because **A (awareness: [Θ, □, Δ])** is structurally possible and stable.
@@ -348,20 +351,21 @@ Eden is not a childish condition. It is a **praxeologically complete setting** i
 
 This is crucial for the central thesis of PMS–EDEN: if Eden already contains maturity as **A (awareness: [Θ, □, Δ])**, then the “Fall” cannot be the beginning of maturity, knowledge, or awareness. The “Fall” must be treated as a **reconfiguration of consequence-legibility** under **Θ (temporality)** and **Ω (asymmetry)**, not an epistemic upgrade.
 
-### 2.3 The Apple as Threshold Marker (Maturity Present; NRK Becomes an Explicit Option)
+### 2.3 The Apple as Threshold Marker (Maturity Present; a Negative Praxis Option Becomes Explicit)
 
 The apple is not treated as a symbol of “learning through evil,” nor as a mechanism that generates new knowledge. It marks a **threshold of explicitness** in which a particular option becomes structurally foregrounded:
 
 * The paper-internal notion of **possibility space / explicitness** denotes **option visibility** generated by **Δ (difference: minimal distinction)** within **□ (frame: contextual constraint)** across **Θ (temporality: trajectory / time)**. This option-visibility is **not equivalent** to **Χ (distance: reflective inhibition)** and is not treated as knowledge.
 
 * The apple marks that the possibility space has reached a point where a **praxis breach** becomes an explicitly selectable option within **□ (frame: contextual constraint)**, under **A (awareness: [Θ, □, Δ])**.
-  **NRK is not a PMS operator.** It is a **paper-internal composite / pattern label** that abbreviates a specific operator configuration (a breach under available **A** with **Σ/Ψ** not carrying enactment). It introduces no new axiom beyond the PMS_1.1 set **Δ–Ψ**.
 
-* This preserves the core distinction:
-  **knowledge ≠ sin, sin ≠ knowledge.**
-  The apple does not “teach” or “add insight.” It signals that the scene has matured to the point where an option exists whose selection would constitute a **negative responsibility configuration**: an enactment under **∇ (impulse: directed tension)** inside **□ (frame: contextual constraint)** despite **A (awareness: [Θ, □, Δ])**, with **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment across time)** absent, failed, externalized, or simulated.
+* **NRK is not a PMS operator.** It is a **paper-internal alias** that abbreviates a specific operator configuration: a conscious breach under available **A**, realized as enactment under **∇ (impulse: directed tension)** inside **□ (frame: contextual constraint)** while **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment across time)** are absent, failed, externalized, or simulated. NRK introduces no new axiom beyond the PMS_1.1 set **Δ–Ψ**.
 
-Thus, the apple functions as a **threshold marker of option explicitness**, not as a generator of epistemic gain. It indicates that Eden already contains maturity as **A (awareness: [Θ, □, Δ])**, and that the future possibility of a breach is structurally present as an option—without being necessary, demanded, or morally fated.
+* This preserves the core distinction:  
+  **knowledge ≠ sin, sin ≠ knowledge.**  
+  The apple does not “teach” or “add insight.” It signals that the scene has matured to the point where an option exists whose selection would constitute a **negative praxeological structure** (∇ within □ under available A, without Σ/Ψ carriage).
+
+Thus, the apple functions as a **threshold marker of option explicitness**, not as a generator of epistemic gain. It indicates that Eden already contains maturity as **A (awareness: [Θ, □, Δ])**, and that the negative option is structurally present as an option—without being necessary, demanded, or morally fated.
 
 The relevance of this move is methodological: it prevents the common collapse of categories (epistemology ↔ transgression) and keeps the analysis operator-clean. Eden already contains the structural resources for mature praxis; the threshold merely makes the negative option legible as an option—setting up the later claim that the breach “teaches nothing” because the consequence field was structurally anticipable under **A (awareness: [Θ, □, Δ])** before enactment.
 
@@ -413,13 +417,13 @@ This section formalizes the decisive event as a **praxeological negative configu
 
 Key clarifications:
 
-* **Knowledge ≠ sin, sin ≠ knowledge.**
+* **Knowledge ≠ sin, sin ≠ knowledge.**  
   The act does not generate **Δ (difference: minimal distinction)**, does not deepen **A (awareness: [Θ, □, Δ])**, and does not add a new operator. The act is a selection among already legible possibilities within **□ (frame)** across **Θ (temporality)**.
 
-* “Sin” here names a **praxeological negative structure**, not a moral category.
-  It can be fully rewritten without the term by specifying its operator profile: enactment under **∇ (impulse: directed tension)** inside **□ (frame: contextual constraint)** with **Σ (integration: coherence synthesis)** low/absent and **Ψ (self-binding: durable commitment across time)** absent/failed/externalized/simulated, while **A (awareness: [Θ, □, Δ])** is available.
+* “Sin” here names a **praxeological negative structure**, not a moral category.  
+  It can be fully rewritten without the term by specifying its operator profile: enactment under **∇ (impulse: directed tension)** inside **□ (frame: contextual constraint)** with **Σ (integration: coherence synthesis)** absent or not carrying coordination, and **Ψ (self-binding: durable commitment across time)** absent, failed, externalized, or simulated, while **A (awareness: [Θ, □, Δ])** is available.
 
-* Consciousness is not imported as psychology.
+* Consciousness is not imported as psychology.  
   “Conscious” is strictly structural: **A (awareness: [Θ, □, Δ])** is present in the scene such that alternatives and consequence-possibility are legible within **□ (frame: contextual constraint)** across **Θ (temporality: trajectory / time)**.
 
 ### 3.2 The Operator Interruption (Without Mislabeling as E)
@@ -429,24 +433,24 @@ In PMS, **E (action: integrated enactment; formally E = [Σ (integration), Θ (t
 A typical interruption profile:
 
 * **∇ (impulse: directed tension)** is activated by **Δ (difference: minimal distinction)** and moves within **□ (frame: contextual constraint)**, but
-* **Σ (integration: coherence synthesis)** is **low/absent**: there is no coherent synthesis that would align impulse, frame, and consequence-horizon under **Θ (temporality)**,
-* **Ψ (self-binding: durable commitment across time)** is **not established / interrupted / externalized / simulated**: there is no stable commitment that carries an integrated structure across **Θ (temporality)**,
-* **Χ (distance: reflective inhibition / meta-position)** may be absent, weak, or irrelevant at the moment of enactment (and is not required for description).
+* **Σ (integration: coherence synthesis)** does not carry the act into coordinated praxis: impulse, frame, and consequence-horizon under **Θ (temporality)** are not synthesized into a coherent whole,
+* **Ψ (self-binding: durable commitment across time)** is not established or does not carry the act: there is no stable commitment that maintains an integrated structure across **Θ (temporality)**,
+* **Χ (distance: reflective inhibition / meta-position)** may be absent, weak, or instrumentally bypassed at the moment of enactment (and is not required for description).
 
 Thus, the breach is structurally:
 
-* **∇ (impulse: directed tension)** → **realization** within **□ (frame: contextual constraint)**
-  while **Σ (integration: coherence synthesis)** is low/absent and **Ψ (self-binding: durable commitment)** is not anchoring the act,
+* **∇ (impulse: directed tension)** → **realization** within **□ (frame: contextual constraint)**,  
+  while **Σ (integration: coherence synthesis)** does not carry coordination and **Ψ (self-binding: durable commitment)** does not anchor the act,
 * occurring in a scene where **A (awareness: [Θ, □, Δ])** is available.
 
-This is the core difference between **integrated action E (action: [Σ, Θ, ∇])** and **mis-enactment**: the latter is not “mere behavior,” but behavior that proceeds **prior to** or **against** **Σ (integration)** and **Ψ (self-binding)**.
+This is the core difference between **integrated action E (action: [Σ, Θ, ∇])** and **mis-enactment**: the latter is not “mere behavior,” but realization that proceeds **without Σ-carrying integration** and **without Ψ-carrying binding**.
 
 ### 3.3 “Teaches Nothing” (Conscious → Consequence, Not Insight)
 
 The formula “teaches nothing” is not rhetorical. It is a structural claim:
 
-* If **A (awareness: [Θ, □, Δ])** is available prior to enactment, then the selection of the negative option cannot be justified as an epistemic necessity.
-  The act does not expand awareness; it merely crosses a threshold where consequences become temporally fixed under **Θ (temporality: trajectory / time)**.
+* If **A (awareness: [Θ, □, Δ])** is available prior to enactment, then the selection of the negative option cannot be specified as an epistemic necessity.  
+  The act does not expand awareness; it crosses a threshold where consequences become temporally fixed under **Θ (temporality: trajectory / time)**.
 
 What the breach produces is not knowledge but a consequence field:
 
@@ -458,9 +462,9 @@ Therefore:
 
 * No new **Δ (difference: minimal distinction)** is created; differences were already present.
 * No new **□ (frame: contextual constraint)** is required; the frame already contained the option space.
-* No new **Θ (temporality: trajectory / time)** is introduced; temporality becomes newly binding only insofar as it now carries irreversibility in a consequence field.
+* No new **Θ (temporality: trajectory / time)** is introduced; temporality becomes newly binding insofar as it now carries irreversibility in a consequence field.
 * No new **A (awareness: [Θ, □, Δ])** is generated; awareness is not “upgraded” by the act.
-* **Χ (distance: reflective inhibition)** is not redefined as “knowledge”: reflective distance is treated as inhibition and meta-positioning, while option visibility is handled via **Δ (difference)** within **□ (frame)** across **Θ (temporality)**.
+* **Χ (distance: reflective inhibition)** is not redefined as “knowledge”: reflective distance is inhibition and meta-positioning, while option visibility is handled via **Δ (difference)** within **□ (frame)** across **Θ (temporality)**.
 
 The act yields **evidence of consequence**, not **epistemic surplus**. It converts a legible possibility into an irreversible trajectory.
 
@@ -468,13 +472,13 @@ The act yields **evidence of consequence**, not **epistemic surplus**. It conver
 
 The question of priority is not a moral indictment but a structural asymmetry claim. The first realization of the breach establishes a directional origin for subsequent asymmetry patterns.
 
-* First enactment produces **directed Ω (asymmetry: structural imbalance of capacity/exposure/obligation)**: an origin gradient of initiative, exposure, and responsibility becomes fixed in the scene.
+* First enactment produces **directed Ω (asymmetry: structural imbalance of capacity/exposure/obligation)**: an origin gradient of initiative, exposure, and responsibility becomes fixed in the scene.  
   Once **Ω (asymmetry)** is origin-coded, it cannot be neutralized by symmetric narration alone.
 
-* The origin is not undoable because **Θ (temporality: trajectory / time)** makes it a trajectory: sequence matters.
+* The origin is not undoable because **Θ (temporality: trajectory / time)** makes it a trajectory: sequence matters.  
   The first act establishes “before/after” as structurally relevant, not merely as chronology.
 
-* After origin is set, stabilization tends to proceed via **Φ (recontextualization: frame shift / embedding into a new frame)**: frame shifts, narratives, and post-hoc alignments attempt to re-stabilize the scene.
+* After origin is set, stabilization tends to proceed via **Φ (recontextualization: frame shift / embedding into a new frame)**: frame shifts, narratives, and post-hoc alignments attempt to re-stabilize the scene.  
   **Φ (recontextualization)** can reinterpret and embed, but it cannot erase the asymmetry origin without a real restoration of **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment across time)**.
 
 Thus, “who goes first” matters because:
@@ -497,8 +501,8 @@ What becomes irreversible is not insight, but consequence: Ω becomes directiona
 
 The costs generated by this configuration are asymmetrically distributed across role-positions:
 
-- Positions proximate to initiation and origin-setting absorb **endpoint and liability costs**: once the trajectory is set, responsibility gradients under Ω become fixed.
-- Positions proximate to continuity and aftermath absorb **ongoing and relational costs**: they must operate within a consequence field already shaped by an origin they did not establish.
+- Positions proximate to initiation and origin-setting absorb **origin and sequencing costs**: once the trajectory is set, the scene’s gradients under Ω become fixed.
+- Positions proximate to continuity and aftermath absorb **ongoing coordination and exposure costs**: they must operate within a consequence field already shaped by an origin they did not set.
 - No position gains epistemic compensation; the structure produces costs without informational reward.
 
 These costs are not assigned by intent or evaluation; they follow from the interruption profile under Θ and Ω.
@@ -513,18 +517,18 @@ Given this cost layout, several responses are structurally rational:
 
 None of these responses indicate deficiency or virtue; they are consequence-management strategies under an origin-coded Ω within Θ.
 
-#### (4) Structural Viability Verdict (Non-Moral)
+#### (4) Structural Viability Note (Non-Moral)
 
-While the breach itself is genesis-neutral, its cost structure is not viability-neutral. A configuration in which origin-setting fixes consequence trajectories under Θ, while ongoing coordination and exposure costs are borne by role-positions that did not establish that origin, is not structurally sustainable under PMS.
+This chapter does not evaluate the breach by intention, virtue, or defect. It notes a structural constraint: a configuration in which origin-setting fixes consequence trajectories under Θ, while ongoing coordination and exposure costs are borne downstream without re-internalization, is not structurally stable as reciprocity over time.
 
-Persistent cost displacement following a chain interruption does not constitute tragedy or misfortune; it constitutes structural non-viability. Adult praxis requires that the costs generated by interruption and trajectory-setting be carried where they arise, rather than stabilized through downstream endurance.
+Persistent cost displacement following a chain interruption is a viability problem in operator terms: it indicates a durable mismatch between consequence production and consequence carrying.
 
 #### (5) Reader-Guard and Cost Boundary
 
-This chapter does not legitimate endurance as maturity, nor does it normalize the carrying of interruption costs by continuity alone. It describes how a consequence field comes into existence—not how it should be maintained.  
+This chapter does not legitimate endurance as maturity, nor does it normalize the carrying of interruption costs by continuity alone. It describes how a consequence field comes into existence—not how it should be maintained.
 
 ⚠ **Structural Cost Marker:**  
-At this stage, the system becomes vulnerable to stabilization via downstream cost absorption: integration, exposure, and coordination efforts risk being offloaded onto role-positions that did not initiate the breach, while origin positions retain insulation from ongoing repair work.  
+At this stage, the system becomes vulnerable to stabilization via downstream cost absorption: integration, exposure, and coordination efforts risk being offloaded onto role-positions that did not set the breach origin, while origin positions retain relative insulation from ongoing repair work.
 
 Where such cost displacement persists without re-internalization, reciprocity has already failed—regardless of intent, narrative framing, or perceived fairness.
 
@@ -643,39 +647,34 @@ These responses are adaptive under consequence pressure; they are not indicators
 
 #### (4) Status-Quo Preference as Loss-Avoidance under NRK (Structural, Not Ideological)
 
-NRK does not presuppose that all downstream actors experience the breach as loss. 
-Under NRK conditions, it is structurally possible—and rational—that one role-position
-experiences the post-breach configuration as comparatively stable or even advantageous.
+NRK does not presuppose that all downstream actors experience the breach as loss.  
+Under NRK conditions, it is structurally possible—and rational—that one role-position experiences the post-breach configuration as comparatively stable or advantageous.
 
 This occurs when:
 
 - the immediate costs of the breach are displaced rather than borne locally,
-- existing gains are embedded as baseline conditions rather than marked as advantages,
-- re-integration via Σ (integration) would require visible re-internalization of costs,
-- and Θ (temporality) renders transition costs irreversible while status-quo stability
-  remains short-term predictable.
+- existing advantages are embedded as baseline conditions rather than marked as advantages,
+- re-integration via **Σ (integration: coherence synthesis)** would require visible re-internalization of costs,
+- and **Θ (temporality)** renders transition costs irreversible while status-quo stability remains short-term predictable.
 
-Under such conditions, preference for maintaining the post-breach configuration
-is a structurally rational loss-avoidance strategy rather than an ideological stance.
+Under such conditions, preference for maintaining the post-breach configuration is a structurally rational loss-avoidance strategy rather than an ideological stance.
 
-NRK therefore explains not only how drift begins, but why resistance to reversal
-is often strongest among those for whom re-coordination would entail
-newly visible responsibility or loss.
+NRK therefore explains not only how drift begins, but why resistance to reversal is often strongest among those for whom re-coordination would entail newly visible responsibility, exposure, or loss.
 
-#### (5) Structural Viability Verdict (Non-Moral)
+#### (5) Structural Viability Note (Non-Moral)
 
-While fig leaves are a rational short-term response to heightened Ω-legibility under Θ, their stabilization marks a critical viability threshold. A configuration in which legibility management replaces integration, and concealment substitutes for coordination, cannot sustain adult reciprocity under PMS.
+While fig leaves are a rational short-term response to heightened Ω-legibility under Θ, their stabilization marks a critical viability threshold. A configuration in which legibility management replaces integration, and concealment substitutes for coordination, cannot sustain reciprocity over time within **Δ–Ψ**.
 
-Persistent reliance on concealment scripts (Α) does not merely defer resolution; it redistributes integration and stabilization costs into the future, where they are borne unevenly and without recovery paths. This constitutes structural non-viability, not tragic inevitability.
+Persistent reliance on concealment scripts (**Α**) does not merely defer coordination; it redistributes integration work into the future, where it is borne unevenly and without recovery paths unless **Σ (integration)** and **Ψ (self-binding)** are re-established as carrying operators.
 
 #### (6) Reader-Guard and Cost Boundary
 
-This chapter does not legitimate legibility management as maturity, nor does it normalize concealment as a viable substitute for coordination. Fig leaves reduce immediate exposure, but they do so by displacing integration work rather than performing it.  
+This chapter does not legitimate legibility management as maturity, nor does it normalize concealment as a viable substitute for coordination. Fig leaves reduce immediate exposure, but they do so by displacing integration work rather than performing it.
 
 ⚠ **Structural Cost Marker:**  
-At this drift point, system stability is maintained by prioritizing exposure reduction over coordination, thereby offloading long-term integration and repair costs onto downstream role-positions while preserving short-term insulation for others.  
+At this drift point, system stability is maintained by prioritizing exposure reduction over coordination, thereby offloading long-term integration and repair costs into downstream trajectories while preserving short-term insulation elsewhere.
 
-Where concealment and stabilization scripts persist in place of renewed Σ and Ψ, reciprocity has already failed—regardless of intent, narrative framing, or perceived necessity.
+Where concealment and stabilization scripts persist in place of renewed **Σ** and **Ψ**, reciprocity has already failed—regardless of intent, narrative framing, or perceived necessity.
 
 ---
 
@@ -693,8 +692,8 @@ NRK provides a precise descriptor for a specific **negative praxis form**:
 
 NRK is not a “moral concept.” It is a **praxeological kernel**: a minimal pattern that can generate downstream structures.
 
-- **NRK** explains the **enactment type**: the structural form of realization that occurs under **∇** within **□** when **Σ** and **Ψ** do not carry integration and binding.  
-- It does not explain moral interpretation or normative judgment. These become legible only *after* asymmetry, temporality, and non-event have stabilized the field.
+* **NRK** explains the **enactment type**: the structural form of realization that occurs under **∇** within **□** when **Σ** and **Ψ** do not carry integration and binding.
+* It does not explain moral interpretation or normative judgment. These become legible only *after* asymmetry, temporality, and non-event have stabilized the field.
 
 Thus, NRK is upstream: it names the mechanism that produces the consequence field in which later readability becomes possible.
 
@@ -723,7 +722,7 @@ NRK requires a configuration in which awareness and alternatives exist **as stru
    NRK cannot occur where only one action is structurally available.
 
 5. **Integration and/or self-binding do not carry enactment:**
-   **Σ (integration: coherence synthesis into coordinated praxis)** is low/failed and/or **Ψ (self-binding: durable commitment across time)** is absent, aborted, externalized (Ψ→Other as demand), or simulated.
+   **Σ (integration: coherence synthesis into coordinated praxis)** does not carry enactment (“low/failed”) and/or **Ψ (self-binding: durable commitment across time)** is not established (“absent”), is aborted, externalized (Ψ→Other as demand), or simulated.
    This is the characteristic coupling point: enactment occurs **before** the operators that would generate integrated action **E (action: integrated enactment; formally E = [Σ (integration), Θ (temporality), ∇ (impulse)])**.
 
 **Note on terminology:**
@@ -733,7 +732,7 @@ NRK does not require that **Χ (distance: reflective inhibition / meta-position)
 
 A sufficient constellation specifies not only prerequisites but the decisive form of realization:
 
-> **NRK** = **A (awareness: [Θ (temporality), □ (frame), Δ (difference)]) high** + **Ω (asymmetry: capacity/exposure/responsibility gradients) effective** + **Θ (temporality: trajectory / time) trajectory-bearing** + **real option-set in □ (frame)** + **enactment/realization under ∇ (impulse) within □ (frame)** **despite** anticipable consequences, **with Σ (integration) low/failed and Ψ (self-binding) absent/aborted/externalized/simulated**.
+> **NRK** = **A (awareness: [Θ (temporality), □ (frame), Δ (difference)]) structurally available** (“high”) + **Ω (asymmetry: capacity/exposure/responsibility gradients) structurally effective** (“effective”) + **Θ (temporality: trajectory / time) trajectory-bearing** (“trajectory-bearing”) + **real option-set in □ (frame)** + **enactment/realization under ∇ (impulse) within □ (frame)** **despite** anticipable consequences, **with Σ (integration) not carrying synthesis into coordinated praxis** (“low/failed”) and **Ψ (self-binding) not established / aborted / externalized / simulated** (“absent/aborted/externalized/simulated”).
 
 Key consequences of this definition:
 
@@ -750,10 +749,10 @@ NRK is a kernel; kernels can appear in variants depending on how the frame (**�
 
 **Profile:** **∇ (impulse: directed tension)** dominates; **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment across time)** do not carry enactment.
 
-* **∇ (impulse: directed tension):** high directional tension drives realization.
+* **∇ (impulse: directed tension):** impulse dominates and drives realization (“high” directional tension).
 * **□ (frame: contextual constraint):** provides the local opportunity structure.
-* **Σ (integration: coherence synthesis):** low/absent; competing considerations are not synthesized.
-* **Ψ (self-binding: durable commitment):** absent/weak; no binding commitment holds against impulse.
+* **Σ (integration: coherence synthesis):** does not carry synthesis into coordinated praxis (“low/absent”); competing considerations are not synthesized.
+* **Ψ (self-binding: durable commitment):** not established (“absent/weak”); no binding commitment holds against impulse.
 * **Θ (temporality: trajectory / time):** still makes the act trajectory-bearing; consequences accrue.
 
 **Outcome tendency:** rapid transition into consequence field (where **Λ (non-event: meaningful absence / non-closure)** and **Ω (asymmetry: structural gradients)** become increasingly legible); later stabilization often requires **Φ (recontextualization: frame shift / embedding)** to explain the breach retroactively.
@@ -767,7 +766,7 @@ NRK is a kernel; kernels can appear in variants depending on how the frame (**�
 * **Σ (integration: coherence synthesis):** simulated (apparent coherence without actual synthesis into coordinated praxis).
 * **Ψ (self-binding: durable commitment):** externalized (Ψ→Other as “the situation made me do it”; “the rule demanded it”; “they forced it”) or replaced by role-claims instead of self-binding.
 
-**Outcome tendency:** high post-hoc stability, because the breach comes with a ready-made narrative operator configuration; **Φ (recontextualization: frame shift / embedding)** becomes a primary stabilizer.
+**Outcome tendency:** comparatively stable post-hoc embedding (“high post-hoc stability”), because the breach comes with a ready-made narrative operator configuration; **Φ (recontextualization: frame shift / embedding)** becomes a primary stabilizer.
 
 #### NR-3 Stabilized Breach Regime
 
@@ -777,11 +776,11 @@ NRK is a kernel; kernels can appear in variants depending on how the frame (**�
 * **□ (frame: contextual constraint):** default-activates the justification subframe when pressure arises.
 * **Ω (asymmetry: structural gradients):** becomes structurally managed rather than coordinated into reciprocity.
 * **Λ (non-event: meaningful absence / non-closure):** often increases as non-closure accumulates (promises, reciprocity expectations, repairs) and becomes a persistent remainder.
-* **Σ (integration: coherence synthesis) / Ψ (self-binding: durable commitment):** remain low/absent, replaced by patterned management and appearance-maintenance.
+* **Σ (integration: coherence synthesis) / Ψ (self-binding: durable commitment):** remain not carrying / not established (“low/absent”), replaced by patterned management and appearance-maintenance.
 
 **Outcome tendency:** drift toward pseudo-reciprocity and chronic non-closure; the system becomes resistant to repair because the attractor stabilizes the failure mode itself.
 
-**Operational summary:** NRK names the upstream breach type that converts a mature, option-visible frame (****A (awareness: [Θ, □, Δ])**** high inside **□ (frame)**) into a consequence field where **Λ (non-event: meaningful absence / non-closure)**, **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)**, and **Θ (temporality: trajectory / time)** become increasingly and irreversibly legible—while **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment across time)** fail to carry reciprocity.
+**Operational summary:** NRK names the upstream breach type that converts a mature, option-visible frame (****A (awareness: [Θ, □, Δ])**** structurally available (“high”) inside **□ (frame)**) into a consequence field where **Λ (non-event: meaningful absence / non-closure)**, **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)**, and **Θ (temporality: trajectory / time)** become increasingly and irreversibly legible—while **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment across time)** do not carry reciprocity (“fail to carry”).
 
 ### 5.5 Chapter Closure — Why NRK Must Be Introduced Early (and What It Licenses)
 
@@ -793,10 +792,10 @@ This chapter establishes **NRK** as the minimal portable handle for the breach-t
 
 NRK makes costs legible in a specific distributional form:
 
-- **Trajectory costs** accrue because Θ now carries the breach as non-resettable development rather than a reversible moment.
-- **Exposure and responsibility gradients** become action-relevant because Ω is effective, even if it was previously non-salient.
-- **Integration costs** rise because Σ is missing or simulated; coherence must be managed by substitutes (Φ, Α, or frame maneuvers) rather than rebuilt.
-- **Binding costs** shift because Ψ is absent/aborted/externalized/simulated; commitments tend to reappear as demands, role-claims, or stabilization scripts rather than durable self-binding.
+* **Trajectory costs** accrue because Θ now carries the breach as non-resettable development rather than a reversible moment.
+* **Exposure and responsibility gradients** become action-relevant because Ω is effective, even if it was previously non-salient.
+* **Integration costs** rise because Σ is missing or simulated; coherence must be managed by substitutes (Φ, Α, or frame maneuvers) rather than rebuilt.
+* **Binding costs** shift because Ψ is absent/aborted/externalized/simulated; commitments tend to reappear as demands, role-claims, or stabilization scripts rather than durable self-binding.
 
 This is a structural allocation of load across role-positions, not an evaluation of persons.
 
@@ -804,10 +803,10 @@ This is a structural allocation of load across role-positions, not an evaluation
 
 Given NRK, several downstream responses become structurally rational options (without being endorsed):
 
-- **Justification framing** (□ intensification) is rational where coordination cannot be carried by Σ/Ψ but must be stabilized anyway.
-- **Recontextualization** (Φ) is rational as a repair-attempt that embeds the breach into an explanatory frame when origin and consequence cannot be undone.
-- **Script formation** (Α) is rational as a low-variance stabilizer when repeated exposure to consequence pressure makes ad hoc regulation too costly.
-- **Distance as shielding** (Χ) is rational as exposure attenuation when Ω-legibility becomes hazardous and integration is unavailable.
+* **Justification framing** (□ intensification) is rational where coordination cannot be carried by Σ/Ψ but must be stabilized anyway.
+* **Recontextualization** (Φ) is rational as a repair-attempt that embeds the breach into an explanatory frame when origin and consequence cannot be undone.
+* **Script formation** (Α) is rational as a low-variance stabilizer when repeated exposure to consequence pressure makes ad hoc regulation too costly.
+* **Distance as shielding** (Χ) is rational as exposure attenuation when Ω-legibility becomes hazardous and integration is unavailable.
 
 These are not defects; they are structurally available adaptations to a consequence field.
 
@@ -819,10 +818,10 @@ Persistent reliance on substitute carriers (Φ, Α, frame maneuvers) in place of
 
 #### (5) Reader-Guard and Cost Boundary
 
-NRK does not legitimate adaptation through indefinite substitution. While justification, recontextualization, script formation, and shielding are rational short-term responses, they do not constitute integration and cannot replace self-binding.  
+NRK does not legitimate adaptation through indefinite substitution. While justification, recontextualization, script formation, and shielding are rational short-term responses, they do not constitute integration and cannot replace self-binding.
 
-⚠ **Structural Cost Marker:**  
-At this drift point, system continuity is maintained by redistributing unresolved integration and binding costs across role-positions, often externalizing them temporally or relationally rather than carrying them directly.  
+⚠ **Structural Cost Marker:**
+At this drift point, system continuity is maintained by redistributing unresolved integration and binding costs across role-positions, often externalizing them temporally or relationally rather than carrying them directly.
 
 Where enactment without Σ and Ψ becomes the stable kernel for downstream coordination, reciprocity has already failed—regardless of intent, narrative coherence, or perceived necessity.
 
@@ -860,7 +859,7 @@ This is the false comparison: attributes are no longer read as functional distin
    **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** is structurally unavoidable in many role relations (capacity, exposure, obligation gradients). Under the value-relation frame, **Ω (asymmetry)** is re-read as a *hurt / unfairness signal* rather than a structural gradient requiring coordination.
 
 4. **Integration failure (Σ low) and binding failure (Ψ low/absent):**
-   When **Σ (integration: coherence synthesis into coordinated praxis)** is low and **Ψ (self-binding: durable commitment across time)** is absent/aborted/externalized, the system lacks the operators that could synthesize differences into a coherent reciprocity regime. The comparative value-frame (**□ (frame)** as value-relation) therefore becomes the default stabilizer.
+   When **Σ (integration: coherence synthesis into coordinated praxis)** does not carry synthesis (“low”) and **Ψ (self-binding: durable commitment across time)** is not established / aborted / externalized (“absent/aborted/externalized”), the system lacks the operators that could synthesize differences into a coherent reciprocity regime. The comparative value-frame (**□ (frame)** as value-relation) therefore becomes the default stabilizer.
 
 5. **Attractor seeding (Α stabilization):**
    Repeated comparative readings form **Α (attractor: pattern stabilization / script formation)** scripts: scanning for advantage, interpreting differences as insults, treating asymmetry as evidence of illegitimacy.
@@ -895,20 +894,20 @@ This chapter isolates the decisive pivot that converts structurally available di
 
 Once comparison becomes the governing relevance grammar, costs distribute in a characteristic asymmetric profile:
 
-- **Permanent interpretive costs** rise: role-differences must be continually translated into standing claims, because functional differentiation no longer stabilizes meaning inside the frame.
-- **Exposure costs** concentrate where Δ is high-salience and Ω is legible: differences become leverage surfaces, not merely distinctions.
-- **Integration costs** escalate because Σ is no longer the default carrier of coordination; the system substitutes accounting and narrative repair for synthesis.
-- **Binding costs** shift and externalize: where Ψ cannot carry reciprocity, commitments tend to reappear as claims, demands, or compliance tests rather than durable self-binding.
-- **Trajectory costs** accumulate under Θ: comparative disputes do not reset; they become path-dependent, producing long-run remainder pressure even when no new events occur.
+* **Permanent interpretive costs** rise: role-differences must be continually translated into standing claims, because functional differentiation no longer stabilizes meaning inside the frame.
+* **Exposure costs** concentrate where Δ is high-salience and Ω is legible: differences become leverage surfaces, not merely distinctions.
+* **Integration costs** escalate because Σ is no longer the default carrier of coordination; the system substitutes accounting and narrative repair for synthesis.
+* **Binding costs** shift and externalize: where Ψ cannot carry reciprocity, commitments tend to reappear as claims, demands, or compliance tests rather than durable self-binding.
+* **Trajectory costs** accumulate under Θ: comparative disputes do not reset; they become path-dependent, producing long-run remainder pressure even when no new events occur.
 
 #### (3) Rational Response Envelope (Structural Rationality)
 
 Given a value-relation frame, several downstream moves become structurally rational—without implying endorsement:
 
-- **Monitoring and scoring** are rational stabilizers when coordination cannot be trusted to hold without Σ/Ψ.
-- **Grievance coding** is rational as a fast signal system when Ω-legibility is high but synthesis is unavailable.
-- **Script formation (Α)** is rational as a low-variance response to recurring comparative activation: scanning, ranking, and pre-emptive positioning reduce uncertainty at the cost of reciprocity.
-- **Frame enforcement** is rational as an attempt to keep comparison coherent, because without enforcement the value-relation grammar destabilizes into inconsistent verdicts.
+* **Monitoring and scoring** are rational stabilizers when coordination cannot be trusted to hold without Σ/Ψ.
+* **Grievance coding** is rational as a fast signal system when Ω-legibility is high but synthesis is unavailable.
+* **Script formation (Α)** is rational as a low-variance response to recurring comparative activation: scanning, ranking, and pre-emptive positioning reduce uncertainty at the cost of reciprocity.
+* **Frame enforcement** is rational as an attempt to keep comparison coherent, because without enforcement the value-relation grammar destabilizes into inconsistent verdicts.
 
 These are structure-driven adaptations to a misframed relevance regime, not intention-based failures.
 
@@ -922,10 +921,10 @@ Persistent cost externalization under comparison is not a moral failure, but it 
 
 #### (5) Reader-Guard and Cost Boundary
 
-This chapter does not normalize comparison as a legitimate long-term coordination mode. The fact that comparison stabilizes attention, grievance, and scripts does not make it viable; it makes its costs legible.  
+This chapter does not normalize comparison as a legitimate long-term coordination mode. The fact that comparison stabilizes attention, grievance, and scripts does not make it viable; it makes its costs legible.
 
-⚠ **Structural Cost Marker:**  
-At this drift pivot, system coherence is maintained by converting coordination failures into continuous accounting, monitoring, and exposure management—externalizing integration and binding costs rather than carrying them.  
+⚠ **Structural Cost Marker:**
+At this drift pivot, system coherence is maintained by converting coordination failures into continuous accounting, monitoring, and exposure management—externalizing integration and binding costs rather than carrying them.
 
 Where comparison replaces praxis as the dominant relevance grammar under real Ω and Θ, reciprocity has already failed—regardless of how normalized, justified, or rhetorically equalized the comparison appears.
 
@@ -943,16 +942,16 @@ A false equivalence is not merely a semantic mistake. It is a **frame decision**
 
 If **Δ (difference: minimal structural distinction)** is denied or flattened inside **□ (frame: contextual constraint / relevance structuring)**, praxis loses the ability to coordinate differences directly. The only remaining method to maintain the equivalence claim is **continuous compensatory work**:
 
-- **Permanent comparison:** **Δ (difference)** keeps reappearing in outcomes, exposures, capacities, desires, and vulnerabilities. The equivalence-claim forces the system to watch for “violations.”
-- **Permanent correction:** Because **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** is structurally legible post-breach, differences show up as gradients in leverage, burden, risk, or reward. The equivalence-frame must constantly intervene to re-level what keeps re-emerging.
-- **Permanent justification:** To stabilize the equivalence-claim across time (**Θ (temporality: trajectory / time)**), **Φ (recontextualization: frame shift / embedding into a new frame)** is repeatedly invoked to narrate each discrepancy as anomaly, injustice, sabotage, or proof of hidden oppression—regardless of whether the discrepancy is structurally generated.
-- **Permanent vigilance across Θ (temporality):** Under **Θ (temporality: trajectory / time)**, small gradients accumulate. What could have been locally coordinated becomes historically accounted-for, remembered, and aggregated into a running balance.
+* **Permanent comparison:** **Δ (difference)** keeps reappearing in outcomes, exposures, capacities, desires, and vulnerabilities. The equivalence-claim forces the system to watch for “violations.”
+* **Permanent correction:** Because **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** is structurally legible post-breach, differences show up as gradients in leverage, burden, risk, or reward. The equivalence-frame must constantly intervene to re-level what keeps re-emerging.
+* **Permanent justification:** To stabilize the equivalence-claim across time (**Θ (temporality: trajectory / time)**), **Φ (recontextualization: frame shift / embedding into a new frame)** is repeatedly invoked to narrate each discrepancy as anomaly, injustice, sabotage, or proof of hidden oppression—regardless of whether the discrepancy is structurally generated.
+* **Permanent vigilance across Θ (temporality):** Under **Θ (temporality: trajectory / time)**, small gradients accumulate. What could have been locally coordinated becomes historically accounted-for, remembered, and aggregated into a running balance.
 
 This yields a stable compulsion profile:
 
-- **Dauervergleich** (continuous comparison)
-- **Dauerjustierung** (continuous adjustment)
-- **Dauerunzufriedenheit** (continuous dissatisfaction)
+* **Dauervergleich** (continuous comparison)
+* **Dauerjustierung** (continuous adjustment)
+* **Dauerunzufriedenheit** (continuous dissatisfaction)
 
 ➡️ **Dissatisfaction is not a defect here. It is the system cost of maintaining a false equivalence under ongoing asymmetry.**
 
@@ -960,14 +959,14 @@ This yields a stable compulsion profile:
 
 A compact operatorial trace of the compulsion loop:
 
-- **Δ (difference: minimal structural distinction)** persists as structural contrast.
-- **□ (frame: contextual constraint / relevance structuring)** enforces equivalence-as-value-relation.
-- **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** renders gradients legible (exposure/leverage/obligation).
-- **Θ (temporality: trajectory / time)** accumulates discrepancies into trajectories.
-- **Φ (recontextualization: frame shift / embedding)** supplies recurring narrative repairs.
-- **Α (attractor: pattern stabilization / script formation)** stabilizes the loop as a reliable script.
-- **Σ (integration: coherence synthesis into coordinated praxis)** remains low (no coherent coordination synthesis).
-- **Ψ (self-binding: durable commitment across time)** remains weak/absent (no stable self-binding to Σ-supported coordination under real Ω).
+* **Δ (difference: minimal structural distinction)** persists as structural contrast.
+* **□ (frame: contextual constraint / relevance structuring)** enforces equivalence-as-value-relation.
+* **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** renders gradients legible (exposure/leverage/obligation).
+* **Θ (temporality: trajectory / time)** accumulates discrepancies into trajectories.
+* **Φ (recontextualization: frame shift / embedding)** supplies recurring narrative repairs.
+* **Α (attractor: pattern stabilization / script formation)** stabilizes the loop as a reliable script.
+* **Σ (integration: coherence synthesis into coordinated praxis)** does not carry coordination synthesis (“remains low”).
+* **Ψ (self-binding: durable commitment across time)** is not established / does not stabilize reciprocity (“remains weak/absent”) (no stable self-binding to Σ-supported coordination under real Ω).
 
 The loop does not require bad intent. It requires only the frame choice plus the post-breach consequence field.
 
@@ -981,15 +980,15 @@ In PMS terms, dissatisfaction here is a **structural signal of frame mismatch**,
 
 Under **□ (frame: value-relation)**, any visible **Ω-gradient (Ω (asymmetry) as capacity/exposure/responsibility imbalance)** is interpreted as a *ranking difference*. Because rankings imply deficiency by definition, the system experiences discrepancy as “someone is shorted.” But the causal source is not deficit:
 
-- The system is responding to **Ω (asymmetry)** being made **readable** and **action-relevant** post-breach under **Θ (temporality)**.
-- The system is forced into **comparative accounting** because **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment)** are not carrying coordination.
+* The system is responding to **Ω (asymmetry)** being made **readable** and **action-relevant** post-breach under **Θ (temporality)**.
+* The system is forced into **comparative accounting** because **Σ (integration: coherence synthesis)** and **Ψ (self-binding: durable commitment)** are not carrying coordination.
 
 #### 7.2.2 Structural diagnostic (non-clinical, praxeological)
 
 A practical PMS check (still non-normative):
 
-- If dissatisfaction decreases when **□ (frame)** shifts from value-relation to praxis-relation, then dissatisfaction was primarily a **frame-cost**, not a deficit signal.
-- If dissatisfaction persists independent of frame and is tied to genuine non-availability of options (Δ (difference) not opening options inside □ (frame) across Θ (temporality)), then deficit dynamics may be present (but this is not assumed by PMS–EDEN).
+* If dissatisfaction decreases when **□ (frame)** shifts from value-relation to praxis-relation, then dissatisfaction was primarily a **frame-cost**, not a deficit signal.
+* If dissatisfaction persists independent of frame and is tied to genuine non-availability of options (Δ (difference) not opening options inside □ (frame) across Θ (temporality)), then deficit dynamics may be present (but this is not assumed by PMS–EDEN).
 
 Within PMS–EDEN, the default claim is narrower:
 
@@ -1005,11 +1004,11 @@ This chapter establishes dissatisfaction as a **structural compulsion effect**, 
 
 Under false equivalence, costs distribute asymmetrically and cumulatively:
 
-- **Observation costs** concentrate where Δ remains salient: differences must be continuously monitored because they reappear in outcomes.
-- **Correction costs** accumulate where Ω gradients are legible: exposure, burden, and leverage require repeated re-leveling efforts.
-- **Justification costs** escalate over Θ: discrepancies must be narratively repaired and re-embedded via Φ to preserve equivalence claims.
-- **Integration costs** rise system-wide because Σ is not carrying coordination; synthesis is replaced by accounting.
-- **Binding costs** externalize because Ψ cannot stabilize reciprocity; commitments reappear as demands, audits, or compliance expectations.
+* **Observation costs** concentrate where Δ remains salient: differences must be continuously monitored because they reappear in outcomes.
+* **Correction costs** accumulate where Ω gradients are legible: exposure, burden, and leverage require repeated re-leveling efforts.
+* **Justification costs** escalate over Θ: discrepancies must be narratively repaired and re-embedded via Φ to preserve equivalence claims.
+* **Integration costs** rise system-wide because Σ is not carrying coordination; synthesis is replaced by accounting.
+* **Binding costs** externalize because Ψ cannot stabilize reciprocity; commitments reappear as demands, audits, or compliance expectations.
 
 These costs do not resolve over time. They compound as trajectory.
 
@@ -1017,29 +1016,29 @@ These costs do not resolve over time. They compound as trajectory.
 
 Given this configuration, several responses are structurally rational without implying preference:
 
-- **Permanent vigilance** is rational when equivalence must be defended against recurring Δ.
-- **Continuous adjustment** is rational when Ω gradients remain action-relevant but cannot be integrated.
-- **Narrative repair (Φ)** is rational as a low-cost stabilizer when structural coordination fails.
-- **Script stabilization (Α)** is rational as a variance-reduction strategy once the loop becomes predictable.
+* **Permanent vigilance** is rational when equivalence must be defended against recurring Δ.
+* **Continuous adjustment** is rational when Ω gradients remain action-relevant but cannot be integrated.
+* **Narrative repair (Φ)** is rational as a low-cost stabilizer when structural coordination fails.
+* **Script stabilization (Α)** is rational as a variance-reduction strategy once the loop becomes predictable.
 
 Dissatisfaction is therefore not a malfunction but the **expected experiential surface** of maintaining equivalence under ongoing asymmetry.
 
 #### (4) Structural Viability Verdict (Non-Moral)
 
-A configuration that produces continuous dissatisfaction as its primary stabilization surface is structurally non-viable under PMS. While dissatisfaction can be endured, monitored, or rhetorically normalized, it cannot carry reciprocity, integration, or durable coordination.  
+A configuration that produces continuous dissatisfaction as its primary stabilization surface is structurally non-viable under PMS. While dissatisfaction can be endured, monitored, or rhetorically normalized, it cannot carry reciprocity, integration, or durable coordination.
 
-Persistent dissatisfaction signals not unmet needs, but a frame-level failure: equivalence is being maintained by continuous cost production rather than by coordinated asymmetry. This is not a tragic remainder but a viability breach.  
+Persistent dissatisfaction signals not unmet needs, but a frame-level failure: equivalence is being maintained by continuous cost production rather than by coordinated asymmetry. This is not a tragic remainder but a viability breach.
 
-Persistent cost externalization through dissatisfaction management is not a moral failure, but it is a structural failure of adult reciprocity under PMS.  
+Persistent cost externalization through dissatisfaction management is not a moral failure, but it is a structural failure of adult reciprocity under PMS.
 
 #### (5) Cost Marker and Boundary
 
-⚠ **Structural Cost Marker:**  
-At this drift stage, system stability is achieved by converting unresolved coordination failures into continuous dissatisfaction—externalizing integration and binding costs into permanent monitoring, correction, and narrative repair.  
+⚠ **Structural Cost Marker:**
+At this drift stage, system stability is achieved by converting unresolved coordination failures into continuous dissatisfaction—externalizing integration and binding costs into permanent monitoring, correction, and narrative repair.
 
-PMS–EDEN does not treat chronic dissatisfaction as an acceptable equilibrium, a sign of depth, or a marker of moral seriousness. Endurance of dissatisfaction does not constitute maturity, and normalization does not restore reciprocity.  
+PMS–EDEN does not treat chronic dissatisfaction as an acceptable equilibrium, a sign of depth, or a marker of moral seriousness. Endurance of dissatisfaction does not constitute maturity, and normalization does not restore reciprocity.
 
-Where a system requires ongoing dissatisfaction to preserve equivalence under real Ω and Θ, coordination has already failed—regardless of how familiar, justified, or culturally stabilized that dissatisfaction appears.  
+Where a system requires ongoing dissatisfaction to preserve equivalence under real Ω and Θ, coordination has already failed—regardless of how familiar, justified, or culturally stabilized that dissatisfaction appears.
 
 ---
 
@@ -1050,6 +1049,7 @@ Where a system requires ongoing dissatisfaction to preserve equivalence under re
 Assuming full adult accountability on both sides (no infantilization, no clinical reading, no ontological ranking):
 
 **Operator-readable tendency weighting (descriptive):**
+
 * **The initial drift impulse is structurally closer to her.**
 
 This is **not** a moral claim and not a claim about essence. It is a **praxeological weighting** that follows from the post-breach configuration.
@@ -1059,7 +1059,7 @@ This is **not** a moral claim and not a claim about essence. It is a **praxeolog
 #### 8.1.1 Structural reasons (operatorial)
 
 1. **Lower cost-of-agency under Ω and Θ (initiative proximity)**
-   After **NRK (negative responsibility kernel: breach under **A (awareness: [Θ, □, Δ])** with Σ (integration) and Ψ (self-binding) not carrying enactment)**, **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** becomes legible and **Θ (temporality: trajectory / time)** makes consequences accumulative.
+   After **NRK (negative responsibility kernel: breach under A (awareness: [Θ, □, Δ]) with Σ (integration) and Ψ (self-binding) not carrying enactment)**, **Ω (asymmetry: structural imbalance of capacity/exposure/responsibility)** becomes legible and **Θ (temporality: trajectory / time)** makes consequences accumulative.
    In many scenes, the party with **lower perceived risk of initiating frame moves** is structurally nearer to the first intervention via **□ (frame: contextual constraint / relevance structuring)** and/or **Φ (recontextualization: frame shift / embedding)**—that is, a change in the dominant frame (**□**) and/or a post-hoc meaning-embedding shift (**Φ**).
    This is not superiority; it is **initiative proximity** under a legible consequence field.
 
@@ -1073,8 +1073,9 @@ This is **not** a moral claim and not a claim about essence. It is a **praxeolog
 
    * adjusting **□ (frame)** (what counts, what is comparable, what is legitimate),
    * and supplying **Φ (recontextualization)** (narrative embedding and post-hoc meaning repair),
-     rather than by building **Σ (integration)** and **Ψ (self-binding)** as a coordinated reciprocity regime.
-     If her reachable lever is primarily **□ (frame)** and **Φ (recontextualization)**, then the earliest “drift step” tends to appear as a **frame move**.
+
+   rather than by building **Σ (integration)** and **Ψ (self-binding)** as a coordinated reciprocity regime.
+   If her reachable lever is primarily **□ (frame)** and **Φ (recontextualization)**, then the earliest “drift step” tends to appear as a **frame move**.
 
 ➡️ **Genesis-responsibility ≠ total responsibility.**
 But genesis is **asymmetric** because the first stable perturbation typically occurs at the **□ (frame)** / **Φ (recontextualization)** interface where comparative **Ω (asymmetry)** is managed.
@@ -1128,13 +1129,8 @@ Genesis here describes **dominant drift logics**, not metaphysical fixations or 
 
 * **NRK (negative responsibility kernel)** is a **paper-internal composite / pattern label**, not a PMS operator.
   (NRK does not appear as an operator in PMS.yaml.)
-* **NRK** denotes a **structural enactment-type** under **A (awareness: [Θ, □, Δ])**:
-  awareness and alternatives are structurally available within a frame, while enactment is
-  **not carried** by **Σ (integration)** and/or **Ψ (self-binding)**.
-* Typical NRK configuration:
-  enactment under **∇ (impulse)** within **□ (frame)**, with **Ω (asymmetry)** effective,
-  **Θ (temporality)** trajectory-bearing, and **Σ/Ψ** failing, aborting, externalizing,
-  or being simulated.
+* **NRK** denotes a **structural enactment-type** under **A (awareness: [Θ, □, Δ])**: awareness and alternatives are structurally available within a frame, while enactment is **not carried** by **Σ (integration)** and/or **Ψ (self-binding)**.
+* Typical NRK configuration: enactment under **∇ (impulse)** within **□ (frame)**, with **Ω (asymmetry)** effective, **Θ (temporality)** trajectory-bearing, and **Σ/Ψ** failing, aborting, externalizing, or being simulated.
 
 NRK introduces **no moral law**, **no psychology**, and **no person-essence claim**.
 
@@ -1144,8 +1140,7 @@ It does **not** assert:
 * stable inner will,
 * total person-definition.
 
-NRK is strictly a **structural description of operator-carriage failure** and the
-downstream legibility of consequences (**Λ / Ω / Θ**).
+NRK is strictly a **structural description of operator-carriage failure** and the downstream legibility of consequences (**Λ / Ω / Θ**).
 
 #### 8.3.2 Drift can arise without “wanting the breach”
 
@@ -1173,11 +1168,11 @@ This chapter establishes that **drift genesis is directional without being moral
 
 Costs distribute unevenly across role-positions once the comparison frame dominates:
 
-- **Initiation costs** are lower for the role-position closer to **□/Φ** levers: early frame moves reduce immediate Ω-pressure but externalize long-term coordination costs.
-- **Coordination costs** accumulate for the role-position attempting to preserve functional Ω via Δ-explicitness and Θ-discipline when Σ/Ψ are not carrying integration.
-- **Exposure costs** rise where clarification triggers escalation under the value-relation frame, making continued coordination attempts increasingly expensive.
-- **Binding costs** shift asymmetrically: one side binds toward frame maintenance and narrative repair; the other re-binds toward avoidance and de-escalation.
-- **Trajectory costs** compound bilaterally under Θ as avoidance and frame maintenance stabilize into durable patterns.
+* **Initiation costs** are lower for the role-position closer to **□/Φ** levers: early frame moves reduce immediate Ω-pressure but externalize long-term coordination costs.
+* **Coordination costs** accumulate for the role-position attempting to preserve functional Ω via Δ-explicitness and Θ-discipline when Σ/Ψ are not carrying integration.
+* **Exposure costs** rise where clarification triggers escalation under the value-relation frame, making continued coordination attempts increasingly expensive.
+* **Binding costs** shift asymmetrically: one side binds toward frame maintenance and narrative repair; the other re-binds toward avoidance and de-escalation.
+* **Trajectory costs** compound bilaterally under Θ as avoidance and frame maintenance stabilize into durable patterns.
 
 The asymmetry lies in **where costs appear first**, not in who ultimately bears them.
 
@@ -1185,27 +1180,27 @@ The asymmetry lies in **where costs appear first**, not in who ultimately bears 
 
 Given this configuration, the observed responses are structurally rational:
 
-- **Early frame intervention (□/Φ)** is rational where it reduces immediate Ω-intolerability at low initiation cost.
-- **Withdrawal from coordination attempts** is rational where Δ-explicitness repeatedly escalates conflict and Σ/Ψ are unavailable.
-- **Avoidance-binding (Ψ → de-escalation)** is rational as a survival stabilization once coordination proves structurally unviable.
-- **Attractor formation (Α)** is rational as a variance-reduction strategy when the same escalation patterns repeat.
+* **Early frame intervention (□/Φ)** is rational where it reduces immediate Ω-intolerability at low initiation cost.
+* **Withdrawal from coordination attempts** is rational where Δ-explicitness repeatedly escalates conflict and Σ/Ψ are unavailable.
+* **Avoidance-binding (Ψ → de-escalation)** is rational as a survival stabilization once coordination proves structurally unviable.
+* **Attractor formation (Α)** is rational as a variance-reduction strategy when the same escalation patterns repeat.
 
 None of these moves imply innocence or guilt; they are adaptations to an environment where coordination is expensive and comparison is cheap.
 
 #### (4) Structural Viability Verdict (Non-Moral)
 
-Directional drift genesis does not license asymmetric endurance. While initiative-proximate frame intervention is structurally cheaper at genesis, the persistence of externally shifted coordination, exposure, or stabilization costs constitutes a viability failure under PMS.  
+Directional drift genesis does not license asymmetric endurance. While initiative-proximate frame intervention is structurally cheaper at genesis, the persistence of externally shifted coordination, exposure, or stabilization costs constitutes a viability failure under PMS.
 
-When early frame-setting reduces immediate Ω-pressure by displacing long-term integration and binding work onto the opposing role-position, the system exits adult reciprocity. This is not a tragic remainder of asymmetry, but a structural non-viability condition.  
+When early frame-setting reduces immediate Ω-pressure by displacing long-term integration and binding work onto the opposing role-position, the system exits adult reciprocity. This is not a tragic remainder of asymmetry, but a structural non-viability condition.
 
-Persistent cost externalization following drift genesis is not a moral failure, but it is a structural failure of adult reciprocity under PMS.  
+Persistent cost externalization following drift genesis is not a moral failure, but it is a structural failure of adult reciprocity under PMS.
 
 #### (5) Cost Marker and Boundary
 
-⚠ **Structural Cost Marker:**  
-At this drift stage, system stability is achieved by allowing the role-position proximate to □/Φ to minimize immediate exposure, while the opposing role-position absorbs escalating coordination, clarification, and binding costs under Θ.  
+⚠ **Structural Cost Marker:**
+At this drift stage, system stability is achieved by allowing the role-position proximate to □/Φ to minimize immediate exposure, while the opposing role-position absorbs escalating coordination, clarification, and binding costs under Θ.
 
-PMS–EDEN does not treat this distribution as acceptable simply because it emerges early, stabilizes quickly, or avoids overt conflict. Genesis asymmetry does not authorize permanent asymmetry of burden.  
+PMS–EDEN does not treat this distribution as acceptable simply because it emerges early, stabilizes quickly, or avoids overt conflict. Genesis asymmetry does not authorize permanent asymmetry of burden.
 
 Where one role persistently carries coordination and stabilization costs while the other retains early closure, avoidance, or frame-control advantages, reciprocity has already failed—regardless of intent, narrative, or claims of balance.
 
@@ -1234,7 +1229,7 @@ This chapter becomes the **pivot** between:
 * integration is bypassed (**Σ (integration: coherence synthesis into coordinated praxis)** is replaced by narrative equivalence via **Φ (recontextualization: frame shift / narrative embedding)**),
 * self-binding is displaced (**Ψ (self-binding: durable commitment across time)** binds to *maintaining the equality-appearance* rather than binding to coordination interfaces that match real **Ω (asymmetry)**).
 
-**Notation note (paper-wide):** Wherever “operator signatures” are given, bracket lists `[...]` denote **component sets** (co-availability / co-configuration), not arithmetic addition. Composition symbols (like `∘`) are reserved for *application statements* (e.g., “applied to Ω-handling”) and not used as an alternative spelling for axis formulas.
+**Notation note (paper-wide):** Wherever “operator signatures” are given, bracket lists `[...]` denote **component sets** (co-availability / co-configuration), not arithmetic addition. Composition symbols (like `∘`) are reserved for *application statements* (e.g., “(Ψ ∘ Χ) applied to Ω-handling”) and not used as an alternative spelling for axis formulas.
 
 **Core operator signature (minimal, readable):**
 
@@ -1243,9 +1238,9 @@ This chapter becomes the **pivot** between:
 
 ### 9.2 Weighted Attributes Under Ω (what is being equalized, and why it fails)
 
-Pseudo-symmetry functions by **re-weighting attributes** to make them comparable within a value-frame: **□ (frame: contextual constraint)** is used as comparison-and-status accounting rather than praxis coordination. The central operation is not the creation of new differences, but the recoding of already available **Δ (difference: minimal distinction)** into a single metric that can be “equalized” rhetorically.  
+Pseudo-symmetry functions by **re-weighting attributes** to make them comparable within a value-frame: **□ (frame: contextual constraint)** is used as comparison-and-status accounting rather than praxis coordination. The central operation is not the creation of new differences, but the recoding of already available **Δ (difference: minimal distinction)** into a single metric that can be “equalized” rhetorically.
 
-As established in the NRK analysis (§5), the stabilizing appeal of Pseudo-Symmetry *does not* require ideological commitment. It follows *structurally from loss-avoidance* under *irreversible coordination costs*, where restoring Σ (integration) and Ψ (self-binding) would require visible re-internalization of previously displaced burdens.
+As established in the NRK analysis (§5), the stabilizing appeal of Pseudo-Symmetry does not require ideological commitment. It follows structurally from loss-avoidance under irreversible coordination costs, where restoring **Σ (integration)** and **Ψ (self-binding)** would require visible re-internalization of previously displaced burdens.
 
 #### 9.2.1 Attribute classes (PMS–EDEN compatible)
 
@@ -1270,11 +1265,11 @@ Let “attributes” mean **structural capacities and exposures** (operatorially
    * ability to name **Ω (asymmetry)** functionally without weaponizing it (Ω-speech without verdict logic)
    * tolerance for explicit role definition in **□ (frame)** without moralization (praxis-frame clarity rather than tribunal framing)
 
-4. **Binding attributes (dignity-in-practice **D (dignity-in-practice) = [Ψ (self-binding), Χ (distance)] applied to Ω (asymmetry)-handling**, i.e., Ψ and Χ constrain Ω-handling)**
+4. **Binding / restraint attributes (D-relevant; D (dignity-in-practice) as restrained Ω-handling)**
 
    * willingness to hold commitments across **Θ (temporality: trajectory / time)** (durability under time)
    * ability to self-limit leverage under **Ω (asymmetry)** through **Χ (distance: reflective inhibition)**
-     (dignity-in-practice **D (dignity-in-practice: restrained handling of asymmetry) = Ψ (self-binding) ∘ Χ (distance) ∘ Ω (asymmetry)**, i.e., Ψ and Χ constrain Ω-handling)
+     (Dignity-in-practice in PMS–EDEN: **D = (Ψ ∘ Χ) applied to Ω-handling** — i.e., self-bound reflective restraint in asymmetrical relations)
 
 #### 9.2.2 What pseudo-symmetry does to attributes
 
@@ -1298,10 +1293,10 @@ The difference is not moral; it is structural: **does PS reopen Σ (integration)
 
 Pseudo-symmetry is temporarily admissible as a **de-escalation buffer** if:
 
-* it is explicitly framed as **provisional** (Θ (temporality: time/trajectory) bounded),
-* it preserves **option visibility** (Δ (difference: minimal distinction) remains speakable and legible),
-* it re-opens **Σ-work** (Σ (integration: coherence synthesis) is scheduled and permitted, not bypassed),
-* it protects **D (dignity-in-practice: restrained handling of asymmetry)** by preventing immediate weaponization of **Ω (asymmetry)**.
+* it is explicitly framed as **provisional** (**Θ (temporality)** bounded),
+* it preserves **option visibility** (**Δ (difference)** remains speakable and legible),
+* it re-opens **Σ-work** (**Σ (integration)** is scheduled and permitted, not bypassed),
+* it protects **D (dignity-in-practice: (Ψ ∘ Χ) applied to Ω-handling)** by preventing immediate weaponization of **Ω (asymmetry)**.
 
 **Operator form (readable):**
 
@@ -1366,7 +1361,7 @@ These are **structural warning flags** that pseudo-symmetry is no longer bufferi
 
 Goal (descriptive): identify **operator-readable viability constraints** that tend to re-establish **functional coordination** under real **Ω (asymmetry)** without weaponizing Ω and without forcing equivalence inside **□ (frame)**.
 
-**Validity reminder (non-prescriptive):** The items below are **structural viability constraints** (descriptive signatures). They are not person-evaluations and not moral injunctions. If enacted as guidance, the PMS entry condition applies: **Χ (distance: reflective inhibition) + reversibility + D (dignity-in-practice: [Ψ, Χ] applied to Ω-handling)**.
+**Validity reminder (non-prescriptive):** The items below are **structural viability constraints** (descriptive signatures). They are not person-evaluations and not moral injunctions. If enacted as guidance, the PMS entry condition applies: **Χ (distance: reflective inhibition) + reversibility + D (dignity-in-practice: (Ψ ∘ Χ) applied to Ω-handling)**.
 
 #### 9.5.1 Counter-measure CM1 — Re-open Δ without ranking
 
@@ -2319,10 +2314,10 @@ These are **operator-readable viability signatures** (descriptive). If enacted a
 * Σ becomes integration again when it yields **concrete coordination outputs** (agreements, interface design) rather than moral closure.
 * Ψ remains stabilizing when it binds to **dignity-in-practice constraints (D)** rather than purity/identity victory.
 
-### 13.8 P-Σ-SIM — Σ-Simulation instead of Integration (Pseudo-maturity)
+### 13.8 P-Σ-SIM — Σ-Simulation instead of Integration (Coherence Display)
 
 **Definition:**
-The appearance of integration is produced (coherent talk, mature vocabulary, “balanced” rhetoric), but the underlying structure remains unintegrated.
+The appearance of integration is produced (coherent talk, PMS vocabulary, “balanced” rhetoric), but the underlying structure remains unintegrated.
 
 **Trigger / Stabilizer / Failure (C5 discipline):**
 
@@ -2390,10 +2385,10 @@ This chapter establishes a **portable recognition layer**: a pattern library tha
 
 The library makes cost placement explicit without moralizing:
 
-- **Epistemic cost reduction:** pattern compression reduces interpretive noise and misreadings (less projection, fewer “trait” narratives).
-- **Coordination cost visibility:** patterns surface where costs are being paid as **permanent monitoring**, **narrative repair**, or **residue management** rather than as Σ-work.
-- **Role-position exposure:** role-positions nearer to exposure/standing risk under **Ω** tend to bear higher costs when stabilization routes through **Λ** (open remainder leverage) or **□** (frame control).
-- **Time costs:** under **Θ (temporality)**, unresolved residues (**Λ**) and protocolized scripts (**Α**) compound, making late repair structurally more expensive.
+* **Epistemic cost reduction:** pattern compression reduces interpretive noise and misreadings (less projection, fewer “trait” narratives).
+* **Coordination cost visibility:** patterns surface where costs are being paid as **permanent monitoring**, **narrative repair**, or **residue management** rather than as Σ-work.
+* **Role-position exposure:** role-positions nearer to exposure/standing risk under **Ω** tend to bear higher costs when stabilization routes through **Λ** (open remainder leverage) or **□** (frame control).
+* **Time costs:** under **Θ (temporality)**, unresolved residues (**Λ**) and protocolized scripts (**Α**) compound, making late repair structurally more expensive.
 
 These are structural cost gradients, not evaluations of persons.
 
@@ -2401,10 +2396,10 @@ These are structural cost gradients, not evaluations of persons.
 
 Given these patterns, rational structural responses differentiate sharply by domain:
 
-- **Use the library descriptively** to identify which operator constellation is active (mapping without binding).
-- **Refuse automatic prescriptions**: recognition does not itself authorize demands; application remains gated by **§12**.
-- **Target the failure operator**, not the person: when drift is driven by **Σ low**, **Ψ misbound**, **Χ suppressed**, or **D violated**, the rational move is to restore the missing constraint (or exit the binding attempt), rather than escalate narrative control.
-- **Prefer Ψ→Self over Ψ→Other** as the stable pivot: patterns become durable when binding is externalized as demand; they loosen when commitments are adopted as self-binding under **Χ** and reversibility.
+* **Use the library descriptively** to identify which operator constellation is active (mapping without binding).
+* **Refuse automatic prescriptions**: recognition does not itself authorize demands; application remains gated by **§12**.
+* **Target the failure operator**, not the person: when drift is driven by **Σ low**, **Ψ misbound**, **Χ suppressed**, or **D violated**, the rational move is to restore the missing constraint (or exit the binding attempt), rather than escalate narrative control.
+* **Prefer Ψ→Self over Ψ→Other** as the stable pivot: patterns become durable when binding is externalized as demand; they loosen when commitments are adopted as self-binding under **Χ** and reversibility.
 
 This describes structural viability envelopes, not moral recommendations.
 
@@ -2414,18 +2409,18 @@ This closure does not claim that any pattern proves guilt, pathology, ideology, 
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
-Under PMS criteria, pattern recognition is structurally viable only as long as it does not externalize binding, obligation, or correction costs. When a pattern library is used to obligate others while insulating the recognizing position from exposure, reversibility, or repair, it ceases to function as coordination support and becomes a domination proxy.  
+Under PMS criteria, pattern recognition is structurally viable only as long as it does not externalize binding, obligation, or correction costs. When a pattern library is used to obligate others while insulating the recognizing position from exposure, reversibility, or repair, it ceases to function as coordination support and becomes a domination proxy.
 
-Pattern recognition does not fail because it is “harsh” or “uncomfortable,” but because it is misused as authority without self-binding. Adult praxis requires that those who name patterns also carry the costs of acting on them.  
+Pattern recognition does not fail because it is “harsh” or “uncomfortable,” but because it is misused as authority without self-binding. Adult praxis requires that those who name patterns also carry the costs of acting on them.
 
 Persistent externalization of binding and correction costs through pattern invocation is not a moral failure, but it is a structural failure of adult reciprocity under PMS.
 
 #### (6) Drift Cost Marker and Structural Boundary
 
-⚠ **Structural Cost Marker:**  
-At this stage, system stability is often achieved by shifting coordination, correction, and exposure costs onto role-positions named by patterns, while the recognizing position retains interpretive authority, exit options, and deniability. When patterns are used without Χ, reversibility, and self-binding, they function as cost-displacement devices rather than coordination tools.  
+⚠ **Structural Cost Marker:**
+At this stage, system stability is often achieved by shifting coordination, correction, and exposure costs onto role-positions named by patterns, while the recognizing position retains interpretive authority, exit options, and deniability. When patterns are used without Χ, reversibility, and self-binding, they function as cost-displacement devices rather than coordination tools.
 
-PMS–EDEN does not legitimate pattern-based obligation, diagnosis-by-recognition, or enforcement through structural naming.  
+PMS–EDEN does not legitimate pattern-based obligation, diagnosis-by-recognition, or enforcement through structural naming.
 
 Where pattern recognition is used to bind others without the recognizer carrying corresponding costs, reciprocity has already failed—regardless of analytical precision, formal correctness, or claimed neutrality.
 
@@ -2467,7 +2462,7 @@ This describes a **structural consequence**, not a moral judgement, intention, o
 
   * permanent comparison (**□ (frame)** used as comparison maintained against **Δ (difference)**)
   * permanent adjustment (attempts to “re-level” **Ω (asymmetry)** outcomes)
-  * permanent dissatisfaction (system cost of maintaining false equivalence across **Θ (temporality)**)
+  * permanent dissatisfaction (system cost of maintaining false equivalence across **Θ (temporality: trajectory/time)**)
     Dissatisfaction is therefore modeled as a **maintenance load** required to keep the false equivalence stable under **Ω (asymmetry)** across **Θ (temporality)**.
 
 * **Blocked coordination stabilizes devaluation via Α:**
@@ -2540,11 +2535,11 @@ The paper’s end state is a single readable trace: a mature, non-deficit praxis
 
 The terminal configuration has a hard cost shape:
 
-- **Trajectory costs (Θ):** once the breach is enacted, downstream states become path-dependent; repair is no longer “reset,” but cumulative work.
-- **Remainder costs (Λ):** unresolved non-closure becomes durable load; it either converts into Σ-work or persists as a standing background that must be managed.
-- **Comparison costs (□ as value-relation):** if Δ is forced into equivalence, the system pays for the claim by permanent monitoring and correction.
-- **Stabilization costs (Φ/Α):** narrative repair and protocolization lower short-term conflict expense while increasing long-term coordination debt.
-- **Role-position gradients (Ω):** costs distribute asymmetrically by exposure/capacity/obligation proximity, without implying superiority, defect, or moral rank.
+* **Trajectory costs (Θ):** once the breach is enacted, downstream states become path-dependent; repair is no longer “reset,” but cumulative work.
+* **Remainder costs (Λ):** unresolved non-closure becomes durable load; it either converts into Σ-work or persists as a standing background that must be managed.
+* **Comparison costs (□ as value-relation):** if Δ is forced into equivalence, the system pays for the claim by permanent monitoring and correction.
+* **Stabilization costs (Φ/Α):** narrative repair and protocolization lower short-term conflict expense while increasing long-term coordination debt.
+* **Role-position gradients (Ω):** costs distribute asymmetrically by exposure/capacity/obligation proximity, without implying superiority, defect, or moral rank.
 
 These costs are structural outputs of the operator routing, not person-evaluations.
 
@@ -2552,10 +2547,10 @@ These costs are structural outputs of the operator routing, not person-evaluatio
 
 Within the model, “reasonable” responses are cost-logic responses, not virtues:
 
-- **Do not treat description as permission to bind.** The analysis remains descriptive unless it is used to obligate, prescribe, or enforce.
-- **When stability is sought, target operator carriage rather than narrative victory:** reduce comparison routing in **□**, reopen functional **Ω** legibility, rebuild **Σ** as interface work, and anchor **Ψ** as self-binding rather than externalized demand.
-- **Where residual stabilization dominates (Φ/Λ/Α),** expect short-term calming and long-term reciprocity erosion; the rational reading is cost recognition, not moral inference.
-- **If application is attempted,** validity is conditioned by the gate: **Χ (distance) + reversibility + D (dignity-in-practice constraints on Ω-handling)**.
+* **Do not treat description as permission to bind.** The analysis remains descriptive unless it is used to obligate, prescribe, or enforce.
+* **When stability is sought, target operator carriage rather than narrative victory:** reduce comparison routing in **□**, reopen functional **Ω** legibility, rebuild **Σ** as interface work, and anchor **Ψ** as self-binding rather than externalized demand.
+* **Where residual stabilization dominates (Φ/Λ/Α),** expect short-term calming and long-term reciprocity erosion; the rational reading is cost recognition, not moral inference.
+* **If application is attempted,** validity is conditioned by the gate: **Χ (distance) + reversibility + D (dignity-in-practice constraints on Ω-handling)**.
 
 This is an envelope of structurally viable moves, not a recommendation set.
 
@@ -2565,14 +2560,14 @@ This closure does not assign guilt, diagnose persons, or claim ideological essen
 
 #### (5) Structural Viability Verdict (Non-Moral)
 
-Under PMS criteria, the terminal configuration described in this paper is not structurally viable when stabilization is achieved through persistent cost externalization. Where coordination, integration, and repair costs are continuously displaced onto specific role-positions while others retain insulation, exit options, or narrative control, adult reciprocity cannot be sustained. 
+Under PMS criteria, the terminal configuration described in this paper is not structurally viable when stabilization is achieved through persistent cost externalization. Where coordination, integration, and repair costs are continuously displaced onto specific role-positions while others retain insulation, exit options, or narrative control, adult reciprocity cannot be sustained.
 
 Persistent cost externalization is not a moral failure, but it is a structural failure of adult reciprocity under PMS.
 
 #### (6) Drift Cost Marker (System-Level)
 
-⚠ **Structural Cost Marker:**  
-At the end state traced by this paper, system stability is frequently maintained by relocating ongoing integration, coordination, and repair costs onto role-positions closer to exposure and obligation under Ω, while opposing positions retain legibility control, early stabilization, or withdrawal capacity. This configuration preserves surface coherence at the price of cumulative depletion and reciprocity erosion under Θ. 
+⚠ **Structural Cost Marker:**
+At the end state traced by this paper, system stability is frequently maintained by relocating ongoing integration, coordination, and repair costs onto role-positions closer to exposure and obligation under Ω, while opposing positions retain legibility control, early stabilization, or withdrawal capacity. This configuration preserves surface coherence at the price of cumulative depletion and reciprocity erosion under Θ.
 
 This marker describes a cost geometry, not a moral defect.
 
@@ -2582,24 +2577,25 @@ This marker describes a cost geometry, not a moral defect.
 
 ### 15.1 Purpose and Validity Window
 
-EDEN-MAP is a **structural mapping protocol** for PMS–EDEN analyses.  
+EDEN-MAP is a **structural mapping protocol** for PMS–EDEN analyses.
 It identifies operator configurations (**Δ–Ψ (PMS operators: difference through self-binding)**) in a given scene **without diagnosing persons**.
 
-**Validity constraint (PMS entry condition):**  
+**Validity constraint (PMS entry condition):**
+
 * Mapping can remain purely **descriptive** (operator attribution) without becoming **binding** (normative steering).
 * Any **application** that prescribes, binds, obligates, or demands must preserve **Χ (distance: reflective inhibition) + reversibility + D (dignity-in-practice: restrained handling of asymmetry)**.
 * Uses that suspend **Χ (distance)**, reversibility, or **D (dignity-in-practice)** are **formally invalid as PMS application**, even if PMS vocabulary is used.
 
-**Question-only clause (method discipline):**  
+**Question-only clause (method discipline):**
 The following sections provide **mapping prompts** (questions) and **recording templates** (structured outputs). They do not authorize binding, demands, sanctions, or coercive “use against” persons or roles.
 
-**Structural Viability Note (Method-Level):**  
+**Structural Viability Note (Method-Level):**
 Repeated EDEN-MAP mappings that identify persistent cost externalization across scenes do not describe a neutral or stable condition. While EDEN-MAP itself remains descriptive, such recurrence indicates structural non-viability under PMS criteria unless costs are re-internalized at the role-position where they arise.
 
-Persistent cost externalization is not a moral failure, but it is a structural failure of adult reciprocity under PMS.  
+Persistent cost externalization is not a moral failure, but it is a structural failure of adult reciprocity under PMS.
 
-⚠ **Structural Cost Marker (Mapping Level):**  
-If EDEN-MAP repeatedly shows that integration, coordination, or stabilization costs are borne by the same role-position across scenes, the mapping itself indicates a drift regime. Continued descriptive mapping without structural change does not remain neutral; it documents cumulative depletion under Θ.  
+⚠ **Structural Cost Marker (Mapping Level):**
+If EDEN-MAP repeatedly shows that integration, coordination, or stabilization costs are borne by the same role-position across scenes, the mapping itself indicates a drift regime. Continued descriptive mapping without structural change does not remain neutral; it documents cumulative depletion under Θ.
 
 EDEN-MAP does not normalize such configurations; it makes their cost geometry explicit.
 
@@ -2611,22 +2607,31 @@ A scene packet is a compact record capturing operator-relevant elements in a bou
 * **Scene ID:** What is the time span (**Θ (temporality: trajectory/time) window**), what anchors the context (**□ (frame: contextual constraint)**), and who appears as **roles** (not persons)?
 * **Trigger (Δ/∇):** Which **Δ (difference: minimal distinction)** activated which **∇ (impulse: directed tension)**?
 * **Expected events:** What “should have happened” under the dominant **□ (frame: contextual constraint)** (i.e., which **Λ (non-event: structured absence / non-closure)** candidates were created)?
-* **Observed realizations (enactments, neutral):** What behaviors, omissions, or escalations occurred (operator-relevant realizations). Separately record whether—if at all—the scene meets **E (action: integrated enactment; Σ (integration: coherence synthesis) + Θ (temporality) + ∇ (impulse))**.  
+* **Observed realizations (enactments, neutral):** What behaviors, omissions, or escalations occurred (operator-relevant realizations). Separately record whether—if at all—the scene meets **E (action: integrated enactment; Σ (integration: coherence synthesis) + Θ (temporality) + ∇ (impulse))**.
   **Discipline:** realization/enactment **≠ E** unless **Σ (integration)** carries the act (and binding is not outsourced as Ψ→Other).
 
 **Recording template (scene packet; paper-standard):**
 
 * `SceneID = {Θwindow: …, □anchor: …, roles: …}`
+
 * `Trigger = {Δ: …, ∇: …}`
+
 * `Λcandidates = […]`
+
 * `Realizations = {observed: …, omissions: …, escalations: …}`
+
 * `Echeck = {E_present?: yes/no/partial, Σcarrier?: yes/no/partial, notes: …}`
+
 * `Αstabilizers = […]`
+
 * `Ωreal = {capacity: …, exposure: …, obligation: …, leverage: …}`
+
 * `Ψmap = {declared: …, enacted: …, enforced: …, externalized: …}`
 
 * **Stabilizers:** Which repeated scripts are visible (explicit or covert) as **Α (attractor: pattern stabilization / script formation)**?
+
 * **Asymmetry map:** Which capacity/exposure/obligation/leverage gradients are real as **Ω (asymmetry: structural imbalance)** in consequences?
+
 * **Binding map:** Which commitments are claimed vs enacted as **Ψ (self-binding: durable commitment)**, and where is binding outsourced as **Ψ→Other (externalized binding: “you must…”)**?
 
 **Recording template (scene packet; paper-standard):**
@@ -2755,7 +2760,7 @@ Is **Ω (asymmetry)** currently **Ω-legible** (nameable and coordinable in a pr
 **Who adopts Ψ (self-binding: durable commitment across time) as self-obligation, and where is binding externalized as Ψ→Other (demand: “you must…”)—and how is binding enforced?**
 
 **Ψ self-binding (Ψ→Self):**
-Ψ (self-binding) adopted as self-obligation under **Χ (distance)** and **D (dignity-in-practice: restrained handling of asymmetry)**.
+Ψ (self-binding) adopted as self-obligation under **Χ (distance)** and **D (dignity-in-practice: (Ψ ∘ Χ) applied to Ω-handling)**.
 
 **Ψ externalization (Ψ→Other):**
 Ψ (self-binding) displaced as demand: binding outsourced as “you must…” (often bypassing **Χ (distance)** and replacing **Σ (integration)** with compliance tests).
@@ -2764,7 +2769,7 @@ Is **Ω (asymmetry)** currently **Ω-legible** (nameable and coordinable in a pr
 
 1. **Declared Ψ:** What is said to be binding?
 2. **Enacted Ψ:** What is actually carried across **Θ (temporality: trajectory/time)**?
-3. **Enforced Ψ:** How is binding maintained—via self-restraint (Χ + D), or via coercion-by-frame (**□ (frame)**) and leverage (**Ω (asymmetry)**)?
+3. **Enforced Ψ:** How is binding maintained—via self-restraint (**Χ** and **D**), or via coercion-by-frame (**□ (frame)**) and leverage (**Ω (asymmetry)**)?
 
 **Output format (Ψ statement):**
 `Ψself (self-binding) = <who binds themselves to what>`
@@ -2783,14 +2788,14 @@ Is **Ω (asymmetry)** currently **Ω-legible** (nameable and coordinable in a pr
 
 3. **Cost profile (system costs; structural, not moral):**
 
-* **A (awareness: Θ (temporality) + □ (frame) + Δ (difference)) costs:** option visibility and monitoring load.
-* **C (coherence: Θ (temporality) + Λ (non-event) + □ (frame) + ∇ (impulse)) costs:** coherence volatility vs stabilization.
-* **R (responsibility: Ψ (self-binding) + Φ (recontextualization) + Θ (temporality) + Ω (asymmetry)) costs:** responsibility clarity vs outsourcing.
-* **E (action: Σ (integration) + Θ (temporality) + ∇ (impulse)) costs:** integrated enactment bandwidth vs suppression (note: E requires Σ-carriage).
-* **D (dignity-in-practice: Ψ (self-binding) ∘ Χ (distance) ∘ Ω (asymmetry)) costs:** restraint/protection load vs degradation-in-practice risk when Χ/D are bypassed.
+* **A (awareness: [Θ (temporality), □ (frame), Δ (difference)]) costs:** option visibility and monitoring load.
+* **C (coherence: [Θ (temporality), Λ (non-event), □ (frame), ∇ (impulse)]) costs:** coherence volatility vs stabilization.
+* **R (responsibility: [Ψ (self-binding), Φ (recontextualization), Θ (temporality), Ω (asymmetry)]) costs:** responsibility clarity vs outsourcing.
+* **E (enactment: [Σ (integration), Θ (temporality), ∇ (impulse)]) costs:** integrated enactment bandwidth vs suppression (note: E requires Σ-carriage).
+* **D (dignity-in-practice: (Ψ ∘ Χ) applied to Ω-handling) costs:** restraint/protection load vs degradation-in-practice risk when Χ/D are bypassed.
 
 4. **Lowest-cost correction signature (operator-readable; descriptive):**
-This is a **viability signature**, not a prescription. It describes the smallest operator moves that *would tend to reopen coordination* **if** the analysis is used as guidance. Any actual application must pass the validity gate (**Χ + reversibility + D**) (see **§12.2.2**).
+   This is a **viability signature**, not a prescription. It describes the smallest operator moves that *would tend to reopen coordination* **if** the analysis is used as guidance. Any actual application must pass the validity gate (**Χ + reversibility + D**) (see **§12.2.2**).
 
 Which minimal steps would simultaneously address the following three questions?
 
@@ -2823,7 +2828,7 @@ Not allowed:
 
 ### 15.6 Meta-Notes (Operational Constraints)
 
-* **Clarity ≠ humiliation:** naming operators can be precise without degrading standing (**D (dignity-in-practice: restrained handling of asymmetry)** remains active as an application constraint).
+* **Clarity ≠ humiliation:** naming operators can be precise without degrading standing (**D (dignity-in-practice: (Ψ ∘ Χ) applied to Ω-handling)** remains active as an application constraint).
 * **Naming ≠ moralizing:** **Ω (asymmetry: structural imbalance)** / **Λ (non-event: structured absence)** / **□ (frame: contextual constraint)** can be specified functionally without verdict logic.
 * **Firmness ≠ dignity break:** boundaries can be enacted with **Χ (distance: reflective inhibition)** and reversibility; hardness becomes a dignity violation only when **D (dignity-in-practice)** is suspended.
 
@@ -2833,15 +2838,15 @@ Not allowed:
 
 This section defines **paper-internal structural terms** used in PMS–EDEN. Definitions are operator-conform and non-psychological. The goal is **terminology discipline**, not pedagogy or persuasion.
 
-**Scope note (discipline):**  
+**Scope note (discipline):**
 All terms below are **structural operators or operator-derived composites**. They are **not** diagnoses, traits, inner-state claims, or moral evaluations. Where a term has everyday psychological connotations (e.g., “maturity,” “humiliation”), the paper’s use is **strictly formal/structural** and limited to **in-scene consequence structure**.
 
-**Notation note (paper-wide discipline):**  
-Throughout this paper, `+` denotes **operator co-availability / compositional participation** (a compact way to state that multiple operators are jointly active/required in-scene). It is **not** arithmetic addition and not a causal operator by itself.  
-Where `∘` is used (e.g., dignity constraints), it denotes **constraint/application order** (a restraint operator applied to the handling of another operator), not function composition in a mathematical proof sense.
+**Notation note (paper-wide discipline):**
+Throughout this paper, bracket lists like `[...]` denote **component co-availability / co-configuration** (not arithmetic addition).
+Where `∘` is used (e.g., dignity constraints), it denotes **constraint/application order** (a restraint operator applied to the handling of another operator), not an alternative spelling for axis sets.
 
-**Structural Viability Note:**  
-The inclusion of a term in this glossary does not imply that the configuration it names is viable, neutral, or sustainable under PMS criteria. Many terms in this glossary describe *drift stabilizations*, *substitution regimes*, or *residual control modes* that persist precisely because costs are externalized or deferred.  
+**Structural Viability Note:**
+The inclusion of a term in this glossary does not imply that the configuration it names is viable, neutral, or sustainable under PMS criteria. Many terms in this glossary describe *drift stabilizations*, *substitution regimes*, or *residual control modes* that persist precisely because costs are externalized or deferred.
 
 Persistent cost externalization is not a moral failure, but it is a structural failure of adult reciprocity under PMS.
 
@@ -2850,7 +2855,7 @@ Persistent cost externalization is not a moral failure, but it is a structural f
 **Awareness (A)** is defined strictly as **sustained, framed differentiation across time**:
 
 * **A (awareness: sustained, framed differentiation across time)**
-  **A = Θ (temporality: trajectory/time) + □ (frame: contextual constraint) + Δ (difference: minimal distinction)**
+  **A = [Θ (temporality: trajectory/time), □ (frame: contextual constraint), Δ (difference: minimal distinction)]**
 
 Awareness denotes **operator availability**, not phenomenology: it specifies that distinctions **Δ (difference)** remain legible within a frame **□ (frame)** across a temporal horizon **Θ (temporality)**.
 
@@ -2924,14 +2929,14 @@ Impulse **∇** is not itself “good” or “bad”; drift arises when ∇ cou
 
 **E (action: integrated enactment)** is defined in PMS as:
 
-* **E (action: integrated enactment)**
-  **E = Σ (integration: coherence synthesis into coordinated praxis) + Θ (temporality: trajectory/time) + ∇ (impulse: directed tension)**
+* **E (enactment: integrated enactment)**
+  **E = [Σ (integration: coherence synthesis into coordinated praxis), Θ (temporality: trajectory/time), ∇ (impulse: directed tension)]**
 
 **Enactment/realization (paper usage):**
 The paper uses “enactment/realization” as a neutral label for observable realizations (acts/omissions/escalations) **regardless** of whether they are integrated.
 
 **Discipline (hard separation):**
-Enactment/realization **≠ E** unless **Σ (integration)** carries the act (and binding is not outsourced as **Ψ→Other**).  
+Enactment/realization **≠ E** unless **Σ (integration)** carries the act (and binding is not outsourced as **Ψ→Other**).
 This is a structural criterion, not a claim about inner states.
 
 ### 16.8 Temporality (Θ)
