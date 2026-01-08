@@ -20,7 +20,7 @@ In this sense, PMS–EDEN should be read as:
 * **formally consistent with the PMS operator grammar**, and
 * **focused on the structural discipline of drift legibility and non-coercive analysis**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18152785.svg)](https://zenodo.org/records/18166536)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18186812.svg)](https://doi.org/10.5281/zenodo.18186812)
 
 ---
 
