@@ -1,0 +1,401 @@
+example_id: "PMS-EDEN_EX01"
+example_version: "1.1"
+schema_version: "PMS-EDEN_1.1"
+example_label: "Pseudo-Symmetry under Real Cost Asymmetry"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-EDEN_1.1"
+
+minimal_vignette:
+  title: "Equality rhetoric under irreversible cost gradients"
+  scene_boundaries:
+    domain: "extended coordination under unequal consequence exposure"
+    scope: "roles, asymmetries, cost distribution, frame drift, and reciprocity conditions"
+    out_of_scope:
+      - "person-level judgement"
+      - "motive attribution"
+      - "virtue assessment"
+      - "clinical or psychological interpretation"
+      - "action prescription"
+  short_scene: >
+    Two role-positions remain engaged across an extended coordination sequence.
+    One role-position stays close to decision endpoints and closure authority,
+    while the other remains close to continuity work, repair effort, and
+    fallout handling. As unequal consequence exposure becomes increasingly
+    legible, the scene does not reopen explicit coordination around real Ω.
+    Instead, the frame drifts from praxis-coordination toward comparison and
+    equivalence talk. Equality rhetoric rises, comparison cycles stabilize, and
+    durable interface change fails to form.
+  structural_focus: >
+    The case examines how pseudo-symmetry (PS) stabilizes when real asymmetry
+    in cost and exposure remains operative but becomes difficult or illegitimate
+    to name within the dominant frame. The key issue is not whether equality is
+    normatively desirable, but whether equivalence-talk substitutes for
+    coordination under real Ω across Θ.
+  scenic_elements:
+    actors:
+      - "role-position near endpoint decisions and closure authority"
+      - "role-position near continuity work and fallout handling"
+      - "coordination interface or shared task environment"
+    salient_objects:
+      - "decision endpoints"
+      - "repair labor"
+      - "continuity obligations"
+      - "justification cycles"
+      - "fairness/equality claims"
+      - "unreopened coordination interfaces"
+    trigger_event:
+      label: "cost asymmetry becomes legible"
+      description: >
+        Unequal exposure to durable consequences becomes visible, but instead
+        of being coordinated explicitly, it is reprocessed through comparison,
+        equivalence, and fairness rhetoric.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example shows one of the clearest PMS-EDEN use-cases: real Ω remains
+    active in consequences while the dominant frame drifts toward rhetorical
+    parity. It makes visible how PS can function as a stabilization regime
+    rather than as reciprocity.
+  repo_value:
+    - >
+      Demonstrates the transition from □praxis to □comparison under active Ω.
+    - >
+      Shows how pseudo-symmetry can substitute for Σ without resolving the
+      underlying coordination problem.
+    - >
+      Makes durable cost distribution legible across Θ without moralizing.
+    - >
+      Clarifies how fairness rhetoric can become a frame-control device when Ψ
+      externalizes and Χ is pressured.
+    - >
+      Connects local comparison cycles to broader PMS-EDEN drift logic:
+      false comparison → PS → residual stabilization → reciprocity loss.
+  central_repo_question: >
+    How does equality rhetoric become a cost-masking attractor when real
+    asymmetry remains action-relevant but coordination under Ω is not reopened?
+  lens_relevance:
+    pseudo_symmetry: >
+      The example directly instantiates PS as rhetorical parity under real Ω
+      with Σ low or simulated and Ψ misbound to appearance-management.
+    cost_geometry: >
+      The example highlights how invisible redistribution of durable load can
+      stabilize a drift regime even without overt domination language.
+    validity_gate: >
+      The example sharply distinguishes descriptive structural mapping from any
+      invalid attempt to force action, compliance, or obligation through the
+      analysis itself.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["□", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ", "Λ", "Α"]
+    note: >
+      The case centers on frame drift under legible asymmetry, temporally
+      extended consequence distribution, pseudo-symmetry, and the failure of
+      integration/self-binding to stabilize reciprocity.
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A distinction emerges between endpoint-costs and continuity-costs, and
+        between rhetorical equality and real consequence asymmetry.
+    "∇":
+      scene_role: >
+        Pressure rises to restore a fairness-image without reopening explicit
+        coordination around unequal burdens.
+    "□":
+      scene_role: >
+        The scene begins in praxis-coordination but drifts toward comparison,
+        equivalence, and justification grammar. The decisive question is whether
+        the frame still permits functional Ω-speech.
+    "Λ":
+      scene_role: >
+        Expected explicit renegotiation of obligations and cost handling does
+        not occur. Missing repair and missing interface revision remain active
+        non-events across the scene.
+    "Α":
+      scene_role: >
+        Repeated comparison loops, fairness invocations, and leveling attempts
+        stabilize into recurrent scripts that preserve the configuration without
+        repairing it.
+    "Ω":
+      scene_role: >
+        Real asymmetry remains active in exposure, continuity burden, and
+        consequence carrying, even where rhetoric asserts parity.
+    "Θ":
+      scene_role: >
+        Consequences accumulate over time. One-off endpoint decisions and
+        repeated maintenance work do not have the same temporal weight.
+    "Φ":
+      scene_role: >
+        The configuration is recontextualized from coordination problem to
+        fairness problem; from unequal consequences to disputed equivalence.
+    "Χ":
+      scene_role: >
+        Distance becomes endangered when requests for pause, revision, or
+        restraint are recoded as avoidance, unfairness, or lack of commitment.
+    "Σ":
+      scene_role: >
+        Integration would require reopened interfaces around actual burdens,
+        obligations, and exposure gradients. In the drifted scene, Σ remains
+        low, blocked, or simulated.
+    "Ψ":
+      scene_role: >
+        Binding drifts away from self-restraint and coordinated obligation
+        toward pressure on the other to display fairness, equality, or renewed
+        compliance.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness increases because the cost gradient becomes more legible, but
+        the dominant frame blocks direct coordination of what is seen.
+    C:
+      reading: >
+        Coherence is maintained rhetorically through equivalence-talk, but the
+        configuration remains structurally unstable because Λ stays open.
+    R:
+      reading: >
+        Responsibility becomes distorted when durable burden is redistributed
+        without explicit renegotiation and when binding migrates outward.
+    E:
+      reading: >
+        Integrated action remains weak because realizations occur without stable
+        Σ-carriage; comparison and justification substitute for coordination.
+    D:
+      reading: >
+        Dignity-in-Practice is stressed where real Ω is suppressed in speech but
+        enforced in consequences, and where fairness talk pressures compliance
+        instead of protecting standing under asymmetry.
+  structural_mechanism_summary:
+    sequence:
+      - "Real Ω in consequences becomes legible."
+      - "Explicit coordination around Ω does not consolidate."
+      - "□ drifts from praxis to comparison/equivalence."
+      - "Φ reframes asymmetry as fairness dispute."
+      - "PS stabilizes rhetorical parity under real gradients."
+      - "Α locks comparison and justification scripts."
+      - "Σ remains low or simulated; Ψ misbinds or externalizes."
+      - "Reciprocity becomes structurally compromised across Θ."
+    concise_formula: >
+      legible Ω -> failed Σ around cost distribution -> □comparison ->
+      Φ fairness reframe -> PS -> Α comparison scripts -> Ψ misbinding /
+      externalization -> reciprocity erosion
+
+drift_position_in_master_trace:
+  stage_label: "PS under real Ω with residual stabilization pressure"
+  master_trace_handle: >
+    EDEN -> THRESHOLD -> NRK -> □comparison -> PS ->
+    residual_stabilization(Λ/Φ/Α) -> (DEVALUATION|HUMILIATION) ->
+    RECIPROCITY_LOSS
+  local_position_note: >
+    This case sits primarily at the PS node and the transition toward residual
+    stabilization. It does not require overt devaluation to become structurally
+    non-viable.
+
+cost_layout:
+  note: "Structural cost geometry only; non-moral; scene-bound."
+  consequence_interfaces:
+    endpoint_adjacent_costs:
+      - "decision cost"
+      - "closure cost"
+      - "short-horizon justification cost"
+    continuity_adjacent_costs:
+      - "repair cost"
+      - "maintenance cost"
+      - "fallout handling cost"
+      - "repeated relational load"
+  asymmetry_readout:
+    omega_capacity_gradient: >
+      Closure-near roles often hold more capacity to define endpoints and frame
+      completion.
+    omega_exposure_gradient: >
+      Continuity-near roles often absorb more repeated exposure to unresolved
+      consequences across Θ.
+    omega_obligation_gradient: >
+      Maintenance burden can become tacitly assigned rather than explicitly
+      coordinated.
+    omega_leverage_gradient: >
+      Fairness/equality framing can function as leverage when direct naming of
+      asymmetry is delegitimated.
+  system_effect: >
+    The system does not remove cost asymmetry; it masks and redistributes it.
+    What appears as fairness maintenance can function as a durable cost-shift
+    into less visible continuity work.
+
+pattern_markers:
+  max_expected: 3
+  markers:
+    - id: "P-Σ-SIM"
+      label: "Σ-Simulation instead of Integration"
+      operator_links: ["Σ", "Φ", "Α", "Λ", "Ψ"]
+      indicator: >
+        Coordination is performed discursively, but interfaces do not change and
+        remainder persists.
+    - id: "P-Ψ-EXT"
+      label: "Ψ -> Externalization"
+      operator_links: ["Ψ", "Χ", "Ω", "□"]
+      indicator: >
+        Binding shifts from self-restraint to demands imposed on the other in
+        the name of fairness, equality, or commitment.
+    - id: "P-Ω-AC"
+      label: "Ω -> Covert Authority"
+      operator_links: ["Ω", "□", "Α", "Λ"]
+      indicator: >
+        Real gradient-speech is blocked while frame control and indirect
+        steering remain effective through comparison and justification.
+  additional_red_flags:
+    - "We are equal here, so asymmetry should not be named."
+    - "Requesting distance proves lack of commitment."
+    - "Fairness now means matching burden-display rather than coordinating real burden."
+    - "The issue is no longer the task but whether parity has been performed."
+    - "Repair is discussed, but interfaces remain unchanged."
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must remain available as reflective restraint. Requests for pause,
+      revision, or non-fusion must not be converted into evidence of unfairness
+      or guilt.
+    reversibility: >
+      Any mapping must remain scene-bound and revisable. The analysis must not
+      harden into global labels about persons or roles.
+    dignity_in_practice: >
+      Real Ω may be named structurally, but asymmetry handling must remain
+      dignity-constrained: no shaming, ranking, humiliation, or coercive use of
+      PMS vocabulary.
+  case_specific_validity_test:
+    valid_if:
+      - >
+        Real asymmetry in consequences can be named without collapsing into
+        blame or person-ranking.
+      - >
+        Equality language does not substitute for coordination around burdens,
+        obligations, and exposure.
+      - >
+        Ψ remains primarily self-binding rather than a demand directed outward.
+      - >
+        Χ remains speakable and protected rather than punished as avoidance.
+    formally_invalid_if:
+      - >
+        The analysis is used to force compliance or proof of fairness from the
+        other role-position.
+      - >
+        Ω is invoked as accusation rather than coordinated as structural
+        gradient.
+      - >
+        Χ is overridden through urgency, equivalence rhetoric, or moralized
+        commitment language.
+      - >
+        The case is converted into a diagnosis of character, motive, or worth.
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    This case shows how pseudo-symmetry can stabilize when real asymmetry in
+    cost and exposure remains active but becomes difficult to coordinate
+    explicitly. Equality rhetoric then ceases to function as reciprocity and
+    instead becomes a comparison-frame substitute for Σ. What the scene calls
+    fairness may structurally operate as a cost-masking attractor: durable load
+    is redistributed without being negotiated. Under PMS-EDEN, the result is
+    not moral failure but drift toward reciprocity loss unless real Ω, Χ, Σ,
+    and Ψ are reopened in a dignity-constrained way.
+
+extended_scene_analysis:
+  frame_validity_check:
+    operator: "□"
+    in_scope:
+      - "coordination obligations"
+      - "cost-bearing distribution"
+      - "repair and maintenance load"
+      - "closure authority"
+      - "comparison/equivalence rhetoric"
+    out_of_scope:
+      - "global claims about equality as such"
+      - "person-level moral verdicts"
+      - "psychological motive assignment"
+    drift_signal: >
+      The key drift appears when a coordination frame becomes a comparison frame
+      and fairness-talk starts replacing interface revision.
+  non_event_integrity_check:
+    operator: "Λ"
+    decisive_absences:
+      - "missing renegotiation of obligations"
+      - "missing explicit coordination of unequal burden"
+      - "missing durable interface change"
+    drift_signal: >
+      Λ stays active because what should have been coordinated remains absent,
+      while rhetoric of resolution attempts to cover the lack.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "continuity-near role-position"
+      - "repair-bearing role-position"
+      - "fallout-handling role-position"
+    capacity_holders:
+      - "closure-near role-position"
+      - "endpoint decision position"
+      - "frame-defining position"
+    drift_signal: >
+      The decisive problem is not asymmetry itself, but that asymmetry remains
+      operative in consequences while becoming illegitimate to name in the
+      dominant frame.
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "initial coordination orientation"
+      - "asymmetry becomes legible"
+      - "explicit repair does not consolidate"
+      - "comparison/equivalence talk rises"
+      - "justification cycles stabilize"
+      - "maintenance burden accumulates"
+      - "reciprocity weakens"
+    drift_signal: >
+      The configuration becomes harder to reverse because repeated continuity
+      costs accumulate more quietly than visible endpoint decisions.
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      The scene is re-read from unequal consequence handling into a fairness and
+      parity dispute.
+    drift_signal: >
+      Φ ceases to support adaptation and instead protects the comparison frame
+      from reopening real Ω-coordination.
+  distance_enforcement:
+    operator: "Χ"
+    core_test: "Can reflective restraint still be exercised without penalty?"
+    erosion_markers:
+      - "distance framed as avoidance"
+      - "pause framed as unfairness"
+      - "restraint framed as lack of commitment"
+      - "revision requests treated as disloyalty to parity"
+    pms_relevance: >
+      PMS-EDEN requires Χ as application condition and as a structural limit on
+      coercive frame control.
+  integration_quality:
+    operator: "Σ"
+    must_integrate:
+      - "real burden distribution"
+      - "repair obligations"
+      - "decision authority"
+      - "continuity exposure"
+      - "reversibility conditions"
+    drift_signal: >
+      Σ fails when the scene discusses equality while refusing the interface
+      work needed to coordinate unequal consequences.
+  self_binding_test:
+    operator: "Ψ"
+    decisive_question: "Who is being bound, and how?"
+    valid_form: >
+      Each role-position binds itself to explicit coordination, burden clarity,
+      and reversible handling of asymmetry.
+    invalid_form: >
+      One role-position pressures the other to prove fairness or equality while
+      avoiding self-binding to asymmetry coordination.
+
+assistant_test_vectors:
+  promptables:
+    - "Map this scene in PMS-EDEN terms. Where does □ drift from praxis to comparison?"
+    - "Show how pseudo-symmetry stabilizes under real Ω without resolving the cost gradient."
+    - "Where is Σ simulated rather than enacted in this configuration?"
+    - "How does Ψ externalization appear in fairness rhetoric here?"
+    - "Explain why this case points toward reciprocity loss without making moral claims."

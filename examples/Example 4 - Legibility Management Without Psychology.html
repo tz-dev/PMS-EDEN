@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-EDEN — Example 4: Legibility Management Without Psychology</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–EDEN</strong></h1>
+			<h2><em>Example 4: Fig Leaves / Legibility Management Without Psychology</em></h2>
+			<div class="meta">
+				<strong>Example ID:</strong> <code>PMS-EDEN_EX04</code> &middot;
+				<strong>Example Version:</strong> <code>1.1</code> &middot;
+				<strong>Schema Version:</strong> <code>PMS-EDEN_1.1</code><br />
+				<strong>Status:</strong> draft &middot;
+				<strong>Language:</strong> EN &middot;
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-EDEN_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Example Identity</h2>
+			<p>
+				<strong>Example label:</strong> <em>Fig Leaves / Legibility Management Without Psychology</em>
+			</p>
+			<p>
+				<strong>Aligned with:</strong> <code>PMS-EDEN.yaml</code> (<code>PMS-EDEN_1.1</code>) and
+				<code>PMS.yaml</code> (<code>PMS_1.3</code>)
+			</p>
+			<hr />
+
+			<h2>1) Minimal Vignette</h2>
+
+			<h3>1.1 Title</h3>
+			<p>
+				Shielding, exposure, and the birth of stabilized scripts.
+			</p>
+
+			<h3>1.2 Scene boundaries</h3>
+			<ul>
+				<li><strong>Domain:</strong> post-breach exposure management, legibility reduction, shielding, and early script formation</li>
+				<li><strong>Scope:</strong> observable operator shifts in the immediate post-breach interval under altered exposure gradients</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>person-level judgement</li>
+						<li>shame or guilt psychology</li>
+						<li>motive attribution</li>
+						<li>virtue assessment</li>
+						<li>clinical or psychological interpretation</li>
+						<li>action prescription</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>1.3 Short scene</h3>
+			<p>
+				A breach has already occurred and the field has changed irreversibly. What
+				becomes newly salient is not insight but exposure: some role-positions now
+				stand in a more visible and vulnerable relation to consequence, while
+				others can observe, interpret, or leverage that visibility. The first
+				operative moves are not integrative or explanatory. Instead, visibility is
+				reduced through covering, shielding, boundary-setting, and other forms of
+				exposure attenuation. These moves repeat because they locally work, and
+				repetition begins to stabilize into scripts before any later narrative
+				interpretation appears.
+			</p>
+
+			<h3>1.4 Structural focus</h3>
+			<p>
+				The case examines PMS-EDEN's fig-leaf logic as legibility management
+				without psychologizing. The decisive issue is how post-breach consequence
+				legibility under <strong>Ω/Θ/Λ</strong> shifts <strong>□</strong> toward vulnerability management, activates
+				reactive <strong>Χ</strong> as shielding, and seeds <strong>Α</strong> as repeatable protective script.
+			</p>
+
+			<h3>1.5 Scenic elements</h3>
+			<ul>
+				<li><strong>Actors:</strong>
+					<ul>
+						<li>newly exposed role-position</li>
+						<li>role-position capable of observing or leveraging exposure</li>
+						<li>shared scene reorganizing under consequence visibility</li>
+					</ul>
+				</li>
+				<li><strong>Salient objects:</strong>
+					<ul>
+						<li>exposure gradients</li>
+						<li>covering or shielding moves</li>
+						<li>reduced visibility</li>
+						<li>boundary-setting behaviors</li>
+						<li>repeatable protective routines</li>
+						<li>later interpretations of the shielding phase</li>
+					</ul>
+				</li>
+				<li><strong>Trigger event:</strong>
+					<ul>
+						<li><strong>Label:</strong> post-breach exposure legibility</li>
+						<li><strong>Description:</strong> Consequences become visible in a way that creates a practical
+							distinction between exposed and shielded positions, making immediate
+							exposure reduction structurally salient.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>2) Why This Is Repo-Useful</h2>
+
+			<h3>2.1 Structural focus</h3>
+			<p>
+				This example is load-bearing for PMS-EDEN because it prevents a major
+				category error: reading fig-leaf dynamics as proof of inner shame,
+				confession, or moral awakening. Instead, the example anchors the move in
+				post-breach operator reconfiguration, exposure control, and early
+				stabilization.
+			</p>
+
+			<h3>2.2 Repository value</h3>
+			<ul>
+				<li>Demonstrates that fig-leaf dynamics can be fully described without recourse to psychology, affect attribution, or moral interpretation.</li>
+				<li>Clarifies the difference between reactive shielding <strong>Χ</strong> and reflective <strong>Χ</strong> as meta-position.</li>
+				<li>Makes visible how <strong>□</strong> can shift from praxis to vulnerability/exposure framing after breach.</li>
+				<li>Shows how <strong>Α</strong> begins as local protective repeatability rather than as explicit strategy or intention.</li>
+				<li>Protects PMS-EDEN from being redescribed as a shame theory or interiority model.</li>
+			</ul>
+
+			<h3>2.3 Central repo question</h3>
+			<p>
+				What exactly is the fig-leaf move in structural terms if it is neither
+				confession nor insight, but still clearly consequential?
+			</p>
+
+			<h3>2.4 Lens relevance</h3>
+			<ul>
+				<li><strong>Post-breach legibility:</strong> The case directly instantiates PMS-EDEN §4: consequence legibility rises,
+					and the field reorganizes around managing exposure rather than restoring
+					integration.</li>
+				<li><strong>Chi clarification:</strong> It sharpens the internal distinction between <strong>Χ</strong> as protective inhibition
+					and <strong>Χ</strong> as reflective distance, which is crucial for correct PMS reading.</li>
+				<li><strong>Attractor genesis:</strong> The example shows how local success in shielding is enough for <strong>Α</strong> to begin
+					forming, without requiring psychology or elaborate narrative content.</li>
+			</ul>
+
+			<hr />
+
+			<h2>3) Drift Position in Master Trace</h2>
+			<p>
+				<strong>Stage label:</strong> Immediate post-breach legibility-management phase
+			</p>
+			<p>
+				<strong>Master trace handle:</strong><br />
+				<code>EDEN -&gt; THRESHOLD -&gt; NRK -&gt; □comparison -&gt; PS -&gt; residual_stabilization(Λ/Φ/Α) -&gt; (DEVALUATION|HUMILIATION) -&gt; RECIPROCITY_LOSS</code>
+			</p>
+			<p>
+				<strong>Local position note:</strong> This case sits just after breach and before later comparison-dominant drift
+				has fully stabilized. It shows the transition where consequence legibility
+				under <strong>Ω/Θ/Λ</strong> first reorganizes the scene around shielding rather than repair.
+			</p>
+
+			<hr />
+
+			<h2>4) Operator Mapping</h2>
+
+			<h3>4.1 Reduced signature</h3>
+			<p><code>Λ, Ω, Χ, □, Θ, Α, Φ, Σ, Ψ</code></p>
+			<p>
+				The scene centers on post-breach remainder, consequence exposure,
+				reactive shielding, frame mutation toward vulnerability management, and
+				early script formation before integration.
+			</p>
+
+			<h3>4.2 Structural analysis by operator</h3>
+			<ul>
+				<li><strong>Δ (Difference):</strong>
+					<ul>
+						<li>A distinction becomes practically salient between exposed and shielded, visible and protected.</li>
+						<li>This distinction is a consequence-surface shift rather than new epistemic differentiation.</li>
+					</ul>
+				</li>
+				<li><strong>∇ (Impulse):</strong>
+					<ul>
+						<li>Directed pressure appears as immediate exposure reduction, not as explanation, articulation, or coordination repair.</li>
+					</ul>
+				</li>
+				<li><strong>□ (Frame):</strong>
+					<ul>
+						<li>The dominant frame shifts from praxis-coordination toward vulnerability, exposure control, and legibility management.</li>
+					</ul>
+				</li>
+				<li><strong>Λ (Non-Event):</strong>
+					<ul>
+						<li>The key non-event is the absence of immediate reintegration.</li>
+						<li>The key non-event is the absence of a frame in which exposure no longer matters.</li>
+						<li>The key non-event is the absence of a clean reset into the prior scene.</li>
+					</ul>
+				</li>
+				<li><strong>Α (Attractor):</strong>
+					<ul>
+						<li>Protective moves repeat because they locally reduce cost.</li>
+						<li>This repeatability begins stabilizing into shielding routines and expectations.</li>
+					</ul>
+				</li>
+				<li><strong>Ω (Asymmetry):</strong>
+					<ul>
+						<li>Asymmetry becomes legible as differential exposure.</li>
+						<li>Asymmetry becomes legible as differential vulnerability.</li>
+						<li>Asymmetry becomes legible as unequal leverage in who can observe, interpret, or exploit visibility.</li>
+					</ul>
+				</li>
+				<li><strong>Θ (Temporality):</strong>
+					<ul>
+						<li>The scene unfolds in the immediate post-breach interval.</li>
+						<li>The trajectory has already changed but long-run scripts are not yet fully consolidated.</li>
+					</ul>
+				</li>
+				<li><strong>Φ (Recontextualization):</strong>
+					<ul>
+						<li>Later recontextualizations may narrativize the phase as shame, insight, awakening, or virtue.</li>
+						<li>These are downstream overlays, not what the move structurally is.</li>
+					</ul>
+				</li>
+				<li><strong>Χ (Distance):</strong>
+					<ul>
+						<li>Distance appears first as reactive inhibition: exposure attenuation, concealment, and boundary-setting that reduce immediate vulnerability.</li>
+					</ul>
+				</li>
+				<li><strong>Σ (Integration):</strong>
+					<ul>
+						<li>Integration is not yet carrying the scene.</li>
+						<li>Shielding takes precedence over interface repair, synthesis, or consolidated coordination.</li>
+					</ul>
+				</li>
+				<li><strong>Ψ (Self-Binding):</strong>
+					<ul>
+						<li>Self-binding becomes relevant only insofar as shielding later either remains reversible restraint or hardens into standing control and durable opacity.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>4.3 Derived-axes projection</h3>
+			<ul>
+				<li><strong>A (Awareness):</strong> Awareness does not increase as insight into self; rather, consequence
+					surfaces become more pragmatically legible in terms of what is now
+					unsafe to expose.</li>
+				<li><strong>C (Coherence):</strong> Coherence is locally increased through reduced visibility and predictable
+					protection scripts, even though deeper integration remains absent.</li>
+				<li><strong>R (Responsibility):</strong> Responsibility questions emerge around who now bears exposure, who must
+					protect standing, and who retains leverage under asymmetrical visibility.</li>
+				<li><strong>E (Action / Enactment):</strong> The observable moves are realizations under cost pressure, not yet
+					integrated action in the strong PMS sense.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Dignity-in-Practice is tested in whether shielding remains protective
+					and reversible, or drifts into coercive opacity and standing control.</li>
+			</ul>
+
+			<h3>4.4 Structural mechanism summary</h3>
+			<ul>
+				<li>Breach has already altered the field.</li>
+				<li><strong>Θ</strong> binds the scene into post-breach trajectory.</li>
+				<li><strong>Ω</strong> becomes legible as exposure asymmetry.</li>
+				<li><strong>□</strong> shifts toward vulnerability and exposure management.</li>
+				<li><strong>Χ</strong> appears as reactive inhibition and shielding.</li>
+				<li>Repeated protective success seeds <strong>Α</strong>.</li>
+				<li>Later <strong>Φ</strong> may narrativize the phase, but only downstream.</li>
+				<li><strong>Σ</strong> is deferred; integration is not yet structurally carrying.</li>
+			</ul>
+			<p>
+				<strong>Concise formula:</strong><br />
+				<code>breach aftermath -&gt; Θ-bound exposure -&gt; Ω legible -&gt; □vulnerability -&gt; reactive Χ shielding -&gt; Α protective script formation -&gt; later Φ narrativization</code>
+			</p>
+
+			<hr />
+
+			<h2>5) Cost Layout</h2>
+			<p>
+				<strong>Note:</strong> Structural cost geometry only; non-moral; scene-bound.
+			</p>
+
+			<h3>5.1 Consequence interfaces</h3>
+			<ul>
+				<li><strong>Immediate costs:</strong>
+					<ul>
+						<li>loss of transparency</li>
+						<li>reduced coordination bandwidth</li>
+						<li>higher shielding effort for exposed positions</li>
+						<li>local inhibition of articulation</li>
+					</ul>
+				</li>
+				<li><strong>Deferred costs:</strong>
+					<ul>
+						<li>stabilization of avoidance or concealment scripts</li>
+						<li>future integration difficulty</li>
+						<li>persistent opacity in coordination</li>
+						<li>increased leverage asymmetry through managed visibility</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>5.2 Asymmetry readout</h3>
+			<ul>
+				<li><strong>Ω capacity gradient:</strong> Some role-positions retain greater capacity to observe, interpret, or
+					reposition under exposure conditions than others.</li>
+				<li><strong>Ω exposure gradient:</strong> Newly exposed positions bear higher immediate costs of visibility and
+					therefore stronger pressure toward shielding.</li>
+				<li><strong>Ω obligation gradient:</strong> The burden of managing exposure is not symmetrically distributed; some
+					roles are structurally pushed to protect standing more actively.</li>
+				<li><strong>Ω leverage gradient:</strong> Lower-exposure positions can retain interpretive or strategic advantage
+					when shielding becomes necessary for higher-exposure positions.</li>
+			</ul>
+
+			<h3>5.3 System effect</h3>
+			<p>
+				Exposure management becomes locally cheaper than integration. This favors
+				early stabilization of shielding over immediate restoration of explicit,
+				coordinative interfaces.
+			</p>
+
+			<hr />
+
+			<h2>6) Pattern Markers</h2>
+
+			<h3>6.1 Primary markers</h3>
+			<ul>
+				<li><strong>P-Λ-DN — Λ → Denial / Suppression</strong><br />
+					<strong>Operator links:</strong> <code>Λ, Φ, Α</code><br />
+					The scene quickly moves to reduce visibility of what has become
+					consequential, treating legibility itself as something to contain rather
+					than openly integrate.
+				</li>
+				<li><strong>P-Σ-SIM — Σ-Simulation instead of Integration</strong><br />
+					<strong>Operator links:</strong> <code>Σ, Φ, Χ</code><br />
+					Later narrative coherence may be added around the shielding phase even
+					though actual integration never carried the immediate move.
+				</li>
+				<li><strong>P-Ω-AC — Ω → Covert Authority</strong><br />
+					<strong>Operator links:</strong> <code>Ω, Α, Χ</code><br />
+					Differential exposure can become a leverage surface if shielding scripts
+					harden and some positions retain interpretive advantage over others.
+				</li>
+			</ul>
+
+			<h3>6.2 Additional red flags</h3>
+			<ul>
+				<li>“Visibility itself becomes too costly to permit.”</li>
+				<li>“Shielding repeats without later reopening integration.”</li>
+				<li>“Distance hardens into chronic opacity.”</li>
+				<li>“Exposure asymmetry becomes a quiet control surface.”</li>
+				<li>“Later narratives overwrite the original protective function.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>7) Frame Validity and Drift Signals</h2>
+
+			<h3>7.1 Operative frame — <strong>□</strong></h3>
+			<ul>
+				<li><strong>In scope:</strong>
+					<ul>
+						<li>post-breach vulnerability framing</li>
+						<li>exposure management</li>
+						<li>covering and shielding acts</li>
+						<li>visibility reduction</li>
+						<li>later script stabilization</li>
+					</ul>
+				</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>shame psychologies</li>
+						<li>moral affect interpretation</li>
+						<li>confession narratives</li>
+						<li>automatic deception claims</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The decisive frame mutation occurs when the field no longer treats
+				coordination as the first task, but exposure attenuation as the urgent one.
+			</p>
+
+			<h3>7.2 Non-event integrity check — <strong>Λ</strong></h3>
+			<ul>
+				<li><strong>Decisive absences:</strong>
+					<ul>
+						<li>no immediate reintegration</li>
+						<li>no exposure-free return to the prior field</li>
+						<li>no symmetrical vulnerability legibility</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> What is missing is precisely the immediate restoration of a world in which
+				visibility is non-costly. Shielding responds to this absence.
+			</p>
+
+			<h3>7.3 Asymmetry audit — <strong>Ω</strong></h3>
+			<ul>
+				<li><strong>Exposure bearers:</strong>
+					<ul>
+						<li>newly visible role-position</li>
+						<li>roles carrying consequence-adjacent vulnerability</li>
+						<li>roles whose standing is more affected by exposure</li>
+					</ul>
+				</li>
+				<li><strong>Capacity holders:</strong>
+					<ul>
+						<li>roles with lower exposure</li>
+						<li>roles able to observe or interpret the exposed position</li>
+						<li>roles able to benefit from or stabilize around asymmetrical visibility</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The central asymmetry is not moral but positional: some roles can better
+				survive exposure, while others must manage it immediately.
+			</p>
+
+			<h3>7.4 Temporality and trajectory — <strong>Θ</strong></h3>
+			<ul>
+				<li><strong>Trajectory pattern:</strong>
+					<ul>
+						<li>breach already occurred</li>
+						<li>exposure becomes salient</li>
+						<li>shielding begins</li>
+						<li>repetition lowers local uncertainty</li>
+						<li>protective script stabilizes</li>
+						<li>later interpretation follows</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The order matters: shielding precedes explanation. This temporal order is
+				what blocks psychologizing the initial move as reflective achievement.
+			</p>
+
+			<h3>7.5 Recontextualization dynamics — <strong>Φ</strong></h3>
+			<p>
+				<strong>Key shift:</strong> Later discourse may redescribe the shielding phase as moral realization,
+				awakening, shame, prudence, or insight.
+			</p>
+			<p>
+				<strong>Drift signal:</strong> <strong>Φ</strong> becomes distorting when it projects later narrative meaning back into a
+				move that was initially only exposure control.
+			</p>
+
+			<h3>7.6 Distance enforcement — <strong>Χ</strong></h3>
+			<p><strong>Core test:</strong> Is distance functioning here as protection rather than reflection?</p>
+			<ul>
+				<li>speed outruns deliberation</li>
+				<li>concealment outruns articulation</li>
+				<li>distance remains fixed rather than relaxable</li>
+				<li>shielding becomes chronic</li>
+			</ul>
+			<p>
+				<strong>PMS relevance:</strong> PMS-EDEN requires that reactive <strong>Χ</strong> be recognized as a different structural
+				event from reflective <strong>Χ</strong>, even though both involve attenuation.
+			</p>
+
+			<h3>7.7 Integration quality — <strong>Σ</strong></h3>
+			<ul>
+				<li><strong>Must integrate:</strong>
+					<ul>
+						<li>altered exposure gradients</li>
+						<li>the cost of visibility</li>
+						<li>the persistence of shielding routines</li>
+						<li>future reopening of interfaces</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Σ</strong> is absent in the immediate fig-leaf phase. Drift begins when later
+				coherence claims substitute for actual reopening of integration.
+			</p>
+
+			<h3>7.8 Self-binding test — <strong>Ψ</strong></h3>
+			<p><strong>Decisive question:</strong> What does the scene later bind itself to?</p>
+			<ul>
+				<li><strong>Valid form:</strong> Shielding remains reversible, non-dominating, and open to later
+					integration once exposure has stabilized enough.</li>
+				<li><strong>Invalid form:</strong> Shielding becomes identity, standing strategy, or durable opacity, and
+					the field binds itself to concealment dominance rather than restraint.</li>
+			</ul>
+
+			<hr />
+
+			<h2>8) Validity Gate Reminder</h2>
+
+			<h3>8.1 PMS entry condition</h3>
+			<ul>
+				<li><strong>Χ (Distance):</strong> Distance must remain structurally reversible. Reactive shielding may occur,
+					but it must not harden into permanent opacity or become immune to later
+					re-opening.</li>
+				<li><strong>Reversibility:</strong> The scene must remain revisable. Shielding cannot be treated as a final
+					truth about the role-position or as permanent interpretive closure.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Exposure gradients must not be converted into domination, degradation, or
+					coercive use of vulnerability.</li>
+			</ul>
+
+			<h3>8.2 Case-specific validity test</h3>
+			<p><strong>Valid if:</strong></p>
+			<ul>
+				<li>Fig-leaf dynamics are mapped as exposure management rather than as proof of shame, guilt, or inner confession.</li>
+				<li>Reactive <strong>Χ</strong> is distinguished from reflective <strong>Χ</strong> and kept reversible.</li>
+				<li><strong>Σ</strong> remains a possible later development even if absent in the immediate phase.</li>
+				<li>Shielding is not redescribed as moral virtue or vice by default.</li>
+			</ul>
+
+			<p><strong>Formally invalid if:</strong></p>
+			<ul>
+				<li>The move is psychologized into inner affect claims without structural basis.</li>
+				<li>Exposure asymmetry is leveraged to justify chronic opacity or control.</li>
+				<li>Shielding is converted into standing manipulation while still being represented as neutral protection.</li>
+				<li>PMS language is used to degrade or fix exposed roles.</li>
+			</ul>
+
+			<hr />
+
+			<h2>9) Readable Structural Closure</h2>
+			<p>
+				This case shows that the fig-leaf move in PMS-EDEN is not a psychology of
+				shame but an operator-level response to newly legible exposure. Once <strong>Ω</strong>
+				becomes visible and <strong>Θ</strong> has already altered the scene, shielding is often the
+				first viable move because reducing visibility is cheaper than restoring
+				integration. What stabilizes first is not insight, but protective
+				inhibition and the early formation of repeatable scripts. PMS-EDEN
+				therefore reads fig-leaf dynamics as legibility management under asymmetry,
+				not as interior confession or reflective achievement.
+			</p>
+
+			<hr />
+
+			<h2>10) Extended Structural Closure</h2>
+
+			<h3>10.1</h3>
+			<p>
+				The field has already changed. The breach is not hypothetical and not
+				pending; it has already altered the scene irreversibly. What now becomes
+				newly salient is not insight but exposure. Certain role-positions stand in
+				a more visible and vulnerable relation to consequence, while others retain
+				more capacity to observe, interpret, or leverage that visibility.
+			</p>
+
+			<h3>10.2</h3>
+			<p>
+				The first important discipline is therefore anti-psychological: nothing in
+				the move requires appeal to shame, guilt, confession, or moral awakening.
+				The fig-leaf phase can be fully described at the level of operator
+				reconfiguration. The decisive shift is from coordination-first handling to
+				exposure management under altered consequence gradients.
+			</p>
+
+			<h3>10.3</h3>
+			<p>
+				The relevant difference <strong>Δ</strong> is not a newly won epistemic distinction but a
+				practically salient one between exposed and shielded, visible and
+				protected. This is a consequence-surface change. It makes certain forms of
+				visibility newly costly without generating new theoretical insight.
+			</p>
+
+			<h3>10.4</h3>
+			<p>
+				Directedness <strong>∇</strong> therefore appears as immediate exposure reduction rather
+				than as explanation, articulation, or repair. The field does not first ask
+				how to understand itself. It first moves to reduce vulnerability. This is
+				why covering, shielding, concealment, and boundary-setting become the
+				initial operative realizations.
+			</p>
+
+			<h3>10.5</h3>
+			<p>
+				The frame <strong>□</strong> correspondingly shifts. What had been a praxis-coordination
+				scene becomes, at least locally, a vulnerability and exposure-management
+				scene. The urgent relevance grammar is no longer “How do we coordinate?”
+				but “How do we reduce dangerous visibility?” This frame mutation is the
+				core structural event of the fig-leaf phase.
+			</p>
+
+			<h3>10.6</h3>
+			<p>
+				The non-event <strong>Λ</strong> remains decisive throughout. What is missing is immediate
+				reintegration, a clean reset, and a frame in which exposure no longer
+				matters. Shielding responds to precisely this absence. It is not primarily
+				a signal about inner feeling; it is a structural response to the continued
+				absence of safe reintegration.
+			</p>
+
+			<h3>10.7</h3>
+			<p>
+				Asymmetry <strong>Ω</strong> becomes legible as differential exposure, differential
+				vulnerability, and unequal leverage. Some positions can better survive
+				exposure; others must manage it immediately. This asymmetry is positional,
+				not moral. It concerns who bears the visibility cost, not who deserves
+				judgment.
+			</p>
+
+			<h3>10.8</h3>
+			<p>
+				Temporality <strong>Θ</strong> is equally important. The scene is already post-breach, but
+				long-run scripts are not yet fully consolidated. The order matters:
+				shielding begins before explanation. This temporal sequence is exactly what
+				blocks psychologizing the move as reflective achievement. The move is first
+				protective, only later narrativized.
+			</p>
+
+			<h3>10.9</h3>
+			<p>
+				Distance <strong>Χ</strong> must therefore be read carefully. Here it appears first as
+				reactive inhibition: exposure attenuation, concealment, and boundary-setting
+				that reduce immediate vulnerability. This is not the same as reflective
+				meta-position. PMS-EDEN insists on distinguishing reactive <strong>Χ</strong> from
+				reflective <strong>Χ</strong>, even though both attenuate immediate continuation.
+			</p>
+
+			<h3>10.10</h3>
+			<p>
+				Because shielding locally works, repetition begins. This is where <strong>Α</strong> enters.
+				No elaborate intention is needed. No rich narrative content is needed.
+				Local cost reduction is enough. Protective moves repeat because they
+				succeed at lowering immediate visibility-cost, and repetition begins to
+				stabilize into routines, expectations, and scripts.
+			</p>
+
+			<h3>10.11</h3>
+			<p>
+				Integration <strong>Σ</strong> is not yet carrying the scene. Shielding takes precedence
+				over interface repair, synthesis, or consolidated coordination. This is one
+				of the key clarifications of the example: fig-leaf dynamics are not
+				integration. They are early-stage legibility management under conditions in
+				which integration is not yet structurally available as the dominant
+				operator.
+			</p>
+
+			<h3>10.12</h3>
+			<p>
+				Only later does <strong>Φ</strong> become centrally relevant. Later discourse may redescribe
+				the shielding phase as shame, awakening, insight, prudence, or moral
+				realization. Such redescriptions are downstream overlays. They may have
+				their own later function, but they should not be projected backward into
+				the original move. The original move was exposure control.
+			</p>
+
+			<h3>10.13</h3>
+			<p>
+				This is why PMS-EDEN resists shame-theoretical or interiority-based
+				readings. The fig-leaf phase is fully explainable as post-breach
+				operator reconfiguration: consequence legibility rises under <strong>Ω/Θ/Λ</strong>, the
+				frame shifts toward vulnerability management, reactive <strong>Χ</strong> appears as
+				shielding, and repeated local success begins to stabilize as <strong>Α</strong>.
+			</p>
+
+			<h3>10.14</h3>
+			<p>
+				Dignity-in-Practice <strong>D</strong> becomes decisive later in whether shielding remains
+				reversible and protective or hardens into coercive opacity, standing
+				control, or managed visibility as leverage. The difference is not whether
+				shielding occurred, but what the field later binds itself to through
+				<strong>Ψ</strong>: reversible restraint, or durable concealment dominance.
+			</p>
+
+			<h3>10.15</h3>
+			<p>
+				The structural conclusion is therefore clear and limited. The fig-leaf move
+				is not confession, not insight, not moral awakening, and not proof of
+				inner affect. It is a frame-compatible shielding operation that manages
+				exposure under newly legible asymmetry. PMS-EDEN reads it as legibility
+				management under altered consequence gradients, with later script formation
+				arising from repeatability rather than from psychology.
+			</p>
+
+			<hr />
+
+			<h2>11) Assistant Test Vectors</h2>
+			<ul>
+				<li>“Map the fig-leaf move without using shame or guilt psychology.”</li>
+				<li>“Explain why reactive Χ here is protection rather than reflection.”</li>
+				<li>“Show how exposure asymmetry leads to shielding before Σ is available.”</li>
+				<li>“Where does Α begin forming in this immediate post-breach phase?”</li>
+				<li>“Why does PMS-EDEN treat this as legibility management rather than moral awakening?”</li>
+			</ul>
+
+			<hr />
+
+			<h2>12) Conclusion</h2>
+			<p>
+				<strong>Takeaway:</strong> This case is essential for keeping PMS-EDEN strictly structural. The
+				fig-leaf phase is not evidence of inner shame or moral realization; it is
+				an operator-level response to newly costly visibility under <strong>Ω</strong>, <strong>Θ</strong>, and
+				<strong>Λ</strong>, with shielding emerging before integration and stabilizing through
+				repeatability as <strong>Α</strong>.
+			</p>
+			<p>
+				<strong>Publication note:</strong> This example remains a scene-bound structural reconstruction.
+				It does not authorize psychological diagnosis, motive attribution, moral
+				affect claims, or fixed person-level interpretations. Any application
+				remains valid only under <strong>Χ + reversibility + D</strong>.
+			</p>
+
+		</section>
+	</body>
+</html>

@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-EDEN — Example 5: Who Goes First as Trajectory Origin, Not Moral Rank</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–EDEN</strong></h1>
+			<h2><em>Example 5: “Who Goes First?” as Trajectory Origin, Not Moral Rank</em></h2>
+			<div class="meta">
+				<strong>Example ID:</strong> <code>PMS-EDEN_EX05</code> &middot;
+				<strong>Example Version:</strong> <code>1.1</code> &middot;
+				<strong>Schema Version:</strong> <code>PMS-EDEN_1.1</code><br />
+				<strong>Status:</strong> draft &middot;
+				<strong>Language:</strong> EN &middot;
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-EDEN_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Example Identity</h2>
+			<p>
+				<strong>Example label:</strong> <em>Who Goes First? as Trajectory Origin, Not Moral Rank</em>
+			</p>
+			<p>
+				<strong>Aligned with:</strong> <code>PMS-EDEN.yaml</code> (<code>PMS-EDEN_1.1</code>) and
+				<code>PMS.yaml</code> (<code>PMS_1.3</code>)
+			</p>
+			<hr />
+
+			<h2>1) Minimal Vignette</h2>
+
+			<h3>1.1 Title</h3>
+			<p>
+				Priority as asymmetry-origin under irreversibility.
+			</p>
+
+			<h3>1.2 Scene boundaries</h3>
+			<ul>
+				<li><strong>Domain:</strong> sequence-opening praxis, first-move asymmetry, trajectory binding, and post-origin handling</li>
+				<li><strong>Scope:</strong> structural analysis of order, origin gradients, asymmetry, irreversibility, and later symmetry pressure</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>person-level judgement</li>
+						<li>guilt attribution</li>
+						<li>intent inference</li>
+						<li>moral ranking</li>
+						<li>clinical or psychological interpretation</li>
+						<li>action prescription</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>1.3 Short scene</h3>
+			<p>
+				A praxis scene reaches a point where indeterminacy cannot continue without a
+				first act, commitment, or decision. One role-position moves first, and the
+				other responds only after the scene has already changed. This first move
+				does not create moral superiority or wrongdoing, but it does create a
+				before/after structure that redistributes burdens, options, and exposure.
+				Later discourse often attempts to neutralize this origin asymmetry through
+				fairness rhetoric, repair narratives, or performed symmetry. PMS-EDEN
+				treats the decisive issue as temporal and structural: who goes first marks
+				the origin of the trajectory.
+			</p>
+
+			<h3>1.4 Structural focus</h3>
+			<p>
+				The case examines how sequence-origin generates <strong>Ω</strong> through <strong>Θ</strong> without
+				implying blame. It tracks how first-move irreversibility alters later
+				option sets, how <strong>Φ</strong> attempts to soften or erase origin effects, and how <strong>Α</strong>
+				can stabilize pseudo-symmetry pressure when origin asymmetry is made
+				rhetorically unspeakable.
+			</p>
+
+			<h3>1.5 Scenic elements</h3>
+			<ul>
+				<li><strong>Actors:</strong>
+					<ul>
+						<li>first-moving role-position</li>
+						<li>responding role-position</li>
+						<li>shared praxis scene with pending interface</li>
+					</ul>
+				</li>
+				<li><strong>Salient objects:</strong>
+					<ul>
+						<li>first act or commitment</li>
+						<li>shifted option set</li>
+						<li>trajectory origin</li>
+						<li>repair narratives</li>
+						<li>symmetry claims</li>
+						<li>future coordination burdens</li>
+					</ul>
+				</li>
+				<li><strong>Trigger event:</strong>
+					<ul>
+						<li><strong>Label:</strong> sequence initiation</li>
+						<li><strong>Description:</strong> One role-position resolves indeterminacy by acting first, thereby
+							changing the scene for the responding role-position in a way that
+							cannot be replayed without consequence.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>2) Why This Is Repo-Useful</h2>
+
+			<h3>2.1 Structural focus</h3>
+			<p>
+				This example is important for PMS-EDEN because it prevents a recurring
+				category error: turning sequence-origin into guilt, superiority, or moral
+				rank. The YAML makes explicit that temporal priority creates structural
+				asymmetry even where later rhetoric insists on equality.
+			</p>
+
+			<h3>2.2 Repository value</h3>
+			<ul>
+				<li>Clarifies that origin asymmetry is generated by sequence under <strong>Θ</strong>, not by personal worth, virtue, or defect.</li>
+				<li>Distinguishes responsibility as temporal-relational positioning from blame as moral framing.</li>
+				<li>Shows how <strong>Φ</strong> can later soften, narrativize, or suppress origin effects without undoing them.</li>
+				<li>Makes visible how pseudo-symmetry can begin from denial of trajectory origin, not only from static comparison.</li>
+				<li>Protects PMS-EDEN from being misused as a guilt grammar when analyzing first-move asymmetries.</li>
+			</ul>
+
+			<h3>2.3 Central repo question</h3>
+			<p>
+				How can a first move be structurally decisive without becoming a verdict
+				about character, guilt, or authority?
+			</p>
+
+			<h3>2.4 Lens relevance</h3>
+			<ul>
+				<li><strong>Origin asymmetry:</strong> The case directly supports PMS-EDEN's weighting and reciprocity logic by
+					showing how sequence creates durable asymmetry before any moral
+					interpretation is added.</li>
+				<li><strong>Phi pressure:</strong> It illustrates the specific role of <strong>Φ</strong> in producing comfort-oriented repair
+					narratives that can suppress origin asymmetry without structurally
+					neutralizing it.</li>
+				<li><strong>Chi requirement:</strong> It highlights why <strong>Χ</strong> is indispensable: origin must remain legible without
+					being weaponized as accusation or purity test.</li>
+			</ul>
+
+			<hr />
+
+			<h2>3) Drift Position in Master Trace</h2>
+			<p>
+				<strong>Stage label:</strong> Origin-weighting and asymmetry-legibility before full pseudo-symmetry stabilization
+			</p>
+			<p>
+				<strong>Master trace handle:</strong><br />
+				<code>EDEN -&gt; THRESHOLD -&gt; NRK -&gt; □comparison -&gt; PS -&gt; residual_stabilization(Λ/Φ/Α) -&gt; (DEVALUATION|HUMILIATION) -&gt; RECIPROCITY_LOSS</code>
+			</p>
+			<p>
+				<strong>Local position note:</strong> This case is especially relevant to the weighting logic in PMS-EDEN §8 and
+				to the later pseudo-symmetry regime in §9: denial of origin asymmetry is a
+				key precursor to performed symmetry and dissatisfaction under real <strong>Ω/Θ</strong>.
+			</p>
+
+			<hr />
+
+			<h2>4) Operator Mapping</h2>
+
+			<h3>4.1 Reduced signature</h3>
+			<p><code>Δ, ∇, □, Ω, Θ, Φ, Α, Χ, Ψ, Σ</code></p>
+			<p>
+				The example centers on sequence-opening difference, first-move
+				directional pressure, asymmetry generated by temporal origin, later
+				narrative rebalancing, and the risk of pseudo-symmetry stabilization.
+			</p>
+
+			<h3>4.2 Structural analysis by operator</h3>
+			<ul>
+				<li><strong>Δ (Difference):</strong>
+					<ul>
+						<li>The decisive difference is between before and after the first move.</li>
+						<li>The decisive difference is between origin and response once the sequence has started.</li>
+					</ul>
+				</li>
+				<li><strong>∇ (Impulse):</strong>
+					<ul>
+						<li>Directed pressure arises from the need to resolve indeterminacy through action, commitment, or decision.</li>
+					</ul>
+				</li>
+				<li><strong>□ (Frame):</strong>
+					<ul>
+						<li>The initial frame is praxis-coordination around a pending interface.</li>
+						<li>It can later drift toward fairness accounting, moralization, or comparison once origin asymmetry becomes uncomfortable.</li>
+					</ul>
+				</li>
+				<li><strong>Λ (Non-Event):</strong>
+					<ul>
+						<li>The missing conditions are simultaneous action.</li>
+						<li>The missing conditions are cost-free reset after sequence initiation.</li>
+						<li>The missing conditions are a truly neutral ordering without consequence effects.</li>
+					</ul>
+				</li>
+				<li><strong>Α (Attractor):</strong>
+					<ul>
+						<li>Repeated narrative smoothing, rotating justifications, and symmetry performance can stabilize into scripts that obscure origin gradients.</li>
+					</ul>
+				</li>
+				<li><strong>Ω (Asymmetry):</strong>
+					<ul>
+						<li>Asymmetry emerges from sequence itself.</li>
+						<li>One role-position defines the origin point while the other acts under altered conditions.</li>
+					</ul>
+				</li>
+				<li><strong>Θ (Temporality):</strong>
+					<ul>
+						<li>Temporality binds the scene irreversibly.</li>
+						<li>Once the first move occurs, the trajectory cannot be structurally reset to pre-origin indeterminacy.</li>
+					</ul>
+				</li>
+				<li><strong>Φ (Recontextualization):</strong>
+					<ul>
+						<li>Recontextualization enters after the fact through statements such as “we were equally involved” or “it no longer matters who started,” attempting to rebalance meaning.</li>
+					</ul>
+				</li>
+				<li><strong>Χ (Distance):</strong>
+					<ul>
+						<li>Distance is needed to keep origin legible without turning sequence into accusation, scorekeeping, or moral capture.</li>
+					</ul>
+				</li>
+				<li><strong>Σ (Integration):</strong>
+					<ul>
+						<li>Integration would require future coordination that acknowledges origin asymmetry rather than erasing it rhetorically.</li>
+					</ul>
+				</li>
+				<li><strong>Ψ (Self-Binding):</strong>
+					<ul>
+						<li>Self-binding becomes relevant in whether future commitments orient toward coordination or toward settling scores and enforcing moral rank.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>4.3 Derived-axes projection</h3>
+			<ul>
+				<li><strong>A (Awareness):</strong> Awareness increases insofar as the sequence-origin becomes legible as a structural difference with downstream effects.</li>
+				<li><strong>C (Coherence):</strong> Coherence is often narratively restored by <strong>Φ</strong>, but this coherence may be only rhetorical if origin asymmetry remains structurally active.</li>
+				<li><strong>R (Responsibility):</strong> Responsibility here means origin-positioning under <strong>Θ</strong> and <strong>Ω</strong>, not guilt. It tracks who moved first and how that restructured later possibilities.</li>
+				<li><strong>E (Action / Enactment):</strong> Action pressure is highest at the indeterminacy threshold where one move must begin the sequence and thereby bind the scene.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Dignity-in-Practice is tested in whether origin asymmetry is handled with restraint or weaponized into verdict, humiliation, or blame.</li>
+			</ul>
+
+			<h3>4.4 Structural mechanism summary</h3>
+			<ul>
+				<li>Indeterminacy cannot continue indefinitely.</li>
+				<li>One role-position acts first.</li>
+				<li><strong>Ω</strong> emerges as origin gradient.</li>
+				<li><strong>Θ</strong> binds the new trajectory irreversibly.</li>
+				<li>The responding role-position faces an altered option set.</li>
+				<li><strong>Φ</strong> produces repair or equality narratives.</li>
+				<li><strong>Α</strong> can stabilize pseudo-symmetry pressure.</li>
+				<li><strong>Χ</strong> is required to prevent origin from becoming verdict.</li>
+			</ul>
+			<p>
+				<strong>Concise formula:</strong><br />
+				<code>indeterminacy -&gt; first move -&gt; Ω(origin gradient) -&gt; Θ(binding) -&gt; Φ symmetry repair -&gt; Α pseudo-symmetry pressure -&gt; Χ needed against moralization</code>
+			</p>
+
+			<hr />
+
+			<h2>5) Cost Layout</h2>
+			<p>
+				<strong>Note:</strong> Structural cost geometry only; non-moral; scene-bound.
+			</p>
+
+			<h3>5.1 Consequence interfaces</h3>
+			<ul>
+				<li><strong>Immediate costs:</strong>
+					<ul>
+						<li>loss of pre-sequence symmetry</li>
+						<li>shifted response space for the second role-position</li>
+						<li>need to reinterpret the scene from a new origin point</li>
+						<li>burden of adjustment after trajectory initiation</li>
+					</ul>
+				</li>
+				<li><strong>Deferred costs:</strong>
+					<ul>
+						<li>persistent origin accountability across <strong>Θ</strong></li>
+						<li>reactive positioning costs for the responding role-position</li>
+						<li>narrative labor to neutralize or suppress origin asymmetry</li>
+						<li>future coordination costs if origin remains morally overcoded or rhetorically denied</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>5.2 Asymmetry readout</h3>
+			<ul>
+				<li><strong>Ω capacity gradient:</strong> The first-moving role-position has capacity to define the trajectory
+					origin, while the second acts only under already transformed conditions.</li>
+				<li><strong>Ω exposure gradient:</strong> The responding role-position bears the exposure of reacting within a field
+					that is no longer neutral or pre-open.</li>
+				<li><strong>Ω obligation gradient:</strong> The first move creates a differentiated burden of explanation,
+					adjustment, or coordination that did not exist before the act.</li>
+				<li><strong>Ω leverage gradient:</strong> Origin status can become leverage if later frames either deny it or
+					convert it into moral accusation rather than structural legibility.</li>
+			</ul>
+
+			<h3>5.3 System effect</h3>
+			<p>
+				Once sequence is set, the system must either coordinate under origin
+				asymmetry or spend ongoing effort trying to rhetorically neutralize it.
+				The latter often becomes cheaper locally, which is why <strong>Φ/Α</strong> pressures toward
+				pseudo-symmetry can intensify over time.
+			</p>
+
+			<hr />
+
+			<h2>6) Pattern Markers</h2>
+
+			<h3>6.1 Primary markers</h3>
+			<ul>
+				<li><strong>P-Σ-SIM — Σ-Simulation instead of Integration</strong><br />
+					<strong>Operator links:</strong> <code>Σ, Φ, Θ</code><br />
+					The scene speaks as if symmetry had been restored, but no actual
+					coordination occurs around the origin gradient and its consequences.
+				</li>
+				<li><strong>P-□-MOR — □ → Moral Frame Capture</strong><br />
+					<strong>Operator links:</strong> <code>□, Ω, Χ</code><br />
+					Sequence-origin is translated into blame, verdict, or purity talk,
+					replacing temporal-relational analysis with moral capture.
+				</li>
+				<li><strong>P-Ψ-EXT — Ψ → Externalization</strong><br />
+					<strong>Operator links:</strong> <code>Ψ, Χ, Ω</code><br />
+					Future obligations become score-settling demands imposed on the other
+					rather than self-binding commitments to coordinated handling.
+				</li>
+			</ul>
+
+			<h3>6.2 Additional red flags</h3>
+			<ul>
+				<li>“It no longer matters who started.”</li>
+				<li>“We were equally involved from the beginning.”</li>
+				<li>“Origin means fault.”</li>
+				<li>“Sequence is used as accusation.”</li>
+				<li>“Fairness rhetoric erases changed response conditions.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>7) Frame Validity and Drift Signals</h2>
+
+			<h3>7.1 Operative frame — <strong>□</strong></h3>
+			<ul>
+				<li><strong>In scope:</strong>
+					<ul>
+						<li>pending interface decisions</li>
+						<li>first move and response structure</li>
+						<li>sequence-origin effects</li>
+						<li>later fairness or repair narratives</li>
+						<li>future coordination under altered conditions</li>
+					</ul>
+				</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>guilt assignment</li>
+						<li>virtue ranking</li>
+						<li>intent psychologizing</li>
+						<li>person-level superiority claims</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The frame drifts when sequence-origin is no longer handled as structural
+				asymmetry but as moral standing, fairness test, or adjudication surface.
+			</p>
+
+			<h3>7.2 Non-event integrity check — <strong>Λ</strong></h3>
+			<ul>
+				<li><strong>Decisive absences:</strong>
+					<ul>
+						<li>no simultaneous move</li>
+						<li>no cost-free reset</li>
+						<li>no neutral ordering</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The missing neutral alternatives are load-bearing: later rhetoric often
+				behaves as if the scene could be re-equalized structurally, when only
+				interpretation can be reworked.
+			</p>
+
+			<h3>7.3 Asymmetry audit — <strong>Ω</strong></h3>
+			<ul>
+				<li><strong>Exposure bearers:</strong>
+					<ul>
+						<li>the role-position forced to respond under altered conditions</li>
+						<li>the role-position bearing downstream adjustment burden</li>
+						<li>the role-position whose options narrowed after the first move</li>
+					</ul>
+				</li>
+				<li><strong>Capacity holders:</strong>
+					<ul>
+						<li>the role-position able to initiate sequence</li>
+						<li>the role-position defining origin point</li>
+						<li>the role-position whose action became reference for later interpretation</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Ω</strong> here is generated by origin position, not by worth or status. It is a
+				directional asymmetry of sequence and altered options.
+			</p>
+
+			<h3>7.4 Temporality and trajectory — <strong>Θ</strong></h3>
+			<ul>
+				<li><strong>Trajectory pattern:</strong>
+					<ul>
+						<li>indeterminacy</li>
+						<li>first move</li>
+						<li>response under changed conditions</li>
+						<li>origin accountability persists</li>
+						<li>repair narrative pressure rises</li>
+						<li>symmetry performance may stabilize</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The impossibility of replay is decisive. Once sequence begins, future
+				handling occurs inside the new trajectory rather than outside it.
+			</p>
+
+			<h3>7.5 Recontextualization dynamics — <strong>Φ</strong></h3>
+			<p>
+				<strong>Key shift:</strong> After sequence-origin is established, discourse often attempts to
+				neutralize asymmetry through formulations of equality, mutuality, or
+				irrelevance of who began.
+			</p>
+			<p>
+				<strong>Drift signal:</strong> <strong>Φ</strong> becomes distorting when it no longer reinterprets the trajectory but
+				instead pretends origin effects were never structurally consequential.
+			</p>
+
+			<h3>7.6 Distance enforcement — <strong>Χ</strong></h3>
+			<p><strong>Core test:</strong> Can origin remain legible without becoming accusation?</p>
+			<ul>
+				<li>sequence is translated directly into fault</li>
+				<li>origin becomes scorekeeping</li>
+				<li>purity tests appear</li>
+				<li>distance is denounced as evasion of responsibility</li>
+			</ul>
+			<p>
+				<strong>PMS relevance:</strong> PMS requires that <strong>Χ</strong> prevent temporal fact from hardening into moral
+				verdict while preserving origin visibility.
+			</p>
+
+			<h3>7.7 Integration quality — <strong>Σ</strong></h3>
+			<ul>
+				<li><strong>Must integrate:</strong>
+					<ul>
+						<li>origin asymmetry</li>
+						<li>altered response space</li>
+						<li>future commitments</li>
+						<li>limits of rhetorical equality</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Σ</strong> fails where the scene performs symmetry linguistically but does not
+				coordinate around the structurally changed trajectory.
+			</p>
+
+			<h3>7.8 Self-binding test — <strong>Ψ</strong></h3>
+			<p><strong>Decisive question:</strong> What do future commitments bind toward after the first move?</p>
+			<ul>
+				<li><strong>Valid form:</strong> Future binding commits to coordination that acknowledges sequence-origin
+					without moral capture or denial.</li>
+				<li><strong>Invalid form:</strong> Future binding becomes score-settling, accusation, or compelled
+					confession grounded in origin asymmetry.</li>
+			</ul>
+
+			<hr />
+
+			<h2>8) Validity Gate Reminder</h2>
+
+			<h3>8.1 PMS entry condition</h3>
+			<ul>
+				<li><strong>Χ (Distance):</strong> Distance must keep origin asymmetry legible without permitting blame
+					inflation, scorekeeping, or moral verdict capture.</li>
+				<li><strong>Reversibility:</strong> The scene itself is irreversible under <strong>Θ</strong>, but future handling must remain
+					revisable, non-final, and open to renewed coordination.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Unequal exposure created by sequence must not be used to degrade or rank
+					either role-position.</li>
+			</ul>
+
+			<h3>8.2 Case-specific validity test</h3>
+			<p><strong>Valid if:</strong></p>
+			<ul>
+				<li>Origin asymmetry is named as temporal-relational positioning rather than guilt.</li>
+				<li>Irreversibility is acknowledged without converting it into moral authority.</li>
+				<li><strong>Φ</strong> is allowed to reinterpret meaning, but not to erase the structural fact of sequence-origin.</li>
+				<li>Future <strong>Ψ</strong> binds toward coordination rather than accusation.</li>
+			</ul>
+
+			<p><strong>Formally invalid if:</strong></p>
+			<ul>
+				<li>First-move priority is treated as proof of superiority, vice, or moral debt.</li>
+				<li>The origin gradient is denied in the name of rhetorical equality while still operative in consequences.</li>
+				<li><strong>Θ</strong>-bound irreversibility is used to justify coercion or irreversible labeling.</li>
+				<li>PMS terms are used to moralize sequence rather than to keep it structurally legible.</li>
+			</ul>
+
+			<hr />
+
+			<h2>9) Readable Structural Closure</h2>
+			<p>
+				This case shows that “who goes first” matters in PMS-EDEN because sequence
+				creates trajectory origin, not because it proves guilt or rank. The first
+				move introduces <strong>Ω</strong> through <strong>Θ</strong> by changing the option space for whoever
+				responds next. Later equality or repair rhetoric may soften the scene, but
+				it cannot undo origin asymmetry once the sequence is bound. PMS-EDEN
+				therefore treats priority as structural positioning under irreversibility,
+				requiring <strong>Χ</strong> precisely so that origin does not harden into verdict.
+			</p>
+
+			<hr />
+
+			<h2>10) Extended Structural Closure</h2>
+
+			<h3>10.1</h3>
+			<p>
+				The structural point of departure is simple: indeterminacy cannot continue
+				indefinitely. At some point a praxis scene with a pending interface must be
+				opened by an act, commitment, or decision. The first move resolves
+				indeterminacy, but it also changes the scene for whoever comes next.
+			</p>
+
+			<h3>10.2</h3>
+			<p>
+				This is why “who goes first” matters in PMS-EDEN. It does not matter
+				because the first mover is automatically better, worse, guiltier, or more
+				virtuous. It matters because the first move establishes origin. Once origin
+				is established, later positions are no longer operating inside the same
+				open field.
+			</p>
+
+			<h3>10.3</h3>
+			<p>
+				The decisive difference <strong>Δ</strong> is therefore between before and after the
+				first move, and between origin and response once sequence has begun. This is
+				not a moral distinction. It is a structural difference in scene position.
+			</p>
+
+			<h3>10.4</h3>
+			<p>
+				The pressure <strong>∇</strong> arises from the need to resolve indeterminacy through
+				action. A move has to be made. The first mover does not thereby gain moral
+				authority, but the move does become trajectory-defining because it binds
+				what follows.
+			</p>
+
+			<h3>10.5</h3>
+			<p>
+				As soon as this happens, <strong>Ω</strong> emerges as origin gradient. One role-position
+				defines the point from which later interpretation, response, and
+				coordination must proceed. The second role-position is no longer choosing
+				from the same open structure. It is already responding inside an altered
+				field.
+			</p>
+
+			<h3>10.6</h3>
+			<p>
+				This origin gradient is generated by <strong>Θ</strong>. Temporality binds the scene
+				irreversibly. The first move cannot be replayed as though it had not
+				occurred. The scene can be reinterpreted, repaired, renegotiated, or
+				reframed, but it cannot be structurally restored to pre-origin symmetry.
+			</p>
+
+			<h3>10.7</h3>
+			<p>
+				The non-event <strong>Λ</strong> remains important here because what is missing is
+				precisely what later comfort-talk often pretends was available: simultaneous
+				action, cost-free reset, and neutral ordering without consequence effects.
+				Those conditions are absent. Their absence is load-bearing for correct
+				structural reading.
+			</p>
+
+			<h3>10.8</h3>
+			<p>
+				The initial frame <strong>□</strong> is praxis-coordination around a pending interface.
+				But after origin asymmetry becomes uncomfortable, the frame can drift. The
+				scene may be redescribed as a fairness problem, a blame problem, or a
+				moral-adjudication problem. This is where PMS-EDEN insists on restraint:
+				sequence-origin must not be silently converted into moral standing.
+			</p>
+
+			<h3>10.9</h3>
+			<p>
+				Responsibility becomes legible here as temporal-relational positioning, not
+				as guilt. To say that one role-position went first is to identify origin
+				position under <strong>Θ</strong> and <strong>Ω</strong>, not to declare vice, innocence, or desert.
+				This distinction is one of the main reasons the example is repo-useful.
+			</p>
+
+			<h3>10.10</h3>
+			<p>
+				After the fact, <strong>Φ</strong> enters. Repair narratives, equality formulations, and
+				comfort-oriented reinterpretations begin to circulate: “we were equally
+				involved,” “it no longer matters who started,” “we should treat this
+				symmetrically now.” These moves may reduce tension, but they do not undo
+				the structural asymmetry created by origin.
+			</p>
+
+			<h3>10.11</h3>
+			<p>
+				That is the exact pressure point at which pseudo-symmetry can begin. It
+				does not always begin from static comparison alone. It can also begin from
+				denial of trajectory origin. Once the field starts performing symmetry
+				rather than coordinating around changed conditions, <strong>Α</strong> can stabilize
+				narrative smoothing, rotating justification, and rhetorical parity claims.
+			</p>
+
+			<h3>10.12</h3>
+			<p>
+				The system then pays ongoing cost for this neutralization work. It must
+				spend narrative labor to soften or suppress origin asymmetry, even though
+				the asymmetry remains operative in burdens, response conditions, and future
+				coordination difficulty. This is why local comfort can become structurally
+				more attractive than explicit origin-coordination.
+			</p>
+
+			<h3>10.13</h3>
+			<p>
+				Distance <strong>Χ</strong> is therefore indispensable. It keeps origin legible without
+				allowing origin to harden into accusation, scorekeeping, purity test, or
+				moral capture. Without <strong>Χ</strong>, temporal fact is translated directly into fault.
+				With <strong>Χ</strong>, the scene can preserve the structural visibility of origin while
+				refusing the slide into verdict.
+			</p>
+
+			<h3>10.14</h3>
+			<p>
+				Integration <strong>Σ</strong> would require future coordination that acknowledges origin
+				asymmetry rather than erasing it rhetorically. The key question is not
+				whether later parties can talk symmetrically, but whether they can
+				coordinate under the structurally changed trajectory. Where the scene
+				performs symmetry linguistically but avoids trajectory-aware coordination,
+				<strong>Σ</strong> remains simulated rather than enacted.
+			</p>
+
+			<h3>10.15</h3>
+			<p>
+				Self-binding <strong>Ψ</strong> then becomes decisive in what future commitments orient
+				toward. A PMS-valid handling binds toward coordination under acknowledged
+				origin asymmetry. An invalid handling binds toward accusation, confession
+				demand, score-settling, or retroactive moral debt grounded in the first move.
+			</p>
+
+			<h3>10.16</h3>
+			<p>
+				Dignity-in-Practice <strong>D</strong> is tested precisely here. Origin asymmetry must not
+				be weaponized into humiliation, degradation, or role-ranking. Sequence may
+				be structurally decisive without licensing any collapse into moral
+				hierarchy.
+			</p>
+
+			<h3>10.17</h3>
+			<p>
+				The overall conclusion is therefore narrow and exact. “Who goes first”
+				matters because sequence creates trajectory origin under irreversibility.
+				It does not matter because firstness proves superiority, vice, or blame.
+				PMS-EDEN keeps this distinction firm so that temporal asymmetry remains
+				structurally visible without turning into a guilt grammar.
+			</p>
+
+			<hr />
+
+			<h2>11) Assistant Test Vectors</h2>
+			<ul>
+				<li>“Map how the first move creates Ω through Θ without implying guilt.”</li>
+				<li>“Explain why sequence-origin is structural asymmetry, not moral rank.”</li>
+				<li>“Show how Φ can soften origin asymmetry without undoing it.”</li>
+				<li>“Where does pseudo-symmetry begin when people say ‘it doesn't matter who started’?”</li>
+				<li>“Describe the role of Χ in keeping origin legible without turning it into verdict.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>12) Conclusion</h2>
+			<p>
+				<strong>Takeaway:</strong> This case shows why PMS-EDEN treats priority as structural origin
+				rather than moral rank. The first move creates <strong>Ω</strong> through <strong>Θ</strong> by binding a
+				trajectory that changes later option space, while later <strong>Φ</strong> and <strong>Α</strong> may
+				attempt to soften or rhetorically erase that fact. The correct discipline is
+				therefore not blame, but legibility under <strong>Χ</strong>.
+			</p>
+			<p>
+				<strong>Publication note:</strong> This example remains a scene-bound structural reconstruction.
+				It does not authorize guilt assignment, person-ranking, or coercive use of
+				origin asymmetry. Any application remains valid only under <strong>Χ + reversibility + D</strong>.
+			</p>
+
+		</section>
+	</body>
+</html>

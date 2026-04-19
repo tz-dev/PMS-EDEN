@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-EDEN — Example 1: Pseudo-Symmetry under Real Cost Asymmetry</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–EDEN</strong></h1>
+			<h2><em>Example 1: Pseudo-Symmetry under Real Cost Asymmetry</em></h2>
+			<div class="meta">
+				<strong>Example ID:</strong> <code>PMS-EDEN_EX01</code> &middot;
+				<strong>Example Version:</strong> <code>1.1</code> &middot;
+				<strong>Schema Version:</strong> <code>PMS-EDEN_1.1</code><br />
+				<strong>Status:</strong> draft &middot;
+				<strong>Language:</strong> EN &middot;
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-EDEN_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Example Identity</h2>
+			<p>
+				<strong>Example label:</strong> <em>Pseudo-Symmetry under Real Cost Asymmetry</em>
+			</p>
+			<p>
+				<strong>Aligned with:</strong> <code>PMS-EDEN.yaml</code> (<code>PMS-EDEN_1.1</code>) and
+				<code>PMS.yaml</code> (<code>PMS_1.3</code>)
+			</p>
+			<hr />
+
+			<h2>1) Minimal Vignette</h2>
+
+			<h3>1.1 Title</h3>
+			<p>
+				Equality rhetoric under irreversible cost gradients.
+			</p>
+
+			<h3>1.2 Scene boundaries</h3>
+			<ul>
+				<li><strong>Domain:</strong> extended coordination under unequal consequence exposure</li>
+				<li><strong>Scope:</strong> roles, asymmetries, cost distribution, frame drift, and reciprocity conditions</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>person-level judgement</li>
+						<li>motive attribution</li>
+						<li>virtue assessment</li>
+						<li>clinical or psychological interpretation</li>
+						<li>action prescription</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>1.3 Short scene</h3>
+			<p>
+				Two role-positions remain engaged across an extended coordination sequence.
+				One role-position stays close to decision endpoints and closure authority,
+				while the other remains close to continuity work, repair effort, and
+				fallout handling. As unequal consequence exposure becomes increasingly
+				legible, the scene does not reopen explicit coordination around real <strong>Ω</strong>.
+				Instead, the frame drifts from praxis-coordination toward comparison and
+				equivalence talk. Equality rhetoric rises, comparison cycles stabilize, and
+				durable interface change fails to form.
+			</p>
+
+			<h3>1.4 Structural focus</h3>
+			<p>
+				The case examines how pseudo-symmetry (<strong>PS</strong>) stabilizes when real asymmetry
+				in cost and exposure remains operative but becomes difficult or illegitimate
+				to name within the dominant frame. The key issue is not whether equality is
+				normatively desirable, but whether equivalence-talk substitutes for
+				coordination under real <strong>Ω</strong> across <strong>Θ</strong>.
+			</p>
+
+			<h3>1.5 Scenic elements</h3>
+			<ul>
+				<li><strong>Actors:</strong>
+					<ul>
+						<li>role-position near endpoint decisions and closure authority</li>
+						<li>role-position near continuity work and fallout handling</li>
+						<li>coordination interface or shared task environment</li>
+					</ul>
+				</li>
+				<li><strong>Salient objects:</strong>
+					<ul>
+						<li>decision endpoints</li>
+						<li>repair labor</li>
+						<li>continuity obligations</li>
+						<li>justification cycles</li>
+						<li>fairness/equality claims</li>
+						<li>unreopened coordination interfaces</li>
+					</ul>
+				</li>
+				<li><strong>Trigger event:</strong>
+					<ul>
+						<li><strong>Label:</strong> cost asymmetry becomes legible</li>
+						<li><strong>Description:</strong> Unequal exposure to durable consequences becomes visible, but instead
+							of being coordinated explicitly, it is reprocessed through comparison,
+							equivalence, and fairness rhetoric.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>2) Why This Is Repo-Useful</h2>
+
+			<h3>2.1 Structural focus</h3>
+			<p>
+				This example shows one of the clearest PMS-EDEN use-cases: real <strong>Ω</strong> remains
+				active in consequences while the dominant frame drifts toward rhetorical
+				parity. It makes visible how <strong>PS</strong> can function as a stabilization regime
+				rather than as reciprocity.
+			</p>
+
+			<h3>2.2 Repository value</h3>
+			<ul>
+				<li>Demonstrates the transition from <strong>□praxis</strong> to <strong>□comparison</strong> under active <strong>Ω</strong>.</li>
+				<li>Shows how pseudo-symmetry can substitute for <strong>Σ</strong> without resolving the underlying coordination problem.</li>
+				<li>Makes durable cost distribution legible across <strong>Θ</strong> without moralizing.</li>
+				<li>Clarifies how fairness rhetoric can become a frame-control device when <strong>Ψ</strong> externalizes and <strong>Χ</strong> is pressured.</li>
+				<li>Connects local comparison cycles to broader PMS-EDEN drift logic:
+					false comparison → PS → residual stabilization → reciprocity loss.</li>
+			</ul>
+
+			<h3>2.3 Central repo question</h3>
+			<p>
+				How does equality rhetoric become a cost-masking attractor when real
+				asymmetry remains action-relevant but coordination under <strong>Ω</strong> is not reopened?
+			</p>
+
+			<h3>2.4 Lens relevance</h3>
+			<ul>
+				<li><strong>Pseudo-symmetry:</strong> The example directly instantiates <strong>PS</strong> as rhetorical parity under real <strong>Ω</strong>
+					with <strong>Σ</strong> low or simulated and <strong>Ψ</strong> misbound to appearance-management.</li>
+				<li><strong>Cost geometry:</strong> The example highlights how invisible redistribution of durable load can
+					stabilize a drift regime even without overt domination language.</li>
+				<li><strong>Validity gate:</strong> The example sharply distinguishes descriptive structural mapping from any
+					invalid attempt to force action, compliance, or obligation through the
+					analysis itself.</li>
+			</ul>
+
+			<hr />
+
+			<h2>3) Drift Position in Master Trace</h2>
+			<p>
+				<strong>Stage label:</strong> PS under real Ω with residual stabilization pressure
+			</p>
+			<p>
+				<strong>Master trace handle:</strong><br />
+				<code>EDEN -&gt; THRESHOLD -&gt; NRK -&gt; □comparison -&gt; PS -&gt; residual_stabilization(Λ/Φ/Α) -&gt; (DEVALUATION|HUMILIATION) -&gt; RECIPROCITY_LOSS</code>
+			</p>
+			<p>
+				<strong>Local position note:</strong> This case sits primarily at the PS node and the transition toward residual
+				stabilization. It does not require overt devaluation to become structurally
+				non-viable.
+			</p>
+
+			<hr />
+
+			<h2>4) Operator Mapping</h2>
+
+			<h3>4.1 Reduced signature</h3>
+			<p><code>□, Ω, Θ, Φ, Χ, Σ, Ψ, Λ, Α</code></p>
+			<p>
+				The case centers on frame drift under legible asymmetry, temporally
+				extended consequence distribution, pseudo-symmetry, and the failure of
+				integration/self-binding to stabilize reciprocity.
+			</p>
+
+			<h3>4.2 Structural analysis by operator</h3>
+			<ul>
+				<li><strong>Δ (Difference):</strong>
+					<ul>
+						<li>A distinction emerges between endpoint-costs and continuity-costs.</li>
+						<li>A distinction emerges between rhetorical equality and real consequence asymmetry.</li>
+					</ul>
+				</li>
+				<li><strong>∇ (Impulse):</strong>
+					<ul>
+						<li>Pressure rises to restore a fairness-image without reopening explicit coordination around unequal burdens.</li>
+					</ul>
+				</li>
+				<li><strong>□ (Frame):</strong>
+					<ul>
+						<li>The scene begins in praxis-coordination but drifts toward comparison, equivalence, and justification grammar.</li>
+						<li>The decisive question is whether the frame still permits functional <strong>Ω</strong>-speech.</li>
+					</ul>
+				</li>
+				<li><strong>Λ (Non-Event):</strong>
+					<ul>
+						<li>Expected explicit renegotiation of obligations and cost handling does not occur.</li>
+						<li>Missing repair and missing interface revision remain active non-events across the scene.</li>
+					</ul>
+				</li>
+				<li><strong>Α (Attractor):</strong>
+					<ul>
+						<li>Repeated comparison loops, fairness invocations, and leveling attempts stabilize into recurrent scripts.</li>
+						<li>These scripts preserve the configuration without repairing it.</li>
+					</ul>
+				</li>
+				<li><strong>Ω (Asymmetry):</strong>
+					<ul>
+						<li>Real asymmetry remains active in exposure, continuity burden, and consequence carrying.</li>
+						<li>This remains true even where rhetoric asserts parity.</li>
+					</ul>
+				</li>
+				<li><strong>Θ (Temporality):</strong>
+					<ul>
+						<li>Consequences accumulate over time.</li>
+						<li>One-off endpoint decisions and repeated maintenance work do not have the same temporal weight.</li>
+					</ul>
+				</li>
+				<li><strong>Φ (Recontextualization):</strong>
+					<ul>
+						<li>The configuration is recontextualized from coordination problem to fairness problem.</li>
+						<li>Unequal consequences are reframed as disputed equivalence.</li>
+					</ul>
+				</li>
+				<li><strong>Χ (Distance):</strong>
+					<ul>
+						<li>Distance becomes endangered when requests for pause, revision, or restraint are recoded as avoidance, unfairness, or lack of commitment.</li>
+					</ul>
+				</li>
+				<li><strong>Σ (Integration):</strong>
+					<ul>
+						<li>Integration would require reopened interfaces around actual burdens, obligations, and exposure gradients.</li>
+						<li>In the drifted scene, <strong>Σ</strong> remains low, blocked, or simulated.</li>
+					</ul>
+				</li>
+				<li><strong>Ψ (Self-Binding):</strong>
+					<ul>
+						<li>Binding drifts away from self-restraint and coordinated obligation.</li>
+						<li>It shifts toward pressure on the other to display fairness, equality, or renewed compliance.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>4.3 Derived-axes projection</h3>
+			<ul>
+				<li><strong>A (Awareness):</strong> Awareness increases because the cost gradient becomes more legible,
+					but the dominant frame blocks direct coordination of what is seen.</li>
+				<li><strong>C (Coherence):</strong> Coherence is maintained rhetorically through equivalence-talk, but
+					the configuration remains structurally unstable because <strong>Λ</strong> stays open.</li>
+				<li><strong>R (Responsibility):</strong> Responsibility becomes distorted when durable burden is redistributed
+					without explicit renegotiation and when binding migrates outward.</li>
+				<li><strong>E (Action / Enactment):</strong> Integrated action remains weak because realizations occur without
+					stable <strong>Σ</strong>-carriage; comparison and justification substitute for coordination.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Dignity-in-Practice is stressed where real <strong>Ω</strong> is suppressed
+					in speech but enforced in consequences, and where fairness talk pressures compliance
+					instead of protecting standing under asymmetry.</li>
+			</ul>
+
+			<h3>4.4 Structural mechanism summary</h3>
+			<ul>
+				<li>Real <strong>Ω</strong> in consequences becomes legible.</li>
+				<li>Explicit coordination around <strong>Ω</strong> does not consolidate.</li>
+				<li><strong>□</strong> drifts from praxis to comparison/equivalence.</li>
+				<li><strong>Φ</strong> reframes asymmetry as fairness dispute.</li>
+				<li><strong>PS</strong> stabilizes rhetorical parity under real gradients.</li>
+				<li><strong>Α</strong> locks comparison and justification scripts.</li>
+				<li><strong>Σ</strong> remains low or simulated; <strong>Ψ</strong> misbinds or externalizes.</li>
+				<li>Reciprocity becomes structurally compromised across <strong>Θ</strong>.</li>
+			</ul>
+			<p>
+				<strong>Concise formula:</strong><br />
+				<code>legible Ω -&gt; failed Σ around cost distribution -&gt; □comparison -&gt; Φ fairness reframe -&gt; PS -&gt; Α comparison scripts -&gt; Ψ misbinding / externalization -&gt; reciprocity erosion</code>
+			</p>
+
+			<hr />
+
+			<h2>5) Cost Layout</h2>
+			<p>
+				<strong>Note:</strong> Structural cost geometry only; non-moral; scene-bound.
+			</p>
+
+			<h3>5.1 Consequence interfaces</h3>
+			<ul>
+				<li><strong>Endpoint-adjacent costs:</strong>
+					<ul>
+						<li>decision cost</li>
+						<li>closure cost</li>
+						<li>short-horizon justification cost</li>
+					</ul>
+				</li>
+				<li><strong>Continuity-adjacent costs:</strong>
+					<ul>
+						<li>repair cost</li>
+						<li>maintenance cost</li>
+						<li>fallout handling cost</li>
+						<li>repeated relational load</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>5.2 Asymmetry readout</h3>
+			<ul>
+				<li><strong>Ω capacity gradient:</strong> Closure-near roles often hold more capacity to define endpoints and frame completion.</li>
+				<li><strong>Ω exposure gradient:</strong> Continuity-near roles often absorb more repeated exposure to unresolved consequences across <strong>Θ</strong>.</li>
+				<li><strong>Ω obligation gradient:</strong> Maintenance burden can become tacitly assigned rather than explicitly coordinated.</li>
+				<li><strong>Ω leverage gradient:</strong> Fairness/equality framing can function as leverage when direct naming of asymmetry is delegitimated.</li>
+			</ul>
+
+			<h3>5.3 System effect</h3>
+			<p>
+				The system does not remove cost asymmetry; it masks and redistributes it.
+				What appears as fairness maintenance can function as a durable cost-shift
+				into less visible continuity work.
+			</p>
+
+			<hr />
+
+			<h2>6) Pattern Markers</h2>
+
+			<h3>6.1 Primary markers</h3>
+			<ul>
+				<li><strong>P-Σ-SIM — Σ-Simulation instead of Integration</strong><br />
+					<strong>Operator links:</strong> <code>Σ, Φ, Α, Λ, Ψ</code><br />
+					Coordination is performed discursively, but interfaces do not change and
+					remainder persists.
+				</li>
+				<li><strong>P-Ψ-EXT — Ψ → Externalization</strong><br />
+					<strong>Operator links:</strong> <code>Ψ, Χ, Ω, □</code><br />
+					Binding shifts from self-restraint to demands imposed on the other in
+					the name of fairness, equality, or commitment.
+				</li>
+				<li><strong>P-Ω-AC — Ω → Covert Authority</strong><br />
+					<strong>Operator links:</strong> <code>Ω, □, Α, Λ</code><br />
+					Real gradient-speech is blocked while frame control and indirect
+					steering remain effective through comparison and justification.
+				</li>
+			</ul>
+
+			<h3>6.2 Additional red flags</h3>
+			<ul>
+				<li>“We are equal here, so asymmetry should not be named.”</li>
+				<li>“Requesting distance proves lack of commitment.”</li>
+				<li>“Fairness now means matching burden-display rather than coordinating real burden.”</li>
+				<li>“The issue is no longer the task but whether parity has been performed.”</li>
+				<li>“Repair is discussed, but interfaces remain unchanged.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>7) Frame Validity and Drift Signals</h2>
+
+			<h3>7.1 Operative frame — <strong>□</strong></h3>
+			<ul>
+				<li><strong>In scope:</strong>
+					<ul>
+						<li>coordination obligations</li>
+						<li>cost-bearing distribution</li>
+						<li>repair and maintenance load</li>
+						<li>closure authority</li>
+						<li>comparison/equivalence rhetoric</li>
+					</ul>
+				</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>global claims about equality as such</li>
+						<li>person-level moral verdicts</li>
+						<li>psychological motive assignment</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The key drift appears when a coordination frame becomes a comparison frame
+				and fairness-talk starts replacing interface revision.
+			</p>
+
+			<h3>7.2 Non-event integrity check — <strong>Λ</strong></h3>
+			<ul>
+				<li><strong>Decisive absences:</strong>
+					<ul>
+						<li>missing renegotiation of obligations</li>
+						<li>missing explicit coordination of unequal burden</li>
+						<li>missing durable interface change</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Λ</strong> stays active because what should have been coordinated remains absent,
+				while rhetoric of resolution attempts to cover the lack.
+			</p>
+
+			<h3>7.3 Asymmetry audit — <strong>Ω</strong></h3>
+			<ul>
+				<li><strong>Exposure bearers:</strong>
+					<ul>
+						<li>continuity-near role-position</li>
+						<li>repair-bearing role-position</li>
+						<li>fallout-handling role-position</li>
+					</ul>
+				</li>
+				<li><strong>Capacity holders:</strong>
+					<ul>
+						<li>closure-near role-position</li>
+						<li>endpoint decision position</li>
+						<li>frame-defining position</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The decisive problem is not asymmetry itself, but that asymmetry remains
+				operative in consequences while becoming illegitimate to name in the
+				dominant frame.
+			</p>
+
+			<h3>7.4 Temporality and trajectory — <strong>Θ</strong></h3>
+			<ul>
+				<li><strong>Trajectory pattern:</strong>
+					<ul>
+						<li>initial coordination orientation</li>
+						<li>asymmetry becomes legible</li>
+						<li>explicit repair does not consolidate</li>
+						<li>comparison/equivalence talk rises</li>
+						<li>justification cycles stabilize</li>
+						<li>maintenance burden accumulates</li>
+						<li>reciprocity weakens</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The configuration becomes harder to reverse because repeated continuity
+				costs accumulate more quietly than visible endpoint decisions.
+			</p>
+
+			<h3>7.5 Recontextualization dynamics — <strong>Φ</strong></h3>
+			<p>
+				<strong>Key shift:</strong> The scene is re-read from unequal consequence handling into a fairness and
+				parity dispute.
+			</p>
+			<p>
+				<strong>Drift signal:</strong> <strong>Φ</strong> ceases to support adaptation and instead protects the comparison frame
+				from reopening real Ω-coordination.
+			</p>
+
+			<h3>7.6 Distance enforcement — <strong>Χ</strong></h3>
+			<p><strong>Core test:</strong> Can reflective restraint still be exercised without penalty?</p>
+			<ul>
+				<li>distance framed as avoidance</li>
+				<li>pause framed as unfairness</li>
+				<li>restraint framed as lack of commitment</li>
+				<li>revision requests treated as disloyalty to parity</li>
+			</ul>
+			<p>
+				<strong>PMS relevance:</strong> PMS-EDEN requires <strong>Χ</strong> as application condition and as a structural limit on
+				coercive frame control.
+			</p>
+
+			<h3>7.7 Integration quality — <strong>Σ</strong></h3>
+			<ul>
+				<li><strong>Must integrate:</strong>
+					<ul>
+						<li>real burden distribution</li>
+						<li>repair obligations</li>
+						<li>decision authority</li>
+						<li>continuity exposure</li>
+						<li>reversibility conditions</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Σ</strong> fails when the scene discusses equality while refusing the interface
+				work needed to coordinate unequal consequences.
+			</p>
+
+			<h3>7.8 Self-binding test — <strong>Ψ</strong></h3>
+			<p><strong>Decisive question:</strong> Who is being bound, and how?</p>
+			<ul>
+				<li><strong>Valid form:</strong> Each role-position binds itself to explicit coordination, burden clarity,
+					and reversible handling of asymmetry.</li>
+				<li><strong>Invalid form:</strong> One role-position pressures the other to prove fairness or equality while
+					avoiding self-binding to asymmetry coordination.</li>
+			</ul>
+
+			<hr />
+
+			<h2>8) Validity Gate Reminder</h2>
+
+			<h3>8.1 PMS entry condition</h3>
+			<ul>
+				<li><strong>Χ (Distance):</strong> Distance must remain available as reflective restraint. Requests for pause,
+					revision, or non-fusion must not be converted into evidence of unfairness
+					or guilt.</li>
+				<li><strong>Reversibility:</strong> Any mapping must remain scene-bound and revisable. The analysis must not
+					harden into global labels about persons or roles.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Real <strong>Ω</strong> may be named structurally, but asymmetry handling must remain
+					dignity-constrained: no shaming, ranking, humiliation, or coercive use of
+					PMS vocabulary.</li>
+			</ul>
+
+			<h3>8.2 Case-specific validity test</h3>
+			<p><strong>Valid if:</strong></p>
+			<ul>
+				<li>Real asymmetry in consequences can be named without collapsing into blame or person-ranking.</li>
+				<li>Equality language does not substitute for coordination around burdens, obligations, and exposure.</li>
+				<li><strong>Ψ</strong> remains primarily self-binding rather than a demand directed outward.</li>
+				<li><strong>Χ</strong> remains speakable and protected rather than punished as avoidance.</li>
+			</ul>
+
+			<p><strong>Formally invalid if:</strong></p>
+			<ul>
+				<li>The analysis is used to force compliance or proof of fairness from the other role-position.</li>
+				<li><strong>Ω</strong> is invoked as accusation rather than coordinated as structural gradient.</li>
+				<li><strong>Χ</strong> is overridden through urgency, equivalence rhetoric, or moralized commitment language.</li>
+				<li>The case is converted into a diagnosis of character, motive, or worth.</li>
+			</ul>
+
+			<hr />
+
+			<h2>9) Readable Structural Closure</h2>
+			<p>
+				This case shows how pseudo-symmetry can stabilize when real asymmetry in
+				cost and exposure remains active but becomes difficult to coordinate
+				explicitly. Equality rhetoric then ceases to function as reciprocity and
+				instead becomes a comparison-frame substitute for <strong>Σ</strong>. What the scene calls
+				fairness may structurally operate as a cost-masking attractor: durable load
+				is redistributed without being negotiated. Under PMS-EDEN, the result is
+				not moral failure but drift toward reciprocity loss unless real <strong>Ω</strong>, <strong>Χ</strong>, <strong>Σ</strong>,
+				and <strong>Ψ</strong> are reopened in a dignity-constrained way.
+			</p>
+
+			<hr />
+
+			<h2>10) Extended Structural Closure</h2>
+
+			<h3>10.1</h3>
+			<p>
+				The case begins with a coordination scene in which asymmetrical burdens
+				become increasingly legible in consequences. One role-position stays close
+				to visible endpoint decisions and closure authority, while another remains
+				exposed to continuity work, repair load, and fallout handling across time.
+				This does not yet require moral language. It already establishes a
+				structural difference in what each role-position carries under real <strong>Ω</strong>
+				across <strong>Θ</strong>.
+			</p>
+
+			<h3>10.2</h3>
+			<p>
+				The decisive drift occurs when this asymmetry is not reopened as a
+				coordination problem, but reprocessed as a fairness and equivalence problem.
+				The frame <strong>□</strong> shifts from praxis toward comparison. Once that shift occurs,
+				what should have remained an interface question—who carries which burden,
+				under which conditions, with which reversibility—becomes a question of
+				parity display, balance rhetoric, and justification cycles.
+			</p>
+
+			<h3>10.3</h3>
+			<p>
+				In this drifted frame, pseudo-symmetry (<strong>PS</strong>) stabilizes as rhetorical parity
+				under real consequence asymmetry. The configuration no longer negotiates
+				actual burdens. Instead, it performs equivalence. This is why the example
+				is so central to PMS-EDEN: it shows how <strong>PS</strong> functions not as reciprocity,
+				but as a substitute regime when real <strong>Ω</strong>-coordination is blocked or made
+				illegitimate.
+			</p>
+
+			<h3>10.4</h3>
+			<p>
+				The non-event <strong>Λ</strong> remains decisive throughout. What is missing is not
+				communication in general, but explicit renegotiation of obligations,
+				burdens, and interfaces. Missing repair and missing interface revision
+				continue to structure the scene. Because these remain absent, comparison and
+				fairness rhetoric cannot count as resolution. They only produce a more
+				coherent appearance around a still-open remainder.
+			</p>
+
+			<h3>10.5</h3>
+			<p>
+				Attractor formation <strong>Α</strong> enters when these comparison and justification
+				loops repeat because they work locally. They reduce immediate tension
+				without reopening the harder coordination problem. Over time, the repeated
+				script becomes cheaper than explicit renegotiation. What appears as fairness
+				maintenance can therefore stabilize into a cost-masking attractor in which
+				durable load is redistributed into less visible continuity work.
+			</p>
+
+			<h3>10.6</h3>
+			<p>
+				The temporal dimension <strong>Θ</strong> is crucial. Endpoint decisions and repeated
+				maintenance work do not carry the same time-form. One closure event can be
+				absorbed as a visible cost; repeated repair and fallout handling compound
+				more quietly. This temporal asymmetry is one reason the configuration can
+				look symmetrical rhetorically while remaining asymmetrical structurally.
+				Reciprocity weakens not because one side is morally worse, but because time
+				distributes burdens differently than the dominant frame admits.
+			</p>
+
+			<h3>10.7</h3>
+			<p>
+				Distance <strong>Χ</strong> is endangered in a very specific way here. Requests for pause,
+				revision, or non-fusion are no longer treated as reflective restraint.
+				Instead, they are recoded as avoidance, unfairness, or lack of commitment.
+				Once that happens, the frame not only suppresses asymmetry-speech; it also
+				begins to punish the very conditions required for a PMS-valid reopening of
+				the scene.
+			</p>
+
+			<h3>10.8</h3>
+			<p>
+				Self-binding <strong>Ψ</strong> is likewise distorted. Rather than binding each role-position
+				to explicit coordination, burden clarity, and reversible handling of
+				asymmetry, <strong>Ψ</strong> drifts outward. One role-position pressures the other to
+				prove fairness, equality, or renewed compliance. This is why the example
+				connects directly to PMS-EDEN's externalization logic: self-binding no
+				longer stabilizes reciprocity; it becomes a pressure surface.
+			</p>
+
+			<h3>10.9</h3>
+			<p>
+				Integration <strong>Σ</strong> correspondingly remains low or simulated. The scene may speak
+				in the language of equality, repair, or shared responsibility, yet the
+				actual interfaces do not change. Burden distribution, decision authority,
+				continuity exposure, and reversibility conditions remain uncoordinated. In
+				this sense, the configuration exemplifies <strong>Σ</strong>-simulation rather than
+				integration.
+			</p>
+
+			<h3>10.10</h3>
+			<p>
+				The structural result is clear: equality rhetoric under these conditions
+				does not remove asymmetry. It masks and redistributes it. What the scene
+				calls fairness may function as a durable cost-shift into less visible
+				continuity work. PMS-EDEN therefore treats the configuration as a drift
+				toward reciprocity loss, not because equality is normatively bad, but
+				because rhetorical parity has replaced coordination under real <strong>Ω</strong> across <strong>Θ</strong>.
+			</p>
+
+			<hr />
+
+			<h2>11) Assistant Test Vectors</h2>
+			<ul>
+				<li>“Map this scene in PMS-EDEN terms. Where does □ drift from praxis to comparison?”</li>
+				<li>“Show how pseudo-symmetry stabilizes under real Ω without resolving the cost gradient.”</li>
+				<li>“Where is Σ simulated rather than enacted in this configuration?”</li>
+				<li>“How does Ψ externalization appear in fairness rhetoric here?”</li>
+				<li>“Explain why this case points toward reciprocity loss without making moral claims.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>12) Conclusion</h2>
+			<p>
+				<strong>Takeaway:</strong> Pseudo-symmetry under real cost asymmetry is one of the clearest
+				PMS-EDEN cases because it shows how rhetorical equality can function as a
+				stabilization regime rather than reciprocity. The decisive issue is not
+				equality as such, but whether equivalence-talk replaces coordination under
+				real <strong>Ω</strong> across <strong>Θ</strong>.
+			</p>
+			<p>
+				<strong>Publication note:</strong> This example remains a scene-bound structural reconstruction.
+				It does not license blame, diagnosis, coercion, or person-level verdicts.
+				Any application remains valid only under <strong>Χ + reversibility + D</strong>.
+			</p>
+
+		</section>
+	</body>
+</html>

@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-EDEN — Example 3: Teaches Nothing vs. the Learning or Transgression Myth</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–EDEN</strong></h1>
+			<h2><em>Example 3: Teaches Nothing vs. the Learning / Transgression Myth</em></h2>
+			<div class="meta">
+				<strong>Example ID:</strong> <code>PMS-EDEN_EX03</code> &middot;
+				<strong>Example Version:</strong> <code>1.1</code> &middot;
+				<strong>Schema Version:</strong> <code>PMS-EDEN_1.1</code><br />
+				<strong>Status:</strong> draft &middot;
+				<strong>Language:</strong> EN &middot;
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-EDEN_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Example Identity</h2>
+			<p>
+				<strong>Example label:</strong> <em>Teaches Nothing vs. the Learning / Transgression Myth</em>
+			</p>
+			<p>
+				<strong>Aligned with:</strong> <code>PMS-EDEN.yaml</code> (<code>PMS-EDEN_1.1</code>) and
+				<code>PMS.yaml</code> (<code>PMS_1.3</code>)
+			</p>
+			<hr />
+
+			<h2>1) Minimal Vignette</h2>
+
+			<h3>1.1 Title</h3>
+			<p>
+				The threshold act as consequence-legibility without epistemic gain.
+			</p>
+
+			<h3>1.2 Scene boundaries</h3>
+			<ul>
+				<li><strong>Domain:</strong> threshold-crossing, breach, irreversibility, post-act meaning production, and consequence management</li>
+				<li><strong>Scope:</strong> structural differentiation, trajectory activation, asymmetrical consequence distribution, and post-hoc learning narratives</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>person-level judgement</li>
+						<li>motive attribution</li>
+						<li>heroic transgression narratives</li>
+						<li>virtue assessment</li>
+						<li>clinical or psychological interpretation</li>
+						<li>action prescription</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>1.3 Short scene</h3>
+			<p>
+				A scene begins in a highly specified praxis configuration where options are
+				already structurally available and legible. A threshold act is nevertheless
+				enacted, despite the availability of alternatives. The act does not produce
+				a reversible experiment, nor does it open a new option set. Instead, it
+				binds consequences across time, makes gradients and residues newly salient,
+				and forces the field into monitoring, protection, concealment, accounting,
+				and post-hoc meaning production. What is later described as “learning” is
+				structurally downstream of the act and functions as recontextualization
+				under altered conditions, not as epistemic gain generated by the threshold
+				itself.
+			</p>
+
+			<h3>1.4 Structural focus</h3>
+			<p>
+				The case examines PMS-EDEN's central claim that breach or threshold crossing
+				teaches nothing in the praxeological sense. The decisive structural outcome
+				is consequence-legibility under <strong>Θ/Ω/Λ</strong>, not new differentiation, not
+				maturity gain, and not pedagogical advancement through transgression.
+			</p>
+
+			<h3>1.5 Scenic elements</h3>
+			<ul>
+				<li><strong>Actors:</strong>
+					<ul>
+						<li>role-position with threshold initiation capacity</li>
+						<li>role-position with higher downstream exposure or carry-over burden</li>
+						<li>shared field now reorganized under consequence management</li>
+					</ul>
+				</li>
+				<li><strong>Salient objects:</strong>
+					<ul>
+						<li>threshold act</li>
+						<li>already available alternatives</li>
+						<li>irreversible trajectory effects</li>
+						<li>exposure gradients</li>
+						<li>monitoring and protection scripts</li>
+						<li>learning or growth narratives</li>
+					</ul>
+				</li>
+				<li><strong>Trigger event:</strong>
+					<ul>
+						<li><strong>Label:</strong> irreversible threshold crossing</li>
+						<li><strong>Description:</strong> An already legible negative option is enacted, closing prior
+							reversibility windows and binding the field to downstream consequences.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>2) Why This Is Repo-Useful</h2>
+
+			<h3>2.1 Structural focus</h3>
+			<p>
+				This example is load-bearing for PMS-EDEN because it clarifies one of the
+				overlay's strongest interpretive disciplines: breach does not generate new
+				knowledge; it generates a consequence field. The example prevents the model
+				from drifting into transgression-romanticism, moral pedagogy, or growth-
+				through-loss mythology.
+			</p>
+
+			<h3>2.2 Repository value</h3>
+			<ul>
+				<li>Demonstrates the difference between available differentiation and post-hoc narrative coherence.</li>
+				<li>Makes visible why threshold crossing cannot be credited with epistemic expansion when options were already structurally legible.</li>
+				<li>Shows how <strong>Φ</strong> can generate learning-talk after the fact without opening any new path in the original act.</li>
+				<li>Clarifies the relation between breach, NRK, consequence-legibility, and irreversibility under <strong>Θ</strong>.</li>
+				<li>Provides a strict example of how PMS-EDEN separates adaptation under loss from learning through new <strong>Δ</strong>.</li>
+			</ul>
+
+			<h3>2.3 Central repo question</h3>
+			<p>
+				When a threshold act changes everything, what exactly has changed: the
+				option set, or only the legibility and binding force of consequences?
+			</p>
+
+			<h3>2.4 Lens relevance</h3>
+			<ul>
+				<li><strong>Threshold-marker discipline:</strong> The case directly instantiates the threshold-marker logic of PMS-EDEN:
+					explicitness of option does not equal epistemic gain.</li>
+				<li><strong>Breach logic:</strong> The example clarifies the breach chain as non-epistemic realization under
+					available <strong>A=[Θ,□,Δ]</strong>, followed by consequence binding rather than insight.</li>
+				<li><strong>Anti-pedagogical guard:</strong> The case protects PMS-EDEN against retrospective conversion of
+					irreversibility into “necessary learning” or deserved moral instruction.</li>
+			</ul>
+
+			<hr />
+
+			<h2>3) Drift Position in Master Trace</h2>
+			<p>
+				<strong>Stage label:</strong> Threshold / breach transition into consequence field
+			</p>
+			<p>
+				<strong>Master trace handle:</strong><br />
+				<code>EDEN -&gt; THRESHOLD -&gt; NRK -&gt; □comparison -&gt; PS -&gt; residual_stabilization(Λ/Φ/Α) -&gt; (DEVALUATION|HUMILIATION) -&gt; RECIPROCITY_LOSS</code>
+			</p>
+			<p>
+				<strong>Local position note:</strong> This case sits at the Eden/Threshold/Breach transition and shows why the
+				act itself should not be redescribed as a gain event. It opens the
+				downstream field in which <strong>Ω</strong>, <strong>Θ</strong>, <strong>Λ</strong>, and later <strong>Φ/Α</strong> become structurally active.
+			</p>
+
+			<hr />
+
+			<h2>4) Operator Mapping</h2>
+
+			<h3>4.1 Reduced signature</h3>
+			<p><code>Δ, □, Θ, Ω, Λ, Α, Φ, Χ, Σ, Ψ</code></p>
+			<p>
+				The scene turns on already available differentiation, threshold crossing,
+				temporal irreversibility, asymmetrical consequence exposure, post-hoc
+				recontextualization, and the non-equivalence of adaptation and learning.
+			</p>
+
+			<h3>4.2 Structural analysis by operator</h3>
+			<ul>
+				<li><strong>Δ (Difference):</strong>
+					<ul>
+						<li>Differentiation is already present before the threshold act.</li>
+						<li>The option field is legible; the act does not create a new distinction.</li>
+					</ul>
+				</li>
+				<li><strong>∇ (Impulse):</strong>
+					<ul>
+						<li>Directed pressure appears as the impulse to cross the threshold despite available alternatives and visible consequence possibility.</li>
+					</ul>
+				</li>
+				<li><strong>□ (Frame):</strong>
+					<ul>
+						<li>The initial frame is praxis availability under a highly specified scene.</li>
+						<li>After the act, the frame shifts toward comparison, security, exposure control, and consequence accounting.</li>
+					</ul>
+				</li>
+				<li><strong>Λ (Non-Event):</strong>
+					<ul>
+						<li>The non-event takes the form of the missing clean outcome.</li>
+						<li>The non-event takes the form of the missing return path.</li>
+						<li>The non-event takes the form of the missing restoration of the prior field.</li>
+					</ul>
+				</li>
+				<li><strong>Α (Attractor):</strong>
+					<ul>
+						<li>Monitoring, concealment, protection, accounting, and justification stabilize as recurrent scripts under the new consequence field.</li>
+					</ul>
+				</li>
+				<li><strong>Ω (Asymmetry):</strong>
+					<ul>
+						<li>Asymmetry becomes newly salient in who initiated.</li>
+						<li>Asymmetry becomes newly salient in who is exposed.</li>
+						<li>Asymmetry becomes newly salient in who carries downstream costs and who can or cannot absorb them.</li>
+					</ul>
+				</li>
+				<li><strong>Θ (Temporality):</strong>
+					<ul>
+						<li>The threshold act becomes non-resettable.</li>
+						<li>Before/after cannot be collapsed, and the field is locked into trajectory effects.</li>
+					</ul>
+				</li>
+				<li><strong>Φ (Recontextualization):</strong>
+					<ul>
+						<li>Post-hoc meaning production reframes adaptation, endurance, and damage management as “learning,” “growth,” or necessary transgression.</li>
+					</ul>
+				</li>
+				<li><strong>Χ (Distance):</strong>
+					<ul>
+						<li>Distance is tested where retrospective pedagogy emerges: can the field resist converting consequence into justified lesson?</li>
+					</ul>
+				</li>
+				<li><strong>Σ (Integration):</strong>
+					<ul>
+						<li>Integration would require carrying altered consequences without myth, denial, or coercive narrative closure.</li>
+						<li>Often, coherence claims outrun actual integration.</li>
+					</ul>
+				</li>
+				<li><strong>Ψ (Self-Binding):</strong>
+					<ul>
+						<li>Self-binding is tested in whether the field binds itself to restraint, repair capacity, and consequence-carrying.</li>
+						<li>The alternative drift is binding to justificatory myths about necessary learning.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>4.3 Derived-axes projection</h3>
+			<ul>
+				<li><strong>A (Awareness):</strong> Awareness does not arise from the act itself; <strong>A</strong> was already structurally
+					available beforehand. What rises afterward is consequence legibility,
+					not new awareness through added <strong>Δ</strong>.</li>
+				<li><strong>C (Coherence):</strong> Coherence is threatened by irreversibility and open remainder, then
+					often narratively repaired through <strong>Φ</strong>-based learning stories.</li>
+				<li><strong>R (Responsibility):</strong> Responsibility sharpens around who initiated, who bears costs, and who
+					narratively redistributes or moralizes the altered consequence field.</li>
+				<li><strong>E (Action / Enactment):</strong> The act is realization, but not automatically integrated action. It does
+					not qualify as epistemically productive simply by having occurred.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Dignity-in-Practice is stressed when irreversible exposure is later
+					redescribed as deserved pedagogy or necessary growth.</li>
+			</ul>
+
+			<h3>4.4 Structural mechanism summary</h3>
+			<ul>
+				<li><strong>A=[Θ,□,Δ]</strong> is already available before the threshold act.</li>
+				<li>A negative option is enacted under <strong>∇</strong> within the already legible field.</li>
+				<li><strong>Θ</strong> binds the act into irreversible trajectory.</li>
+				<li><strong>Ω</strong> becomes salient in consequence distribution.</li>
+				<li><strong>Λ</strong> persists as missing clean return, repair, or restored field.</li>
+				<li><strong>□</strong> shifts toward comparison/security/exposure management.</li>
+				<li><strong>Α</strong> stabilizes coping, concealment, and justification scripts.</li>
+				<li><strong>Φ</strong> produces learning narratives after the fact.</li>
+				<li>No new <strong>Δ</strong> is generated; only consequence-legibility has increased.</li>
+			</ul>
+			<p>
+				<strong>Concise formula:</strong><br />
+				<code>available A -&gt; threshold enactment -&gt; Θ irreversibility -&gt; Ω/Λ legibility -&gt; □ shift -&gt; Α management scripts -&gt; Φ learning narrative -&gt; no epistemic expansion</code>
+			</p>
+
+			<hr />
+
+			<h2>5) Cost Layout</h2>
+			<p>
+				<strong>Note:</strong> Structural cost geometry only; non-moral; scene-bound.
+			</p>
+
+			<h3>5.1 Consequence interfaces</h3>
+			<ul>
+				<li><strong>Irreversible costs:</strong>
+					<ul>
+						<li>loss of prior reversibility</li>
+						<li>locked trajectory effects</li>
+						<li>durable exposure</li>
+						<li>non-returnable remainder</li>
+					</ul>
+				</li>
+				<li><strong>Ongoing costs:</strong>
+					<ul>
+						<li>monitoring load</li>
+						<li>protection and concealment work</li>
+						<li>accounting and justification effort</li>
+						<li>coordination under altered frame</li>
+						<li>meaning-management after loss</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>5.2 Asymmetry readout</h3>
+			<ul>
+				<li><strong>Ω capacity gradient:</strong> Capacity to initiate the threshold act does not automatically equal
+					capacity to absorb downstream burdens once the field changes.</li>
+				<li><strong>Ω exposure gradient:</strong> Exposure to consequence and carry-over often distributes unevenly across
+					role-positions after irreversibility binds.</li>
+				<li><strong>Ω obligation gradient:</strong> Some roles may become structurally positioned to absorb monitoring,
+					protection, or repair work without having set the original threshold act.</li>
+				<li><strong>Ω leverage gradient:</strong> Learning narratives can function as leverage by turning consequence
+					carrying into a supposed lesson rather than an irreversible burden.</li>
+			</ul>
+
+			<h3>5.3 System effect</h3>
+			<p>
+				The system must now manage a transformed field whose costs are durable and
+				ongoing. The key change is not new knowledge but new consequence-management
+				obligations under irreversibility.
+			</p>
+
+			<hr />
+
+			<h2>6) Pattern Markers</h2>
+
+			<h3>6.1 Primary markers</h3>
+			<ul>
+				<li><strong>P-Λ-DN — Λ → Denial / Suppression</strong><br />
+					<strong>Operator links:</strong> <code>Λ, Φ, Α</code><br />
+					The missing return path or irrecoverable loss is covered by narratives
+					that imply the outcome was somehow necessary, meaningful, or redeemed.
+				</li>
+				<li><strong>P-Σ-SIM — Σ-Simulation instead of Integration</strong><br />
+					<strong>Operator links:</strong> <code>Σ, Φ, Λ, Θ</code><br />
+					Coherence is narrated as “learning” or “growth,” while the option field
+					itself has not expanded and remainder remains active.
+				</li>
+				<li><strong>P-Ψ-EXT — Ψ → Externalization</strong><br />
+					<strong>Operator links:</strong> <code>Ψ, Χ, Ω</code><br />
+					Those bearing downstream costs are told they must accept the event as
+					instructive or necessary, converting structural exposure into imposed
+					lesson-absorption.
+				</li>
+			</ul>
+
+			<h3>6.2 Additional red flags</h3>
+			<ul>
+				<li>“This had to happen so we could learn.”</li>
+				<li>“The loss was necessary for growth.”</li>
+				<li>“Questioning the lesson means denial.”</li>
+				<li>“Now we know more, therefore the breach was worth it.”</li>
+				<li>“Suffering proves development.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>7) Frame Validity and Drift Signals</h2>
+
+			<h3>7.1 Operative frame — <strong>□</strong></h3>
+			<ul>
+				<li><strong>In scope:</strong>
+					<ul>
+						<li>threshold crossing</li>
+						<li>already legible options</li>
+						<li>post-act comparison/security framing</li>
+						<li>monitoring and protection scripts</li>
+						<li>learning narrative production</li>
+					</ul>
+				</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>heroic transgression mythology</li>
+						<li>automatic maturation claims</li>
+						<li>moral pedagogy through loss</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The field drifts when post-threshold consequence management is redescribed
+				as proof that the act itself was epistemically productive.
+			</p>
+
+			<h3>7.2 Non-event integrity check — <strong>Λ</strong></h3>
+			<ul>
+				<li><strong>Decisive absences:</strong>
+					<ul>
+						<li>no reversible trial outcome</li>
+						<li>no clean restoration of the prior field</li>
+						<li>no new option created by the act itself</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Λ</strong> remains central because what is missing is precisely the clean return,
+				the undoing, and the epistemic surplus that learning mythology claims.
+			</p>
+
+			<h3>7.3 Asymmetry audit — <strong>Ω</strong></h3>
+			<ul>
+				<li><strong>Exposure bearers:</strong>
+					<ul>
+						<li>downstream cost bearers</li>
+						<li>roles carrying altered consequence load</li>
+						<li>roles managing protection or fallout</li>
+					</ul>
+				</li>
+				<li><strong>Capacity holders:</strong>
+					<ul>
+						<li>threshold initiator</li>
+						<li>roles able to narrate or justify the act</li>
+						<li>roles with more distance from ongoing consequence</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The key asymmetry is between initiation and downstream carrying, not
+				between innocence and guilt.
+			</p>
+
+			<h3>7.4 Temporality and trajectory — <strong>Θ</strong></h3>
+			<ul>
+				<li><strong>Trajectory pattern:</strong>
+					<ul>
+						<li>available option field</li>
+						<li>threshold crossing</li>
+						<li>irreversible consequence binding</li>
+						<li>exposure hardening</li>
+						<li>monitoring / protection / accounting</li>
+						<li>post-hoc meaning production</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The structural point of no return is temporal, not epistemic: once the
+				act binds, the field has changed in a way that cannot be undone by better
+				interpretation.
+			</p>
+
+			<h3>7.5 Recontextualization dynamics — <strong>Φ</strong></h3>
+			<p>
+				<strong>Key shift:</strong> Endurance, adaptation, or damage control are reframed as “learning,”
+				turning post-breach coherence work into a myth of epistemic benefit.
+			</p>
+			<p>
+				<strong>Drift signal:</strong> <strong>Φ</strong> becomes distortive when it treats constraint management as if it had
+				produced new differentiation rather than merely stabilizing meaning.
+			</p>
+
+			<h3>7.6 Distance enforcement — <strong>Χ</strong></h3>
+			<p><strong>Core test:</strong> Can the field resist moralizing irreversibility into pedagogy?</p>
+			<ul>
+				<li>questioning the lesson is framed as denial</li>
+				<li>pain is redescribed as necessary education</li>
+				<li>consequence is treated as proof of growth</li>
+				<li>distance from the myth is punished</li>
+			</ul>
+			<p>
+				<strong>PMS relevance:</strong> PMS-EDEN requires <strong>Χ</strong> to prevent retroactive legitimation of exposure and to
+				preserve the distinction between consequence and insight.
+			</p>
+
+			<h3>7.7 Integration quality — <strong>Σ</strong></h3>
+			<ul>
+				<li><strong>Must integrate:</strong>
+					<ul>
+						<li>the altered consequence field</li>
+						<li>the persistence of <strong>Λ</strong></li>
+						<li>asymmetrical downstream burdens</li>
+						<li>the non-equivalence of adaptation and learning</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Σ</strong> fails when coherence is restored only narratively and the scene acts as
+				though the act had opened new options it never actually created.
+			</p>
+
+			<h3>7.8 Self-binding test — <strong>Ψ</strong></h3>
+			<p><strong>Decisive question:</strong> What is the field binding itself to after the threshold act?</p>
+			<ul>
+				<li><strong>Valid form:</strong> The field binds itself to restraint, consequence-carrying, repair
+					capacity, and non-mythologizing acknowledgment of what has changed.</li>
+				<li><strong>Invalid form:</strong> The field binds itself to justificatory narratives that convert
+					irreversibility into necessity, growth, or deserved lesson.</li>
+			</ul>
+
+			<hr />
+
+			<h2>8) Validity Gate Reminder</h2>
+
+			<h3>8.1 PMS entry condition</h3>
+			<ul>
+				<li><strong>Χ (Distance):</strong> Distance must remain active against retrospective pedagogy. The field must
+					be able to distinguish consequence-legibility from moralized lesson-making.</li>
+				<li><strong>Reversibility:</strong> The mapping must remain scene-bound and revisable. It must not become a
+					global theory that every threshold crossing is secretly instructive.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Irreversible exposure must not be converted into deservedness, educational
+					necessity, or justified standing reduction.</li>
+			</ul>
+
+			<h3>8.2 Case-specific validity test</h3>
+			<p><strong>Valid if:</strong></p>
+			<ul>
+				<li>The threshold act is not credited with generating new <strong>Δ</strong> when the option field was already structurally available.</li>
+				<li>“Learning” is treated, where relevant, as downstream <strong>Φ</strong> under altered conditions rather than as the product of the breach itself.</li>
+				<li>Open <strong>Λ</strong> is carried explicitly rather than collapsed into redemption narrative.</li>
+				<li><strong>Ω</strong> is named without turning exposure into moral desert.</li>
+			</ul>
+
+			<p><strong>Formally invalid if:</strong></p>
+			<ul>
+				<li>The act is retroactively celebrated as epistemic upgrade simply because consequences later became legible.</li>
+				<li>Irreversibility is transformed into moral pedagogy or necessary lesson.</li>
+				<li><strong>Χ</strong> is attacked by claiming that doubt about the learning myth proves immaturity or denial.</li>
+				<li>PMS language is used to justify exposure rather than to map it.</li>
+			</ul>
+
+			<hr />
+
+			<h2>9) Readable Structural Closure</h2>
+			<p>
+				This case shows why PMS-EDEN says that breach teaches nothing. The threshold
+				act does not add new differentiation; it binds consequences, hardens
+				gradients, and leaves the field reorganizing itself around irreversibility
+				and remainder. What later appears as “learning” is typically a <strong>Φ</strong>-based
+				recontextualization of adaptation under loss, not epistemic gain generated
+				by the act itself. Under PMS-EDEN, the decisive distinction is between
+				consequence-legibility and genuine expansion of the option set.
+			</p>
+
+			<hr />
+
+			<h2>10) Extended Structural Closure</h2>
+
+			<h3>10.1</h3>
+			<p>
+				The scene begins in a highly specified praxis configuration in which the
+				option field is already structurally available and legible. This is the
+				decisive starting discipline: differentiation is already present. The
+				threshold act therefore does not create a new distinction; it enacts an
+				already available negative option within a field where alternatives were
+				already visible.
+			</p>
+
+			<h3>10.2</h3>
+			<p>
+				The act must therefore not be redescribed as epistemic gain. What follows
+				from the act is not a widened option set, but a bound consequence field.
+				Before the act, the field was structured by available differentiation;
+				after the act, the field is structured by irreversibility. The strongest
+				PMS-EDEN claim here is that breach teaches nothing in the praxeological
+				sense because it adds no new <strong>Δ</strong>.
+			</p>
+
+			<h3>10.3</h3>
+			<p>
+				The decisive change is carried by <strong>Θ</strong>. The threshold act becomes
+				non-resettable; before and after can no longer be collapsed. Once the act
+				binds, the field is no longer dealing with a merely available option but
+				with an activated trajectory. This point of no return is temporal rather
+				than epistemic.
+			</p>
+
+			<h3>10.4</h3>
+			<p>
+				As the trajectory binds, <strong>Ω</strong> becomes newly salient in who initiated, who
+				is exposed, who bears downstream costs, and who can or cannot absorb them.
+				The central asymmetry is not innocence versus guilt. It is initiation
+				capacity versus downstream carrying. This is why the case is structurally
+				about consequence distribution, not moral elevation or condemnation.
+			</p>
+
+			<h3>10.5</h3>
+			<p>
+				The non-event <strong>Λ</strong> remains central throughout. What is missing after the act
+				is precisely a clean return, a reversible trial outcome, and the restored
+				prior field. There is no undoing, and there is no epistemic surplus added
+				by the act itself. What learning mythology later claims to have been
+				gained is exactly what the structure shows to be absent.
+			</p>
+
+			<h3>10.6</h3>
+			<p>
+				The frame <strong>□</strong> correspondingly shifts. What began as praxis availability
+				under a highly specified scene tends to become comparison, security,
+				exposure control, and consequence accounting. Monitoring, protection,
+				concealment, and justification become relevant because the field is now
+				organized around managing what has been bound, not around discovering
+				anything that was previously invisible.
+			</p>
+
+			<h3>10.7</h3>
+			<p>
+				These coping and management routines stabilize as <strong>Α</strong>. Monitoring scripts,
+				concealment, protection, accounting, and justificatory routines become
+				repeatable under the altered field. Their function is not epistemic
+				expansion. Their function is local stabilization under irreversibility and
+				remainder.
+			</p>
+
+			<h3>10.8</h3>
+			<p>
+				Only after this does <strong>Φ</strong> become centrally active. Post-hoc meaning
+				production reframes endurance, adaptation, or damage control as “learning,”
+				“growth,” or necessary transgression. This is the key anti-mythological
+				discipline of the example: such narratives are downstream recontextualization,
+				not proof that the act itself generated insight.
+			</p>
+
+			<h3>10.9</h3>
+			<p>
+				The distinction between adaptation and learning is therefore crucial.
+				Adaptation under altered conditions may occur; that is not denied. But
+				adaptation under loss is not the same as learning through new
+				differentiation. The former manages a transformed consequence field. The
+				latter would require added <strong>Δ</strong>. In this case, only the former occurs.
+			</p>
+
+			<h3>10.10</h3>
+			<p>
+				Distance <strong>Χ</strong> is tested precisely where retrospective pedagogy emerges.
+				Can the field resist converting consequence into justified lesson? Can it
+				distinguish legibility of cost from moralized necessity? When questioning
+				the lesson is framed as denial, pain is redescribed as education, and
+				consequence becomes proof of growth, <strong>Χ</strong> has begun to erode.
+			</p>
+
+			<h3>10.11</h3>
+			<p>
+				Integration <strong>Σ</strong> would require carrying the altered consequence field, the
+				persistence of <strong>Λ</strong>, the downstream asymmetries under <strong>Ω</strong>, and the
+				non-equivalence of adaptation and learning without myth, denial, or
+				coercive closure. Where coherence is restored only narratively and the
+				scene acts as though the act had opened new options it never actually
+				created, <strong>Σ</strong> remains simulated rather than fully enacted.
+			</p>
+
+			<h3>10.12</h3>
+			<p>
+				Self-binding <strong>Ψ</strong> is likewise tested in what the field binds itself to
+				after the act. A valid form binds to restraint, consequence-carrying,
+				repair capacity, and non-mythologizing acknowledgment of what has changed.
+				An invalid form binds to justificatory narratives that convert
+				irreversibility into necessity, deserved lesson, or growth imperative.
+			</p>
+
+			<h3>10.13</h3>
+			<p>
+				The structural conclusion is exact and limited: the threshold act changes
+				the binding force and legibility of consequences, not the availability of
+				differentiation that was already present. What later appears as “learning”
+				is typically <strong>Φ</strong>-based coherence work under altered conditions, not
+				epistemic gain produced by breach. PMS-EDEN therefore refuses the
+				learning/transgression myth. It insists on carrying consequence-legibility
+				without retroactive legitimation of exposure.
+			</p>
+
+			<hr />
+
+			<h2>11) Assistant Test Vectors</h2>
+			<ul>
+				<li>“Map why this threshold act teaches nothing in PMS-EDEN terms.”</li>
+				<li>“Explain the difference between consequence-legibility and epistemic gain.”</li>
+				<li>“Where does Φ create a learning narrative without new Δ?”</li>
+				<li>“Show how Θ and Ω make the act binding rather than informative.”</li>
+				<li>“Describe why adaptation under loss is not the same as learning through differentiation.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>12) Conclusion</h2>
+			<p>
+				<strong>Takeaway:</strong> This case is central to PMS-EDEN because it keeps breach from being
+				misread as epistemic advancement. The threshold act does not produce new
+				differentiation; it produces a consequence field organized by <strong>Θ</strong>, <strong>Ω</strong>,
+				and <strong>Λ</strong>, with later stabilization often occurring through <strong>Α</strong> and <strong>Φ</strong>.
+			</p>
+			<p>
+				<strong>Publication note:</strong> This example remains a scene-bound structural reconstruction.
+				It does not authorize heroic transgression narratives, moral pedagogy,
+				retrospective legitimation of loss, or person-level claims about maturity.
+				Any application remains valid only under <strong>Χ + reversibility + D</strong>.
+			</p>
+
+		</section>
+	</body>
+</html>

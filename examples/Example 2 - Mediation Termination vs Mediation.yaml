@@ -1,0 +1,412 @@
+example_id: "PMS-EDEN_EX02"
+example_version: "1.1"
+schema_version: "PMS-EDEN_1.1"
+example_label: "Mediation Termination vs. Mediation Compulsion"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-EDEN_1.1"
+
+minimal_vignette:
+  title: "Mediation collapse as cost-rational, not character"
+  scene_boundaries:
+    domain: "post-breach coordination, repair exhaustion, mediation, exit, and continuity burden"
+    scope: "roles, asymmetries, temporal accumulation, mediation viability, and binding dynamics"
+    out_of_scope:
+      - "person-level judgement"
+      - "motive attribution"
+      - "virtue assessment"
+      - "gender coding"
+      - "clinical or psychological interpretation"
+      - "action prescription"
+  short_scene: >
+    A scene has already passed through breach and failed repair attempts.
+    Costs have accumulated across time, and earlier mediation efforts have
+    already consumed available coordination bandwidth. One role-position stays
+    closer to endpoint authority and exit capacity, while another remains closer
+    to continuity work, mediation labor, and relational carry-over. Pressure now
+    rises to "keep talking" or "keep it together" without reopening the actual
+    role interfaces through which burdens, obligations, and exposure would have
+    to be redistributed. Mediation continues as a repeated script, while hard
+    exit, distancing, or formal withdrawal increasingly appear as competing
+    stabilization responses.
+  structural_focus: >
+    The case examines when mediation stops functioning as Σ-capable
+    coordination and becomes a cost-displacement mechanism under real Ω across
+    irreversible Θ. The decisive issue is not whether mediation is morally
+    preferable, but whether continued mediation still changes the consequence
+    field or merely externalizes further load.
+  scenic_elements:
+    actors:
+      - "role-position near endpoint authority and exit capacity"
+      - "role-position near continuity work and mediation labor"
+      - "shared repair or conflict-processing interface"
+    salient_objects:
+      - "prior repair attempts"
+      - "mediation requests"
+      - "boundary or exit moves"
+      - "carry-over obligations"
+      - "fairness and effort accounting"
+      - "unreopened role interfaces"
+    trigger_event:
+      label: "repair window saturation"
+      description: >
+        A prior breach has made asymmetrical consequences explicit, while
+        repeated mediation no longer reopens viable integration pathways.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example clarifies one of the most important PMS-EDEN distinctions:
+    mediation is not automatically coordination, and terminating mediation is
+    not automatically character failure. The case shows how mediation can drift
+    into a stabilized carry-demand under active Ω and accumulating Θ.
+  repo_value:
+    - >
+      Demonstrates how post-breach sequences can move from attempted repair into
+      mediation compulsion without recovering Σ.
+    - >
+      Makes visible the difference between one-time endpoint costs and recurring
+      continuity costs across Θ.
+    - >
+      Shows how mediation scripts can stabilize as Α even when integration does
+      not consolidate.
+    - >
+      Clarifies how Ψ can polarize into exit-binding on one side and carry-
+      binding on the other.
+    - >
+      Provides a clean case for distinguishing structural rationality from
+      moral ranking in PMS-EDEN examples.
+  central_repo_question: >
+    When does mediation remain structurally viable coordination, and when does
+    it become a coercive endurance script that externalizes cost without
+    reopening Σ-capable interfaces?
+  lens_relevance:
+    post_breach_viability: >
+      The case directly instantiates PMS-EDEN's post-breach logic: once Θ and Ω
+      make prior costs non-resettable, continued repair scripts may become
+      structurally more expensive than termination.
+    reciprocity_conditions: >
+      The example highlights that reciprocity requires active Σ under real Ω,
+      not indefinite continuation of mediation language.
+    validity_gate: >
+      The case is particularly useful for showing how mediation pressure can
+      become formally invalid as PMS application when Χ is suppressed and Ψ is
+      externalized.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Ω", "Θ", "□", "Λ", "Α", "Χ", "Σ", "Ψ", "Φ"]
+    note: >
+      The case centers on post-breach asymmetry, temporal irreversibility,
+      mediation scripts as attractors, and the failure of integration to
+      consolidate under continued repair pressure.
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        The decisive distinction is between one-time endpoint costs and
+        recurring continuity costs, as well as between viable coordination and
+        repeated mediation without interface change.
+    "∇":
+      scene_role: >
+        Pressure intensifies to keep the scene together, restore relation, or
+        prevent visible rupture without renegotiating actual burdens.
+    "□":
+      scene_role: >
+        The frame begins as coordination/repair praxis but drifts toward
+        security, containment, and comparison/accounting: who tried, who failed,
+        who owes further effort.
+    "Λ":
+      scene_role: >
+        Missing acknowledgment of irreversible prior cost, missing burden
+        redistribution, and missing durable repair remain the active non-events
+        in the scene.
+    "Α":
+      scene_role: >
+        Repeated mediation loops, renewed appeals to continue, hard boundary
+        moves, and effort-accounting stabilize as recurrent scripts.
+    "Ω":
+      scene_role: >
+        Real asymmetry appears in who can exit, who must carry continuity costs,
+        who absorbs fallout, and who bears repeated coordination labor.
+    "Θ":
+      scene_role: >
+        Prior mediation costs are no longer resettable. The scene is shaped by
+        accumulation, exhaustion, and increasing irreversibility of prior
+        burden.
+    "Φ":
+      scene_role: >
+        Mediation may be recontextualized from a coordination attempt into a
+        moral requirement, or exit may be reframed as aggression or failure.
+    "Χ":
+      scene_role: >
+        Distance is the key validity test: can mediation be paused, limited, or
+        terminated without being recoded as abandonment, hostility, or guilt?
+    "Σ":
+      scene_role: >
+        Integration would require reopened interfaces around burden,
+        consequence, and obligation. In the drifted scene, mediation repeats
+        without producing durable consolidation.
+    "Ψ":
+      scene_role: >
+        Self-binding polarizes: one side binds to exit, containment, or formal
+        boundary; the other binds to continuity, carrying, or renewed repair.
+        Drift worsens when either binding is imposed outward as obligation.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness rises as the cost geometry becomes clearer, especially around
+        who carries recurring mediation load and who can terminate sooner.
+    C:
+      reading: >
+        Coherence weakens because mediation continues as script while Λ remains
+        open and the scene no longer produces actual repair consolidation.
+    R:
+      reading: >
+        Responsibility becomes unstable when mediation is confused with moral
+        duty and recurring costs are externalized onto the continuity-proximal
+        role-position.
+    E:
+      reading: >
+        Action quality drops where realizations continue but fail the Σ-carriage
+        criterion; repeated mediation is not equivalent to integrated repair.
+    D:
+      reading: >
+        Dignity-in-Practice is stressed when continued mediation is demanded
+        despite exhausted repair conditions, especially where Χ is attacked and
+        endurance is coerced.
+  structural_mechanism_summary:
+    sequence:
+      - "Breach renders Ω and consequence asymmetry explicit."
+      - "Θ makes prior repair costs non-resettable."
+      - "Expected redistribution and acknowledgment do not consolidate (Λ remains open)."
+      - "□ drifts from repair praxis toward security and fairness accounting."
+      - "Α stabilizes mediation loops and counter-scripts (continue vs exit)."
+      - "Σ remains suppressed or non-consolidating."
+      - "Ψ polarizes into carry-binding and exit-binding."
+      - "Further mediation risks becoming cost displacement rather than coordination."
+    concise_formula: >
+      breach -> Ω legible + Θ irreversible -> open Λ -> □security/comparison ->
+      Α mediation scripts -> Σ low/suppressed -> Ψ polarization ->
+      mediation compulsion or termination response
+
+drift_position_in_master_trace:
+  stage_label: "Post-breach carry-demand stabilization under blocked Σ"
+  master_trace_handle: >
+    EDEN -> THRESHOLD -> NRK -> □comparison -> PS ->
+    residual_stabilization(Λ/Φ/Α) -> (DEVALUATION|HUMILIATION) ->
+    RECIPROCITY_LOSS
+  local_position_note: >
+    This case sits downstream of breach/NRK logic and near residual
+    stabilization. It does not require explicit pseudo-symmetry or overt
+    devaluation to become structurally non-viable; carry-demand alone may
+    stabilize the drift.
+
+cost_layout:
+  note: "Structural cost geometry only; non-moral; scene-bound."
+  consequence_interfaces:
+    exit_adjacent_costs:
+      - "immediate rupture cost"
+      - "endpoint decision cost"
+      - "reputational fallout"
+      - "loss of continuity"
+    continuation_adjacent_costs:
+      - "repeated mediation labor"
+      - "repair effort"
+      - "temporal carry-over load"
+      - "coordination fatigue"
+      - "ongoing fallout handling"
+  asymmetry_readout:
+    omega_capacity_gradient: >
+      Exit-near roles often hold more capacity to terminate, formalize, or
+      close the scene.
+    omega_exposure_gradient: >
+      Continuity-near roles often absorb more repeated exposure to unresolved
+      consequences and mediation demand across Θ.
+    omega_obligation_gradient: >
+      Mediation duty can become tacitly assigned to the role-position already
+      burdened with continuity work.
+    omega_leverage_gradient: >
+      Appeals to fairness, commitment, or responsibility can function as
+      leverage to keep mediation going after its repair value is exhausted.
+  system_effect: >
+    Once mediation costs become irreversibly cumulative, continued mediation can
+    become structurally more expensive than its likely repair value. At that
+    point, mediation may stop coordinating costs and begin redistributing them.
+
+pattern_markers:
+  max_expected: 3
+  markers:
+    - id: "P-Ψ-EXT"
+      label: "Ψ -> Externalization"
+      operator_links: ["Ψ", "Χ", "□", "Ω"]
+      indicator: >
+        One role-position is pressed to keep mediating, carrying, or proving
+        commitment, while binding is no longer primarily self-applied.
+    - id: "P-Σ-SIM"
+      label: "Σ-Simulation instead of Integration"
+      operator_links: ["Σ", "Λ", "Φ", "Α"]
+      indicator: >
+        Mediation continues as a visible repair-performance, but the underlying
+        interfaces do not reopen and remainder persists.
+    - id: "P-Λ-DN"
+      label: "Λ -> Denial / Suppression"
+      operator_links: ["Λ", "Φ", "Α"]
+      indicator: >
+        Prior irrecoverable costs are not fully acknowledged; the scene acts as
+        if further talking could erase already accumulated consequence.
+  additional_red_flags:
+    - "You must keep mediating."
+    - "Stopping mediation proves abandonment."
+    - "More discussion is required even though nothing structurally changes."
+    - "Boundary-setting is framed as aggression by default."
+    - "Prior costs are ignored while new effort is demanded."
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must remain available as reversible restraint. Pausing,
+      formalizing, limiting, or terminating mediation must remain structurally
+      possible without automatic moralization.
+    reversibility: >
+      The mapping must remain scene-bound and revisable. It must not harden into
+      global claims about who is "the avoidant one" or "the caring one."
+    dignity_in_practice: >
+      Real Ω may be named structurally, but mediation must not become a vehicle
+      for coercive endurance demands, humiliation, or forced carrying.
+  case_specific_validity_test:
+    valid_if:
+      - >
+        Mediation is treated as viable only where Σ-capable interfaces can still
+        be reopened.
+      - >
+        Prior irrecoverable costs under Θ are acknowledged explicitly rather
+        than erased through renewed effort demands.
+      - >
+        Χ remains speakable and self-applied rather than punished.
+      - >
+        Ψ remains self-binding and dignity-preserving rather than imposed as
+        compulsory continuation.
+    formally_invalid_if:
+      - >
+        Mediation is moralized into an unconditional duty regardless of open Λ,
+        blocked Σ, and accumulated Θ-cost.
+      - >
+        Exit, pause, or formalization are treated as proof of deficiency rather
+        than possible cost-containment responses.
+      - >
+        Ω is denied while burden remains asymmetrically distributed.
+      - >
+        PMS language is used to force continued endurance or relational labor.
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    This case shows that mediation is not automatically coordination and that
+    terminating mediation is not automatically a failure of character. Once
+    repair attempts have already consumed available bandwidth, continued
+    mediation under real Ω and irreversible Θ can become a carry-demand
+    attractor rather than a path to Σ. What looks like commitment to repair may
+    then function structurally as cost displacement onto the continuity-proximal
+    role-position. Under PMS-EDEN, the decisive question is not who cares more,
+    but whether mediation still changes the consequence field in a dignity-
+    preserving and reversible way.
+
+extended_scene_analysis:
+  frame_validity_check:
+    operator: "□"
+    in_scope:
+      - "repair attempts"
+      - "mediation viability"
+      - "exit capacity"
+      - "continuity burden"
+      - "fairness and effort accounting"
+    out_of_scope:
+      - "global celebration of mediation as such"
+      - "person-level maturity claims"
+      - "moral ranking of exit vs continuation"
+    drift_signal: >
+      The decisive frame drift occurs when repair praxis becomes security /
+      containment / accounting logic and further mediation is demanded without
+      reopening actual interfaces.
+  non_event_integrity_check:
+    operator: "Λ"
+    decisive_absences:
+      - "missing acknowledgment of prior irreversible cost"
+      - "missing burden redistribution"
+      - "missing durable repair consolidation"
+    drift_signal: >
+      Λ remains active when the scene behaves as though repeated mediation could
+      still perform repair after the relevant repair window has closed.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "continuity-near role-position"
+      - "mediation labor bearer"
+      - "fallout-handling position"
+    capacity_holders:
+      - "exit-capable role-position"
+      - "endpoint authority position"
+      - "formal boundary-setting position"
+    drift_signal: >
+      The central issue is not who is right, but that the capacity to exit and
+      the obligation to carry are unevenly distributed.
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "breach"
+      - "initial repair attempt"
+      - "repeated mediation"
+      - "cost accumulation"
+      - "repair saturation"
+      - "boundary or exit pressure"
+      - "polarized continuation vs termination"
+    drift_signal: >
+      Temporal irreversibility matters because prior mediation costs cannot be
+      undone simply by repeating the mediation script.
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      Mediation is re-read from a coordination attempt into a moral test of
+      commitment, fairness, or willingness.
+    drift_signal: >
+      Φ ceases to support adaptation when it transforms exhausted mediation into
+      compulsory virtue display.
+  distance_enforcement:
+    operator: "Χ"
+    core_test: "Can mediation be limited or terminated without dignity collapse?"
+    erosion_markers:
+      - "distance framed as abandonment"
+      - "boundary framed as aggression"
+      - "pause framed as moral failure"
+      - "formalization framed as refusal to care"
+    pms_relevance: >
+      PMS-EDEN requires Χ both as application gate and as a structural limit on
+      coercive continuation demands.
+  integration_quality:
+    operator: "Σ"
+    must_integrate:
+      - "acknowledgment of prior costs"
+      - "burden redistribution"
+      - "role interface clarity"
+      - "repair viability"
+      - "reversibility conditions"
+    drift_signal: >
+      Σ fails when mediation repeats but does not reopen the interfaces required
+      for actual redistribution, clarification, or coordinated repair.
+  self_binding_test:
+    operator: "Ψ"
+    decisive_question: "Who is being bound to what?"
+    valid_form: >
+      Each role-position binds itself to what it can carry, limit, or terminate
+      under reversible and dignity-preserving conditions.
+    invalid_form: >
+      One role-position is compelled to continue carrying mediation labor while
+      the other remains relatively free to exit, close, or redefine the scene.
+
+assistant_test_vectors:
+  promptables:
+    - "Map this mediation sequence in PMS-EDEN terms. Where does mediation stop being Σ-capable?"
+    - "Explain why mediation termination can be structurally rational without making character claims."
+    - "Show how Ω and Θ determine whether continued mediation is viable."
+    - "Where does Ψ externalization appear when mediation becomes compulsory?"
+    - "Describe how this case fits post-breach PMS-EDEN drift without moralizing either response."

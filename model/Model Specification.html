@@ -196,15 +196,15 @@
         <h1>PMS-EDEN – Model Specification</h1>
         <div class="subtitle">
           A PMS-conform application profile (overlay) for structural drift in praxis: Eden → threshold → NRK → comparison-frame dominance →
-          pseudo-symmetry → devaluation → reciprocity loss, with strict separation between descriptive mapping and binding application
-          (Χ + reversibility + D). No person-typing, diagnosis, or how-to guidance.
+          pseudo-symmetry → residual stabilization (Λ/Φ/Α) → devaluation/humiliation → reciprocity loss, with strict separation between
+          descriptive mapping and PMS-valid binding application (Χ + reversibility + D). No person-typing, diagnosis, or how-to guidance.
         </div>
         <div class="meta">
-          Version: <span class="code-inline">PMS-EDEN_1.0</span> &middot;
+          Version: <span class="code-inline">PMS-EDEN_1.1</span> &middot;
           Spec basis: <span class="code-inline">PMS-EDEN.yaml</span><br />
-          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.2 Thinking)<br />
+          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.4 Thinking)<br />
           Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "draft"</span>)<br />
-          Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.1"</span>)<br />
+          Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.3"</span>)<br />
           Repo: <span class="code-inline">https://github.com/tz-dev/PMS-EDEN</span>
         </div>
       </header>
@@ -216,7 +216,7 @@
         <p>
           This document specifies the <em>PMS-EDEN</em> layer in a concise, technical form.
           It is based on the YAML profile <span class="code-inline">PMS-EDEN.yaml</span>
-          (with <span class="code-inline">schema_version = "PMS-EDEN_1.0"</span>)
+          (with <span class="code-inline">schema_version = "PMS-EDEN_1.1"</span>)
           and renders its structure, constraints, and semantics explicit for human readers
           and computational systems.
         </p>
@@ -227,22 +227,26 @@
           operators, dependencies, layers, or derived axes. Instead, it formalizes an
           <strong>Eden drift lens</strong>: a structurally minimal grammar for how
           a praxis configuration can drift into comparison governance, pseudo-symmetry,
-          devaluation-based stabilization, and reciprocity loss—read strictly as
-          operator configurations (Δ–Ψ) under asymmetry (Ω) and temporality (Θ).
+          residual stabilization, devaluation or humiliation, and reciprocity loss—read
+          strictly as operator configurations (Δ–Ψ) under asymmetry (Ω) and temporality (Θ).
+          All paper-specific labels remain <strong>paper-internal, descriptive, scene-bound,
+          revisable, and non-totalizing</strong>.
         </p>
 
         <p>The specification covers, in particular:</p>
         <ul>
-          <li>the <strong>schema_meta</strong> block (identity, status, authorship, dependency on PMS_1.1);</li>
-          <li>the <strong>validity gate</strong> enforcing Χ (Distance), reversibility, and D (dignity-in-practice);</li>
-          <li><strong>paper-internal composites</strong> (e.g., NRK, PS, PFO) as non-operators (labels only);</li>
-          <li>the <strong>master trace</strong> and drift corridor (Eden → threshold → NRK → □comparison → PS → devaluation → reciprocity loss);</li>
-          <li><strong>EDEN-MAP</strong> as scene-bound mapping protocol (method appendix; question-only discipline);</li>
+          <li>the <strong>schema_meta</strong> block (identity, status, authorship, dependency on PMS_1.3, authoritative source-paper role);</li>
+          <li>the <strong>validity_gate</strong> enforcing Χ (Distance), reversibility, and D (dignity-in-practice) for PMS-valid application only;</li>
+          <li><strong>paper-internal constructs</strong> (e.g., NRK, PS, PFO) as non-operators / paper-internal composites or regime labels;</li>
+          <li><strong>reduced_signatures</strong> and the <strong>drift_catalogue</strong>, including the master trace with explicit residual stabilization (Λ/Φ/Α);</li>
+          <li><strong>viability</strong> as paper-bound cost/coordination readout under PMS criteria as used in this paper;</li>
+          <li><strong>EDEN-MAP</strong> as scene-bound mapping protocol with cartographic-status discipline, rival-framing openness, and non-capture safeguards;</li>
+          <li><strong>pattern_library</strong> with pattern-status clarification and paper-internal composite discipline;</li>
           <li><strong>glossary handles</strong> (stable refs; canonical text remains in the paper);</li>
-          <li><strong>alternative explanations</strong> (methodological discipline box; sufficiency, no ranking);</li>
-          <li><strong>boundary conditions</strong> (scope discipline; weakened applicability, not moral softening);</li>
-          <li><strong>appendix positioning</strong> (adjacent frameworks; non-goals; classification risk controls);</li>
-          <li><strong>example-suite schema</strong> (repo vignettes; scene-bound, non-instructional).</li>
+          <li><strong>alternative explanations</strong> (methodological discipline box; sufficiency, no ranking, including AE4 external institutional stress);</li>
+          <li><strong>boundary conditions</strong> (scope discipline, rival-framework openness, genuine non-capture, strongest-applicability summary);</li>
+          <li><strong>appendix positioning</strong> (adjacent frameworks, non-goals, classification risk controls, theory-adjacent stance);</li>
+          <li><strong>example-suite schema</strong> (repo vignettes; scene-bound, non-instructional, dignity-preserving).</li>
         </ul>
 
         <div class="box">
@@ -252,7 +256,8 @@
           <p class="small">
             PMS-EDEN treats “Eden” as a minimal structural testbed: a praxis-first scene where drift becomes legible by
             tracking what operators carry (or fail to carry) integration (Σ), binding (Ψ), distance (Χ), and asymmetry
-            legibility (Ω). The overlay’s job is to keep the analysis structural, scene-bound, auditable, and dignity-preserving.
+            legibility (Ω). The overlay’s job is to keep the analysis structural, scene-bound, auditable, revisable,
+            rival-framing-open, and dignity-preserving.
           </p>
         </div>
       </section>
@@ -275,42 +280,77 @@
           <tbody>
             <tr>
               <td><span class="code-inline">schema_version</span></td>
-              <td>Version identifier (<span class="code-inline">"PMS-EDEN_1.0"</span>).</td>
+              <td>Version identifier (<span class="code-inline">"PMS-EDEN_1.1"</span>).</td>
               <td>Compatibility and citation</td>
             </tr>
             <tr>
               <td><span class="code-inline">schema_meta</span></td>
-              <td>Model identity, authors, status, dependency on PMS_1.1, repo references.</td>
+              <td>Model identity, authors, status, dependency on PMS_1.3, repo references, source-paper metadata.</td>
               <td>Meta-information / inheritance statement</td>
             </tr>
             <tr>
-              <td><span class="code-inline">pms_entry_condition</span></td>
+              <td><span class="code-inline">abbrev_legend</span></td>
+              <td>Named abbreviations and paper-internal label discipline.</td>
+              <td>Terminology normalization</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">validity_gate</span></td>
               <td>Application-only validity clause: Χ + reversibility + D.</td>
               <td>Formal application firewall</td>
             </tr>
             <tr>
-              <td><span class="code-inline">master_trace</span></td>
-              <td>Core drift corridor as operator-readable sequence (Eden → … → reciprocity loss).</td>
-              <td>Orientation spine</td>
+              <td><span class="code-inline">operator_reference</span></td>
+              <td>Canonical PMS operator source, fixed set, and dependency hygiene note.</td>
+              <td>PMS conformance anchor</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">paper_frontmatter_min</span></td>
+              <td>Load-bearing claims, PMS conformance, ACRED references, minimal paper terms.</td>
+              <td>Frontmatter compression layer</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">paper_constructs</span></td>
+              <td>Paper-internal constructs (NRK, PS, PFO, reciprocity, humiliation, etc.) as non-operators.</td>
+              <td>Structural construct layer</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">reduced_signatures</span></td>
+              <td>Reduced operator-readable signatures, compact traces, viability proposals.</td>
+              <td>Orientation and shorthand layer</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">drift_catalogue</span></td>
+              <td>Consolidated corridors, regimes, and chapter-level drift handles.</td>
+              <td>Drift legibility layer</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">pattern_library</span></td>
+              <td>Paper-internal composites with C5 pattern discipline and revisability notes.</td>
+              <td>Portable recognition layer</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">viability</span></td>
+              <td>Minimal viability/cost windows: where structural non-viability is read out.</td>
+              <td>Cost-bearing coordination discipline</td>
             </tr>
             <tr>
               <td><span class="code-inline">eden_map</span></td>
-              <td>Scene-bound mapping protocol: scene packet + Q1–Q6 + one-page synthesis + firewall.</td>
-              <td>Operational method scaffold (question-only discipline)</td>
+              <td>Scene-bound mapping protocol: cartographic status, scene packet, Q1–Q6, synthesis, firewall.</td>
+              <td>Operational method scaffold</td>
             </tr>
             <tr>
               <td><span class="code-inline">glossary_index</span></td>
-              <td>Stable handles/refs for paper glossary entries; avoids duplicating full text.</td>
+              <td>Stable paper-internal handles/refs for glossary entries; avoids duplicating full text.</td>
               <td>Terminology discipline + retrieval keys</td>
             </tr>
             <tr>
               <td><span class="code-inline">alternative_explanations</span></td>
-              <td>Methodological discipline: multiple sufficient generators; no ranking.</td>
+              <td>Methodological discipline: multiple sufficient generators; no ranking; includes AE4.</td>
               <td>Anti-overclaim guard</td>
             </tr>
             <tr>
               <td><span class="code-inline">boundary_conditions</span></td>
-              <td>Conditions where drift pipeline weakens/changes (Ω minimal, □praxis, early Σ/Ψ, institutions).</td>
+              <td>Conditions where drift weakens, changes, or rival frameworks/non-capture limit applicability.</td>
               <td>Scope discipline</td>
             </tr>
             <tr>
@@ -323,6 +363,11 @@
               <td>Repo vignette blocks: minimal scene, mapping, costs, markers, gate reminder, closure.</td>
               <td>Example library format</td>
             </tr>
+            <tr>
+              <td><span class="code-inline">paper_structure_map</span></td>
+              <td>Coverage index for complete paper-to-YAML section mapping.</td>
+              <td>Coverage / auditability layer</td>
+            </tr>
           </tbody>
         </table>
 
@@ -333,7 +378,7 @@
           <p class="small">
             PMS defines the operator grammar (Δ–Ψ) and derived axes (A, C, R, E, D).
             PMS-EDEN defines a drift-reading discipline (Eden sequences, frames, non-events, regimes, costs, reciprocity loss)
-            without introducing new operators or person-level explanations.
+            without introducing new operators, new axioms, or person-level explanations.
           </p>
         </div>
       </section>
@@ -344,11 +389,11 @@
       <section id="validity">
         <h2>3. Validity gate and scope constraints</h2>
 
-        <h3>3.1 Application gate (PMS entry condition)</h3>
+        <h3>3.1 PMS-valid application gate</h3>
         <ul>
-          <li><strong>Χ (Distance):</strong> maintain meta-position and stop-capability; no fusion into verdict, impulse, ideology, or role.</li>
-          <li><strong>Reversibility:</strong> all readings remain scene-bound, revisable, configuration-specific; no irreversible interpretive capture.</li>
-          <li><strong>D (Dignity-in-practice):</strong> no shaming/ranking; critique targets enacted structures and cost handling only.</li>
+          <li><strong>Χ (Distance):</strong> maintain meta-position and reflective stop-capability; no fusion into verdict, urgency, enforcement, or person-level attribution.</li>
+          <li><strong>Reversibility:</strong> all readings remain scene-bound, revisable, non-final, and configuration-specific; no global person labels or irreversible interpretive capture.</li>
+          <li><strong>D (Dignity-in-practice):</strong> no shaming, ranking, humiliation, or ontological person evaluation; critique targets enacted structures and cost handling only.</li>
         </ul>
 
         <h3>3.2 Explicit non-goals (overlay discipline)</h3>
@@ -357,12 +402,13 @@
           <li>no personality typing, motive theory, or inner-state claims;</li>
           <li>no prescriptive “how-to” or coercive action demands (no Ψ→Other enforcement);</li>
           <li>no moral ranking of persons; no ontological dignity judgments;</li>
-          <li>no ideology-based attribution: regimes are defined by operator behavior only.</li>
+          <li>no ideology-based attribution: regimes are defined by operator behavior only;</li>
+          <li>no automatic extension into scenes better captured by rival frameworks or genuine non-capture cases.</li>
         </ul>
 
         <div class="box">
           <div class="box-title">
-            <span>Key firewall</span> <span class="pill">description vs application</span>
+            <span>Key firewall</span> <span class="pill">description vs PMS-valid application</span>
           </div>
           <p class="small">
             PMS-EDEN allows sharp descriptive mapping (operators, costs, drift signatures). The moment the mapping is used to bind,
@@ -387,11 +433,11 @@
         <div class="box">
           <div class="box-title">Core corridor (operator-readable; non-moral)</div>
           <p class="small">
-            <span class="code-inline">Eden → Threshold → NRK → □comparison-dominant → PS (pseudo-symmetry) → devaluation →
-              reciprocity loss (Σ/Ψ failure under Ω across Θ with chronic Λ)</span>
+            <span class="code-inline">Eden → Threshold → NRK → □comparison-dominant → PS (pseudo-symmetry) → residual stabilization (Λ/Φ/Α) → (devaluation | humiliation) → reciprocity loss (Σ/Ψ failure under Ω across Θ with chronic Λ)</span>
             <br />
-            PMS-EDEN treats this as a repeatable structural corridor: a sequence that can stabilize as scripts (Α),
-            especially when Ω becomes legible in consequences but illegible in speech under the dominant □.
+            PMS-EDEN treats this as a repeatable structural corridor within this reconstruction: a sequence that can stabilize as scripts (Α),
+            especially when Ω becomes legible in consequences but illegible in speech under the dominant □. Residual stabilization
+            (Λ/Φ/Α) is kept explicit rather than compressed away.
           </p>
         </div>
 
@@ -401,28 +447,29 @@
             <div class="box-title">NRK (Negative Responsibility Kernel)</div>
             <p class="small">
               Breach-type label: enactment occurs while awareness options are available, yet Σ/Ψ do not carry the enactment.
-              NRK is a composite descriptor, not a PMS operator.
+              NRK is a paper-internal composite descriptor, not a PMS operator.
             </p>
           </div>
           <div class="box">
             <div class="box-title">PS (Pseudo-Symmetry)</div>
             <p class="small">
               Rhetorical equality inside a comparison-dominant □ under real Ω in consequences,
-              with Σ blocked/simulated and Ψ misbound (often to appearance-management).
+              with Σ blocked or simulated and Ψ misbound (often to appearance-management).
+              Within PMS-EDEN, PS is structurally viable only as a bounded reversible buffer.
             </p>
           </div>
           <div class="box">
             <div class="box-title">PFO (Postfeminist Override)</div>
             <p class="small">
-              Regime-level frame configuration: Ω remains operative but Ω-legibility is disallowed; Φ/Λ/Α stabilize without Σ/Ψ consolidation.
-              Defined only by operator behavior; not ideological; not a group label.
+              Paper-internal regime label for a regime-level frame configuration: Ω remains operative but Ω-legibility is disallowed;
+              Φ/Λ/Α stabilize without Σ/Ψ consolidation. Defined only by operator behavior; not ideological; not a group label.
             </p>
           </div>
           <div class="box">
             <div class="box-title">Humiliation / devaluation (structural use)</div>
             <p class="small">
               Paper-internal meaning: status regulation via devaluation as residual stabilization when explicit Ω-coordination via Σ/Ψ is blocked.
-              This is a structural consequence claim, not an intent or moral verdict.
+              This is a structural consequence claim, not an intent, motive, trait, or moral verdict.
             </p>
           </div>
         </div>
@@ -448,6 +495,22 @@
           (Δ–Ψ) in a given scene <strong>without diagnosing persons</strong>. It is question-driven and includes a mandatory
           diagnostics-to-action firewall.
         </p>
+
+        <div class="box">
+          <div class="box-title">
+            <span>Cartographic status</span> <span class="pill">not a closed ontology</span>
+          </div>
+          <p class="small">
+            EDEN-MAP is not a closed ontology of relational breakdown. It is a
+            cartographic compression of the structural patterns reconstructed in PMS-EDEN.
+            Its purpose is to increase portability, comparability, and auditability,
+            not to claim that every relevant case is already exhausted by its map-space.
+          </p>
+          <p class="small">
+            The map remains revisable, scene-dependent in application, and open to rival framings and genuine non-capture.
+            The more portable the map becomes, the greater the risk that compression is mistaken for structural completeness.
+          </p>
+        </div>
 
         <h3>5.1 Minimal unit: Scene Packet (15.2)</h3>
         <div class="box small">
@@ -483,7 +546,8 @@
           <summary>Q3 — Which Λ is active and how is it handled?</summary>
           <p class="small">
             Identify the active non-event (reply/repair/recognition/coordination/commitment missing) and closure mode
-            (denial, minimization, displacement, pseudo-closure). Output: <span class="code-inline">Λactive / Λhandling / Λremainder</span>.
+            (denial, minimization, moralization, displacement, pseudo-closure). Output:
+            <span class="code-inline">Λactive / Λhandling / Λremainder</span>.
           </p>
         </details>
         <details>
@@ -507,6 +571,8 @@
           </p>
         </details>
 
+        <div class="pagebreak"></div>
+
         <h3>5.3 One-page synthesis (15.4)</h3>
         <div class="box">
           <div class="box-title">Required synthesis fields</div>
@@ -514,15 +580,16 @@
             <span class="code-inline">Drift = □dominant → Λhandling → Αstabilizer → Ωmanagement → Σstatus → Ψpattern</span><br />
             <span class="code-inline">Αprimary</span> (what repetition stabilizes the configuration)<br />
             <span class="code-inline">Costs = {A, C, R, E, D}</span> (system costs; non-moral)<br />
-            <span class="code-inline">LowestCostCorrection = {Χstep, Λ→Σstep, Ψshift}</span> (viability signature; not a prescription)
+            <span class="code-inline">LowestCostCorrection = {Χstep, Λ→Σstep, Ψshift}</span> (descriptive viability signature; not a prescription)
           </p>
         </div>
 
         <div class="box">
           <div class="box-title">Mandatory firewall (15.5)</div>
           <p class="small">
-            EDEN-MAP is not a person-evaluation tool. It permits scene-bound structural mapping and reversible, dignity-preserving counter-measures.
-            It forbids global person labels, inner-state claims, and coercive prescriptions justified by PMS vocabulary.
+            The restrictions in this section apply to PMS-valid application, not to all possible discourse about persons, scenes, or institutions.
+            EDEN-MAP is not a person-evaluation tool. It permits scene-bound structural mapping and reversible, dignity-preserving
+            viability signatures. It forbids global person labels, inner-state claims, and coercive prescriptions justified by PMS vocabulary.
           </p>
         </div>
       </section>
@@ -563,14 +630,14 @@
               <td><span class="code-inline">□comparison + Ω + (Σ low) + (Ψ misbound)</span></td>
             </tr>
             <tr>
-              <td><span class="code-inline">PFO</span> (Regime label)</td>
-              <td>Ω-illegibility regime: Φ/Λ/Α stabilize without Σ/Ψ consolidation.</td>
+              <td><span class="code-inline">PFO</span> (paper-internal regime label)</td>
+              <td>Ω-illegibility regime: Φ/Λ/Α stabilize without Σ/Ψ consolidation; defined by operator behavior only.</td>
               <td><span class="code-inline">□(Ω-taboo) + Φ + Λ + Α; Σ/Ψ suppressed</span></td>
             </tr>
             <tr>
               <td><span class="code-inline">NRK</span> (Composite)</td>
               <td>Breach type: enactment under available awareness where Σ/Ψ do not carry.</td>
-              <td><span class="code-inline">A available; Σ/Ψ failed/aborted/externalized</span></td>
+              <td><span class="code-inline">A available; Σ/Ψ failed/aborted/externalized/displaced</span></td>
             </tr>
             <tr>
               <td><span class="code-inline">Reciprocity</span></td>
@@ -578,9 +645,9 @@
               <td><span class="code-inline">Σ under Ω; Ψ; Χ</span></td>
             </tr>
             <tr>
-              <td><span class="code-inline">Cost marker</span></td>
-              <td>Repeated co-occurrence indicates drift regime sustained by asymmetric cost carriage.</td>
-              <td><span class="code-inline">Ω ↔ Θ with chronic Λ; Σ/Ψ displaced</span></td>
+              <td><span class="code-inline">Structural Drift Cost Marker</span></td>
+              <td>Repeated co-occurrence of Ω-illegibility, low/simulated Σ, displaced or externalized Ψ, chronic Λ, and stabilized Α.</td>
+              <td><span class="code-inline">Ω ↔ Θ with chronic Λ; Σ/Ψ displaced; costs accumulate</span></td>
             </tr>
           </tbody>
         </table>
@@ -589,7 +656,7 @@
           <div class="box-title">Scope note</div>
           <p class="small">
             Everyday connotations (“maturity,” “humiliation,” etc.) are explicitly overridden: PMS-EDEN uses these as
-            structural terms about in-scene consequence handling, not about inner states, traits, or moral worth.
+            paper-internal structural terms about in-scene consequence handling, not about inner states, traits, motives, or moral worth.
           </p>
         </div>
       </section>
@@ -608,17 +675,17 @@
         <h3>7.1 Core drift corridor (compressed)</h3>
         <div class="box small">
           <span class="code-inline">
-            Eden → Threshold → NRK → □comparison dominance → PS → devaluation (residual stabilization) → reciprocity loss
+            Eden → Threshold → NRK → □comparison dominance → PS → residual stabilization (Λ/Φ/Α) → devaluation/humiliation → reciprocity loss
           </span>
         </div>
 
         <h3>7.2 Regime-level repeatability (PFO as meta-frame)</h3>
         <details open>
-          <summary>PFO (regime) — repeatability without ideology</summary>
+          <summary>PFO (paper-internal regime label) — repeatability without ideology</summary>
           <p class="small">
             PFO denotes a dominant □ configured as Ω-illegibility + comparison metric, with high Φ (continuous recontextualization),
-            persistent Λ (non-closure as remainder/leverage), and stabilized Α scripts. Σ and Ψ remain suppressed/misbound, so reciprocity
-            cannot consolidate. This is defined only by operator behavior, not political identity.
+            persistent Λ (non-closure as remainder or leverage), and stabilized Α scripts. Σ and Ψ remain suppressed or misbound, so reciprocity
+            cannot consolidate. This is defined only by operator behavior, not political identity, ideology, or group membership.
           </p>
         </details>
 
@@ -634,9 +701,9 @@
         <div class="box">
           <div class="box-title">Cost marker (non-moral)</div>
           <p class="small">
-            Where mappings repeatedly show suppressed Ω-legibility, low/simulated Σ, Ψ→Other externalization, chronic Λ, and stabilized Α scripts,
-            PMS-EDEN treats the configuration as a drift regime sustained by asymmetric cost carriage. This is a structural non-viability signal,
-            not a moral verdict.
+            Where mappings repeatedly show suppressed Ω-legibility, low or simulated Σ, Ψ→Other externalization or Ψ misbinding,
+            chronic Λ, and stabilized Α scripts, PMS-EDEN treats the configuration as a drift regime sustained by asymmetric cost carriage.
+            This is a structural non-viability signal under PMS criteria as used in this paper, not a moral verdict.
           </p>
         </div>
       </section>
@@ -650,7 +717,7 @@
         <h3>8.1 Alternative explanations (methodological discipline)</h3>
         <p class="small">
           PMS-EDEN explicitly lists alternative sufficient generators to prevent over-claiming. No refutation is attempted; no ranking is implied.
-          Alternatives are phrased in role/gradient language (Ω positions), not group labels.
+          Alternatives are phrased in role/gradient language (Ω positions), not group labels. All AE use remains scene-bound and structurally revisable.
         </p>
         <div class="grid">
           <div class="box">
@@ -666,9 +733,16 @@
             </p>
           </div>
           <div class="box">
-            <div class="box-title">AE3 — Drift without devaluation</div>
+            <div class="box-title">AE3 — Drift without humiliation</div>
             <p class="small">
-              Stabilization can occur via withdrawal/exit/isolation rather than devaluation: Χ increases as withdrawal; Θ locks separation.
+              Stabilization can occur via withdrawal/exit/isolation rather than humiliation: Χ increases as withdrawal; Θ locks separation.
+            </p>
+          </div>
+          <div class="box">
+            <div class="box-title">AE4 — External institutional stress</div>
+            <p class="small">
+              Drift can be driven by institutional scarcity, compliance, sanction logics, throughput pressure, or administrative overload rather than
+              by a locally stabilized regime logic; Α then stabilizes procedural survival scripts.
             </p>
           </div>
         </div>
@@ -698,6 +772,18 @@
               <td><strong>External institutions stabilize roles</strong></td>
               <td>Contracts/norms scaffold Σ/Ψ and constrain □; regime-like drift becomes less likely.</td>
             </tr>
+            <tr>
+              <td><strong>Rival frameworks retain explanatory force</strong></td>
+              <td>In some scenes, trauma, attachment, symbolic recognition, institutional asymmetry, theological anthropology, or phenomenological alienation may remain more discriminative than PMS-EDEN.</td>
+            </tr>
+            <tr>
+              <td><strong>Genuine non-capture cases</strong></td>
+              <td>Where PMS-EDEN would smooth over distinctions better preserved elsewhere, the model should be narrowed, suspended, or treated as partial.</td>
+            </tr>
+            <tr>
+              <td><strong>Strongest applicability condition</strong></td>
+              <td>Highest discriminative force occurs when Ω is action-relevant, □ becomes comparison-dominant, Σ stays low, Ψ is absent/misbound/externalized, Λ becomes chronic, and Α stabilizes scripts.</td>
+            </tr>
           </tbody>
         </table>
 
@@ -705,7 +791,7 @@
           <div class="box-title">Non-normalization clause</div>
           <p class="small">
             Reduced applicability limits explanatory reach, not viability criteria. Persistent cost externalization remains structurally non-viable
-            under PMS regardless of genesis path.
+            under PMS criteria as used in this paper regardless of genesis path.
           </p>
         </div>
       </section>
@@ -718,7 +804,8 @@
 
         <p>
           This section is repository-facing: it situates PMS-EDEN relative to adjacent theoretical programs, clarifies non-goals,
-          and reduces predictable misclassification (psychological, theological, ideological, normative).
+          reduces predictable misclassification (psychological, theological, ideological, normative), and preserves rival-framing openness
+          without replacement or superiority claims.
         </p>
 
         <table class="table">
@@ -746,14 +833,19 @@
               <td>More schematic/generative; designed for cross-scene comparability.</td>
             </tr>
             <tr>
-              <td>Systems theory traditions</td>
-              <td>Stabilization logic; self-reinforcing scripts; regimes.</td>
-              <td>Role-position gradients (Ω) kept explicit; D as viability boundary without verdict logic.</td>
+              <td>Systems theory</td>
+              <td>Drift, stabilization, regime reproduction.</td>
+              <td>Praxeological and role-position oriented (Ω gradients); explicit dignity-in-practice (D) as viability boundary without moralization.</td>
             </tr>
             <tr>
-              <td>Economies of worth</td>
-              <td>Comparison frames; justification grammars; ranking tests.</td>
-              <td>Drift modeled as operator-carriage failure under Ω/Θ/Λ, not primarily as plural worth orders.</td>
+              <td>Pragmatic sociology</td>
+              <td>Value frames and justification grammars.</td>
+              <td>Drift modeled as operator carriage failure under Ω/Θ/Λ; dissatisfaction framed as system maintenance cost, not deficit.</td>
+            </tr>
+            <tr>
+              <td>Theological contrast</td>
+              <td>Contrast class only.</td>
+              <td>Eden as minimal structural test scene, not doctrine or moral anthropology; tragedy defined structurally, not as desert.</td>
             </tr>
           </tbody>
         </table>
@@ -762,7 +854,8 @@
           <div class="box-title">Label risk control</div>
           <p class="small">
             If a regime label is predictably politicized or misread, the preferred fix is lower-entropy renaming
-            (e.g., “Ω-illegibility regime”) while preserving the operator definition and non-ideological stance.
+            (for example, an Ω-illegibility label) while preserving the operator definition, paper-internal label discipline,
+            and non-ideological stance.
           </p>
         </div>
       </section>
@@ -814,7 +907,7 @@
 
         <p>
           The authoritative overlay specification is <span class="code-inline">PMS-EDEN.yaml</span>,
-          intended to be loaded after <span class="code-inline">PMS.yaml</span> (PMS_1.1).
+          intended to be loaded after <span class="code-inline">PMS.yaml</span> (PMS_1.3).
         </p>
 
         <div class="box small">
@@ -828,7 +921,13 @@
 
         <p class="small">
           <strong>Base dependency:</strong><br />
-          <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.1)</em>
+          <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.3)</em>
+        </p>
+
+        <p class="small">
+          <strong>Source-paper basis:</strong><br />
+          <em>PMS-EDEN – Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss</em>
+          (<span class="code-inline">PMS-EDEN_1.1</span>; authoritative overlay source)
         </p>
 
         <p>

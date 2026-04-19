@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<title>PMS-EDEN — Example 2: Mediation Termination vs Mediation</title>
+		<style type="text/css">
+			:root {
+			  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-heading: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+			  --font-mono: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+			  --color-bg: #f5f7fb;
+			  --color-surface: #ffffff;
+			  --color-surface-soft: #f9fbfd;
+			  --color-text: #18202a;
+			  --color-muted: #5f6b7a;
+			  --color-accent: #1f4b99;
+			  --color-accent-soft: #e8f0ff;
+			  --color-border: #d9e1ea;
+			  --color-border-strong: #bfc9d8;
+			  --color-quote: #2f5da8;
+			  --color-code-bg: #f3f5f7;
+			  --color-table-head: #eef3f8;
+			  --color-row-alt: #fbfcfe;
+
+			  --shadow-soft: 0 10px 30px rgba(18, 30, 50, 0.06);
+			  --radius-sm: 6px;
+			  --radius-md: 10px;
+			  --radius-lg: 16px;
+
+			  --content-width: 980px;
+			  --line-height: 1.7;
+			}
+
+			*,
+			*::before,
+			*::after {
+			  box-sizing: border-box;
+			}
+
+			html {
+			  margin: 0;
+			  padding: 0;
+			  scroll-behavior: smooth;
+			}
+
+			body {
+			  margin: 0;
+			  padding: 32px 20px 64px;
+			  font-family: var(--font-body);
+			  font-size: 16px;
+			  line-height: var(--line-height);
+			  color: var(--color-text);
+			  background:
+			    linear-gradient(180deg, #f7f9fc 0%, #f3f6fa 100%);
+			}
+
+			.page,
+			body > header,
+			body > section,
+			body > main {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.page {
+			  background: var(--color-surface);
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-lg);
+			  box-shadow: var(--shadow-soft);
+			  padding: 40px 42px 56px;
+			}
+
+			/* Header */
+			header {
+			  width: min(100%, var(--content-width));
+			  margin: 0 auto 28px;
+			  padding: 24px 0 18px;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			header h1 {
+			  margin: 0 0 10px;
+			  font-family: var(--font-heading);
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			  line-height: 1.15;
+			  text-align: center;
+			  letter-spacing: -0.02em;
+			  color: var(--color-text);
+			}
+
+			header h2 {
+			  margin: 0 auto 12px;
+			  max-width: 48rem;
+			  font-size: 1.15rem !important;
+			  line-height: 1.45;
+			  font-weight: 400;
+			  text-align: center;
+			  color: var(--color-muted);
+			  border: 0;
+			  padding: 0;
+			}
+
+			header .subtitle {
+			  max-width: 52rem;
+			  margin: 0 auto 12px;
+			  text-align: center;
+			  color: var(--color-muted);
+			  font-size: 1rem;
+			}
+
+			header .meta {
+			  max-width: 52rem;
+			  margin: 14px auto 0;
+			  padding: 12px 14px;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  background: var(--color-surface-soft);
+			  font-size: 0.88rem;
+			  line-height: 1.55;
+			  color: var(--color-muted);
+			}
+
+			/* Sections */
+			section {
+			  margin: 0 0 28px;
+			}
+
+			section#content {
+			  width: min(100%, var(--content-width));
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			  font-family: var(--font-heading);
+			  color: var(--color-text);
+			  letter-spacing: -0.01em;
+			}
+
+			h1 {
+			  font-size: clamp(2rem, 4vw, 2.8rem);
+			  font-weight: 500;
+			}
+
+			h2,
+			h2 strong {
+			  padding-bottom: 8px;
+			  font-size: 1.65rem !important;
+			  font-weight: 500 !important;
+			  line-height: 1.25;
+			  border-bottom: 1px solid var(--color-border);
+			}
+
+			h3,
+			h3 strong {
+			  margin: 22px 0 8px !important;
+			  font-size: 1.2rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h4,
+			h4 strong {
+			  margin: 18px 0 6px !important;
+			  font-size: 1.05rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			h5,
+			h5 strong,
+			h6,
+			h6 strong {
+			  margin: 16px 0 4px !important;
+			  font-size: 1rem !important;
+			  font-weight: 600 !important;
+			  line-height: 1.35;
+			}
+
+			/* Text */
+			p {
+			  margin: 0 0 12px;
+			}
+
+			strong {
+			  color: #111827;
+			}
+
+			em {
+			  color: inherit;
+			}
+
+			.small {
+			  font-size: 0.92rem;
+			  color: var(--color-muted);
+			}
+
+			/* Links */
+			a {
+			  color: var(--color-accent);
+			  text-decoration: none;
+			  border-bottom: 1px solid transparent;
+			}
+
+			a:hover,
+			a:focus {
+			  border-bottom-color: currentColor;
+			}
+
+			/* Lists */
+			ul,
+			ol {
+			  margin: 8px 0 14px 1.25rem;
+			  padding: 0;
+			}
+
+			li {
+			  margin: 0 0 6px;
+			  padding-left: 2px;
+			}
+
+			ul ul,
+			ol ol,
+			ul ol,
+			ol ul {
+			  margin-top: 6px;
+			  margin-bottom: 8px;
+			}
+
+			li > p {
+			  margin-bottom: 6px;
+			}
+
+			/* Horizontal rule */
+			hr {
+			  display: block;
+			  height: 0;
+			  border: 0;
+			  border-top: 1px solid var(--color-border);
+			  margin: 24px 0;
+			}
+
+			/* Quotes */
+			blockquote {
+			  margin: 16px 0;
+			  padding: 12px 18px;
+			  border-left: 4px solid var(--color-quote);
+			  background: #f8fbff;
+			  color: #324154;
+			  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+			}
+
+			blockquote p:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Code */
+			code,
+			.code-inline {
+			  font-family: var(--font-mono);
+			  font-size: 0.92em;
+			  background: var(--color-code-bg);
+			  border: 1px solid #e7ebf0;
+			  border-radius: 4px;
+			  padding: 0.12em 0.4em;
+			  color: #233044;
+			}
+
+			pre {
+			  margin: 14px 0 18px;
+			  padding: 14px 16px;
+			  overflow-x: auto;
+			  background: #111827;
+			  color: #f3f4f6;
+			  border-radius: var(--radius-md);
+			  border: 1px solid #0f172a;
+			  text-align: left;
+			  line-height: 1.55;
+			}
+
+			pre code {
+			  background: transparent;
+			  border: 0;
+			  color: inherit;
+			  padding: 0;
+			  font-size: 0.92rem;
+			}
+
+			/* Boxes / callouts */
+			.box {
+			  margin: 16px 0 18px;
+			  padding: 14px 16px;
+			  border: 1px solid var(--color-border);
+			  border-left: 4px solid var(--color-accent);
+			  border-radius: var(--radius-md);
+			  background: linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+			  line-height: 1.55;
+			}
+
+			.box-title {
+			  margin: 0 0 6px;
+			  font-size: 0.95rem;
+			  font-weight: 700;
+			  color: var(--color-accent);
+			}
+
+			.box p:last-child,
+			.box ul:last-child,
+			.box ol:last-child {
+			  margin-bottom: 0;
+			}
+
+			/* Tables */
+			.table,
+			table {
+			  width: 100%;
+			  margin: 14px 0 18px;
+			  border-collapse: collapse;
+			  border-spacing: 0;
+			  font-size: 0.95rem;
+			  line-height: 1.5;
+			  border: 1px solid var(--color-border);
+			  border-radius: var(--radius-md);
+			  overflow: hidden;
+			}
+
+			.table th,
+			.table td,
+			table th,
+			table td {
+			  padding: 10px 12px;
+			  vertical-align: top;
+			  border: 1px solid var(--color-border);
+			  text-align: left;
+			}
+
+			.table th,
+			table th {
+			  background: var(--color-table-head);
+			  color: #233044;
+			  font-weight: 700;
+			  font-variant: small-caps;
+			  letter-spacing: 0.03em;
+			}
+
+			.table tr:nth-child(even) td,
+			table tr:nth-child(even) td {
+			  background: var(--color-row-alt);
+			}
+
+			.table tr:nth-child(odd) td,
+			table tr:nth-child(odd) td {
+			  background: #ffffff;
+			}
+
+			/* Tags */
+			.tag {
+			  display: inline-block;
+			  margin: 0 6px 6px 0;
+			  padding: 3px 10px;
+			  border: 1px solid var(--color-border-strong);
+			  border-radius: 999px;
+			  background: #fff;
+			  color: var(--color-muted);
+			  font-size: 0.78rem;
+			  line-height: 1.3;
+			}
+
+			/* Placeholder */
+			.placeholder {
+			  color: var(--color-muted);
+			  font-style: italic;
+			}
+
+			/* Two-column layouts */
+			.two-column {
+			  display: grid;
+			  grid-template-columns: repeat(2, minmax(0, 1fr));
+			  gap: 18px;
+			  margin: 10px 0 16px;
+			}
+
+			.two-column > div {
+			  min-width: 0;
+			}
+
+			/* Utility */
+			.pagebreak {
+			  page-break-before: always;
+			  break-before: page;
+			}
+
+			/* Better spacing for consecutive structural blocks */
+			h2 + p,
+			h3 + p,
+			h4 + p {
+			  margin-top: 2px;
+			}
+
+			p + ul,
+			p + ol {
+			  margin-top: 6px;
+			}
+
+			ul + p,
+			ol + p {
+			  margin-top: 10px;
+			}
+
+			/* Optional content-specific helper classes */
+			.meta-grid {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			  margin: 12px 0 18px;
+			}
+
+			.meta-grid dt {
+			  font-weight: 600;
+			  color: var(--color-muted);
+			}
+
+			.meta-grid dd {
+			  margin: 0;
+			}
+
+			.definition-list {
+			  display: grid;
+			  grid-template-columns: 180px 1fr;
+			  gap: 8px 14px;
+			}
+
+			.definition-list dt {
+			  font-weight: 600;
+			  color: var(--color-accent);
+			}
+
+			.definition-list dd {
+			  margin: 0;
+			}
+
+			.callout-warning {
+			  border-left-color: #b45309;
+			  background: #fffaf2;
+			}
+
+			.callout-success {
+			  border-left-color: #0f766e;
+			  background: #f4fffd;
+			}
+
+			.callout-danger {
+			  border-left-color: #b91c1c;
+			  background: #fff8f8;
+			}
+
+			/* Images */
+			img {
+			  display: block;
+			  max-width: 100%;
+			  height: auto;
+			  margin: 14px auto 18px;
+			  border-radius: var(--radius-sm);
+			}
+
+			/* Print */
+			@media print {
+			  :root {
+			    --color-bg: white;
+			    --color-surface: white;
+			    --color-surface-soft: white;
+			    --color-row-alt: #fafafa;
+			    --shadow-soft: none;
+			  }
+
+			  html,
+			  body {
+			    background: white !important;
+			  }
+
+			  body {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    font-size: 11pt;
+			    line-height: 1.45;
+			  }
+
+			  .page,
+			  body > header,
+			  body > section,
+			  body > main,
+			  section#content {
+			    width: 100%;
+			    max-width: 100%;
+			    margin: 0;
+			  }
+
+			  .page {
+			    border: 0;
+			    box-shadow: none;
+			    border-radius: 0;
+			    padding: 0;
+			  }
+
+			  header {
+			    margin-bottom: 18px;
+			    padding: 0 0 12px;
+			  }
+
+			  h2,
+			  h2 strong {
+			    page-break-after: avoid;
+			  }
+
+			  h3,
+			  h3 strong,
+			  h4,
+			  h4 strong {
+			    page-break-after: avoid;
+			  }
+
+			  p,
+			  li,
+			  blockquote,
+			  .box,
+			  table,
+			  pre {
+			    page-break-inside: avoid;
+			  }
+
+			  a,
+			  a:visited {
+			    color: inherit;
+			    text-decoration: none;
+			  }
+
+			  a[href]::after {
+			    content: "";
+			  }
+
+			  .box {
+			    background: white;
+			  }
+			}
+
+			/* Responsive */
+			@media (max-width: 900px) {
+			  body {
+			    padding: 20px 14px 44px;
+			  }
+
+			  .page {
+			    padding: 28px 22px 40px;
+			  }
+
+			  .two-column {
+			    grid-template-columns: 1fr;
+			  }
+
+			  .meta-grid,
+			  .definition-list {
+			    grid-template-columns: 1fr;
+			    gap: 4px 0;
+			  }
+
+			  header h1 {
+			    font-size: 2.2rem;
+			  }
+
+			  h2,
+			  h2 strong {
+			    font-size: 1.45rem !important;
+			  }
+			}
+
+			@media (max-width: 640px) {
+			  body {
+			    font-size: 15px;
+			  }
+
+			  .page {
+			    padding: 22px 16px 32px;
+			    border-radius: 12px;
+			  }
+
+			  header .meta {
+			    padding: 10px 12px;
+			  }
+
+			  .table,
+			  table {
+			    font-size: 0.88rem;
+			  }
+
+			  .table th,
+			  .table td,
+			  table th,
+			  table td {
+			    padding: 8px 9px;
+			  }
+
+			  pre {
+			    padding: 12px 13px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><strong>PMS–EDEN</strong></h1>
+			<h2><em>Example 2: Mediation Termination vs. Mediation Compulsion</em></h2>
+			<div class="meta">
+				<strong>Example ID:</strong> <code>PMS-EDEN_EX02</code> &middot;
+				<strong>Example Version:</strong> <code>1.1</code> &middot;
+				<strong>Schema Version:</strong> <code>PMS-EDEN_1.1</code><br />
+				<strong>Status:</strong> draft &middot;
+				<strong>Language:</strong> EN &middot;
+				<strong>Depends on:</strong> <code>PMS_1.3</code>, <code>PMS-EDEN_1.1</code>
+			</div>
+		</header>
+
+		<section id="content">
+
+			<h2>0) Example Identity</h2>
+			<p>
+				<strong>Example label:</strong> <em>Mediation Termination vs. Mediation Compulsion</em>
+			</p>
+			<p>
+				<strong>Aligned with:</strong> <code>PMS-EDEN.yaml</code> (<code>PMS-EDEN_1.1</code>) and
+				<code>PMS.yaml</code> (<code>PMS_1.3</code>)
+			</p>
+			<hr />
+
+			<h2>1) Minimal Vignette</h2>
+
+			<h3>1.1 Title</h3>
+			<p>
+				Mediation collapse as cost-rational, not character.
+			</p>
+
+			<h3>1.2 Scene boundaries</h3>
+			<ul>
+				<li><strong>Domain:</strong> post-breach coordination, repair exhaustion, mediation, exit, and continuity burden</li>
+				<li><strong>Scope:</strong> roles, asymmetries, temporal accumulation, mediation viability, and binding dynamics</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>person-level judgement</li>
+						<li>motive attribution</li>
+						<li>virtue assessment</li>
+						<li>gender coding</li>
+						<li>clinical or psychological interpretation</li>
+						<li>action prescription</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>1.3 Short scene</h3>
+			<p>
+				A scene has already passed through breach and failed repair attempts.
+				Costs have accumulated across time, and earlier mediation efforts have
+				already consumed available coordination bandwidth. One role-position stays
+				closer to endpoint authority and exit capacity, while another remains closer
+				to continuity work, mediation labor, and relational carry-over. Pressure now
+				rises to “keep talking” or “keep it together” without reopening the actual
+				role interfaces through which burdens, obligations, and exposure would have
+				to be redistributed. Mediation continues as a repeated script, while hard
+				exit, distancing, or formal withdrawal increasingly appear as competing
+				stabilization responses.
+			</p>
+
+			<h3>1.4 Structural focus</h3>
+			<p>
+				The case examines when mediation stops functioning as <strong>Σ</strong>-capable
+				coordination and becomes a cost-displacement mechanism under real <strong>Ω</strong> across
+				irreversible <strong>Θ</strong>. The decisive issue is not whether mediation is morally
+				preferable, but whether continued mediation still changes the consequence
+				field or merely externalizes further load.
+			</p>
+
+			<h3>1.5 Scenic elements</h3>
+			<ul>
+				<li><strong>Actors:</strong>
+					<ul>
+						<li>role-position near endpoint authority and exit capacity</li>
+						<li>role-position near continuity work and mediation labor</li>
+						<li>shared repair or conflict-processing interface</li>
+					</ul>
+				</li>
+				<li><strong>Salient objects:</strong>
+					<ul>
+						<li>prior repair attempts</li>
+						<li>mediation requests</li>
+						<li>boundary or exit moves</li>
+						<li>carry-over obligations</li>
+						<li>fairness and effort accounting</li>
+						<li>unreopened role interfaces</li>
+					</ul>
+				</li>
+				<li><strong>Trigger event:</strong>
+					<ul>
+						<li><strong>Label:</strong> repair window saturation</li>
+						<li><strong>Description:</strong> A prior breach has made asymmetrical consequences explicit, while
+							repeated mediation no longer reopens viable integration pathways.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>2) Why This Is Repo-Useful</h2>
+
+			<h3>2.1 Structural focus</h3>
+			<p>
+				This example clarifies one of the most important PMS-EDEN distinctions:
+				mediation is not automatically coordination, and terminating mediation is
+				not automatically character failure. The case shows how mediation can drift
+				into a stabilized carry-demand under active <strong>Ω</strong> and accumulating <strong>Θ</strong>.
+			</p>
+
+			<h3>2.2 Repository value</h3>
+			<ul>
+				<li>Demonstrates how post-breach sequences can move from attempted repair into mediation compulsion without recovering <strong>Σ</strong>.</li>
+				<li>Makes visible the difference between one-time endpoint costs and recurring continuity costs across <strong>Θ</strong>.</li>
+				<li>Shows how mediation scripts can stabilize as <strong>Α</strong> even when integration does not consolidate.</li>
+				<li>Clarifies how <strong>Ψ</strong> can polarize into exit-binding on one side and carry-binding on the other.</li>
+				<li>Provides a clean case for distinguishing structural rationality from moral ranking in PMS-EDEN examples.</li>
+			</ul>
+
+			<h3>2.3 Central repo question</h3>
+			<p>
+				When does mediation remain structurally viable coordination, and when does
+				it become a coercive endurance script that externalizes cost without
+				reopening <strong>Σ</strong>-capable interfaces?
+			</p>
+
+			<h3>2.4 Lens relevance</h3>
+			<ul>
+				<li><strong>Post-breach viability:</strong> The case directly instantiates PMS-EDEN's post-breach logic: once <strong>Θ</strong> and <strong>Ω</strong>
+					make prior costs non-resettable, continued repair scripts may become
+					structurally more expensive than termination.</li>
+				<li><strong>Reciprocity conditions:</strong> The example highlights that reciprocity requires active <strong>Σ</strong> under real <strong>Ω</strong>,
+					not indefinite continuation of mediation language.</li>
+				<li><strong>Validity gate:</strong> The case is particularly useful for showing how mediation pressure can
+					become formally invalid as PMS application when <strong>Χ</strong> is suppressed and <strong>Ψ</strong> is
+					externalized.</li>
+			</ul>
+
+			<hr />
+
+			<h2>3) Drift Position in Master Trace</h2>
+			<p>
+				<strong>Stage label:</strong> Post-breach carry-demand stabilization under blocked Σ
+			</p>
+			<p>
+				<strong>Master trace handle:</strong><br />
+				<code>EDEN -&gt; THRESHOLD -&gt; NRK -&gt; □comparison -&gt; PS -&gt; residual_stabilization(Λ/Φ/Α) -&gt; (DEVALUATION|HUMILIATION) -&gt; RECIPROCITY_LOSS</code>
+			</p>
+			<p>
+				<strong>Local position note:</strong> This case sits downstream of breach/NRK logic and near residual
+				stabilization. It does not require explicit pseudo-symmetry or overt
+				devaluation to become structurally non-viable; carry-demand alone may
+				stabilize the drift.
+			</p>
+
+			<hr />
+
+			<h2>4) Operator Mapping</h2>
+
+			<h3>4.1 Reduced signature</h3>
+			<p><code>Ω, Θ, □, Λ, Α, Χ, Σ, Ψ, Φ</code></p>
+			<p>
+				The case centers on post-breach asymmetry, temporal irreversibility,
+				mediation scripts as attractors, and the failure of integration to
+				consolidate under continued repair pressure.
+			</p>
+
+			<h3>4.2 Structural analysis by operator</h3>
+			<ul>
+				<li><strong>Δ (Difference):</strong>
+					<ul>
+						<li>The decisive distinction is between one-time endpoint costs and recurring continuity costs.</li>
+						<li>A further distinction emerges between viable coordination and repeated mediation without interface change.</li>
+					</ul>
+				</li>
+				<li><strong>∇ (Impulse):</strong>
+					<ul>
+						<li>Pressure intensifies to keep the scene together, restore relation, or prevent visible rupture without renegotiating actual burdens.</li>
+					</ul>
+				</li>
+				<li><strong>□ (Frame):</strong>
+					<ul>
+						<li>The frame begins as coordination/repair praxis but drifts toward security, containment, and comparison/accounting.</li>
+						<li>The drifted frame increasingly asks who tried, who failed, and who owes further effort.</li>
+					</ul>
+				</li>
+				<li><strong>Λ (Non-Event):</strong>
+					<ul>
+						<li>Missing acknowledgment of irreversible prior cost remains active.</li>
+						<li>Missing burden redistribution remains active.</li>
+						<li>Missing durable repair remains the decisive non-event in the scene.</li>
+					</ul>
+				</li>
+				<li><strong>Α (Attractor):</strong>
+					<ul>
+						<li>Repeated mediation loops stabilize as recurrent scripts.</li>
+						<li>Renewed appeals to continue, hard boundary moves, and effort-accounting also stabilize as recurrent scripts.</li>
+					</ul>
+				</li>
+				<li><strong>Ω (Asymmetry):</strong>
+					<ul>
+						<li>Real asymmetry appears in who can exit.</li>
+						<li>Real asymmetry appears in who must carry continuity costs.</li>
+						<li>Real asymmetry appears in who absorbs fallout and who bears repeated coordination labor.</li>
+					</ul>
+				</li>
+				<li><strong>Θ (Temporality):</strong>
+					<ul>
+						<li>Prior mediation costs are no longer resettable.</li>
+						<li>The scene is shaped by accumulation, exhaustion, and increasing irreversibility of prior burden.</li>
+					</ul>
+				</li>
+				<li><strong>Φ (Recontextualization):</strong>
+					<ul>
+						<li>Mediation may be recontextualized from a coordination attempt into a moral requirement.</li>
+						<li>Exit may be reframed as aggression or failure.</li>
+					</ul>
+				</li>
+				<li><strong>Χ (Distance):</strong>
+					<ul>
+						<li>Distance is the key validity test: can mediation be paused, limited, or terminated without being recoded as abandonment, hostility, or guilt?</li>
+					</ul>
+				</li>
+				<li><strong>Σ (Integration):</strong>
+					<ul>
+						<li>Integration would require reopened interfaces around burden, consequence, and obligation.</li>
+						<li>In the drifted scene, mediation repeats without producing durable consolidation.</li>
+					</ul>
+				</li>
+				<li><strong>Ψ (Self-Binding):</strong>
+					<ul>
+						<li>Self-binding polarizes: one side binds to exit, containment, or formal boundary.</li>
+						<li>The other side binds to continuity, carrying, or renewed repair.</li>
+						<li>Drift worsens when either binding is imposed outward as obligation.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>4.3 Derived-axes projection</h3>
+			<ul>
+				<li><strong>A (Awareness):</strong> Awareness rises as the cost geometry becomes clearer, especially around
+					who carries recurring mediation load and who can terminate sooner.</li>
+				<li><strong>C (Coherence):</strong> Coherence weakens because mediation continues as script while <strong>Λ</strong> remains
+					open and the scene no longer produces actual repair consolidation.</li>
+				<li><strong>R (Responsibility):</strong> Responsibility becomes unstable when mediation is confused with moral
+					duty and recurring costs are externalized onto the continuity-proximal
+					role-position.</li>
+				<li><strong>E (Action / Enactment):</strong> Action quality drops where realizations continue but fail the <strong>Σ</strong>-carriage
+					criterion; repeated mediation is not equivalent to integrated repair.</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Dignity-in-Practice is stressed when continued mediation is demanded
+					despite exhausted repair conditions, especially where <strong>Χ</strong> is attacked and
+					endurance is coerced.</li>
+			</ul>
+
+			<h3>4.4 Structural mechanism summary</h3>
+			<ul>
+				<li>Breach renders <strong>Ω</strong> and consequence asymmetry explicit.</li>
+				<li><strong>Θ</strong> makes prior repair costs non-resettable.</li>
+				<li>Expected redistribution and acknowledgment do not consolidate (<strong>Λ</strong> remains open).</li>
+				<li><strong>□</strong> drifts from repair praxis toward security and fairness accounting.</li>
+				<li><strong>Α</strong> stabilizes mediation loops and counter-scripts (continue vs exit).</li>
+				<li><strong>Σ</strong> remains suppressed or non-consolidating.</li>
+				<li><strong>Ψ</strong> polarizes into carry-binding and exit-binding.</li>
+				<li>Further mediation risks becoming cost displacement rather than coordination.</li>
+			</ul>
+			<p>
+				<strong>Concise formula:</strong><br />
+				<code>breach -&gt; Ω legible + Θ irreversible -&gt; open Λ -&gt; □security/comparison -&gt; Α mediation scripts -&gt; Σ low/suppressed -&gt; Ψ polarization -&gt; mediation compulsion or termination response</code>
+			</p>
+
+			<hr />
+
+			<h2>5) Cost Layout</h2>
+			<p>
+				<strong>Note:</strong> Structural cost geometry only; non-moral; scene-bound.
+			</p>
+
+			<h3>5.1 Consequence interfaces</h3>
+			<ul>
+				<li><strong>Exit-adjacent costs:</strong>
+					<ul>
+						<li>immediate rupture cost</li>
+						<li>endpoint decision cost</li>
+						<li>reputational fallout</li>
+						<li>loss of continuity</li>
+					</ul>
+				</li>
+				<li><strong>Continuation-adjacent costs:</strong>
+					<ul>
+						<li>repeated mediation labor</li>
+						<li>repair effort</li>
+						<li>temporal carry-over load</li>
+						<li>coordination fatigue</li>
+						<li>ongoing fallout handling</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>5.2 Asymmetry readout</h3>
+			<ul>
+				<li><strong>Ω capacity gradient:</strong> Exit-near roles often hold more capacity to terminate, formalize, or close the scene.</li>
+				<li><strong>Ω exposure gradient:</strong> Continuity-near roles often absorb more repeated exposure to unresolved consequences and mediation demand across <strong>Θ</strong>.</li>
+				<li><strong>Ω obligation gradient:</strong> Mediation duty can become tacitly assigned to the role-position already burdened with continuity work.</li>
+				<li><strong>Ω leverage gradient:</strong> Appeals to fairness, commitment, or responsibility can function as leverage to keep mediation going after its repair value is exhausted.</li>
+			</ul>
+
+			<h3>5.3 System effect</h3>
+			<p>
+				Once mediation costs become irreversibly cumulative, continued mediation can
+				become structurally more expensive than its likely repair value. At that
+				point, mediation may stop coordinating costs and begin redistributing them.
+			</p>
+
+			<hr />
+
+			<h2>6) Pattern Markers</h2>
+
+			<h3>6.1 Primary markers</h3>
+			<ul>
+				<li><strong>P-Ψ-EXT — Ψ → Externalization</strong><br />
+					<strong>Operator links:</strong> <code>Ψ, Χ, □, Ω</code><br />
+					One role-position is pressed to keep mediating, carrying, or proving
+					commitment, while binding is no longer primarily self-applied.
+				</li>
+				<li><strong>P-Σ-SIM — Σ-Simulation instead of Integration</strong><br />
+					<strong>Operator links:</strong> <code>Σ, Λ, Φ, Α</code><br />
+					Mediation continues as a visible repair-performance, but the underlying
+					interfaces do not reopen and remainder persists.
+				</li>
+				<li><strong>P-Λ-DN — Λ → Denial / Suppression</strong><br />
+					<strong>Operator links:</strong> <code>Λ, Φ, Α</code><br />
+					Prior irrecoverable costs are not fully acknowledged; the scene acts as
+					if further talking could erase already accumulated consequence.
+				</li>
+			</ul>
+
+			<h3>6.2 Additional red flags</h3>
+			<ul>
+				<li>“You must keep mediating.”</li>
+				<li>“Stopping mediation proves abandonment.”</li>
+				<li>“More discussion is required even though nothing structurally changes.”</li>
+				<li>“Boundary-setting is framed as aggression by default.”</li>
+				<li>“Prior costs are ignored while new effort is demanded.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>7) Frame Validity and Drift Signals</h2>
+
+			<h3>7.1 Operative frame — <strong>□</strong></h3>
+			<ul>
+				<li><strong>In scope:</strong>
+					<ul>
+						<li>repair attempts</li>
+						<li>mediation viability</li>
+						<li>exit capacity</li>
+						<li>continuity burden</li>
+						<li>fairness and effort accounting</li>
+					</ul>
+				</li>
+				<li><strong>Out of scope:</strong>
+					<ul>
+						<li>global celebration of mediation as such</li>
+						<li>person-level maturity claims</li>
+						<li>moral ranking of exit vs continuation</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The decisive frame drift occurs when repair praxis becomes security /
+				containment / accounting logic and further mediation is demanded without
+				reopening actual interfaces.
+			</p>
+
+			<h3>7.2 Non-event integrity check — <strong>Λ</strong></h3>
+			<ul>
+				<li><strong>Decisive absences:</strong>
+					<ul>
+						<li>missing acknowledgment of prior irreversible cost</li>
+						<li>missing burden redistribution</li>
+						<li>missing durable repair consolidation</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Λ</strong> remains active when the scene behaves as though repeated mediation could
+				still perform repair after the relevant repair window has closed.
+			</p>
+
+			<h3>7.3 Asymmetry audit — <strong>Ω</strong></h3>
+			<ul>
+				<li><strong>Exposure bearers:</strong>
+					<ul>
+						<li>continuity-near role-position</li>
+						<li>mediation labor bearer</li>
+						<li>fallout-handling position</li>
+					</ul>
+				</li>
+				<li><strong>Capacity holders:</strong>
+					<ul>
+						<li>exit-capable role-position</li>
+						<li>endpoint authority position</li>
+						<li>formal boundary-setting position</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> The central issue is not who is right, but that the capacity to exit and
+				the obligation to carry are unevenly distributed.
+			</p>
+
+			<h3>7.4 Temporality and trajectory — <strong>Θ</strong></h3>
+			<ul>
+				<li><strong>Trajectory pattern:</strong>
+					<ul>
+						<li>breach</li>
+						<li>initial repair attempt</li>
+						<li>repeated mediation</li>
+						<li>cost accumulation</li>
+						<li>repair saturation</li>
+						<li>boundary or exit pressure</li>
+						<li>polarized continuation vs termination</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> Temporal irreversibility matters because prior mediation costs cannot be
+				undone simply by repeating the mediation script.
+			</p>
+
+			<h3>7.5 Recontextualization dynamics — <strong>Φ</strong></h3>
+			<p>
+				<strong>Key shift:</strong> Mediation is re-read from a coordination attempt into a moral test of
+				commitment, fairness, or willingness.
+			</p>
+			<p>
+				<strong>Drift signal:</strong> <strong>Φ</strong> ceases to support adaptation when it transforms exhausted mediation into
+				compulsory virtue display.
+			</p>
+
+			<h3>7.6 Distance enforcement — <strong>Χ</strong></h3>
+			<p><strong>Core test:</strong> Can mediation be limited or terminated without dignity collapse?</p>
+			<ul>
+				<li>distance framed as abandonment</li>
+				<li>boundary framed as aggression</li>
+				<li>pause framed as moral failure</li>
+				<li>formalization framed as refusal to care</li>
+			</ul>
+			<p>
+				<strong>PMS relevance:</strong> PMS-EDEN requires <strong>Χ</strong> both as application gate and as a structural limit on
+				coercive continuation demands.
+			</p>
+
+			<h3>7.7 Integration quality — <strong>Σ</strong></h3>
+			<ul>
+				<li><strong>Must integrate:</strong>
+					<ul>
+						<li>acknowledgment of prior costs</li>
+						<li>burden redistribution</li>
+						<li>role interface clarity</li>
+						<li>repair viability</li>
+						<li>reversibility conditions</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<strong>Drift signal:</strong> <strong>Σ</strong> fails when mediation repeats but does not reopen the interfaces required
+				for actual redistribution, clarification, or coordinated repair.
+			</p>
+
+			<h3>7.8 Self-binding test — <strong>Ψ</strong></h3>
+			<p><strong>Decisive question:</strong> Who is being bound to what?</p>
+			<ul>
+				<li><strong>Valid form:</strong> Each role-position binds itself to what it can carry, limit, or terminate
+					under reversible and dignity-preserving conditions.</li>
+				<li><strong>Invalid form:</strong> One role-position is compelled to continue carrying mediation labor while
+					the other remains relatively free to exit, close, or redefine the scene.</li>
+			</ul>
+
+			<hr />
+
+			<h2>8) Validity Gate Reminder</h2>
+
+			<h3>8.1 PMS entry condition</h3>
+			<ul>
+				<li><strong>Χ (Distance):</strong> Distance must remain available as reversible restraint. Pausing,
+					formalizing, limiting, or terminating mediation must remain structurally
+					possible without automatic moralization.</li>
+				<li><strong>Reversibility:</strong> The mapping must remain scene-bound and revisable. It must not harden into
+					global claims about who is “the avoidant one” or “the caring one.”</li>
+				<li><strong>D (Dignity-in-Practice):</strong> Real <strong>Ω</strong> may be named structurally, but mediation must not become a vehicle
+					for coercive endurance demands, humiliation, or forced carrying.</li>
+			</ul>
+
+			<h3>8.2 Case-specific validity test</h3>
+			<p><strong>Valid if:</strong></p>
+			<ul>
+				<li>Mediation is treated as viable only where <strong>Σ</strong>-capable interfaces can still be reopened.</li>
+				<li>Prior irrecoverable costs under <strong>Θ</strong> are acknowledged explicitly rather than erased through renewed effort demands.</li>
+				<li><strong>Χ</strong> remains speakable and self-applied rather than punished.</li>
+				<li><strong>Ψ</strong> remains self-binding and dignity-preserving rather than imposed as compulsory continuation.</li>
+			</ul>
+
+			<p><strong>Formally invalid if:</strong></p>
+			<ul>
+				<li>Mediation is moralized into an unconditional duty regardless of open <strong>Λ</strong>, blocked <strong>Σ</strong>, and accumulated <strong>Θ</strong>-cost.</li>
+				<li>Exit, pause, or formalization are treated as proof of deficiency rather than possible cost-containment responses.</li>
+				<li><strong>Ω</strong> is denied while burden remains asymmetrically distributed.</li>
+				<li>PMS language is used to force continued endurance or relational labor.</li>
+			</ul>
+
+			<hr />
+
+			<h2>9) Readable Structural Closure</h2>
+			<p>
+				This case shows that mediation is not automatically coordination and that
+				terminating mediation is not automatically a failure of character. Once
+				repair attempts have already consumed available bandwidth, continued
+				mediation under real <strong>Ω</strong> and irreversible <strong>Θ</strong> can become a carry-demand
+				attractor rather than a path to <strong>Σ</strong>. What looks like commitment to repair may
+				then function structurally as cost displacement onto the continuity-proximal
+				role-position. Under PMS-EDEN, the decisive question is not who cares more,
+				but whether mediation still changes the consequence field in a dignity-
+				preserving and reversible way.
+			</p>
+
+			<hr />
+
+			<h2>10) Extended Structural Closure</h2>
+
+			<h3>10.1</h3>
+			<p>
+				The scene begins after breach and failed repair attempts. Earlier mediation
+				efforts have already consumed coordination bandwidth, and the consequence
+				field has changed irreversibly across time. One role-position remains closer
+				to endpoint authority and exit capacity, while another remains closer to
+				continuity work, mediation labor, and relational carry-over. This does not
+				yet imply any moral asymmetry, but it already establishes different forms of
+				exposure and capacity under real <strong>Ω</strong> across <strong>Θ</strong>.
+			</p>
+
+			<h3>10.2</h3>
+			<p>
+				The decisive structural question is whether mediation still functions as
+				coordination or has already become a repeated script that no longer changes
+				the consequence field. In PMS-EDEN terms, mediation remains viable only so
+				long as it can reopen <strong>Σ</strong>-capable interfaces around burden, obligation,
+				repair viability, and reversibility. Once those interfaces no longer reopen,
+				repeated mediation ceases to be integration and becomes a form of cost
+				management.
+			</p>
+
+			<h3>10.3</h3>
+			<p>
+				The non-event <strong>Λ</strong> is central here. What remains missing is not merely a
+				pleasant outcome or emotional reconciliation, but explicit acknowledgment of
+				prior irreversible costs, actual burden redistribution, and durable repair
+				consolidation. Because these remain absent, the continuation of mediation
+				cannot be treated as proof that repair remains structurally possible.
+			</p>
+
+			<h3>10.4</h3>
+			<p>
+				The frame <strong>□</strong> correspondingly drifts. What began as repair praxis tends to
+				shift toward containment, security, and effort accounting: who kept trying,
+				who failed, who still owes continuation, and who is now threatening rupture.
+				In this drifted frame, mediation can become less a coordination practice
+				than a visible performance of willingness. The scene no longer asks whether
+				repair is still structurally viable; it asks whether continuation is still
+				being displayed.
+			</p>
+
+			<h3>10.5</h3>
+			<p>
+				Attractor formation <strong>Α</strong> enters when these repeated mediation loops, renewed
+				appeals, hard boundary moves, and effort-accounting patterns begin to
+				stabilize locally. They reduce immediate escalation pressure, but they do
+				not necessarily reopen actual interfaces. This is why mediation compulsion
+				can become structurally cheaper than explicit repair work even while it
+				becomes more expensive than its remaining repair value.
+			</p>
+
+			<h3>10.6</h3>
+			<p>
+				Temporality <strong>Θ</strong> intensifies the problem. Prior mediation costs are not
+				resettable. Exhaustion, repeated effort, and accumulated fallout remain part
+				of the scene. The longer mediation repeats without redistribution or
+				consolidation, the more likely it becomes that continued mediation no longer
+				coordinates costs but redistributes them toward the continuity-proximal
+				role-position.
+			</p>
+
+			<h3>10.7</h3>
+			<p>
+				Real asymmetry <strong>Ω</strong> appears precisely in this uneven distribution. Exit-near
+				role-positions often hold more capacity to terminate, formalize, or close
+				the scene, while continuity-near role-positions absorb more repeated
+				exposure to unresolved consequences, mediation demand, and fallout handling.
+				The issue is not who is morally better. The issue is that the capacity to
+				exit and the obligation to carry are distributed unequally.
+			</p>
+
+			<h3>10.8</h3>
+			<p>
+				Recontextualization <strong>Φ</strong> can worsen the drift when mediation is no longer
+				read as one possible coordination attempt, but as a moral test of
+				commitment, fairness, or willingness. Under that reframe, exit may be cast
+				as aggression, limitation as abandonment, and formalization as refusal to
+				care. At that point, <strong>Φ</strong> no longer supports adaptation; it protects
+				compulsory continuation.
+			</p>
+
+			<h3>10.9</h3>
+			<p>
+				Distance <strong>Χ</strong> is therefore the key validity test. A PMS-valid scene must still
+				allow mediation to be paused, limited, formalized, or terminated without
+				automatic dignity collapse. When pause becomes moral failure, boundary
+				becomes aggression, and formalization becomes proof of deficiency, <strong>Χ</strong> is
+				no longer functioning as reversible restraint. The continuation demand has
+				become coercive.
+			</p>
+
+			<h3>10.10</h3>
+			<p>
+				Self-binding <strong>Ψ</strong> polarizes under these conditions. One role-position may bind
+				itself to exit, containment, or formal boundary; the other may bind itself
+				to continuity, carrying, or renewed repair. This polarization is not itself
+				a failure. Drift worsens when either binding is imposed outward as
+				obligation—when one role-position is compelled to continue carrying
+				mediation labor while the other remains relatively free to exit, close, or
+				redefine the scene.
+			</p>
+
+			<h3>10.11</h3>
+			<p>
+				Integration <strong>Σ</strong> correspondingly remains low or non-consolidating. Mediation
+				may continue visibly, but visible continuation is not equivalent to
+				integrated repair. Where prior costs are not acknowledged, burden is not
+				redistributed, repair viability is not reassessed, and interfaces are not
+				reopened, repeated mediation fails the <strong>Σ</strong>-carriage criterion. It becomes
+				coordination language without integration.
+			</p>
+
+			<h3>10.12</h3>
+			<p>
+				The structural conclusion follows directly: mediation is not automatically a
+				sign of responsibility, and termination is not automatically a sign of
+				deficiency. Once repair attempts have already saturated the available
+				window, continued mediation under real <strong>Ω</strong> and irreversible <strong>Θ</strong> can become
+				a carry-demand attractor rather than a path to repair. Under PMS-EDEN, the
+				decisive question is whether mediation still changes the consequence field
+				in a reversible and dignity-preserving way. If it does not, continued
+				mediation risks becoming cost displacement rather than coordination.
+			</p>
+
+			<hr />
+
+			<h2>11) Assistant Test Vectors</h2>
+			<ul>
+				<li>“Map this mediation sequence in PMS-EDEN terms. Where does mediation stop being Σ-capable?”</li>
+				<li>“Explain why mediation termination can be structurally rational without making character claims.”</li>
+				<li>“Show how Ω and Θ determine whether continued mediation is viable.”</li>
+				<li>“Where does Ψ externalization appear when mediation becomes compulsory?”</li>
+				<li>“Describe how this case fits post-breach PMS-EDEN drift without moralizing either response.”</li>
+			</ul>
+
+			<hr />
+
+			<h2>12) Conclusion</h2>
+			<p>
+				<strong>Takeaway:</strong> Mediation termination vs. mediation compulsion is a core PMS-EDEN
+				case because it shows that repeated repair-performance is not the same as
+				coordination. The decisive issue is not who is more committed, but whether
+				continued mediation still reopens <strong>Σ</strong>-capable interfaces under real <strong>Ω</strong>
+				across irreversible <strong>Θ</strong>.
+			</p>
+			<p>
+				<strong>Publication note:</strong> This example remains a scene-bound structural reconstruction.
+				It does not license diagnosis, blame, coercive mediation demands, or
+				person-level maturity claims. Any application remains valid only under
+				<strong>Χ + reversibility + D</strong>.
+			</p>
+
+		</section>
+	</body>
+</html>

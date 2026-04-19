@@ -1,0 +1,404 @@
+example_id: "PMS-EDEN_EX04"
+example_version: "1.1"
+schema_version: "PMS-EDEN_1.1"
+example_label: "Fig Leaves / Legibility Management Without Psychology"
+example_status: "draft"
+language: "en"
+depends_on:
+  - "PMS_1.3"
+  - "PMS-EDEN_1.1"
+
+minimal_vignette:
+  title: "Shielding, exposure, and the birth of stabilized scripts"
+  scene_boundaries:
+    domain: "post-breach exposure management, legibility reduction, shielding, and early script formation"
+    scope: "observable operator shifts in the immediate post-breach interval under altered exposure gradients"
+    out_of_scope:
+      - "person-level judgement"
+      - "shame or guilt psychology"
+      - "motive attribution"
+      - "virtue assessment"
+      - "clinical or psychological interpretation"
+      - "action prescription"
+  short_scene: >
+    A breach has already occurred and the field has changed irreversibly. What
+    becomes newly salient is not insight but exposure: some role-positions now
+    stand in a more visible and vulnerable relation to consequence, while
+    others can observe, interpret, or leverage that visibility. The first
+    operative moves are not integrative or explanatory. Instead, visibility is
+    reduced through covering, shielding, boundary-setting, and other forms of
+    exposure attenuation. These moves repeat because they locally work, and
+    repetition begins to stabilize into scripts before any later narrative
+    interpretation appears.
+  structural_focus: >
+    The case examines PMS-EDEN's fig-leaf logic as legibility management
+    without psychologizing. The decisive issue is how post-breach consequence
+    legibility under Ω/Θ/Λ shifts □ toward vulnerability management, activates
+    reactive Χ as shielding, and seeds Α as repeatable protective script.
+  scenic_elements:
+    actors:
+      - "newly exposed role-position"
+      - "role-position capable of observing or leveraging exposure"
+      - "shared scene reorganizing under consequence visibility"
+    salient_objects:
+      - "exposure gradients"
+      - "covering or shielding moves"
+      - "reduced visibility"
+      - "boundary-setting behaviors"
+      - "repeatable protective routines"
+      - "later interpretations of the shielding phase"
+    trigger_event:
+      label: "post-breach exposure legibility"
+      description: >
+        Consequences become visible in a way that creates a practical
+        distinction between exposed and shielded positions, making immediate
+        exposure reduction structurally salient.
+
+why_this_is_repo_useful:
+  structural_focus: >
+    This example is load-bearing for PMS-EDEN because it prevents a major
+    category error: reading fig-leaf dynamics as proof of inner shame,
+    confession, or moral awakening. Instead, the example anchors the move in
+    post-breach operator reconfiguration, exposure control, and early
+    stabilization.
+  repo_value:
+    - >
+      Demonstrates that fig-leaf dynamics can be fully described without
+      recourse to psychology, affect attribution, or moral interpretation.
+    - >
+      Clarifies the difference between reactive shielding Χ and reflective Χ as
+      meta-position.
+    - >
+      Makes visible how □ can shift from praxis to vulnerability/exposure
+      framing after breach.
+    - >
+      Shows how Α begins as local protective repeatability rather than as
+      explicit strategy or intention.
+    - >
+      Protects PMS-EDEN from being redescribed as a shame theory or interiority
+      model.
+  central_repo_question: >
+    What exactly is the fig-leaf move in structural terms if it is neither
+    confession nor insight, but still clearly consequential?
+  lens_relevance:
+    post_breach_legibility: >
+      The case directly instantiates PMS-EDEN §4: consequence legibility rises,
+      and the field reorganizes around managing exposure rather than restoring
+      integration.
+    chi_clarification: >
+      It sharpens the internal distinction between Χ as protective inhibition
+      and Χ as reflective distance, which is crucial for correct PMS reading.
+    attractor_genesis: >
+      The example shows how local success in shielding is enough for Α to begin
+      forming, without requiring psychology or elaborate narrative content.
+
+operator_mapping:
+  reduced_signature:
+    primary: ["Λ", "Ω", "Χ", "□", "Θ", "Α", "Φ", "Σ", "Ψ"]
+    note: >
+      The scene centers on post-breach remainder, consequence exposure,
+      reactive shielding, frame mutation toward vulnerability management, and
+      early script formation before integration.
+  operator_roles_in_scene:
+    "Δ":
+      scene_role: >
+        A distinction becomes practically salient between exposed and shielded,
+        visible and protected, though this distinction is a consequence-surface
+        shift rather than new epistemic differentiation.
+    "∇":
+      scene_role: >
+        Directed pressure appears as immediate exposure reduction, not as
+        explanation, articulation, or coordination repair.
+    "□":
+      scene_role: >
+        The dominant frame shifts from praxis-coordination toward vulnerability,
+        exposure control, and legibility management.
+    "Λ":
+      scene_role: >
+        The key non-event is the absence of immediate reintegration, the absence
+        of a frame in which exposure no longer matters, and the absence of a
+        clean reset into the prior scene.
+    "Α":
+      scene_role: >
+        Protective moves repeat because they locally reduce cost. This
+        repeatability begins stabilizing into shielding routines and expectations.
+    "Ω":
+      scene_role: >
+        Asymmetry becomes legible as differential exposure, differential
+        vulnerability, and unequal leverage in who can observe, interpret, or
+        exploit visibility.
+    "Θ":
+      scene_role: >
+        The scene unfolds in the immediate post-breach interval, where the
+        trajectory has already changed but long-run scripts are not yet fully
+        consolidated.
+    "Φ":
+      scene_role: >
+        Later recontextualizations may narrativize the phase as shame, insight,
+        awakening, or virtue, but these are downstream overlays, not what the
+        move structurally is.
+    "Χ":
+      scene_role: >
+        Distance appears first as reactive inhibition: exposure attenuation,
+        concealment, and boundary-setting that reduce immediate vulnerability.
+    "Σ":
+      scene_role: >
+        Integration is not yet carrying the scene. Shielding takes precedence
+        over interface repair, synthesis, or consolidated coordination.
+    "Ψ":
+      scene_role: >
+        Self-binding becomes relevant only insofar as shielding later either
+        remains reversible restraint or hardens into standing control and durable
+        opacity.
+  derived_axes_projection:
+    A:
+      reading: >
+        Awareness does not increase as insight into self; rather, consequence
+        surfaces become more pragmatically legible in terms of what is now
+        unsafe to expose.
+    C:
+      reading: >
+        Coherence is locally increased through reduced visibility and predictable
+        protection scripts, even though deeper integration remains absent.
+    R:
+      reading: >
+        Responsibility questions emerge around who now bears exposure, who must
+        protect standing, and who retains leverage under asymmetrical visibility.
+    E:
+      reading: >
+        The observable moves are realizations under cost pressure, not yet
+        integrated action in the strong PMS sense.
+    D:
+      reading: >
+        Dignity-in-Practice is tested in whether shielding remains protective
+        and reversible, or drifts into coercive opacity and standing control.
+  structural_mechanism_summary:
+    sequence:
+      - "Breach has already altered the field."
+      - "Θ binds the scene into post-breach trajectory."
+      - "Ω becomes legible as exposure asymmetry."
+      - "□ shifts toward vulnerability and exposure management."
+      - "Χ appears as reactive inhibition and shielding."
+      - "Repeated protective success seeds Α."
+      - "Later Φ may narrativize the phase, but only downstream."
+      - "Σ is deferred; integration is not yet structurally carrying."
+    concise_formula: >
+      breach aftermath -> Θ-bound exposure -> Ω legible -> □vulnerability ->
+      reactive Χ shielding -> Α protective script formation -> later Φ
+      narrativization
+
+drift_position_in_master_trace:
+  stage_label: "Immediate post-breach legibility-management phase"
+  master_trace_handle: >
+    EDEN -> THRESHOLD -> NRK -> □comparison -> PS ->
+    residual_stabilization(Λ/Φ/Α) -> (DEVALUATION|HUMILIATION) ->
+    RECIPROCITY_LOSS
+  local_position_note: >
+    This case sits just after breach and before later comparison-dominant drift
+    has fully stabilized. It shows the transition where consequence legibility
+    under Ω/Θ/Λ first reorganizes the scene around shielding rather than repair.
+
+cost_layout:
+  note: "Structural cost geometry only; non-moral; scene-bound."
+  consequence_interfaces:
+    immediate_costs:
+      - "loss of transparency"
+      - "reduced coordination bandwidth"
+      - "higher shielding effort for exposed positions"
+      - "local inhibition of articulation"
+    deferred_costs:
+      - "stabilization of avoidance or concealment scripts"
+      - "future integration difficulty"
+      - "persistent opacity in coordination"
+      - "increased leverage asymmetry through managed visibility"
+  asymmetry_readout:
+    omega_capacity_gradient: >
+      Some role-positions retain greater capacity to observe, interpret, or
+      reposition under exposure conditions than others.
+    omega_exposure_gradient: >
+      Newly exposed positions bear higher immediate costs of visibility and
+      therefore stronger pressure toward shielding.
+    omega_obligation_gradient: >
+      The burden of managing exposure is not symmetrically distributed; some
+      roles are structurally pushed to protect standing more actively.
+    omega_leverage_gradient: >
+      Lower-exposure positions can retain interpretive or strategic advantage
+      when shielding becomes necessary for higher-exposure positions.
+  system_effect: >
+    Exposure management becomes locally cheaper than integration. This favors
+    early stabilization of shielding over immediate restoration of explicit,
+    coordinative interfaces.
+
+pattern_markers:
+  max_expected: 3
+  markers:
+    - id: "P-Λ-DN"
+      label: "Λ -> Denial / Suppression"
+      operator_links: ["Λ", "Φ", "Α"]
+      indicator: >
+        The scene quickly moves to reduce visibility of what has become
+        consequential, treating legibility itself as something to contain rather
+        than openly integrate.
+    - id: "P-Σ-SIM"
+      label: "Σ-Simulation instead of Integration"
+      operator_links: ["Σ", "Φ", "Χ"]
+      indicator: >
+        Later narrative coherence may be added around the shielding phase even
+        though actual integration never carried the immediate move.
+    - id: "P-Ω-AC"
+      label: "Ω -> Covert Authority"
+      operator_links: ["Ω", "Α", "Χ"]
+      indicator: >
+        Differential exposure can become a leverage surface if shielding scripts
+        harden and some positions retain interpretive advantage over others.
+  additional_red_flags:
+    - "Visibility itself becomes too costly to permit."
+    - "Shielding repeats without later reopening integration."
+    - "Distance hardens into chronic opacity."
+    - "Exposure asymmetry becomes a quiet control surface."
+    - "Later narratives overwrite the original protective function."
+
+validity_gate_reminder:
+  pms_entry_condition:
+    chi_distance: >
+      Distance must remain structurally reversible. Reactive shielding may occur,
+      but it must not harden into permanent opacity or become immune to later
+      re-opening.
+    reversibility: >
+      The scene must remain revisable. Shielding cannot be treated as a final
+      truth about the role-position or as permanent interpretive closure.
+    dignity_in_practice: >
+      Exposure gradients must not be converted into domination, degradation, or
+      coercive use of vulnerability.
+  case_specific_validity_test:
+    valid_if:
+      - >
+        Fig-leaf dynamics are mapped as exposure management rather than as proof
+        of shame, guilt, or inner confession.
+      - >
+        Reactive Χ is distinguished from reflective Χ and kept reversible.
+      - >
+        Σ remains a possible later development even if absent in the immediate
+        phase.
+      - >
+        Shielding is not redescribed as moral virtue or vice by default.
+    formally_invalid_if:
+      - >
+        The move is psychologized into inner affect claims without structural
+        basis.
+      - >
+        Exposure asymmetry is leveraged to justify chronic opacity or control.
+      - >
+        Shielding is converted into standing manipulation while still being
+        represented as neutral protection.
+      - >
+        PMS language is used to degrade or fix exposed roles.
+
+readable_structural_closure:
+  summary_2_to_5_sentences: >
+    This case shows that the fig-leaf move in PMS-EDEN is not a psychology of
+    shame but an operator-level response to newly legible exposure. Once Ω
+    becomes visible and Θ has already altered the scene, shielding is often the
+    first viable move because reducing visibility is cheaper than restoring
+    integration. What stabilizes first is not insight, but protective
+    inhibition and the early formation of repeatable scripts. PMS-EDEN
+    therefore reads fig-leaf dynamics as legibility management under asymmetry,
+    not as interior confession or reflective achievement.
+
+extended_scene_analysis:
+  frame_validity_check:
+    operator: "□"
+    in_scope:
+      - "post-breach vulnerability framing"
+      - "exposure management"
+      - "covering and shielding acts"
+      - "visibility reduction"
+      - "later script stabilization"
+    out_of_scope:
+      - "shame psychologies"
+      - "moral affect interpretation"
+      - "confession narratives"
+      - "automatic deception claims"
+    drift_signal: >
+      The decisive frame mutation occurs when the field no longer treats
+      coordination as the first task, but exposure attenuation as the urgent one.
+  non_event_integrity_check:
+    operator: "Λ"
+    decisive_absences:
+      - "no immediate reintegration"
+      - "no exposure-free return to the prior field"
+      - "no symmetrical vulnerability legibility"
+    drift_signal: >
+      What is missing is precisely the immediate restoration of a world in which
+      visibility is non-costly. Shielding responds to this absence.
+  asymmetry_audit:
+    operator: "Ω"
+    exposure_bearers:
+      - "newly visible role-position"
+      - "roles carrying consequence-adjacent vulnerability"
+      - "roles whose standing is more affected by exposure"
+    capacity_holders:
+      - "roles with lower exposure"
+      - "roles able to observe or interpret the exposed position"
+      - "roles able to benefit from or stabilize around asymmetrical visibility"
+    drift_signal: >
+      The central asymmetry is not moral but positional: some roles can better
+      survive exposure, while others must manage it immediately.
+  temporality_and_trajectory:
+    operator: "Θ"
+    trajectory_pattern:
+      - "breach already occurred"
+      - "exposure becomes salient"
+      - "shielding begins"
+      - "repetition lowers local uncertainty"
+      - "protective script stabilizes"
+      - "later interpretation follows"
+    drift_signal: >
+      The order matters: shielding precedes explanation. This temporal order is
+      what blocks psychologizing the initial move as reflective achievement.
+  recontextualization_dynamics:
+    operator: "Φ"
+    key_shift: >
+      Later discourse may redescribe the shielding phase as moral realization,
+      awakening, shame, prudence, or insight.
+    drift_signal: >
+      Φ becomes distorting when it projects later narrative meaning back into a
+      move that was initially only exposure control.
+  distance_enforcement:
+    operator: "Χ"
+    core_test: "Is distance functioning here as protection rather than reflection?"
+    erosion_markers:
+      - "speed outruns deliberation"
+      - "concealment outruns articulation"
+      - "distance remains fixed rather than relaxable"
+      - "shielding becomes chronic"
+    pms_relevance: >
+      PMS-EDEN requires that reactive Χ be recognized as a different structural
+      event from reflective Χ, even though both involve attenuation.
+  integration_quality:
+    operator: "Σ"
+    must_integrate:
+      - "altered exposure gradients"
+      - "the cost of visibility"
+      - "the persistence of shielding routines"
+      - "future reopening of interfaces"
+    drift_signal: >
+      Σ is absent in the immediate fig-leaf phase. Drift begins when later
+      coherence claims substitute for actual reopening of integration.
+  self_binding_test:
+    operator: "Ψ"
+    decisive_question: "What does the scene later bind itself to?"
+    valid_form: >
+      Shielding remains reversible, non-dominating, and open to later
+      integration once exposure has stabilized enough.
+    invalid_form: >
+      Shielding becomes identity, standing strategy, or durable opacity, and
+      the field binds itself to concealment dominance rather than restraint.
+
+assistant_test_vectors:
+  promptables:
+    - "Map the fig-leaf move without using shame or guilt psychology."
+    - "Explain why reactive Χ here is protection rather than reflection."
+    - "Show how exposure asymmetry leads to shielding before Σ is available."
+    - "Where does Α begin forming in this immediate post-breach phase?"
+    - "Why does PMS-EDEN treat this as legibility management rather than moral awakening?"
