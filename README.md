@@ -21,7 +21,7 @@ PMS–EDEN should therefore be read as:
 * **strictly subordinate to the canonical PMS specification**, and
 * **focused on the structural discipline of drift legibility, scene-bound mapping, and non-coercive analysis**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18186812.svg)](https://doi.org/10.5281/zenodo.18186812)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19652438.svg)](https://doi.org/10.5281/zenodo.19652438)
 
 ---
 
