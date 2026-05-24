@@ -1,18 +1,18 @@
 example_id: "PMS-EDEN_EX02"
-example_version: "1.1"
-schema_version: "PMS-EDEN_1.1"
+example_version: "1.2"
+schema_version: "PMS-EDEN_1.2"
 example_label: "Mediation Termination vs. Mediation Compulsion"
 example_status: "draft"
 language: "en"
 depends_on:
   - "PMS_1.3"
-  - "PMS-EDEN_1.1"
+  - "PMS-EDEN_1.2"
 
 minimal_vignette:
   title: "Mediation collapse as cost-rational, not character"
   scene_boundaries:
     domain: "post-breach coordination, repair exhaustion, mediation, exit, and continuity burden"
-    scope: "roles, asymmetries, temporal accumulation, mediation viability, and binding dynamics"
+    scope: "roles, asymmetries, temporal accumulation, mediation viability, switch drift, and binding dynamics"
     out_of_scope:
       - "person-level judgement"
       - "motive attribution"
@@ -20,6 +20,8 @@ minimal_vignette:
       - "gender coding"
       - "clinical or psychological interpretation"
       - "action prescription"
+      - "maturity ranking"
+      - "essence claim about any role-position"
   short_scene: >
     A scene has already passed through breach and failed repair attempts.
     Costs have accumulated across time, and earlier mediation efforts have
@@ -30,13 +32,19 @@ minimal_vignette:
     role interfaces through which burdens, obligations, and exposure would have
     to be redistributed. Mediation continues as a repeated script, while hard
     exit, distancing, or formal withdrawal increasingly appear as competing
-    stabilization responses.
+    stabilization responses. Under this pressure, mediation may also become a
+    switch surface: asymmetry, vulnerability, fairness, or responsibility may be
+    invoked to prolong mediation, while parity or exit capacity may be invoked
+    to avoid further responsibility.
   structural_focus: >
     The case examines when mediation stops functioning as Σ-capable
     coordination and becomes a cost-displacement mechanism under real Ω across
     irreversible Θ. The decisive issue is not whether mediation is morally
     preferable, but whether continued mediation still changes the consequence
-    field or merely externalizes further load.
+    field or merely externalizes further load. The updated PMS-EDEN question is
+    whether mediation remains a Σ/Ψ re-binding interface, or whether it becomes
+    a scene of switch drift: unmarked asymmetry activation, parity-to-exit, or
+    responsibility-to-authority.
   scenic_elements:
     actors:
       - "role-position near endpoint authority and exit capacity"
@@ -49,18 +57,26 @@ minimal_vignette:
       - "carry-over obligations"
       - "fairness and effort accounting"
       - "unreopened role interfaces"
+      - "asymmetry claims around vulnerability, cost, or protection"
+      - "parity claims around mutuality, equal effort, or equal exit"
+      - "responsibility claims around who must keep mediating"
     trigger_event:
       label: "repair window saturation"
       description: >
         A prior breach has made asymmetrical consequences explicit, while
         repeated mediation no longer reopens viable integration pathways.
+        Drift risk increases where continued mediation is demanded without
+        marking what burden is being carried, who must carry it, and how any
+        asymmetry activation is re-bound into Σ/Ψ.
 
 why_this_is_repo_useful:
   structural_focus: >
     This example clarifies one of the most important PMS-EDEN distinctions:
     mediation is not automatically coordination, and terminating mediation is
     not automatically character failure. The case shows how mediation can drift
-    into a stabilized carry-demand under active Ω and accumulating Θ.
+    into a stabilized carry-demand under active Ω and accumulating Θ. It also
+    shows how mediation can become a switch surface when asymmetry, parity, and
+    responsibility remain available but are not coordinated.
   repo_value:
     - >
       Demonstrates how post-breach sequences can move from attempted repair into
@@ -74,6 +90,12 @@ why_this_is_repo_useful:
     - >
       Clarifies how Ψ can polarize into exit-binding on one side and carry-
       binding on the other.
+    - >
+      Shows where mediation pressure can become responsibility-to-authority or
+      unmarked asymmetry activation rather than Σ-capable repair.
+    - >
+      Shows where exit language can become parity-to-exit rather than
+      reciprocity-binding symmetry.
     - >
       Provides a clean case for distinguishing structural rationality from
       moral ranking in PMS-EDEN examples.
@@ -89,6 +111,11 @@ why_this_is_repo_useful:
     reciprocity_conditions: >
       The example highlights that reciprocity requires active Σ under real Ω,
       not indefinite continuation of mediation language.
+    switch_drift: >
+      The example highlights how mediation can become a switch surface: asymmetry
+      may be invoked to keep mediation going, parity may be invoked to exit
+      responsibility, and responsibility may be converted into authority over the
+      frame.
     validity_gate: >
       The case is particularly useful for showing how mediation pressure can
       become formally invalid as PMS application when Χ is suppressed and Ψ is
@@ -97,10 +124,17 @@ why_this_is_repo_useful:
 operator_mapping:
   reduced_signature:
     primary: ["Ω", "Θ", "□", "Λ", "Α", "Χ", "Σ", "Ψ", "Φ"]
+    paper_internal_handles:
+      - "RECIPROCITY_LOSS"
+      - "ASYMMETRY_SWITCH_AVAILABILITY"
+      - "PARITY_TO_EXIT"
+      - "RESPONSIBILITY_TO_AUTHORITY"
     note: >
       The case centers on post-breach asymmetry, temporal irreversibility,
       mediation scripts as attractors, and the failure of integration to
-      consolidate under continued repair pressure.
+      consolidate under continued repair pressure. Switch drift is relevant
+      where mediation becomes a surface for unmarked asymmetry activation,
+      parity-to-exit, or responsibility-to-authority.
   operator_roles_in_scene:
     "Δ":
       scene_role: >
@@ -115,7 +149,8 @@ operator_mapping:
       scene_role: >
         The frame begins as coordination/repair praxis but drifts toward
         security, containment, and comparison/accounting: who tried, who failed,
-        who owes further effort.
+        who owes further effort. Drift sharpens when the frame treats mediation
+        itself as proof of virtue, responsibility, or fairness.
     "Λ":
       scene_role: >
         Missing acknowledgment of irreversible prior cost, missing burden
@@ -124,11 +159,14 @@ operator_mapping:
     "Α":
       scene_role: >
         Repeated mediation loops, renewed appeals to continue, hard boundary
-        moves, and effort-accounting stabilize as recurrent scripts.
+        moves, effort-accounting, and possible switch-use stabilize as recurrent
+        scripts.
     "Ω":
       scene_role: >
         Real asymmetry appears in who can exit, who must carry continuity costs,
-        who absorbs fallout, and who bears repeated coordination labor.
+        who absorbs fallout, and who bears repeated coordination labor. Ω is
+        not the problem as such; drift begins where Ω is denied, moralized, or
+        selectively activated without re-binding.
     "Θ":
       scene_role: >
         Prior mediation costs are no longer resettable. The scene is shaped by
@@ -141,17 +179,19 @@ operator_mapping:
     "Χ":
       scene_role: >
         Distance is the key validity test: can mediation be paused, limited, or
-        terminated without being recoded as abandonment, hostility, or guilt?
+        terminated without being recoded as abandonment, hostility, guilt, or
+        refusal to carry responsibility?
     "Σ":
       scene_role: >
         Integration would require reopened interfaces around burden,
-        consequence, and obligation. In the drifted scene, mediation repeats
-        without producing durable consolidation.
+        consequence, obligation, mediation limits, and exit conditions. In the
+        drifted scene, mediation repeats without producing durable consolidation.
     "Ψ":
       scene_role: >
         Self-binding polarizes: one side binds to exit, containment, or formal
         boundary; the other binds to continuity, carrying, or renewed repair.
-        Drift worsens when either binding is imposed outward as obligation.
+        Drift worsens when either binding is imposed outward as obligation,
+        converted into authority, or used to exit responsibility through parity.
   derived_axes_projection:
     A:
       reading: >
@@ -173,8 +213,8 @@ operator_mapping:
     D:
       reading: >
         Dignity-in-Practice is stressed when continued mediation is demanded
-        despite exhausted repair conditions, especially where Χ is attacked and
-        endurance is coerced.
+        despite exhausted repair conditions, especially where Χ is attacked,
+        endurance is coerced, or responsibility becomes authority.
   structural_mechanism_summary:
     sequence:
       - "Breach renders Ω and consequence asymmetry explicit."
@@ -184,23 +224,29 @@ operator_mapping:
       - "Α stabilizes mediation loops and counter-scripts (continue vs exit)."
       - "Σ remains suppressed or non-consolidating."
       - "Ψ polarizes into carry-binding and exit-binding."
+      - "Mediation becomes a possible switch surface."
+      - "Asymmetry activation, parity-to-exit, or responsibility-to-authority may appear locally."
       - "Further mediation risks becoming cost displacement rather than coordination."
     concise_formula: >
       breach -> Ω legible + Θ irreversible -> open Λ -> □security/comparison ->
       Α mediation scripts -> Σ low/suppressed -> Ψ polarization ->
-      mediation compulsion or termination response
+      mediation compulsion / termination response -> possible switch drift ->
+      reciprocity erosion
 
 drift_position_in_master_trace:
   stage_label: "Post-breach carry-demand stabilization under blocked Σ"
   master_trace_handle: >
     EDEN -> THRESHOLD -> NRK -> □comparison -> PS ->
+    ASYMMETRY_SWITCH_AVAILABILITY risk -> PFO/PERMANENTIZED_EXCEPTION risk ->
+    (PARITY_TO_EXIT|RESPONSIBILITY_TO_AUTHORITY) risk ->
     residual_stabilization(Λ/Φ/Α) -> (DEVALUATION|HUMILIATION) ->
     RECIPROCITY_LOSS
   local_position_note: >
     This case sits downstream of breach/NRK logic and near residual
-    stabilization. It does not require explicit pseudo-symmetry or overt
-    devaluation to become structurally non-viable; carry-demand alone may
-    stabilize the drift.
+    stabilization. It does not require explicit pseudo-symmetry, full PFO, or
+    overt devaluation to become structurally non-viable; carry-demand and local
+    switch drift alone may stabilize the drift where mediation blocks Σ/Ψ
+    re-binding.
 
 cost_layout:
   note: "Structural cost geometry only; non-moral; scene-bound."
@@ -216,6 +262,13 @@ cost_layout:
       - "temporal carry-over load"
       - "coordination fatigue"
       - "ongoing fallout handling"
+    switch_adjacent_costs:
+      - "marking cost"
+      - "bounding cost"
+      - "re-binding cost"
+      - "cost of distinguishing necessary mediation from coerced endurance"
+      - "cost of distinguishing necessary asymmetry activation from leverage"
+      - "cost of blocking parity-to-exit and responsibility-to-authority"
   asymmetry_readout:
     omega_capacity_gradient: >
       Exit-near roles often hold more capacity to terminate, formalize, or
@@ -227,12 +280,30 @@ cost_layout:
       Mediation duty can become tacitly assigned to the role-position already
       burdened with continuity work.
     omega_leverage_gradient: >
-      Appeals to fairness, commitment, or responsibility can function as
-      leverage to keep mediation going after its repair value is exhausted.
+      Appeals to fairness, commitment, vulnerability, protection, or
+      responsibility can function as leverage to keep mediation going after its
+      repair value is exhausted. Conversely, parity or equal-exit rhetoric can
+      function as leverage to avoid additional responsibility under unequal
+      Ω/Θ consequences.
+  switch_drift_readout:
+    asymmetry_activation: >
+      Appears where a role-position invokes vulnerability, protection,
+      disproportionate cost, or exception to require further mediation. This is
+      structurally viable only if marked, bounded, and re-bound into Σ/Ψ.
+    parity_to_exit: >
+      Appears where parity rhetoric or mutuality language is used to deny
+      additional responsibility under unequal Ω/Θ consequence structures.
+    responsibility_to_authority: >
+      Appears where responsibility for repair, protection, mediation, or care is
+      converted into authority to define the frame, demand endurance, or govern
+      the other role-position's exit.
   system_effect: >
     Once mediation costs become irreversibly cumulative, continued mediation can
     become structurally more expensive than its likely repair value. At that
     point, mediation may stop coordinating costs and begin redistributing them.
+    Where switch drift appears, mediation becomes less an interface of repair
+    and more a surface for responsibility displacement, exit rhetoric, or
+    authority-conversion.
 
 pattern_markers:
   max_expected: 3
@@ -255,12 +326,36 @@ pattern_markers:
       indicator: >
         Prior irrecoverable costs are not fully acknowledged; the scene acts as
         if further talking could erase already accumulated consequence.
+  switch_drift_markers:
+    asymmetry_activation:
+      status: "possible"
+      indicator: >
+        Vulnerability, protection, disproportionate cost, or exception is
+        invoked to continue mediation without marking the activation as bounded
+        and re-bound into Σ/Ψ.
+    parity_to_exit:
+      status: "possible"
+      indicator: >
+        Parity or mutuality language is used to deny additional responsibility
+        under unequal consequence structures.
+    responsibility_to_authority:
+      status: "possible"
+      indicator: >
+        Responsibility for repair, protection, or mediation is converted into
+        authority to demand continuation, define the frame, or control exit.
+    re_binding_test: >
+      Mediation remains structurally viable only where asymmetry activation is
+      marked, mediation limits are bounded under Θ, and role-specific burdens
+      are re-bound into Σ/Ψ rather than imposed through Ψ→Other.
   additional_red_flags:
     - "You must keep mediating."
     - "Stopping mediation proves abandonment."
     - "More discussion is required even though nothing structurally changes."
     - "Boundary-setting is framed as aggression by default."
     - "Prior costs are ignored while new effort is demanded."
+    - "Vulnerability or protection is invoked to require endurance without re-binding."
+    - "Equal participation is cited to deny unequal consequence costs."
+    - "Responsibility for repair becomes authority over the mediation frame."
 
 validity_gate_reminder:
   pms_entry_condition:
@@ -270,10 +365,12 @@ validity_gate_reminder:
       possible without automatic moralization.
     reversibility: >
       The mapping must remain scene-bound and revisable. It must not harden into
-      global claims about who is "the avoidant one" or "the caring one."
+      global claims about who is "the avoidant one," "the caring one," "the
+      mature one," or "the irresponsible one."
     dignity_in_practice: >
       Real Ω may be named structurally, but mediation must not become a vehicle
-      for coercive endurance demands, humiliation, or forced carrying.
+      for coercive endurance demands, humiliation, forced carrying, maturity
+      ranking, or authority-through-responsibility.
   case_specific_validity_test:
     valid_if:
       - >
@@ -282,6 +379,9 @@ validity_gate_reminder:
       - >
         Prior irrecoverable costs under Θ are acknowledged explicitly rather
         than erased through renewed effort demands.
+      - >
+        Asymmetry activation, if present, is marked, bounded, and re-bound into
+        Σ/Ψ rather than treated as a standing entitlement to further mediation.
       - >
         Χ remains speakable and self-applied rather than punished.
       - >
@@ -297,6 +397,13 @@ validity_gate_reminder:
       - >
         Ω is denied while burden remains asymmetrically distributed.
       - >
+        Asymmetry activation is used to require continued mediation without
+        marking, bounding, or re-binding.
+      - >
+        Parity is used to exit responsibility under unequal Ω/Θ consequences.
+      - >
+        Responsibility is converted into authority over the mediation frame.
+      - >
         PMS language is used to force continued endurance or relational labor.
 
 readable_structural_closure:
@@ -307,9 +414,12 @@ readable_structural_closure:
     mediation under real Ω and irreversible Θ can become a carry-demand
     attractor rather than a path to Σ. What looks like commitment to repair may
     then function structurally as cost displacement onto the continuity-proximal
-    role-position. Under PMS-EDEN, the decisive question is not who cares more,
-    but whether mediation still changes the consequence field in a dignity-
-    preserving and reversible way.
+    role-position. The updated PMS-EDEN reading adds that mediation can become a
+    switch surface: asymmetry may be invoked to require endurance, parity may be
+    invoked to exit responsibility, and responsibility may become authority.
+    Under PMS-EDEN, the decisive question is not who cares more, but whether
+    mediation still changes the consequence field in a dignity-preserving,
+    reversible, and Σ/Ψ-capable way.
 
 extended_scene_analysis:
   frame_validity_check:
@@ -320,20 +430,28 @@ extended_scene_analysis:
       - "exit capacity"
       - "continuity burden"
       - "fairness and effort accounting"
+      - "mediation as parity surface"
+      - "mediation as switch surface"
     out_of_scope:
       - "global celebration of mediation as such"
       - "person-level maturity claims"
       - "moral ranking of exit vs continuation"
+      - "essence claim about any role-position"
+      - "clinical or psychological motive assignment"
     drift_signal: >
       The decisive frame drift occurs when repair praxis becomes security /
       containment / accounting logic and further mediation is demanded without
-      reopening actual interfaces.
+      reopening actual interfaces. A sharper drift appears where mediation
+      becomes the surface on which asymmetry, parity, or responsibility is
+      selectively invoked without re-binding.
   non_event_integrity_check:
     operator: "Λ"
     decisive_absences:
       - "missing acknowledgment of prior irreversible cost"
       - "missing burden redistribution"
       - "missing durable repair consolidation"
+      - "missing mediation limit"
+      - "missing re-binding after asymmetry activation"
     drift_signal: >
       Λ remains active when the scene behaves as though repeated mediation could
       still perform repair after the relevant repair window has closed.
@@ -349,7 +467,29 @@ extended_scene_analysis:
       - "formal boundary-setting position"
     drift_signal: >
       The central issue is not who is right, but that the capacity to exit and
-      the obligation to carry are unevenly distributed.
+      the obligation to carry are unevenly distributed. Switch drift appears
+      where this asymmetry is not coordinated but selectively invoked, denied,
+      or converted into authority.
+  switch_drift_check:
+    paper_internal_handles:
+      - "ASYMMETRY_SWITCH_AVAILABILITY"
+      - "PARITY_TO_EXIT"
+      - "RESPONSIBILITY_TO_AUTHORITY"
+    asymmetry_activation_test: >
+      Is vulnerability, protection, exception, or disproportionate cost invoked
+      to require further mediation? If so, is that activation marked, bounded
+      under Θ, and re-bound into Σ/Ψ?
+    parity_to_exit_test: >
+      Is parity invoked to coordinate reciprocity, or to deny additional
+      responsibility under unequal Ω/Θ consequences?
+    responsibility_to_authority_test: >
+      Is responsibility for care, repair, or mediation carried as Ψ/Χ
+      self-binding, or converted into authority to define the frame and demand
+      continuation?
+    drift_signal: >
+      Switch drift is present where mediation remains available as a demand,
+      exit remains available as insulation, or responsibility becomes frame
+      authority without explicit Σ/Ψ re-binding.
   temporality_and_trajectory:
     operator: "Θ"
     trajectory_pattern:
@@ -360,6 +500,7 @@ extended_scene_analysis:
       - "repair saturation"
       - "boundary or exit pressure"
       - "polarized continuation vs termination"
+      - "possible switch drift"
     drift_signal: >
       Temporal irreversibility matters because prior mediation costs cannot be
       undone simply by repeating the mediation script.
@@ -367,10 +508,10 @@ extended_scene_analysis:
     operator: "Φ"
     key_shift: >
       Mediation is re-read from a coordination attempt into a moral test of
-      commitment, fairness, or willingness.
+      commitment, fairness, responsibility, or willingness.
     drift_signal: >
       Φ ceases to support adaptation when it transforms exhausted mediation into
-      compulsory virtue display.
+      compulsory virtue display, or when it reframes switch-naming as hostility.
   distance_enforcement:
     operator: "Χ"
     core_test: "Can mediation be limited or terminated without dignity collapse?"
@@ -379,6 +520,7 @@ extended_scene_analysis:
       - "boundary framed as aggression"
       - "pause framed as moral failure"
       - "formalization framed as refusal to care"
+      - "switch clarification framed as accusation"
     pms_relevance: >
       PMS-EDEN requires Χ both as application gate and as a structural limit on
       coercive continuation demands.
@@ -389,10 +531,12 @@ extended_scene_analysis:
       - "burden redistribution"
       - "role interface clarity"
       - "repair viability"
+      - "mediation limits"
       - "reversibility conditions"
+      - "conditions for marked/bounded asymmetry activation"
     drift_signal: >
       Σ fails when mediation repeats but does not reopen the interfaces required
-      for actual redistribution, clarification, or coordinated repair.
+      for actual redistribution, clarification, repair, or re-binding.
   self_binding_test:
     operator: "Ψ"
     decisive_question: "Who is being bound to what?"
@@ -401,7 +545,8 @@ extended_scene_analysis:
       under reversible and dignity-preserving conditions.
     invalid_form: >
       One role-position is compelled to continue carrying mediation labor while
-      the other remains relatively free to exit, close, or redefine the scene.
+      the other remains relatively free to exit, close, redefine the scene, or
+      convert responsibility into authority.
 
 assistant_test_vectors:
   promptables:
@@ -409,4 +554,8 @@ assistant_test_vectors:
     - "Explain why mediation termination can be structurally rational without making character claims."
     - "Show how Ω and Θ determine whether continued mediation is viable."
     - "Where does Ψ externalization appear when mediation becomes compulsory?"
+    - "Where does asymmetry-switch availability appear, if at all?"
+    - "Is asymmetry activation marked, bounded, and re-bound into Σ/Ψ, or is mediation being used as switch drift?"
+    - "Where could parity-to-exit appear in this mediation scene?"
+    - "Where could responsibility-to-authority appear in this mediation scene?"
     - "Describe how this case fits post-breach PMS-EDEN drift without moralizing either response."

@@ -1,12 +1,12 @@
 example_id: "PMS-EDEN_EX03"
-example_version: "1.1"
-schema_version: "PMS-EDEN_1.1"
+example_version: "1.2"
+schema_version: "PMS-EDEN_1.2"
 example_label: "Teaches Nothing vs. the Learning / Transgression Myth"
 example_status: "draft"
 language: "en"
 depends_on:
   - "PMS_1.3"
-  - "PMS-EDEN_1.1"
+  - "PMS-EDEN_1.2"
 
 minimal_vignette:
   title: "The threshold act as consequence-legibility without epistemic gain"
@@ -20,6 +20,9 @@ minimal_vignette:
       - "virtue assessment"
       - "clinical or psychological interpretation"
       - "action prescription"
+      - "maturity ranking"
+      - "essence claim about any role-position"
+      - "retroactive justification of exposure"
   short_scene: >
     A scene begins in a highly specified praxis configuration where options are
     already structurally available and legible. A threshold act is nevertheless
@@ -36,6 +39,9 @@ minimal_vignette:
     teaches nothing in the praxeological sense. The decisive structural outcome
     is consequence-legibility under Θ/Ω/Λ, not new differentiation, not
     maturity gain, and not pedagogical advancement through transgression.
+    Downstream drift may later enter comparison, pseudo-symmetry, switch
+    availability, PFO, or reciprocity loss, but those later stages do not
+    convert the threshold act into an epistemic upgrade.
   scenic_elements:
     actors:
       - "role-position with threshold initiation capacity"
@@ -48,6 +54,8 @@ minimal_vignette:
       - "exposure gradients"
       - "monitoring and protection scripts"
       - "learning or growth narratives"
+      - "post-hoc justification"
+      - "non-returnable consequence field"
     trigger_event:
       label: "irreversible threshold crossing"
       description: >
@@ -77,6 +85,10 @@ why_this_is_repo_useful:
     - >
       Provides a strict example of how PMS-EDEN separates adaptation under loss
       from learning through new Δ.
+    - >
+      Guards against converting downstream drift, including later comparison,
+      pseudo-symmetry, switch availability, or PFO risk, into retroactive proof
+      that the original threshold act was necessary or epistemically productive.
   central_repo_question: >
     When a threshold act changes everything, what exactly has changed: the
     option set, or only the legibility and binding force of consequences?
@@ -90,14 +102,26 @@ why_this_is_repo_useful:
     anti_pedagogical_guard: >
       The case protects PMS-EDEN against retrospective conversion of
       irreversibility into "necessary learning" or deserved moral instruction.
+    downstream_trace_guard: >
+      The example keeps later drift stages readable without allowing them to
+      rewrite the threshold act as beneficial. Later PS, switch drift, PFO, or
+      reciprocity loss remain consequence-field developments, not evidence that
+      the breach taught anything.
 
 operator_mapping:
   reduced_signature:
     primary: ["Δ", "□", "Θ", "Ω", "Λ", "Α", "Φ", "Χ", "Σ", "Ψ"]
+    paper_internal_handles:
+      - "THRESHOLD"
+      - "NRK"
+      - "BREACH_CHAIN_INTERRUPTION"
+      - "RECIPROCITY_LOSS_DOWNSTREAM_RISK"
     note: >
       The scene turns on already available differentiation, threshold crossing,
       temporal irreversibility, asymmetrical consequence exposure, post-hoc
       recontextualization, and the non-equivalence of adaptation and learning.
+      Switch/PFO handles are not primary in this example; they belong only to
+      possible downstream drift after the consequence field has formed.
   operator_roles_in_scene:
     "Δ":
       scene_role: >
@@ -167,7 +191,8 @@ operator_mapping:
     D:
       reading: >
         Dignity-in-Practice is stressed when irreversible exposure is later
-        redescribed as deserved pedagogy or necessary growth.
+        redescribed as deserved pedagogy, necessary growth, maturity gain, or
+        justified standing reduction.
   structural_mechanism_summary:
     sequence:
       - "A=[Θ,□,Δ] is already available before the threshold act."
@@ -179,6 +204,7 @@ operator_mapping:
       - "Α stabilizes coping, concealment, and justification scripts."
       - "Φ produces learning narratives after the fact."
       - "No new Δ is generated; only consequence-legibility has increased."
+      - "Downstream drift may later enter PS, switch availability, PFO, or reciprocity loss, but this does not retroactively make the breach epistemically productive."
     concise_formula: >
       available A -> threshold enactment -> Θ irreversibility -> Ω/Λ legibility
       -> □ shift -> Α management scripts -> Φ learning narrative ->
@@ -188,12 +214,17 @@ drift_position_in_master_trace:
   stage_label: "Threshold / breach transition into consequence field"
   master_trace_handle: >
     EDEN -> THRESHOLD -> NRK -> □comparison -> PS ->
+    ASYMMETRY_SWITCH_AVAILABILITY -> PFO/PERMANENTIZED_EXCEPTION ->
+    (PARITY_TO_EXIT|RESPONSIBILITY_TO_AUTHORITY) ->
     residual_stabilization(Λ/Φ/Α) -> (DEVALUATION|HUMILIATION) ->
     RECIPROCITY_LOSS
   local_position_note: >
     This case sits at the Eden/Threshold/Breach transition and shows why the
     act itself should not be redescribed as a gain event. It opens the
     downstream field in which Ω, Θ, Λ, and later Φ/Α become structurally active.
+    Later PS, switch availability, PFO, or reciprocity-loss stages are possible
+    downstream developments, not proof that the original threshold crossing
+    generated knowledge.
 
 cost_layout:
   note: "Structural cost geometry only; non-moral; scene-bound."
@@ -209,6 +240,11 @@ cost_layout:
       - "accounting and justification effort"
       - "coordination under altered frame"
       - "meaning-management after loss"
+    narrative_costs:
+      - "cost of resisting learning mythology"
+      - "cost of carrying consequence without redemption narrative"
+      - "cost of distinguishing adaptation from epistemic gain"
+      - "cost of refusing retroactive justification"
   asymmetry_readout:
     omega_capacity_gradient: >
       Capacity to initiate the threshold act does not automatically equal
@@ -222,6 +258,19 @@ cost_layout:
     omega_leverage_gradient: >
       Learning narratives can function as leverage by turning consequence
       carrying into a supposed lesson rather than an irreversible burden.
+  downstream_drift_readout:
+    pseudo_symmetry_risk: >
+      If later comparison frames arise, the scene may drift toward rhetorical
+      parity under real consequence asymmetry. This remains downstream of the
+      threshold event and does not make the threshold act epistemically
+      productive.
+    switch_drift_risk: >
+      If later asymmetry activation, parity-to-exit, or responsibility-to-
+      authority appears, these are later drift affordances in the consequence
+      field, not proof that breach generated new Δ or maturity.
+    reciprocity_loss_risk: >
+      Reciprocity loss becomes possible where altered Ω/Θ/Λ conditions are not
+      integrated through Σ/Ψ and are instead managed through Φ/Α substitutes.
   system_effect: >
     The system must now manage a transformed field whose costs are durable and
     ongoing. The key change is not new knowledge but new consequence-management
@@ -249,12 +298,21 @@ pattern_markers:
         Those bearing downstream costs are told they must accept the event as
         instructive or necessary, converting structural exposure into imposed
         lesson-absorption.
+  switch_drift_markers:
+    status: "not_primary"
+    note: >
+      Switch drift is not the primary mechanism in this example. It may appear
+      only downstream if the consequence field later develops into PS/PFO-like
+      stabilization. Do not infer asymmetry-switch drift merely from threshold
+      crossing itself.
   additional_red_flags:
     - "This had to happen so we could learn."
     - "The loss was necessary for growth."
     - "Questioning the lesson means denial."
     - "Now we know more, therefore the breach was worth it."
     - "Suffering proves development."
+    - "The irreversible consequence proves maturity."
+    - "The downstream adaptation justifies the threshold act."
 
 validity_gate_reminder:
   pms_entry_condition:
@@ -266,7 +324,7 @@ validity_gate_reminder:
       global theory that every threshold crossing is secretly instructive.
     dignity_in_practice: >
       Irreversible exposure must not be converted into deservedness, educational
-      necessity, or justified standing reduction.
+      necessity, justified standing reduction, or maturity ranking.
   case_specific_validity_test:
     valid_if:
       - >
@@ -280,6 +338,9 @@ validity_gate_reminder:
         narrative.
       - >
         Ω is named without turning exposure into moral desert.
+      - >
+        Later PS, switch drift, or reciprocity-loss risks are treated as
+        downstream developments, not as retroactive justification of the act.
     formally_invalid_if:
       - >
         The act is retroactively celebrated as epistemic upgrade simply because
@@ -291,6 +352,9 @@ validity_gate_reminder:
         immaturity or denial.
       - >
         PMS language is used to justify exposure rather than to map it.
+      - >
+        Downstream adaptation is treated as evidence that the original breach
+        was necessary, desirable, or maturity-producing.
 
 readable_structural_closure:
   summary_2_to_5_sentences: >
@@ -300,7 +364,9 @@ readable_structural_closure:
     and remainder. What later appears as "learning" is typically a Φ-based
     recontextualization of adaptation under loss, not epistemic gain generated
     by the act itself. Under PMS-EDEN, the decisive distinction is between
-    consequence-legibility and genuine expansion of the option set.
+    consequence-legibility and genuine expansion of the option set. Later drift
+    into comparison, PS, switch availability, PFO, or reciprocity loss does not
+    retroactively convert the breach into knowledge.
 
 extended_scene_analysis:
   frame_validity_check:
@@ -311,10 +377,14 @@ extended_scene_analysis:
       - "post-act comparison/security framing"
       - "monitoring and protection scripts"
       - "learning narrative production"
+      - "downstream drift risk"
     out_of_scope:
       - "heroic transgression mythology"
       - "automatic maturation claims"
       - "moral pedagogy through loss"
+      - "maturity ranking"
+      - "essence claim about any role-position"
+      - "retrospective justification of exposure"
     drift_signal: >
       The field drifts when post-threshold consequence management is redescribed
       as proof that the act itself was epistemically productive.
@@ -324,6 +394,7 @@ extended_scene_analysis:
       - "no reversible trial outcome"
       - "no clean restoration of the prior field"
       - "no new option created by the act itself"
+      - "no epistemic surplus generated by the breach"
     drift_signal: >
       Λ remains central because what is missing is precisely the clean return,
       the undoing, and the epistemic surplus that learning mythology claims.
@@ -349,6 +420,7 @@ extended_scene_analysis:
       - "exposure hardening"
       - "monitoring / protection / accounting"
       - "post-hoc meaning production"
+      - "possible downstream comparison or reciprocity drift"
     drift_signal: >
       The structural point of no return is temporal, not epistemic: once the
       act binds, the field has changed in a way that cannot be undone by better
@@ -369,6 +441,7 @@ extended_scene_analysis:
       - "pain is redescribed as necessary education"
       - "consequence is treated as proof of growth"
       - "distance from the myth is punished"
+      - "refusal of retrospective justification is framed as immaturity"
     pms_relevance: >
       PMS-EDEN requires Χ to prevent retroactive legitimation of exposure and to
       preserve the distinction between consequence and insight.
@@ -379,6 +452,7 @@ extended_scene_analysis:
       - "the persistence of Λ"
       - "asymmetrical downstream burdens"
       - "the non-equivalence of adaptation and learning"
+      - "the difference between consequence-legibility and new Δ"
     drift_signal: >
       Σ fails when coherence is restored only narratively and the scene acts as
       though the act had opened new options it never actually created.
@@ -390,7 +464,7 @@ extended_scene_analysis:
       capacity, and non-mythologizing acknowledgment of what has changed.
     invalid_form: >
       The field binds itself to justificatory narratives that convert
-      irreversibility into necessity, growth, or deserved lesson.
+      irreversibility into necessity, growth, deserved lesson, or maturity gain.
 
 assistant_test_vectors:
   promptables:
@@ -399,3 +473,4 @@ assistant_test_vectors:
     - "Where does Φ create a learning narrative without new Δ?"
     - "Show how Θ and Ω make the act binding rather than informative."
     - "Describe why adaptation under loss is not the same as learning through differentiation."
+    - "Explain why downstream PS, switch drift, PFO, or reciprocity loss do not retroactively justify the threshold act."

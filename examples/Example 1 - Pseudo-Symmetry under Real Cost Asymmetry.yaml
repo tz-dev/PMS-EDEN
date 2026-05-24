@@ -1,24 +1,26 @@
 example_id: "PMS-EDEN_EX01"
-example_version: "1.1"
-schema_version: "PMS-EDEN_1.1"
+example_version: "1.2"
+schema_version: "PMS-EDEN_1.2"
 example_label: "Pseudo-Symmetry under Real Cost Asymmetry"
 example_status: "draft"
 language: "en"
 depends_on:
   - "PMS_1.3"
-  - "PMS-EDEN_1.1"
+  - "PMS-EDEN_1.2"
 
 minimal_vignette:
   title: "Equality rhetoric under irreversible cost gradients"
   scene_boundaries:
     domain: "extended coordination under unequal consequence exposure"
-    scope: "roles, asymmetries, cost distribution, frame drift, and reciprocity conditions"
+    scope: "roles, asymmetries, cost distribution, frame drift, switch availability, and reciprocity conditions"
     out_of_scope:
       - "person-level judgement"
       - "motive attribution"
       - "virtue assessment"
       - "clinical or psychological interpretation"
       - "action prescription"
+      - "maturity ranking"
+      - "essence claim about any role-position"
   short_scene: >
     Two role-positions remain engaged across an extended coordination sequence.
     One role-position stays close to decision endpoints and closure authority,
@@ -27,13 +29,17 @@ minimal_vignette:
     legible, the scene does not reopen explicit coordination around real Ω.
     Instead, the frame drifts from praxis-coordination toward comparison and
     equivalence talk. Equality rhetoric rises, comparison cycles stabilize, and
-    durable interface change fails to form.
+    durable interface change fails to form. Under this pressure, an asymmetry
+    switch may become available: parity remains the public surface while
+    asymmetry can be invoked situationally for protection, cost, exception, or
+    responsibility displacement.
   structural_focus: >
     The case examines how pseudo-symmetry (PS) stabilizes when real asymmetry
     in cost and exposure remains operative but becomes difficult or illegitimate
     to name within the dominant frame. The key issue is not whether equality is
     normatively desirable, but whether equivalence-talk substitutes for
-    coordination under real Ω across Θ.
+    coordination under real Ω across Θ, and whether asymmetry activation remains
+    marked, bounded, and re-bound into Σ/Ψ rather than becoming a drift affordance.
   scenic_elements:
     actors:
       - "role-position near endpoint decisions and closure authority"
@@ -46,19 +52,25 @@ minimal_vignette:
       - "justification cycles"
       - "fairness/equality claims"
       - "unreopened coordination interfaces"
+      - "selective asymmetry activation"
+      - "parity surface under real cost gradients"
     trigger_event:
       label: "cost asymmetry becomes legible"
       description: >
         Unequal exposure to durable consequences becomes visible, but instead
         of being coordinated explicitly, it is reprocessed through comparison,
-        equivalence, and fairness rhetoric.
+        equivalence, and fairness rhetoric. The drift risk increases where
+        asymmetry is neither denied nor integrated, but selectively activated
+        without explicit re-binding.
 
 why_this_is_repo_useful:
   structural_focus: >
     This example shows one of the clearest PMS-EDEN use-cases: real Ω remains
     active in consequences while the dominant frame drifts toward rhetorical
     parity. It makes visible how PS can function as a stabilization regime
-    rather than as reciprocity.
+    rather than as reciprocity, and how PS can prepare asymmetry-switch
+    availability when parity remains rhetorically preserved while asymmetry
+    becomes situationally activatable.
   repo_value:
     - >
       Demonstrates the transition from □praxis to □comparison under active Ω.
@@ -71,15 +83,24 @@ why_this_is_repo_useful:
       Clarifies how fairness rhetoric can become a frame-control device when Ψ
       externalizes and Χ is pressured.
     - >
+      Shows where asymmetry activation must be marked, bounded, and re-bound
+      into Σ/Ψ to avoid switch drift.
+    - >
       Connects local comparison cycles to broader PMS-EDEN drift logic:
-      false comparison → PS → residual stabilization → reciprocity loss.
+      false comparison → PS → asymmetry-switch availability → PFO/permanentized
+      exception risk → residual stabilization → reciprocity loss.
   central_repo_question: >
     How does equality rhetoric become a cost-masking attractor when real
-    asymmetry remains action-relevant but coordination under Ω is not reopened?
+    asymmetry remains action-relevant but coordination under Ω is not reopened,
+    and when can the resulting switch availability become structurally erosive?
   lens_relevance:
     pseudo_symmetry: >
       The example directly instantiates PS as rhetorical parity under real Ω
       with Σ low or simulated and Ψ misbound to appearance-management.
+    asymmetry_switch: >
+      The example shows the pre-PFO form of switch availability: parity remains
+      the surface grammar while asymmetry may become selectively activatable
+      for cost, protection, exception, or responsibility displacement.
     cost_geometry: >
       The example highlights how invisible redistribution of durable load can
       stabilize a drift regime even without overt domination language.
@@ -91,10 +112,15 @@ why_this_is_repo_useful:
 operator_mapping:
   reduced_signature:
     primary: ["□", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ", "Λ", "Α"]
+    paper_internal_handles:
+      - "PS"
+      - "ASYMMETRY_SWITCH_AVAILABILITY"
+      - "PARITY_TO_EXIT"
+      - "RESPONSIBILITY_TO_AUTHORITY"
     note: >
       The case centers on frame drift under legible asymmetry, temporally
-      extended consequence distribution, pseudo-symmetry, and the failure of
-      integration/self-binding to stabilize reciprocity.
+      extended consequence distribution, pseudo-symmetry, switch availability,
+      and the failure of integration/self-binding to stabilize reciprocity.
   operator_roles_in_scene:
     "Δ":
       scene_role: >
@@ -108,7 +134,8 @@ operator_mapping:
       scene_role: >
         The scene begins in praxis-coordination but drifts toward comparison,
         equivalence, and justification grammar. The decisive question is whether
-        the frame still permits functional Ω-speech.
+        the frame still permits functional Ω-speech, and whether parity-language
+        becomes a surface under which asymmetry activation remains available.
     "Λ":
       scene_role: >
         Expected explicit renegotiation of obligations and cost handling does
@@ -116,13 +143,15 @@ operator_mapping:
         non-events across the scene.
     "Α":
       scene_role: >
-        Repeated comparison loops, fairness invocations, and leveling attempts
-        stabilize into recurrent scripts that preserve the configuration without
-        repairing it.
+        Repeated comparison loops, fairness invocations, leveling attempts, and
+        possible switch-use stabilize into recurrent scripts that preserve the
+        configuration without repairing it.
     "Ω":
       scene_role: >
         Real asymmetry remains active in exposure, continuity burden, and
-        consequence carrying, even where rhetoric asserts parity.
+        consequence carrying, even where rhetoric asserts parity. Drift begins
+        where Ω is not coordinated as a functional gradient but becomes
+        selectively activatable.
     "Θ":
       scene_role: >
         Consequences accumulate over time. One-off endpoint decisions and
@@ -134,17 +163,19 @@ operator_mapping:
     "Χ":
       scene_role: >
         Distance becomes endangered when requests for pause, revision, or
-        restraint are recoded as avoidance, unfairness, or lack of commitment.
+        restraint are recoded as avoidance, unfairness, lack of commitment, or
+        accusation for naming switch-use.
     "Σ":
       scene_role: >
         Integration would require reopened interfaces around actual burdens,
-        obligations, and exposure gradients. In the drifted scene, Σ remains
-        low, blocked, or simulated.
+        obligations, exposure gradients, and conditions for marked asymmetry
+        activation. In the drifted scene, Σ remains low, blocked, or simulated.
     "Ψ":
       scene_role: >
         Binding drifts away from self-restraint and coordinated obligation
         toward pressure on the other to display fairness, equality, or renewed
-        compliance.
+        compliance. Ψ also fails where parity becomes exit or responsibility
+        becomes authority rather than self-binding.
   derived_axes_projection:
     A:
       reading: >
@@ -174,24 +205,30 @@ operator_mapping:
       - "□ drifts from praxis to comparison/equivalence."
       - "Φ reframes asymmetry as fairness dispute."
       - "PS stabilizes rhetorical parity under real gradients."
-      - "Α locks comparison and justification scripts."
+      - "Asymmetry-switch availability may emerge under the parity surface."
+      - "Α locks comparison, justification, and possible switch-use scripts."
       - "Σ remains low or simulated; Ψ misbinds or externalizes."
+      - "Parity-to-exit or responsibility-to-authority may appear as local counter-drifts."
       - "Reciprocity becomes structurally compromised across Θ."
     concise_formula: >
       legible Ω -> failed Σ around cost distribution -> □comparison ->
-      Φ fairness reframe -> PS -> Α comparison scripts -> Ψ misbinding /
-      externalization -> reciprocity erosion
+      Φ fairness reframe -> PS -> asymmetry-switch availability ->
+      Α comparison/switch scripts -> Ψ misbinding / externalization ->
+      reciprocity erosion
 
 drift_position_in_master_trace:
-  stage_label: "PS under real Ω with residual stabilization pressure"
+  stage_label: "PS under real Ω with asymmetry-switch availability risk"
   master_trace_handle: >
     EDEN -> THRESHOLD -> NRK -> □comparison -> PS ->
+    ASYMMETRY_SWITCH_AVAILABILITY -> PFO/PERMANENTIZED_EXCEPTION risk ->
+    (PARITY_TO_EXIT|RESPONSIBILITY_TO_AUTHORITY) risk ->
     residual_stabilization(Λ/Φ/Α) -> (DEVALUATION|HUMILIATION) ->
     RECIPROCITY_LOSS
   local_position_note: >
-    This case sits primarily at the PS node and the transition toward residual
-    stabilization. It does not require overt devaluation to become structurally
-    non-viable.
+    This case sits primarily at the PS node and the transition toward
+    asymmetry-switch availability. It does not require full PFO or overt
+    devaluation to become structurally non-viable; local switch drift is already
+    enough to compromise reciprocity where it blocks Σ/Ψ re-binding.
 
 cost_layout:
   note: "Structural cost geometry only; non-moral; scene-bound."
@@ -205,6 +242,12 @@ cost_layout:
       - "maintenance cost"
       - "fallout handling cost"
       - "repeated relational load"
+    switch_adjacent_costs:
+      - "marking cost"
+      - "bounding cost"
+      - "re-binding cost"
+      - "cost of distinguishing necessary asymmetry activation from leverage"
+      - "cost of blocking parity-to-exit and responsibility-to-authority"
   asymmetry_readout:
     omega_capacity_gradient: >
       Closure-near roles often hold more capacity to define endpoints and frame
@@ -217,11 +260,25 @@ cost_layout:
       coordinated.
     omega_leverage_gradient: >
       Fairness/equality framing can function as leverage when direct naming of
-      asymmetry is delegitimated.
+      asymmetry is delegitimated. Under switch drift, asymmetry can also become
+      leverage where it is activated without marking, bounding, and re-binding.
+  switch_drift_readout:
+    asymmetry_activation: >
+      Structurally viable only where activation is explicitly marked as
+      necessary or emergency-bound, temporally bounded, and re-bound into Σ/Ψ.
+    parity_to_exit: >
+      Appears where equality rhetoric is used to deny additional responsibility
+      under unequal Ω/Θ consequence structures.
+    responsibility_to_authority: >
+      Appears where additional responsibility under asymmetry is converted into
+      control, protection entitlement, frame authority, or governance over the
+      other role-position.
   system_effect: >
     The system does not remove cost asymmetry; it masks and redistributes it.
     What appears as fairness maintenance can function as a durable cost-shift
-    into less visible continuity work.
+    into less visible continuity work. Where switch drift appears, parity and
+    asymmetry remain alternately available without being coordinated through
+    Σ/Ψ.
 
 pattern_markers:
   max_expected: 3
@@ -242,28 +299,54 @@ pattern_markers:
       label: "Ω -> Covert Authority"
       operator_links: ["Ω", "□", "Α", "Λ"]
       indicator: >
+        Real gradient-speech is blocked while frame control Authority"
+      operator_links: ["Ω", "□", "Α", "Λ"]
+      indicator: >
         Real gradient-speech is blocked while frame control and indirect
         steering remain effective through comparison and justification.
+  switch_drift_markers:
+    asymmetry_activation:
+      status: "possible"
+      indicator: >
+        Parity remains rhetorically preserved while asymmetry is activated
+        situationally for protection, cost, exception, or responsibility
+        displacement.
+    parity_to_exit:
+      status: "possible"
+      indicator: >
+        Equality rhetoric is used to deny additional responsibility under
+        unequal Ω/Θ consequence structures.
+    responsibility_to_authority:
+      status: "possible"
+      indicator: >
+        Additional responsibility under asymmetry is converted into control,
+        protection entitlement, or frame authority.
+    re_binding_test: >
+      Switch-use remains structurally viable only where activation is marked,
+      bounded, and re-bound into Σ/Ψ.
   additional_red_flags:
     - "We are equal here, so asymmetry should not be named."
     - "Requesting distance proves lack of commitment."
     - "Fairness now means matching burden-display rather than coordinating real burden."
     - "The issue is no longer the task but whether parity has been performed."
     - "Repair is discussed, but interfaces remain unchanged."
+    - "Asymmetry is denied for coordination but invoked for exception or protection."
+    - "Parity is used to exit responsibility under unequal consequences."
+    - "Responsibility is used to claim authority over the frame."
 
 validity_gate_reminder:
   pms_entry_condition:
     chi_distance: >
       Distance must remain available as reflective restraint. Requests for pause,
-      revision, or non-fusion must not be converted into evidence of unfairness
-      or guilt.
+      revision, non-fusion, or switch-clarification must not be converted into
+      evidence of unfairness, guilt, or accusation.
     reversibility: >
       Any mapping must remain scene-bound and revisable. The analysis must not
       harden into global labels about persons or roles.
     dignity_in_practice: >
       Real Ω may be named structurally, but asymmetry handling must remain
-      dignity-constrained: no shaming, ranking, humiliation, or coercive use of
-      PMS vocabulary.
+      dignity-constrained: no shaming, ranking, humiliation, maturity ranking,
+      essence claim, or coercive use of PMS vocabulary.
   case_specific_validity_test:
     valid_if:
       - >
@@ -272,6 +355,9 @@ validity_gate_reminder:
       - >
         Equality language does not substitute for coordination around burdens,
         obligations, and exposure.
+      - >
+        Asymmetry activation, if present, is marked, bounded, and re-bound into
+        Σ/Ψ rather than treated as standing entitlement.
       - >
         Ψ remains primarily self-binding rather than a demand directed outward.
       - >
@@ -284,10 +370,19 @@ validity_gate_reminder:
         Ω is invoked as accusation rather than coordinated as structural
         gradient.
       - >
+        Asymmetry activation is treated as a standing lever rather than marked
+        as a bounded structural event.
+      - >
+        Parity is used to exit responsibility under unequal Ω/Θ consequences.
+      - >
+        Responsibility is converted into authority, protection entitlement, or
+        frame control.
+      - >
         Χ is overridden through urgency, equivalence rhetoric, or moralized
         commitment language.
       - >
-        The case is converted into a diagnosis of character, motive, or worth.
+        The case is converted into a diagnosis of character, motive, maturity,
+        essence, or worth.
 
 readable_structural_closure:
   summary_2_to_5_sentences: >
@@ -296,9 +391,12 @@ readable_structural_closure:
     explicitly. Equality rhetoric then ceases to function as reciprocity and
     instead becomes a comparison-frame substitute for Σ. What the scene calls
     fairness may structurally operate as a cost-masking attractor: durable load
-    is redistributed without being negotiated. Under PMS-EDEN, the result is
-    not moral failure but drift toward reciprocity loss unless real Ω, Χ, Σ,
-    and Ψ are reopened in a dignity-constrained way.
+    is redistributed without being negotiated. The updated PMS-EDEN reading adds
+    that PS can also prepare asymmetry-switch availability: parity remains the
+    surface while asymmetry becomes selectively activatable. Under PMS-EDEN, the
+    result is not moral failure but drift toward reciprocity loss unless real Ω,
+    Χ, Σ, Ψ, and marked/bounded/re-bound asymmetry activation are restored in a
+    dignity-constrained way.
 
 extended_scene_analysis:
   frame_validity_check:
@@ -309,13 +407,19 @@ extended_scene_analysis:
       - "repair and maintenance load"
       - "closure authority"
       - "comparison/equivalence rhetoric"
+      - "parity surface"
+      - "switch availability"
     out_of_scope:
       - "global claims about equality as such"
       - "person-level moral verdicts"
       - "psychological motive assignment"
+      - "maturity ranking"
+      - "essence claim about any role-position"
     drift_signal: >
       The key drift appears when a coordination frame becomes a comparison frame
-      and fairness-talk starts replacing interface revision.
+      and fairness-talk starts replacing interface revision. A sharper drift
+      appears where parity remains the surface while asymmetry becomes
+      selectively activatable without Σ/Ψ re-binding.
   non_event_integrity_check:
     operator: "Λ"
     decisive_absences:
@@ -338,7 +442,29 @@ extended_scene_analysis:
     drift_signal: >
       The decisive problem is not asymmetry itself, but that asymmetry remains
       operative in consequences while becoming illegitimate to name in the
-      dominant frame.
+      dominant frame. Under switch drift, Ω is neither denied nor coordinated:
+      it becomes selectively activatable.
+
+  switch_drift_check:
+    paper_internal_handles:
+      - "ASYMMETRY_SWITCH_AVAILABILITY"
+      - "PARITY_TO_EXIT"
+      - "RESPONSIBILITY_TO_AUTHORITY"
+    asymmetry_activation_test: >
+      Is asymmetry activation explicitly marked as structurally necessary,
+      bounded under Θ, and re-bound into Σ/Ψ, or does it remain available as a
+      standing lever under parity surface?
+    parity_to_exit_test: >
+      Is parity invoked to coordinate reciprocity, or to deny additional
+      responsibility under unequal Ω/Θ consequences?
+    responsibility_to_authority_test: >
+      Is additional responsibility under asymmetry carried as Ψ/Χ self-binding,
+      or converted into control, protection entitlement, or frame authority?
+    drift_signal: >
+      Switch drift is present where parity, asymmetry, and responsibility remain
+      available but are not coordinated. The issue is not asymmetry activation
+      as such, but unmarked activation without re-binding.
+
   temporality_and_trajectory:
     operator: "Θ"
     trajectory_pattern:
@@ -396,6 +522,10 @@ assistant_test_vectors:
   promptables:
     - "Map this scene in PMS-EDEN terms. Where does □ drift from praxis to comparison?"
     - "Show how pseudo-symmetry stabilizes under real Ω without resolving the cost gradient."
+    - "Where does asymmetry-switch availability appear, if at all?"
+    - "Is asymmetry activation marked, bounded, and re-bound into Σ/Ψ, or does it become switch drift?"
+    - "Where is parity used as reciprocity-binding, and where could it become parity-to-exit?"
+    - "Where could responsibility become self-binding, and where could it become responsibility-to-authority?"
     - "Where is Σ simulated rather than enacted in this configuration?"
     - "How does Ψ externalization appear in fairness rhetoric here?"
     - "Explain why this case points toward reciprocity loss without making moral claims."

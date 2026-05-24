@@ -29,7 +29,7 @@
         color: var(--color-text);
         background: white;
         line-height: 1.5;
-        font-size: 14px;
+        font-size: 13.5px;
       }
 
       blockquote {
@@ -195,15 +195,21 @@
       <header>
         <h1>PMS-EDEN – Model Specification</h1>
         <div class="subtitle">
-          A PMS-conform application profile (overlay) for structural drift in praxis: Eden → threshold → NRK → comparison-frame dominance →
-          pseudo-symmetry → residual stabilization (Λ/Φ/Α) → devaluation/humiliation → reciprocity loss, with strict separation between
-          descriptive mapping and PMS-valid binding application (Χ + reversibility + D). No person-typing, diagnosis, or how-to guidance.
+          A PMS-conform application profile (overlay) for structural drift in praxis:
+          Eden → threshold → NRK → comparison-frame dominance → pseudo-symmetry →
+          asymmetry-switch availability → PFO / permanentized exception →
+          parity-to-exit / responsibility-to-authority → residual stabilization
+          (Λ/Φ/Α) → devaluation/humiliation → reciprocity loss, with strict
+          separation between descriptive mapping and PMS-valid binding application
+          (Χ + reversibility + D). No person-typing, diagnosis, ideology attribution,
+          maturity ranking, or how-to guidance.
         </div>
         <div class="meta">
-          Version: <span class="code-inline">PMS-EDEN_1.1</span> &middot;
+          Version: <span class="code-inline">PMS-EDEN_1.2</span> &middot;
           Spec basis: <span class="code-inline">PMS-EDEN.yaml</span><br />
           Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.4 Thinking)<br />
           Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "draft"</span>)<br />
+          Last updated: <span class="code-inline">2026-05-24</span><br />
           Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.3"</span>)<br />
           Repo: <span class="code-inline">https://github.com/tz-dev/PMS-EDEN</span>
         </div>
@@ -216,7 +222,7 @@
         <p>
           This document specifies the <em>PMS-EDEN</em> layer in a concise, technical form.
           It is based on the YAML profile <span class="code-inline">PMS-EDEN.yaml</span>
-          (with <span class="code-inline">schema_version = "PMS-EDEN_1.1"</span>)
+          (with <span class="code-inline">schema_version = "PMS-EDEN_1.2"</span>)
           and renders its structure, constraints, and semantics explicit for human readers
           and computational systems.
         </p>
@@ -225,28 +231,36 @@
           PMS-EDEN is an <strong>application profile</strong> (overlay) of the
           Praxeological Meta-Structure (PMS; Δ–Ψ). It does <strong>not</strong> redefine PMS
           operators, dependencies, layers, or derived axes. Instead, it formalizes an
-          <strong>Eden drift lens</strong>: a structurally minimal grammar for how
-          a praxis configuration can drift into comparison governance, pseudo-symmetry,
+          <strong>Eden drift lens</strong>: a structurally minimal grammar for how a praxis
+          configuration can drift into comparison governance, pseudo-symmetry,
+          asymmetry-switch availability, permanentized exception, responsibility displacement,
           residual stabilization, devaluation or humiliation, and reciprocity loss—read
-          strictly as operator configurations (Δ–Ψ) under asymmetry (Ω) and temporality (Θ).
-          All paper-specific labels remain <strong>paper-internal, descriptive, scene-bound,
-          revisable, and non-totalizing</strong>.
+          strictly as operator configurations (Δ–Ψ) under asymmetry (Ω), temporality (Θ),
+          distance (Χ), integration (Σ), and self-binding (Ψ).
+        </p>
+
+        <p>
+          All PMS-EDEN labels remain <strong>paper-internal, descriptive, scene-bound,
+          revisable, and non-totalizing</strong>. They are not PMS operators, not diagnoses,
+          not ideology labels, not person categories, not essence claims, and not authority
+          claims.
         </p>
 
         <p>The specification covers, in particular:</p>
         <ul>
           <li>the <strong>schema_meta</strong> block (identity, status, authorship, dependency on PMS_1.3, authoritative source-paper role);</li>
-          <li>the <strong>validity_gate</strong> enforcing Χ (Distance), reversibility, and D (dignity-in-practice) for PMS-valid application only;</li>
-          <li><strong>paper-internal constructs</strong> (e.g., NRK, PS, PFO) as non-operators / paper-internal composites or regime labels;</li>
-          <li><strong>reduced_signatures</strong> and the <strong>drift_catalogue</strong>, including the master trace with explicit residual stabilization (Λ/Φ/Α);</li>
+          <li>the <strong>validity_gate</strong> enforcing Χ (Distance), reversibility, and D (Dignity-in-Practice) for PMS-valid application only;</li>
+          <li><strong>paper-internal terms</strong> from §0.7: asymmetry switch, permanentized exception switch, parity-to-exit, and responsibility-to-authority;</li>
+          <li><strong>paper constructs</strong> (NRK, PS, PFO, reciprocity, devaluation, humiliation, adult reciprocity as non-externalization) as non-operators;</li>
+          <li><strong>reduced_signatures</strong> and the <strong>drift_catalogue</strong>, including the updated master trace with explicit switch drift and residual stabilization;</li>
           <li><strong>viability</strong> as paper-bound cost/coordination readout under PMS criteria as used in this paper;</li>
-          <li><strong>EDEN-MAP</strong> as scene-bound mapping protocol with cartographic-status discipline, rival-framing openness, and non-capture safeguards;</li>
+          <li><strong>EDEN-MAP</strong> as scene-bound mapping protocol with Q1–Q7, including switch-drift scan and diagnostics-to-action firewall;</li>
           <li><strong>pattern_library</strong> with pattern-status clarification and paper-internal composite discipline;</li>
           <li><strong>glossary handles</strong> (stable refs; canonical text remains in the paper);</li>
           <li><strong>alternative explanations</strong> (methodological discipline box; sufficiency, no ranking, including AE4 external institutional stress);</li>
           <li><strong>boundary conditions</strong> (scope discipline, rival-framework openness, genuine non-capture, strongest-applicability summary);</li>
           <li><strong>appendix positioning</strong> (adjacent frameworks, non-goals, classification risk controls, theory-adjacent stance);</li>
-          <li><strong>example-suite schema</strong> (repo vignettes; scene-bound, non-instructional, dignity-preserving).</li>
+          <li><strong>example-suite schema</strong> (repo vignettes; scene-bound, non-instructional, dignity-preserving, switch-drift-aware).</li>
         </ul>
 
         <div class="box">
@@ -254,10 +268,10 @@
             <span>Core idea</span> <span class="pill">drift as operator-carriage</span>
           </div>
           <p class="small">
-            PMS-EDEN treats “Eden” as a minimal structural testbed: a praxis-first scene where drift becomes legible by
-            tracking what operators carry (or fail to carry) integration (Σ), binding (Ψ), distance (Χ), and asymmetry
-            legibility (Ω). The overlay’s job is to keep the analysis structural, scene-bound, auditable, revisable,
-            rival-framing-open, and dignity-preserving.
+            PMS-EDEN treats “Eden” as a minimal structural testbed: a praxis-first scene where drift becomes legible by tracking
+            what operators carry, fail to carry, displace, or simulate. The overlay’s job is to keep the analysis structural,
+            scene-bound, auditable, revisable, rival-framing-open, and dignity-preserving while making switch drift, cost geometry,
+            and reciprocity loss inspectable.
           </p>
         </div>
       </section>
@@ -280,7 +294,7 @@
           <tbody>
             <tr>
               <td><span class="code-inline">schema_version</span></td>
-              <td>Version identifier (<span class="code-inline">"PMS-EDEN_1.1"</span>).</td>
+              <td>Version identifier (<span class="code-inline">"PMS-EDEN_1.2"</span>).</td>
               <td>Compatibility and citation</td>
             </tr>
             <tr>
@@ -290,7 +304,7 @@
             </tr>
             <tr>
               <td><span class="code-inline">abbrev_legend</span></td>
-              <td>Named abbreviations and paper-internal label discipline.</td>
+              <td>Named abbreviations and paper-internal label discipline, including AS, PES, PTE, RTA, PS, PFO, NRK, and EDEN-MAP.</td>
               <td>Terminology normalization</td>
             </tr>
             <tr>
@@ -304,13 +318,28 @@
               <td>PMS conformance anchor</td>
             </tr>
             <tr>
+              <td><span class="code-inline">references</span></td>
+              <td>Repository and model references.</td>
+              <td>Traceability / linking</td>
+            </tr>
+            <tr>
               <td><span class="code-inline">paper_frontmatter_min</span></td>
               <td>Load-bearing claims, PMS conformance, ACRED references, minimal paper terms.</td>
               <td>Frontmatter compression layer</td>
             </tr>
             <tr>
+              <td><span class="code-inline">paper_internal_terms_index</span></td>
+              <td>Stable §0.7 handles for asymmetry switch, permanentized exception switch, parity-to-exit, and responsibility-to-authority.</td>
+              <td>Update-specific term discipline</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">overlays</span></td>
+              <td>Reserved overlay namespace; currently empty in the profile.</td>
+              <td>Future-safe structural namespace</td>
+            </tr>
+            <tr>
               <td><span class="code-inline">paper_constructs</span></td>
-              <td>Paper-internal constructs (NRK, PS, PFO, reciprocity, humiliation, etc.) as non-operators.</td>
+              <td>Paper-internal constructs (EDEN, threshold, breach, fig leaves, NRK, PS, AS, PES, PTE, RTA, PFO, reciprocity, devaluation, humiliation) as non-operators.</td>
               <td>Structural construct layer</td>
             </tr>
             <tr>
@@ -320,7 +349,7 @@
             </tr>
             <tr>
               <td><span class="code-inline">drift_catalogue</span></td>
-              <td>Consolidated corridors, regimes, and chapter-level drift handles.</td>
+              <td>Consolidated corridors, regimes, and chapter-level drift handles, including updated master trace and switch drift branches.</td>
               <td>Drift legibility layer</td>
             </tr>
             <tr>
@@ -330,22 +359,22 @@
             </tr>
             <tr>
               <td><span class="code-inline">viability</span></td>
-              <td>Minimal viability/cost windows: where structural non-viability is read out.</td>
+              <td>Minimal viability/cost windows; structural cost marker 16.25.</td>
               <td>Cost-bearing coordination discipline</td>
             </tr>
             <tr>
               <td><span class="code-inline">eden_map</span></td>
-              <td>Scene-bound mapping protocol: cartographic status, scene packet, Q1–Q6, synthesis, firewall.</td>
+              <td>Scene-bound mapping protocol: cartographic status, scene packet, Q1–Q7, synthesis, firewall.</td>
               <td>Operational method scaffold</td>
             </tr>
             <tr>
               <td><span class="code-inline">glossary_index</span></td>
-              <td>Stable paper-internal handles/refs for glossary entries; avoids duplicating full text.</td>
+              <td>Stable paper-internal handles/refs for glossary entries; avoids duplicating full paper text.</td>
               <td>Terminology discipline + retrieval keys</td>
             </tr>
             <tr>
               <td><span class="code-inline">alternative_explanations</span></td>
-              <td>Methodological discipline: multiple sufficient generators; no ranking; includes AE4.</td>
+              <td>Methodological discipline: multiple sufficient generators; no ranking; includes AE4 external institutional stress.</td>
               <td>Anti-overclaim guard</td>
             </tr>
             <tr>
@@ -355,12 +384,12 @@
             </tr>
             <tr>
               <td><span class="code-inline">appendices</span></td>
-              <td>Positioning layer (adjacent frameworks; non-goals; classification risk control).</td>
+              <td>Positioning layer: adjacent frameworks, non-goals, classification risk controls.</td>
               <td>Repository-facing interpretability</td>
             </tr>
             <tr>
               <td><span class="code-inline">example_suite_schema</span></td>
-              <td>Repo vignette blocks: minimal scene, mapping, costs, markers, gate reminder, closure.</td>
+              <td>Repo vignette blocks: minimal scene, mapping, costs, pattern markers, switch-drift markers, gate reminder, closure.</td>
               <td>Example library format</td>
             </tr>
             <tr>
@@ -377,8 +406,8 @@
           </div>
           <p class="small">
             PMS defines the operator grammar (Δ–Ψ) and derived axes (A, C, R, E, D).
-            PMS-EDEN defines a drift-reading discipline (Eden sequences, frames, non-events, regimes, costs, reciprocity loss)
-            without introducing new operators, new axioms, or person-level explanations.
+            PMS-EDEN defines a drift-reading discipline: Eden sequences, frames, non-events, regimes, switch availability,
+            costs, reciprocity loss, and mapping protocol—without introducing new operators, new axioms, or person-level explanations.
           </p>
         </div>
       </section>
@@ -391,19 +420,22 @@
 
         <h3>3.1 PMS-valid application gate</h3>
         <ul>
-          <li><strong>Χ (Distance):</strong> maintain meta-position and reflective stop-capability; no fusion into verdict, urgency, enforcement, or person-level attribution.</li>
+          <li><strong>Χ (Distance):</strong> maintain meta-position and reflective stop-capability; no fusion into verdict, urgency, enforcement, role, accusation, or person-level attribution.</li>
           <li><strong>Reversibility:</strong> all readings remain scene-bound, revisable, non-final, and configuration-specific; no global person labels or irreversible interpretive capture.</li>
-          <li><strong>D (Dignity-in-practice):</strong> no shaming, ranking, humiliation, or ontological person evaluation; critique targets enacted structures and cost handling only.</li>
+          <li><strong>D (Dignity-in-Practice):</strong> no shaming, ranking, humiliation, diagnosis, maturity hierarchy, dignity hierarchy, or ontological person evaluation; critique targets enacted structures and cost handling only.</li>
         </ul>
 
         <h3>3.2 Explicit non-goals (overlay discipline)</h3>
         <ul>
           <li>no clinical, therapeutic, or forensic use;</li>
           <li>no personality typing, motive theory, or inner-state claims;</li>
-          <li>no prescriptive “how-to” or coercive action demands (no Ψ→Other enforcement);</li>
+          <li>no prescriptive “how-to” or coercive action demands;</li>
           <li>no moral ranking of persons; no ontological dignity judgments;</li>
           <li>no ideology-based attribution: regimes are defined by operator behavior only;</li>
-          <li>no automatic extension into scenes better captured by rival frameworks or genuine non-capture cases.</li>
+          <li>no automatic extension into scenes better captured by rival frameworks or genuine non-capture cases;</li>
+          <li>no conversion of asymmetry switch into authority;</li>
+          <li>no use of parity-to-exit as reciprocity;</li>
+          <li>no use of responsibility-to-authority as care, protection, or adult responsibility.</li>
         </ul>
 
         <div class="box">
@@ -411,9 +443,9 @@
             <span>Key firewall</span> <span class="pill">description vs PMS-valid application</span>
           </div>
           <p class="small">
-            PMS-EDEN allows sharp descriptive mapping (operators, costs, drift signatures). The moment the mapping is used to bind,
-            obligate, prescribe, or enforce, the validity gate is active. Bypassing Χ, reversibility, or D makes the move formally invalid
-            as PMS application—even if the descriptive analysis is accurate.
+            PMS-EDEN allows sharp descriptive mapping: operators, costs, drift signatures, switch handles, and regime configurations.
+            The moment the mapping is used to bind, obligate, prescribe, enforce, rank, diagnose, or authorize control, the validity gate is active.
+            Bypassing Χ, reversibility, or D makes the move formally invalid as PMS application—even if the descriptive analysis is accurate.
           </p>
         </div>
       </section>
@@ -433,11 +465,11 @@
         <div class="box">
           <div class="box-title">Core corridor (operator-readable; non-moral)</div>
           <p class="small">
-            <span class="code-inline">Eden → Threshold → NRK → □comparison-dominant → PS (pseudo-symmetry) → residual stabilization (Λ/Φ/Α) → (devaluation | humiliation) → reciprocity loss (Σ/Ψ failure under Ω across Θ with chronic Λ)</span>
+            <span class="code-inline">Eden → Threshold → NRK → □comparison → PS → ASYMMETRY_SWITCH_AVAILABILITY → PFO/PERMANENTIZED_EXCEPTION → (PARITY_TO_EXIT | RESPONSIBILITY_TO_AUTHORITY) → residual_stabilization(Λ/Φ/Α) → (DEVALUATION | HUMILIATION) → RECIPROCITY_LOSS</span>
             <br />
             PMS-EDEN treats this as a repeatable structural corridor within this reconstruction: a sequence that can stabilize as scripts (Α),
-            especially when Ω becomes legible in consequences but illegible in speech under the dominant □. Residual stabilization
-            (Λ/Φ/Α) is kept explicit rather than compressed away.
+            especially when Ω becomes legible in consequences but illegible in speech under the dominant □. Switch availability and residual
+            stabilization (Λ/Φ/Α) are kept explicit rather than compressed away.
           </p>
         </div>
 
@@ -454,32 +486,71 @@
             <div class="box-title">PS (Pseudo-Symmetry)</div>
             <p class="small">
               Rhetorical equality inside a comparison-dominant □ under real Ω in consequences,
-              with Σ blocked or simulated and Ψ misbound (often to appearance-management).
-              Within PMS-EDEN, PS is structurally viable only as a bounded reversible buffer.
+              with Σ blocked or simulated and Ψ misbound to appearance-management. In the updated profile,
+              PS also prepares switch availability when parity remains the surface grammar while Ω becomes selectively activatable.
             </p>
           </div>
           <div class="box">
-            <div class="box-title">PFO (Postfeminist Override)</div>
+            <div class="box-title">AS / Asymmetry switch</div>
             <p class="small">
-              Paper-internal regime label for a regime-level frame configuration: Ω remains operative but Ω-legibility is disallowed;
-              Φ/Λ/Α stabilize without Σ/Ψ consolidation. Defined only by operator behavior; not ideological; not a group label.
+              Paper-internal label for the shift from parity claim to asymmetry activation under real or invoked Ω/Θ pressure.
+              Valid only where activation is marked, bounded, and re-bound into Σ/Ψ; drifting where unmarked, repeatable,
+              and responsibility-shifting.
+            </p>
+          </div>
+          <div class="box">
+            <div class="box-title">PES / Permanentized exception switch</div>
+            <p class="small">
+              PFO drift form in which asymmetry activation ceases to be emergency-bound and becomes a standing lever while
+              parity remains rhetorically preserved and Σ/Ψ coordination remains blocked.
+            </p>
+          </div>
+          <div class="box">
+            <div class="box-title">PTE / Parity-to-exit</div>
+            <p class="small">
+              Drift pattern in which parity or symmetry language is used not to coordinate reciprocity, but to deny additional
+              responsibility under unequal Ω/Θ consequences.
+            </p>
+          </div>
+          <div class="box">
+            <div class="box-title">RTA / Responsibility-to-authority</div>
+            <p class="small">
+              Drift pattern in which required self-binding under asymmetry is converted into control, protection entitlement,
+              frame authority, or governance. Greater responsibility under asymmetry does not generate authority.
+            </p>
+          </div>
+          <div class="box">
+            <div class="box-title">PFO (Postfeminist Override / Over-steering)</div>
+            <p class="small">
+              Paper-internal regime label for a regime-level meta-frame: □ is configured as comparison metric + Ω-taboo +
+              permanentized exception-switch availability. Φ/Λ/Α stabilize while Σ is suppressed and Ψ is displaced or misbound.
+              Defined only by operator behavior; not ideological; not a group label.
             </p>
           </div>
           <div class="box">
             <div class="box-title">Humiliation / devaluation (structural use)</div>
             <p class="small">
-              Paper-internal meaning: status regulation via devaluation as residual stabilization when explicit Ω-coordination via Σ/Ψ is blocked.
-              This is a structural consequence claim, not an intent, motive, trait, or moral verdict.
+              Paper-internal meaning: status regulation via devaluation as residual stabilization when explicit Ω-coordination
+              via Σ/Ψ is blocked. This is a structural consequence claim, not an intent, motive, trait, or moral verdict.
             </p>
           </div>
         </div>
 
         <div class="box">
+          <div class="box-title">Adult reciprocity principle</div>
+          <p class="small">
+            PMS-EDEN defines reciprocity as coordinated asymmetry, not symmetry:
+            <span class="code-inline">Σ under Ω, bound by Ψ across Θ, limited by Χ, constrained by D</span>.
+            Adult reciprocity does not require equal burdens; it requires non-externalization of unequal burdens.
+          </p>
+        </div>
+
+        <div class="box">
           <div class="box-title">Non-promissory stance</div>
           <p class="small">
-            PMS-EDEN is descriptive and criterial: it makes drift and cost geometry inspectable; it does not offer optimization,
-            therapy, or instruction. Where “correction signatures” are mentioned, they are viability descriptions only and remain subject to
-            the validity gate.
+            PMS-EDEN is descriptive and criterial: it makes drift, switch mechanics, and cost geometry inspectable.
+            It does not offer optimization, therapy, instruction, or authority claims. Where “correction signatures” are mentioned,
+            they are viability descriptions only and remain subject to the validity gate.
           </p>
         </div>
       </section>
@@ -525,21 +596,25 @@
           <div><strong>Α stabilizers:</strong> <span class="code-inline">[...]</span> &middot; <strong>Ω real:</strong> <span class="code-inline">{capacity, exposure, obligation, leverage}</span></div>
           <div class="hr"></div>
           <div><strong>Ψ map:</strong> <span class="code-inline">{declared, enacted, enforced, externalized}</span> (incl. Ψ→Other demands)</div>
+          <div class="hr"></div>
+          <div><strong>Switch map:</strong> <span class="code-inline">{asymmetry_activation, parity_to_exit, responsibility_to_authority, re_binding}</span></div>
         </div>
 
-        <h3>5.2 Core questions Q1–Q6 (15.3)</h3>
+        <h3>5.2 Core questions Q1–Q7 (15.3)</h3>
         <details open>
           <summary>Q1 — Which frame (□) dominates?</summary>
           <p class="small">
             Identify the dominant relevance grammar (□praxis, □comparison, □moral, □security, □scarcity, □narrative, or hybrid).
-            Output: <span class="code-inline">□dominant = &lt;type/hybrid&gt;</span> + what is permitted/forbidden.
+            Output: <span class="code-inline">□dominant = &lt;type/hybrid&gt;</span> + what is permitted, forbidden, speakable, or punishable.
           </p>
         </details>
         <details>
-          <summary>Q2 — What asymmetry (Ω) is real (and is it legible)?</summary>
+          <summary>Q2 — What asymmetry (Ω) is real, and how is it handled?</summary>
           <p class="small">
-            Map gradients: capacity, exposure, obligation, leverage. Record whether Ω is nameable/coordinable or taboo/illegible under □.
-            Output: <span class="code-inline">Ωreal = {capacity, exposure, obligation, leverage}</span>.
+            Map gradients: capacity, exposure, obligation, leverage. Record whether Ω is nameable/coordinable, taboo, selectively activated,
+            weaponized, or unclear under □.
+            Output: <span class="code-inline">Ωreal = {capacity, exposure, obligation, leverage}</span> +
+            <span class="code-inline">Ω-handling = &lt;coordinated|taboo|selectively_activated|weaponized|unclear&gt;</span>.
           </p>
         </details>
         <details>
@@ -553,21 +628,32 @@
         <details>
           <summary>Q4 — Where is Χ missing or instrumentalized?</summary>
           <p class="small">
-            Identify where distance is absent/punished and where “distance” is used as control (erase Λ, avoid Σ while keeping leverage).
+            Identify where distance is absent or punished and where “distance” is used as control
+            (erasing Λ, avoiding Σ while keeping leverage, protecting a switch surface).
             Output: <span class="code-inline">Χabsent / Χinstrumental / Χrestoration</span>.
           </p>
         </details>
         <details>
-          <summary>Q5 — Where is Σ low/failed/suppressed/simulated?</summary>
+          <summary>Q5 — Where is Σ low, failed, suppressed, or simulated?</summary>
           <p class="small">
-            Record integration status and blockers (□/Ω/Λ/Θ). Output: <span class="code-inline">Σstatus / Σblockers / Σminimum</span>.
+            Record integration status and blockers (□/Ω/Λ/Θ). Output:
+            <span class="code-inline">Σstatus / Σblockers / Σminimum</span>.
           </p>
         </details>
         <details>
           <summary>Q6 — Who self-binds (Ψ), and who externalizes binding (Ψ→Other)?</summary>
           <p class="small">
             Map declared vs enacted vs enforced binding; identify Ψ→Other demands.
-            Output: <span class="code-inline">Ψself / Ψexternal / Ψrepair</span> (repair = shift from other-control to self-binding under D).
+            Output: <span class="code-inline">Ψself / Ψexternal / Ψrepair</span>
+            (repair = shift from other-control to self-binding under D).
+          </p>
+        </details>
+        <details>
+          <summary>Q7 — Does switch drift appear?</summary>
+          <p class="small">
+            Test whether asymmetry activation is marked, bounded, and re-bound into Σ/Ψ, or whether drift appears as unmarked asymmetry activation,
+            parity-to-exit, or responsibility-to-authority. Output:
+            <span class="code-inline">switch_drift = {asymmetry_activation, parity_to_exit, responsibility_to_authority, re_binding}</span>.
           </p>
         </details>
 
@@ -577,10 +663,19 @@
         <div class="box">
           <div class="box-title">Required synthesis fields</div>
           <p class="small">
-            <span class="code-inline">Drift = □dominant → Λhandling → Αstabilizer → Ωmanagement → Σstatus → Ψpattern</span><br />
+            <span class="code-inline">Drift = □dominant → Λhandling → Αstabilizer → Ωmanagement/switch_drift → Σstatus → Ψpattern</span><br />
             <span class="code-inline">Αprimary</span> (what repetition stabilizes the configuration)<br />
             <span class="code-inline">Costs = {A, C, R, E, D}</span> (system costs; non-moral)<br />
-            <span class="code-inline">LowestCostCorrection = {Χstep, Λ→Σstep, Ψshift}</span> (descriptive viability signature; not a prescription)
+            <span class="code-inline">LowestCostCorrection = {Χstep, Λ→Σstep, switch_step, Ψshift}</span>
+            (descriptive viability signature; not a prescription)
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="box-title">Switch step in synthesis</div>
+          <p class="small">
+            <span class="code-inline">switch_step</span> means: mark, bound, and re-bind asymmetry activation; block parity-to-exit and
+            responsibility-to-authority; preserve Χ, reversibility, and D. It is a viability signature, not an instruction or enforcement license.
           </p>
         </div>
 
@@ -588,8 +683,10 @@
           <div class="box-title">Mandatory firewall (15.5)</div>
           <p class="small">
             The restrictions in this section apply to PMS-valid application, not to all possible discourse about persons, scenes, or institutions.
-            EDEN-MAP is not a person-evaluation tool. It permits scene-bound structural mapping and reversible, dignity-preserving
-            viability signatures. It forbids global person labels, inner-state claims, and coercive prescriptions justified by PMS vocabulary.
+            EDEN-MAP is not a person-evaluation tool. It permits scene-bound structural mapping, drift-risk and cost geometry,
+            scene-bound switch-drift handles, and reversible dignity-preserving viability signatures. It forbids global person labels,
+            inner-state claims, clinical categories, coercive prescriptions justified by PMS vocabulary, or converting responsibility into authority
+            over another role-position.
           </p>
         </div>
       </section>
@@ -598,13 +695,48 @@
 
       <!-- 6. Glossary / terminology -->
       <section id="glossary">
-        <h2>6. Terminology discipline (glossary handles)</h2>
+        <h2>6. Terminology discipline (paper-internal handles and glossary)</h2>
 
         <p>
-          PMS-EDEN uses paper-internal structural terms as operator-conform composites or strict definitions (non-psychological, non-diagnostic).
-          The YAML typically stores stable <em>handles</em> (refs) rather than duplicating verbatim glossary text.
+          PMS-EDEN uses paper-internal structural terms as operator-conform composites or strict definitions
+          (non-psychological, non-diagnostic). The YAML stores stable <em>handles</em> and refs rather than duplicating
+          the full paper text.
         </p>
 
+        <h3>6.1 §0.7 paper-internal term handles</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Handle</th>
+              <th>Meaning (structural; summary)</th>
+              <th>Discipline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code-inline">0.7_ASYMMETRY_SWITCH</span></td>
+              <td>Shift from parity claim to asymmetry activation under real or invoked Ω/Θ pressure.</td>
+              <td>Valid only where marked, bounded, and re-bound into Σ/Ψ; drift where unmarked, repeatable, and responsibility-shifting.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">0.7_PERMANENTIZED_EXCEPTION_SWITCH</span></td>
+              <td>PFO drift form in which asymmetry activation ceases to be emergency-bound and becomes a standing lever under preserved parity surface.</td>
+              <td>Not a person label; describes regime availability of unmarked activation.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">0.7_PARITY_TO_EXIT</span></td>
+              <td>Drift pattern in which parity rhetoric is used to deny additional responsibility under unequal Ω/Θ consequences.</td>
+              <td>Responsibility-displacement pattern, not a person label.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">0.7_RESPONSIBILITY_TO_AUTHORITY</span></td>
+              <td>Drift pattern in which required self-binding under asymmetry is converted into control, frame authority, protection entitlement, or governance.</td>
+              <td>No authority follows from responsibility; not a person label.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>6.2 §16 glossary handles</h3>
         <table class="table">
           <thead>
             <tr>
@@ -626,27 +758,32 @@
             </tr>
             <tr>
               <td><span class="code-inline">PS</span> (Pseudo-Symmetry)</td>
-              <td>Rhetorical equality under real Ω with blocked/simulated Σ and misbound Ψ.</td>
-              <td><span class="code-inline">□comparison + Ω + (Σ low) + (Ψ misbound)</span></td>
+              <td>Rhetorical parity under real Ω; switch availability may emerge; Σ bypassed or simulated; Ψ misbound to appearance-management.</td>
+              <td><span class="code-inline">□comparison + Ω + Σ low + Ψ misbound</span></td>
             </tr>
             <tr>
               <td><span class="code-inline">PFO</span> (paper-internal regime label)</td>
-              <td>Ω-illegibility regime: Φ/Λ/Α stabilize without Σ/Ψ consolidation; defined by operator behavior only.</td>
-              <td><span class="code-inline">□(Ω-taboo) + Φ + Λ + Α; Σ/Ψ suppressed</span></td>
+              <td>Ω-illegibility / Ω-taboo regime with comparison, permanentized exception-switch availability, high Φ, retained Λ, suppressed Σ, displaced or misbound Ψ, and Α protocolization.</td>
+              <td><span class="code-inline">□(Ω-taboo + comparison + switch) + Φ + Λ + Α; Σ/Ψ suppressed</span></td>
             </tr>
             <tr>
               <td><span class="code-inline">NRK</span> (Composite)</td>
               <td>Breach type: enactment under available awareness where Σ/Ψ do not carry.</td>
-              <td><span class="code-inline">A available; Σ/Ψ failed/aborted/externalized/displaced</span></td>
+              <td><span class="code-inline">A available; Σ/Ψ failed/aborted/externalized/displaced/simulated</span></td>
             </tr>
             <tr>
               <td><span class="code-inline">Reciprocity</span></td>
-              <td>Coordinated asymmetry: integration under Ω, bound by Ψ, limited by Χ.</td>
-              <td><span class="code-inline">Σ under Ω; Ψ; Χ</span></td>
+              <td>Coordinated asymmetry, not symmetry. Adult reciprocity does not require equal burdens; it requires non-externalization of unequal burdens.</td>
+              <td><span class="code-inline">Σ under Ω; Ψ across Θ; Χ; D</span></td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">Devaluation</span></td>
+              <td>Lowering standing-in-practice as control move substituting for coordination when Σ/Ψ cannot consolidate under named Ω.</td>
+              <td><span class="code-inline">□ + Α + Λ under blocked Σ/Ψ</span></td>
             </tr>
             <tr>
               <td><span class="code-inline">Structural Drift Cost Marker</span></td>
-              <td>Repeated co-occurrence of Ω-illegibility, low/simulated Σ, displaced or externalized Ψ, chronic Λ, and stabilized Α.</td>
+              <td>Warning handle for drift regimes sustained by cost externalization: low/simulated Σ, displaced or externalized Ψ, suppressed Ω-legibility or Ω activated without re-binding, parity-to-exit, responsibility-to-authority, retained Λ, protocolized Α, accumulated Θ costs.</td>
               <td><span class="code-inline">Ω ↔ Θ with chronic Λ; Σ/Ψ displaced; costs accumulate</span></td>
             </tr>
           </tbody>
@@ -655,8 +792,9 @@
         <div class="box">
           <div class="box-title">Scope note</div>
           <p class="small">
-            Everyday connotations (“maturity,” “humiliation,” etc.) are explicitly overridden: PMS-EDEN uses these as
-            paper-internal structural terms about in-scene consequence handling, not about inner states, traits, motives, or moral worth.
+            Everyday connotations (“maturity,” “humiliation,” “responsibility,” “authority,” etc.) are explicitly overridden:
+            PMS-EDEN uses these as paper-internal structural terms about in-scene consequence handling, not about inner states,
+            traits, motives, ideology, moral worth, or person status.
           </p>
         </div>
       </section>
@@ -665,7 +803,7 @@
 
       <!-- 7. Drift catalogue -->
       <section id="drift">
-        <h2>7. Drift catalogue (corridors, regimes, reciprocity loss)</h2>
+        <h2>7. Drift catalogue (corridors, regimes, switch drift, reciprocity loss)</h2>
 
         <p>
           Drift markers are configuration statements (“in this scene, the following operators are carrying / failing to carry…”),
@@ -675,49 +813,157 @@
         <h3>7.1 Core drift corridor (compressed)</h3>
         <div class="box small">
           <span class="code-inline">
-            Eden → Threshold → NRK → □comparison dominance → PS → residual stabilization (Λ/Φ/Α) → devaluation/humiliation → reciprocity loss
+            Eden → Threshold → NRK → □comparison → PS → ASYMMETRY_SWITCH_AVAILABILITY → PFO/PERMANENTIZED_EXCEPTION → (PARITY_TO_EXIT | RESPONSIBILITY_TO_AUTHORITY) → residual_stabilization(Λ/Φ/Α) → (DEVALUATION | HUMILIATION) → RECIPROCITY_LOSS
           </span>
         </div>
 
         <h3>7.2 Regime-level repeatability (PFO as meta-frame)</h3>
         <details open>
-          <summary>PFO (paper-internal regime label) — repeatability without ideology</summary>
+          <summary>PFO — paper-internal regime label; repeatability without ideology attribution</summary>
           <p class="small">
-            PFO denotes a dominant □ configured as Ω-illegibility + comparison metric, with high Φ (continuous recontextualization),
-            persistent Λ (non-closure as remainder or leverage), and stabilized Α scripts. Σ and Ψ remain suppressed or misbound, so reciprocity
-            cannot consolidate. This is defined only by operator behavior, not political identity, ideology, or group membership.
+            PFO denotes a dominant □ configured as Ω-illegibility / Ω-taboo + comparison metric + permanentized exception-switch availability,
+            with high Φ (continuous recontextualization), persistent Λ (non-closure as remainder or leverage), and stabilized Α scripts.
+            Σ and Ψ remain suppressed, displaced, or misbound, so reciprocity cannot consolidate. This is defined only by operator behavior,
+            not political identity, ideology, group membership, or person type.
           </p>
         </details>
 
-        <h3>7.3 Reciprocity loss (Tragedy, not guilt)</h3>
+        <h3>7.3 Switch drift branches</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Branch</th>
+              <th>Drift form</th>
+              <th>Validity condition / failure point</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code-inline">ASYMMETRY_SWITCH</span></td>
+              <td>Asymmetry is activated under real or invoked Ω/Θ pressure.</td>
+              <td>Valid where marked, bounded, and re-bound into Σ/Ψ; drift where unmarked, repeatable, and responsibility-shifting.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">PERMANENTIZED_EXCEPTION</span></td>
+              <td>Exception-switch becomes standing regime availability under parity surface.</td>
+              <td>Fails where asymmetry activation is no longer emergency-bound or coordinatively re-bound.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">PARITY_TO_EXIT</span></td>
+              <td>Parity or equality language exits responsibility under unequal Ω/Θ consequences.</td>
+              <td>Fails where equality-language replaces cost re-internalization.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">RESPONSIBILITY_TO_AUTHORITY</span></td>
+              <td>Required Ψ/Χ responsibility is converted into authority, protection entitlement, control, or governance.</td>
+              <td>Fails where responsibility stops being self-binding and becomes authorization.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>7.4 Reciprocity loss (tragedy, not guilt)</h3>
         <details>
-          <summary>Reciprocity = coordinated asymmetry (PMS definition)</summary>
+          <summary>Reciprocity = coordinated asymmetry (PMS-EDEN definition)</summary>
           <p class="small">
-            <span class="code-inline">Reciprocity = Σ under Ω, bound by Ψ, limited by Χ</span>.
+            <span class="code-inline">Reciprocity = Σ under Ω, bound by Ψ across Θ, limited by Χ</span>.
             Loss of reciprocity is readable as collapse of these carriers under comparison-dominant □ plus chronic Λ across Θ.
+            Under the switch extension, reciprocity also fails where parity becomes exit, asymmetry becomes leverage, or responsibility becomes authority.
           </p>
         </details>
 
         <div class="box">
           <div class="box-title">Cost marker (non-moral)</div>
           <p class="small">
-            Where mappings repeatedly show suppressed Ω-legibility, low or simulated Σ, Ψ→Other externalization or Ψ misbinding,
-            chronic Λ, and stabilized Α scripts, PMS-EDEN treats the configuration as a drift regime sustained by asymmetric cost carriage.
-            This is a structural non-viability signal under PMS criteria as used in this paper, not a moral verdict.
+            Where mappings repeatedly show suppressed Ω-legibility, unmarked Ω activation without re-binding, low or simulated Σ,
+            Ψ→Other externalization or Ψ misbinding, parity-to-exit, responsibility-to-authority, chronic Λ, and stabilized Α scripts,
+            PMS-EDEN treats the configuration as a drift regime sustained by asymmetric cost carriage. This is a structural non-viability
+            signal under PMS criteria as used in this paper, not a moral verdict.
           </p>
         </div>
       </section>
 
       <div class="pagebreak"></div>
 
-      <!-- 8. Alternative explanations & boundary conditions -->
-      <section id="scope-discipline">
-        <h2>8. Scope discipline: alternative explanations and boundary conditions</h2>
+      <!-- 8. Pattern library -->
+      <section id="patterns">
+        <h2>8. Pattern library (portable recognition, not diagnosis)</h2>
 
-        <h3>8.1 Alternative explanations (methodological discipline)</h3>
+        <p>
+          The pattern library collects paper-internal composites that bundle recurrent operator constellations into portable analytical forms.
+          Patterns are recognition aids. They are not independent ontological entities, not diagnostic categories, not person labels, and not
+          enforcement licenses.
+        </p>
+
+        <h3>8.1 C5 pattern schema</h3>
+        <div class="box small">
+          <span class="code-inline">Trigger configuration</span> &middot;
+          <span class="code-inline">Primary stabilizer</span> &middot;
+          <span class="code-inline">Primary failure</span>
+        </div>
+
+        <h3>8.2 Pattern index</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Pattern</th>
+              <th>Name</th>
+              <th>Compressed reading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code-inline">P-Ω-AC</span></td>
+              <td>Ω → Covert Authority</td>
+              <td>Real Ω is not coordinated as functional gradient and becomes covert authority via □-control and Α steering.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">P-Λ-DN</span></td>
+              <td>Λ → Denial / Suppression</td>
+              <td>Remainder is treated as non-existent; Φ supplies pseudo-closure; Α stabilizes avoidance while Λ persists.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">P-Σ-TOT</span></td>
+              <td>Σ → Totalization</td>
+              <td>Closure demand turns Σ-language into final-answer script; Χ is suppressed and D is endangered.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">P-Ψ-EXT</span></td>
+              <td>Ψ → Externalization</td>
+              <td>Binding is displaced onto another role-position instead of carried as Ψ→Self under Χ and D.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">P-□-MOR</span></td>
+              <td>□ → Moral Frame Capture</td>
+              <td>Frame shifts into moral adjudication; operator-reading collapses into verdict, guilt, rank, or person capture.</td>
+            </tr>
+            <tr>
+              <td><span class="code-inline">P-Σ-SIM</span></td>
+              <td>Σ-Simulation instead of Integration</td>
+              <td>Coordination is performed discursively while interfaces do not change and remainder persists.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="box">
+          <div class="box-title">Revisability note</div>
+          <p class="small">
+            The pattern library does not claim formal completeness. It organizes the major drift patterns reconstructed in the paper
+            and remains revisable under counter-scenes, rival framings, and cases of genuine non-capture.
+          </p>
+        </div>
+      </section>
+
+      <div class="pagebreak"></div>
+
+      <!-- 9. Alternative explanations & boundary conditions -->
+      <section id="scope-discipline">
+        <h2>9. Scope discipline: alternative explanations and boundary conditions</h2>
+
+        <h3>9.1 Alternative explanations (methodological discipline)</h3>
         <p class="small">
           PMS-EDEN explicitly lists alternative sufficient generators to prevent over-claiming. No refutation is attempted; no ranking is implied.
-          Alternatives are phrased in role/gradient language (Ω positions), not group labels. All AE use remains scene-bound and structurally revisable.
+          Alternatives are phrased in role/gradient language (Ω-capacity/exposure/leverage positions), not group labels. All AE use remains scene-bound
+          and structurally revisable.
         </p>
         <div class="grid">
           <div class="box">
@@ -735,7 +981,7 @@
           <div class="box">
             <div class="box-title">AE3 — Drift without humiliation</div>
             <p class="small">
-              Stabilization can occur via withdrawal/exit/isolation rather than humiliation: Χ increases as withdrawal; Θ locks separation.
+              Stabilization can occur via withdrawal, exit, or isolation rather than humiliation: Χ increases as withdrawal; Θ locks separation.
             </p>
           </div>
           <div class="box">
@@ -747,7 +993,7 @@
           </div>
         </div>
 
-        <h3>8.2 Boundary conditions (where the pipeline weakens)</h3>
+        <h3>9.2 Boundary conditions (where the pipeline weakens)</h3>
         <table class="table">
           <thead>
             <tr>
@@ -770,7 +1016,11 @@
             </tr>
             <tr>
               <td><strong>External institutions stabilize roles</strong></td>
-              <td>Contracts/norms scaffold Σ/Ψ and constrain □; regime-like drift becomes less likely.</td>
+              <td>Contracts, norms, or institutional interfaces may scaffold Σ/Ψ and constrain □; regime-like drift becomes less likely.</td>
+            </tr>
+            <tr>
+              <td><strong>Switch activation marked, bounded, and re-bound</strong></td>
+              <td>Asymmetry activation may remain viable and dignity-preserving when it is explicitly tied to real Ω/Θ burden and re-bound into Σ/Ψ.</td>
             </tr>
             <tr>
               <td><strong>Rival frameworks retain explanatory force</strong></td>
@@ -782,7 +1032,7 @@
             </tr>
             <tr>
               <td><strong>Strongest applicability condition</strong></td>
-              <td>Highest discriminative force occurs when Ω is action-relevant, □ becomes comparison-dominant, Σ stays low, Ψ is absent/misbound/externalized, Λ becomes chronic, and Α stabilizes scripts.</td>
+              <td>Highest discriminative force occurs when Ω is action-relevant, □ becomes comparison-dominant, Σ stays low, Ψ is absent/misbound/externalized, Λ becomes chronic, Α stabilizes scripts, and switch drift is available or already active.</td>
             </tr>
           </tbody>
         </table>
@@ -798,9 +1048,9 @@
 
       <div class="pagebreak"></div>
 
-      <!-- 9. Appendix positioning (adjacent frameworks) -->
+      <!-- 10. Appendix positioning (adjacent frameworks) -->
       <section id="positioning">
-        <h2>9. Positioning within adjacent frameworks (appendix layer)</h2>
+        <h2>10. Positioning within adjacent frameworks (appendix layer)</h2>
 
         <p>
           This section is repository-facing: it situates PMS-EDEN relative to adjacent theoretical programs, clarifies non-goals,
@@ -835,7 +1085,7 @@
             <tr>
               <td>Systems theory</td>
               <td>Drift, stabilization, regime reproduction.</td>
-              <td>Praxeological and role-position oriented (Ω gradients); explicit dignity-in-practice (D) as viability boundary without moralization.</td>
+              <td>Praxeological and role-position oriented (Ω gradients); explicit Dignity-in-Practice (D) as viability boundary without moralization.</td>
             </tr>
             <tr>
               <td>Pragmatic sociology</td>
@@ -854,17 +1104,16 @@
           <div class="box-title">Label risk control</div>
           <p class="small">
             If a regime label is predictably politicized or misread, the preferred fix is lower-entropy renaming
-            (for example, an Ω-illegibility label) while preserving the operator definition, paper-internal label discipline,
-            and non-ideological stance.
+            while preserving the operator definition, paper-internal label discipline, and non-ideological stance.
           </p>
         </div>
       </section>
 
       <div class="pagebreak"></div>
 
-      <!-- 10. Example suite -->
+      <!-- 11. Example suite -->
       <section id="examples">
-        <h2>10. Example-suite schema (repo vignettes; non-instructional)</h2>
+        <h2>11. Example-suite schema (repo vignettes; non-instructional)</h2>
 
         <p>
           PMS-EDEN example files are scene-bound demonstrations that follow a fixed schema.
@@ -879,14 +1128,42 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>Minimal vignette (scene-bound)</td><td>Concrete configuration snapshot (roles/frames), no person-typing.</td></tr>
-            <tr><td>Why repo-useful (structural focus)</td><td>What operator distinction the example demonstrates.</td></tr>
-            <tr><td>Operator mapping (reduced signature)</td><td>Compact operator trace for retrieval/orientation.</td></tr>
-            <tr><td>Drift position in master trace (optional)</td><td>One-line placement (where in the corridor).</td></tr>
-            <tr><td>Cost layout (Ω under Θ)</td><td>Gradients + trajectories; consequence interfaces; asymmetric cost carriage.</td></tr>
-            <tr><td>Pattern markers (max 2–3)</td><td>Selected markers from the pattern library; non-moral.</td></tr>
-            <tr><td>Validity gate reminder</td><td>Χ + reversibility + D.</td></tr>
-            <tr><td>Readable structural closure (2–5 sentences)</td><td>Human-readable summary; no advice, no prescriptions.</td></tr>
+            <tr>
+              <td>Minimal vignette (scene-bound)</td>
+              <td>Concrete configuration snapshot (roles/frames), no person-typing.</td>
+            </tr>
+            <tr>
+              <td>Why repo-useful (structural focus)</td>
+              <td>What operator distinction the example demonstrates.</td>
+            </tr>
+            <tr>
+              <td>Operator mapping (reduced signature)</td>
+              <td>Compact operator trace for retrieval/orientation.</td>
+            </tr>
+            <tr>
+              <td>Drift position in master trace (optional; 1 line)</td>
+              <td>Placement in the updated corridor, including switch availability or downstream switch drift where relevant.</td>
+            </tr>
+            <tr>
+              <td>Cost layout (Ω under Θ)</td>
+              <td>Gradients + trajectories; consequence interfaces; asymmetric cost carriage.</td>
+            </tr>
+            <tr>
+              <td>Pattern markers (max 2–3)</td>
+              <td>Selected markers from the pattern library; non-moral.</td>
+            </tr>
+            <tr>
+              <td>Switch-drift markers if present</td>
+              <td>Asymmetry activation, parity-to-exit, responsibility-to-authority; scene-bound and non-diagnostic.</td>
+            </tr>
+            <tr>
+              <td>Validity gate reminder</td>
+              <td>Χ + reversibility + D.</td>
+            </tr>
+            <tr>
+              <td>Readable structural closure (2–5 sentences)</td>
+              <td>Human-readable summary; no advice, no prescriptions.</td>
+            </tr>
           </tbody>
         </table>
 
@@ -901,9 +1178,9 @@
 
       <div class="pagebreak"></div>
 
-      <!-- 11. Implementation & citation -->
+      <!-- 12. Implementation & citation -->
       <section id="implementation">
-        <h2>11. Implementation notes and citation</h2>
+        <h2>12. Implementation notes and citation</h2>
 
         <p>
           The authoritative overlay specification is <span class="code-inline">PMS-EDEN.yaml</span>,
@@ -917,6 +1194,7 @@
         <p class="small">
           <strong>Technical reference:</strong><br />
           <em>PMS-EDEN.yaml – PMS-EDEN Application Profile (Overlay) Specification</em>
+          (<span class="code-inline">PMS-EDEN_1.2</span>)
         </p>
 
         <p class="small">
@@ -927,7 +1205,7 @@
         <p class="small">
           <strong>Source-paper basis:</strong><br />
           <em>PMS-EDEN – Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss</em>
-          (<span class="code-inline">PMS-EDEN_1.1</span>; authoritative overlay source)
+          (<span class="code-inline">PMS-EDEN_1.2</span>; authoritative overlay source)
         </p>
 
         <p>
@@ -940,7 +1218,8 @@
           <p class="small">
             PMS-EDEN does not replace decisions, responsibility, or tragedy.
             It makes drift and cost geometry legible: where frames convert into comparison, where non-events become steering surfaces,
-            how asymmetry becomes unspeakable yet operative, and why reciprocity can fail structurally without requiring malice.
+            how asymmetry becomes unspeakable yet operative, where asymmetry activation must be marked and re-bound, how parity can become exit,
+            how responsibility can become authority, and why reciprocity can fail structurally without requiring malice.
           </p>
         </div>
       </section>

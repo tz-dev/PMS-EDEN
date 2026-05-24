@@ -8,10 +8,10 @@
 #    PMS-EDEN.yaml
 #
 #  Profile Version:
-#    PMS-EDEN_1.1
+#    PMS-EDEN_1.2
 #
 #  Last Updated:
-#    2026-04-19
+#    2026-05-24
 #
 # -----------------------------------------------------------------------------
 #  PURPOSE AND STATUS
@@ -46,15 +46,20 @@
 #  - All references to operators (Δ–Ψ) retain their meanings exactly as defined
 #    in PMS.yaml.
 #
-#  - Composite labels used in this profile (e.g. NRK, PS, PFO, regimes)
-#    are PAPER-INTERNAL DESCRIPTORS, not PMS operators.
+#  - Composite labels used in this profile (e.g. NRK, PS, PFO, regimes,
+#    asymmetry switch, permanentized exception, parity-to-exit,
+#    responsibility-to-authority) are PAPER-INTERNAL DESCRIPTORS,
+#    not PMS operators.
 #
 # -----------------------------------------------------------------------------
 #  SCOPE OF THE OVERLAY
 # -----------------------------------------------------------------------------
 #  This application profile introduces ONLY overlay-level constructs, including:
 #
-#    - drift sequences and drift corridors (Eden → NRK → comparison → PS → loss),
+#    - drift sequences and drift corridors
+#      (Eden → NRK → comparison → PS → asymmetry-switch availability
+#       → PFO/permanentized exception → parity-to-exit / responsibility-to-authority drift
+#       → reciprocity loss)
 #    - regime descriptions (operator-defined, non-ideological),
 #    - reduced operator signatures (shorthand for analysis, not axioms),
 #    - cost markers and viability boundaries,
@@ -115,12 +120,12 @@
 #
 # =============================================================================
 
-schema_version: "PMS-EDEN_1.1"
+schema_version: "PMS-EDEN_1.2"
 schema_meta:
   model_name: "PMS–EDEN Application Profile"
   model_short: "PMS-EDEN"
   status: "draft"
-  last_updated: "2026-04-19"
+  last_updated: "2026-05-24"
   authors:
     - name: "T. Zöller"
       role: "originator"
@@ -134,13 +139,13 @@ schema_meta:
     APPLICATION PROFILE for PMS (PMS_1.3) implementing the PMS–EDEN lens.
     Machine-first overlay: reduced signatures, paper constructs (non-operators),
     drift and pattern handles, EDEN-MAP mapping schema, and example-suite
-    scaffolding, aligned to the updated PMS–EDEN paper version 1.1.
+    scaffolding, aligned to the updated PMS–EDEN paper version 1.2.
   repo:
     name: "PMS-EDEN"
     url: "https://github.com/tz-dev/PMS-EDEN"
   source_paper:
     title: "PMS–EDEN — Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss"
-    version: "PMS-EDEN_1.1"
+    version: "PMS-EDEN_1.2"
     file: "PMS-EDEN - Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss.md"
     status: "final_updated_reference"
     paper_role: "authoritative_overlay_source"
@@ -165,6 +170,14 @@ abbrev_legend:
   PFO: "Postfeminist Override (paper-internal regime label; non-operator)"
   # NRK = Negative Responsibility Kernel (paper construct; non-operator)
   NRK: "Negative Responsibility Kernel (paper-internal construct)"
+  # AS = Asymmetry Switch / Exception Switch (paper construct; non-operator)
+  AS: "Asymmetry Switch / Exception Switch (paper-internal label; non-operator)"
+  # PES = Permanentized Exception Switch (paper construct; non-operator)
+  PES: "Permanentized Exception Switch (paper-internal regime-drift label; non-operator)"
+  # PTE = Parity-to-exit (paper construct; non-operator)
+  PTE: "Parity-to-exit (paper-internal drift profile; non-operator)"
+  # RTA = Responsibility-to-authority (paper construct; non-operator)
+  RTA: "Responsibility-to-authority (paper-internal drift profile; non-operator)"
   # EDEN-MAP = Method schema (paper appendix; non-operator)
   EDEN-MAP: "EDEN-MAP mapping protocol (paper schema)"
 
@@ -204,7 +217,7 @@ paper_frontmatter_min:
   key_claims:
     - "Eden as a praxeological ground state within the PMS grammar: A-availability (A = [Θ, □, Δ]) without deficit pressure in a structurally highly specified praxis scene."
     - "Breach/Fall as operator-chain interruption (Δ–Ψ), not knowledge gain; consequence-field legibility (Ω/Θ/Λ) without epistemic surplus."
-    - "Drift pipeline: praxis → comparison-dominant □ → PS → devaluation/humiliation scripts → reciprocity loss."
+    - "Drift pipeline: praxis → comparison-dominant □ → PS → asymmetry-switch availability → PFO/permanentized exception → parity-to-exit / responsibility-to-authority drift → devaluation/humiliation scripts → reciprocity loss."
   pms_conformance:
     - "Uses only PMS_1.3 operators Δ–Ψ; no redefinitions; no new axioms."
     - "Separates description vs application; validity gate applies to application only."
@@ -220,9 +233,44 @@ paper_frontmatter_min:
     # D = Dignity-in-practice (structural: (Ψ ∘ Χ) applied to Ω-handling)
     D_note: "D = (Ψ ∘ Χ) applied to Ω-handling (PMS_1.3; non-metaphysical; non-ranking)."
   paper_terms_min:
-    pseudo_symmetry_PS: "Comparison-dominant □ asserts rhetorical parity while Ω remains operative in consequences (paper-internal structural substitution; non-moral)."
-    PFO: "Paper-internal regime label for □ governance attempting to manage or suppress Ω legibility (structural; not a group label and not an ideology claim)."
-    reciprocity_loss: "Erosion or failure of Σ/Ψ-supported coordination under real Ω across Θ (tragedy framing; non-blame; under PMS criteria as used in this paper)."
+    pseudo_symmetry_PS: "Comparison-dominant □ asserts rhetorical parity while Ω remains operative in consequences and may produce asymmetry-switch availability (paper-internal structural substitution; non-moral)."
+    asymmetry_switch: "Paper-internal label for parity-to-asymmetry activation under real or invoked Ω/Θ pressure; valid only where marked, bounded, and re-bound into Σ/Ψ."
+    permanentized_exception_switch: "PFO drift form in which asymmetry activation ceases to be emergency-bound and becomes a standing lever under preserved parity surface."
+    parity_to_exit: "Drift pattern in which parity rhetoric is used to deny additional responsibility under unequal Ω/Θ consequences."
+    responsibility_to_authority: "Drift pattern in which required Ψ/Χ self-binding under asymmetry is converted into control, protection entitlement, or frame authority."
+    PFO: "Paper-internal regime label for □ governance attempting to manage or suppress Ω legibility while permanentizing asymmetry-switch availability (structural; not a group label and not an ideology claim)."
+    reciprocity_loss: "Erosion or failure of Σ/Ψ-supported coordination under real Ω across Θ, including switch-drift forms where parity becomes exit, asymmetry becomes leverage, or responsibility becomes authority (tragedy framing; non-blame; under PMS criteria as used in this paper)."
+
+# -----------------------------------------------------------------------------
+# Paper-internal term definitions (§0.7) — stable handles only
+# -----------------------------------------------------------------------------
+paper_internal_terms_index:
+  note: "Paper-internal term definitions live in §0.7; here: stable handles/refs only."
+  ref: "PMS-EDEN §0.7"
+  entries:
+    "0.7_ASYMMETRY_SWITCH": |
+      Asymmetry switch / exception switch — paper-internal label for a shift from parity claim to asymmetry activation under real or invoked Ω/Θ pressure.
+      Handle: valid only where activation is marked, bounded, and re-bound into Σ/Ψ; drift where unmarked, repeatable, and responsibility-shifting.
+      Discipline: not an operator, not a diagnosis, not an essence claim.
+      Crosslinks: §0.7, §9.3.3, §10.3, §11.2.1.
+
+    "0.7_PERMANENTIZED_EXCEPTION_SWITCH": |
+      Permanentized exception switch — PFO drift form in which asymmetry activation ceases to be emergency-bound and becomes a standing lever under preserved parity surface.
+      Handle: asymmetry activation as regime option, not coordinated Ω-handling.
+      Discipline: not a person label; describes regime availability of unmarked activation.
+      Crosslinks: §0.7, §10.3, §14.
+
+    "0.7_PARITY_TO_EXIT": |
+      Parity-to-exit — drift pattern in which parity rhetoric is used to deny additional responsibility under unequal Ω/Θ consequences.
+      Handle: equality-language becomes an exit from re-internalizing costs.
+      Discipline: responsibility-displacement pattern, not a person label.
+      Crosslinks: §0.7, §10.3, §11.2.1.
+
+    "0.7_RESPONSIBILITY_TO_AUTHORITY": |
+      Responsibility-to-authority — drift pattern in which required self-binding under asymmetry is converted into control, frame authority, protection entitlement, or governance.
+      Handle: additional Ψ/Χ responsibility becomes authorization.
+      Discipline: no authority follows from responsibility; not a person label.
+      Crosslinks: §0.7, §10.3, §11.2.1.
 
 # -----------------------------------------------------------------------------
 # Overlays (non-operators; amplification only) — none required by PMS–EDEN
@@ -385,23 +433,28 @@ paper_constructs:
     name: "Pseudo-Symmetry (PS) regime"
     is_operator: false
     type: "drift_regime"
-    basis_operators: ["□", "Ω", "Σ", "Ψ"]
+    basis_operators: ["□", "Ω", "Θ", "Σ", "Ψ", "Φ", "Λ", "Α"]
     ref: "PMS-EDEN §9; Glossary 16.11"
     definition: >
       Pseudo-Symmetry (PS) is a paper-internal drift regime in which rhetorical
       equality is asserted within □ while real Ω gradients continue to operate in
       consequences. Ω is denied or tabooed as functional gradient-speech,
-      option-space is flattened (Δ is re-described as “the same”), Σ is bypassed
-      (integration replaced by narrative equivalence via Φ), and Ψ binds to
-      appearance-management (maintaining parity-appearance) rather than binding to
-      coordination interfaces matching real Ω across Θ. Within PMS–EDEN, PS is
-      structurally viable only as a bounded reversible buffer; as persistent
-      substitution (with Φ/Λ/Α as companions), it yields Σ/Ψ failure under Ω.
-      # PS = Pseudo-Symmetry named at first mention; Σ = Integration, Ψ = Self-Binding already canonical.
+      option-space is flattened (Δ is re-described as “the same”), and switch
+      availability can emerge: parity remains the public surface while Ω can be
+      selectively activated for protection, cost, responsibility, exception, or
+      leverage. Σ is bypassed (integration replaced by narrative equivalence via Φ),
+      and Ψ binds to appearance-management (maintaining parity-appearance) rather
+      than binding to coordination interfaces matching real Ω across Θ. Within
+      PMS–EDEN, PS is structurally viable only as a bounded reversible buffer; as
+      persistent substitution (with Φ/Λ/Α as companions), it yields Σ/Ψ failure
+      under Ω and prepares PFO by making asymmetry activation available without
+      explicit coordination.
+      # PS = Pseudo-Symmetry named at first mention; added switch availability remains paper-internal and non-operatorial.
 
     core_operator_signature_9_1: >
-      PS = [□ (comparison/value-relation), Ω (real gradient), Σ (low/blocked),
-      Ψ (misbound to appearance-management)].
+      PS = [□ (comparison/value-relation), Ω (real gradient), Ω selectively
+      activatable under parity surface, Σ (low/blocked), Ψ (misbound to
+      appearance-management)].
       # Brackets denote component set (co-configuration), not arithmetic.
 
     typical_companions_9_1: >
@@ -410,46 +463,133 @@ paper_constructs:
       These are companions, not additions to the PS basis signature.
       # Φ = Recontextualization, Λ = Non-Event, Α = Attractor (named at first mention here).
 
+  ASYMMETRY_SWITCH:
+    name: "Asymmetry switch / exception switch"
+    is_operator: false
+    type: "paper_internal_label"
+    paper_internal_label: true
+    non_person_label: true
+    basis_operators: ["□", "Ω", "Θ", "Σ", "Ψ", "Χ"]
+    ref: "PMS-EDEN §0.7; §9.3.3; §10.3"
+    definition: >
+      Asymmetry switch / exception switch is a paper-internal label for a
+      role-position's shift from parity claim to asymmetry activation under real
+      or invoked Ω/Θ pressure. The switch is not illegitimate as such. It remains
+      structurally valid where real asymmetry cannot be carried symmetrically,
+      provided the activation is marked, bounded, and re-bound into Σ/Ψ. It
+      becomes drift where it functions as an unmarked, repeatable,
+      responsibility-shifting option while parity remains rhetorically preserved.
+      This is not a PMS operator and not a person-level diagnosis.
+
+  PERMANENTIZED_EXCEPTION_SWITCH:
+    name: "Permanentized exception switch"
+    is_operator: false
+    type: "regime_drift_label"
+    paper_internal_label: true
+    non_person_label: true
+    basis_operators: ["□", "Ω", "Θ", "Σ", "Ψ", "Φ", "Λ", "Α"]
+    ref: "PMS-EDEN §0.7; §10.3"
+    definition: >
+      Permanentized exception switch is the PFO drift form in which asymmetry
+      activation ceases to be emergency-bound and becomes a standing lever while
+      parity remains rhetorically preserved and Σ/Ψ coordination remains blocked.
+      The term names regime availability of unmarked asymmetry activation, not a
+      trait, motive, or essence of any role-position.
+
+  PARITY_TO_EXIT:
+    name: "Parity-to-exit"
+    is_operator: false
+    type: "drift_profile"
+    paper_internal_label: true
+    non_person_label: true
+    basis_operators: ["□", "Ω", "Θ", "Ψ", "Χ"]
+    ref: "PMS-EDEN §0.7; §10.3; §11.2.1"
+    definition: >
+      Parity-to-exit is a drift pattern in which a role-position invokes parity
+      or symmetry not to coordinate reciprocity, but to deny additional
+      responsibility under unequal Ω/Θ consequences. Equality-language becomes
+      an exit from re-internalizing costs. This is a responsibility-displacement
+      pattern, not a person label.
+
+  RESPONSIBILITY_TO_AUTHORITY:
+    name: "Responsibility-to-authority"
+    is_operator: false
+    type: "drift_profile"
+    paper_internal_label: true
+    non_person_label: true
+    basis_operators: ["Ω", "Θ", "Ψ", "Χ", "□"]
+    ref: "PMS-EDEN §0.7; §10.3; §11.2.1"
+    definition: >
+      Responsibility-to-authority is a drift pattern in which required self-binding
+      under asymmetry is converted into control, protection entitlement, frame
+      authority, or governance over the other role-position. The drift lies in
+      converting additional Ψ/Χ responsibility into authorization. Greater
+      responsibility under asymmetry does not generate a right to define, control,
+      protect-by-command, or govern the frame.
+
+  ADULT_RECIPROCITY_NON_EXTERNALIZATION:
+    name: "Adult reciprocity as non-externalization of unequal burdens"
+    is_operator: false
+    type: "viability_principle"
+    paper_internal_label: true
+    non_person_label: true
+    basis_operators: ["Ω", "Θ", "Σ", "Ψ", "Χ"]
+    basis_axes: ["D"]
+    ref: "PMS-EDEN §10.3.2; §14.3 G4"
+    definition: >
+      Adult reciprocity does not require equal burdens; it requires
+      non-externalization of unequal burdens. Each role-position must carry the
+      self-binding required by its own cost, capacity, externalization, and
+      irreversibility profile. This principle describes coordinated asymmetry,
+      not hidden hierarchy, person ranking, or moral superiority.
+
   PFO:
     name: "Postfeminist Override (PFO; paper-internal regime label)"
     is_operator: false
     type: "meta_frame_regime"
-    basis_operators: ["□", "Ω", "Φ", "Λ", "Α", "Σ", "Ψ", "Θ"]
+    basis_operators: ["□", "Ω", "Φ", "Λ", "Α", "Σ", "Ψ", "Θ", "Χ"]
     ref: "PMS-EDEN §10; Glossary 16.12"
     paper_internal_label: true
     non_group_label: true
     non_ideology_claim: true
     definition: >
       Postfeminist Override / Over-steering (PFO) is a paper-internal regime label
-      for a regime-level meta-frame: □ is configured as (comparison metric + Ω-taboo),
-      so functional Ω coordination is disallowed while Ω remains operative.
-      Stabilization shifts to high Φ (continuous narrative repair), persistent Λ
-      (open remainder as standing constraint or control surface), and Α
-      protocolization (repeatable scripts), with Σ suppressed and Ψ displaced or
-      misbound (binding to appearance-management instead of explicit coordination).
-      Under Θ, this produces repeatable drift (short-term de-escalation,
-      long-term reciprocity erosion) without requiring ideology claims. It is a
-      purely operator-behavioral regime hypothesis intended as a paper-internal
-      structural description, not a group label.
-      # PFO = Postfeminist Override named at first mention; Θ = Temporality named here as trajectory carrier.
+      for a regime-level meta-frame: □ is configured as (comparison metric + Ω-taboo
+      + permanentized exception switch), so functional Ω coordination is disallowed
+      while Ω remains operative and selectively activatable. Stabilization shifts
+      to high Φ (continuous narrative repair), persistent Λ (open remainder as
+      standing constraint or control surface), and Α protocolization (repeatable
+      scripts), with Σ suppressed and Ψ displaced or misbound (binding to
+      appearance-management instead of explicit coordination). Under Θ, this
+      produces repeatable drift (short-term de-escalation, long-term reciprocity
+      erosion) without requiring ideology claims. Its double drift consists of
+      unmarked asymmetry activation as standing lever, parity-to-exit, and
+      responsibility-to-authority. It is a purely operator-behavioral regime
+      hypothesis intended as a paper-internal structural description, not a group
+      label.
+      # PFO = Postfeminist Override named at first mention; the switch labels are paper-internal non-operators.
 
-    compact_formalization_10_7: >
-      PFO = □(Ω-taboo + comparison) + Φ-high + Λ-open + Α-protocol with Σ
-      suppressed and Ψ displaced or misbound across Θ
-      (trajectory-bearing costs/erosion).
-      # Compact regime form; mirrors paper §10.7 "Compact Formalization";
+    compact_formalization_10_8: >
+      PFO = □(Ω-taboo + comparison + permanentized exception-switch availability)
+      + Φ-high + Λ-open + Α-protocol with Σ suppressed and Ψ displaced or
+      misbound across Θ (trajectory-bearing costs/erosion).
+      # Compact regime form; mirrors paper §10.8 "Compact Formalization";
       # “+” here is descriptive concatenation (not axis algebra), not operator redefinition.
 
-    residual_stabilization_outcome_10_7: >
+    residual_stabilization_outcome_10_8: >
       Residual stabilization outcome: humiliation emerges as the remaining
-      low-cost stabilization mode when explicit Ω/Σ/Ψ coordination is blocked.
-      # Mirrors paper §10.7; structural consequence only, not moral judgement.
+      low-cost stabilization mode when explicit Ω/Σ/Ψ coordination is blocked
+      under Ω-taboo and permanentized exception-switch conditions.
+      # Mirrors paper §10.8; structural consequence only, not moral judgement.
 
-    positioning_in_master_trace_10_0: >
+    positioning_in_master_trace_10: >
       Master-trace placement: Eden/Threshold → NRK → comparison-dominant □ →
-      PS → (devaluation/humiliation protocols) → reciprocity loss; PFO functions
+      PS → asymmetry-switch availability → PFO/permanentized exception →
+      parity-to-exit / responsibility-to-authority drift →
+      (devaluation/humiliation protocols) → reciprocity loss. PFO functions
       as the meta-frame that makes the sequence repeatable by stabilizing
-      Ω-illegibility and substituting Φ/Λ/Α for Σ/Ψ consolidation under Θ.
+      Ω-illegibility, permanentizing exception-switch availability, and
+      substituting Φ/Λ/Α for Σ/Ψ consolidation under Θ.
       # Links regime role to pipeline; no new operators introduced.
 
   RECIPROCITY:
@@ -467,28 +607,36 @@ paper_constructs:
       D = (Ψ ∘ Χ) applied to Ω-handling. Minimal condition: Ω legible (as a
       functional gradient) + Σ active (interface synthesis) + Ψ anchored
       (durable commitment to coordination, not appearance) + Χ present
-      (inhibition/meta-position). If any component collapses, reciprocity becomes
-      unstable, simulated, or displaced into substitutes (Φ/Λ/Α, devaluation,
-      protocol control).
+      (inhibition/meta-position). Under the PFO-switch extension, reciprocity also
+      fails where Ω remains materially operative but becomes selectively
+      activatable rather than coordinatively legible: parity becomes exit,
+      asymmetry becomes leverage, or responsibility becomes authority. Adult
+      reciprocity does not require equal burdens; it requires non-externalization
+      of unequal burdens. If any component collapses, reciprocity becomes unstable,
+      simulated, or displaced into substitutes (Φ/Λ/Α, devaluation, protocol
+      control, parity-to-exit, responsibility-to-authority, unmarked asymmetry
+      activation).
       # Ω=Asymmetry, Σ=Integration, Ψ=Self-Binding, Θ=Temporality, Χ=Distance named here at first mention.
 
   RECIPROCITY_LOSS:
     name: "Loss of reciprocity"
     is_operator: false
     type: "erosion_trajectory"
-    basis_operators: ["Ω", "Θ", "Λ", "Α", "Σ", "Ψ"]
+    basis_operators: ["Ω", "Θ", "Λ", "Α", "Σ", "Ψ", "□", "Χ"]
     ref: "PMS-EDEN §11"
     definition: >
       Loss of reciprocity is a trajectory of channel erosion under Θ once Ω is
-      real but denied or tabooed in □, such that Σ cannot consolidate and Ψ is
-      displaced (absent, externalized, or misbound). Λ becomes chronic remainder
-      (non-closure persists and accumulates), and Α stabilizes repeatable scripts
-      (indirect control, avoidance, status regulation) that substitute for
-      coordinated interfaces. Net: stability is maintained via management or
-      substitution rather than Σ/Ψ-carried coordination, yielding cumulative
-      erosion across Θ and structurally compromising reciprocity under PMS criteria
-      as used in this paper.
-      # Λ=Non-Event, Α=Attractor named here once; □/Φ referenced as companions, not added to basis_operators.
+      real but denied, tabooed, or selectively activatable in □, such that Σ cannot
+      consolidate and Ψ is displaced (absent, externalized, or misbound). Λ becomes
+      chronic remainder (non-closure persists and accumulates), and Α stabilizes
+      repeatable scripts (indirect control, avoidance, status regulation) that
+      substitute for coordinated interfaces. Under the PFO-switch extension,
+      reciprocity loss also includes asymmetry activation without re-binding,
+      parity-to-exit, and responsibility-to-authority. Net: stability is maintained
+      via management, switch affordances, or substitution rather than Σ/Ψ-carried
+      coordination, yielding cumulative erosion across Θ and structurally
+      compromising reciprocity under PMS criteria as used in this paper.
+      # Switch labels remain paper-internal non-operators; □/Χ included because switch drift depends on frame and distance/restraint handling.
 
   DEVALUATION:
     name: "Devaluation"
@@ -498,32 +646,37 @@ paper_constructs:
     ref: "PMS-EDEN Glossary 16.22"
     definition: >
       Devaluation is a stabilization substitute in which □ (Frame) uses
-      Ω-relevant differences or exposures as standing signals and reduces the
-      other’s standing-in-practice to lower conflict salience or regain control.
-      It typically operates by keeping Λ (Non-Event) open (unresolved residue as
-      implicit debt or leverage) and stabilizing the move as Α (Attractor) script
-      across Θ (Temporality). Devaluation substitutes status operations for
-      Σ/Ψ-based coordination when integration or binding are blocked or punished
-      in the dominant □.
+      Ω-relevant differences, exposures, switch-use, or switch-naming as standing
+      signals and reduces the other’s standing-in-practice to lower conflict
+      salience or regain control. It typically operates by keeping Λ (Non-Event)
+      open (unresolved residue as implicit debt or leverage) and stabilizing the
+      move as Α (Attractor) script across Θ (Temporality). Under permanentized
+      exception-switch conditions, devaluation can reduce the standing of the
+      role-position that makes Ω or switch-use legible rather than coordinating the
+      gradient. Devaluation substitutes status operations for Σ/Ψ-based
+      coordination when integration or binding are blocked or punished in the
+      dominant □.
       # □=Frame named here at first mention; ties to Σ/Ψ are explanatory companions only.
 
   HUMILIATION:
     name: "Humiliation (paper-internal structural use)"
     is_operator: false
     type: "cost_marker"
-    basis_operators: ["Ω", "□", "Θ", "Λ"]
+    basis_operators: ["Ω", "□", "Θ", "Λ", "Α"]
     ref: "PMS-EDEN Glossary 16.13"
     definition: >
       Humiliation (paper-internal) denotes status regulation via devaluation as
       residual stabilization when Ω gradients are action-relevant but functional
       Ω-coordination is blocked in □ and reciprocity carriers (Σ integration / Ψ
-      self-binding) do not consolidate. Structurally, it marks a cost mode:
-      short-term stability is purchased by standing reduction and persistent
-      remainder (Λ) rather than by coordinated interface repair across Θ. This is
-      a paper-internal structural descriptor (no motive or trait claim; no moral
+      self-binding) do not consolidate. Under Ω-taboo and permanentized
+      exception-switch conditions, humiliation can stabilize the regime by lowering
+      the standing of the carrier of Ω-signals or switch-legibility rather than by
+      coordinating the gradient. Structurally, it marks a cost mode: short-term
+      stability is purchased by standing reduction and persistent remainder (Λ)
+      rather than by coordinated interface repair across Θ. This is a
+      paper-internal structural descriptor (no motive or trait claim; no moral
       verdict).
       # "Humiliation" named explicitly as paper-internal structural term; non-normativity reminder embedded.
-
 # -----------------------------------------------------------------------------
 # Reduced signatures (paper-specific; reduced shorthand only)
 # -----------------------------------------------------------------------------
@@ -538,10 +691,10 @@ reduced_signatures:
   master_drift_trace_pipeline:
     label: "Master drift trace (pipeline)"
     reduced: true
-    raw: "EDEN → THRESHOLD → NRK → □comparison → PS → residual_stabilization(Λ/Φ/Α) → (DEVALUATION|HUMILIATION) → RECIPROCITY_LOSS"
+    raw: "EDEN → THRESHOLD → NRK → □comparison → PS → ASYMMETRY_SWITCH_AVAILABILITY → PFO/PERMANENTIZED_EXCEPTION → (PARITY_TO_EXIT|RESPONSIBILITY_TO_AUTHORITY) → residual_stabilization(Λ/Φ/Α) → (DEVALUATION|HUMILIATION) → RECIPROCITY_LOSS"
     operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
     ref: "PMS-EDEN §14 (Figure 1 / master trace)"
-    note: "Consolidated paper-wide trace within this reconstruction; descriptive only. Residual stabilization (Λ/Φ/Α) is kept explicit here rather than compressed away."
+    note: "Consolidated paper-wide trace within this reconstruction; descriptive only. Switch labels are paper-internal non-operators; residual stabilization (Λ/Φ/Α) is kept explicit here rather than compressed away."
 
   threshold_marker_signature:
     label: "Threshold marker (Apple) — reduced"
@@ -590,13 +743,14 @@ reduced_signatures:
   PS_core_signature:
     label: "Pseudo-Symmetry (PS) — core operator signature"
     reduced: true
-    raw: "PS = [□comparison + Ω real] with Σ blocked/simulated and Ψ misbound to appearance-management; typical companions: Φ-high, Λ-retained, Α-protocolized."
-    operators: ["□", "Ω", "Σ", "Ψ"]
-    ref: "PMS-EDEN §9.1"
+    raw: "PS = [□comparison + Ω real] with Σ blocked/simulated and Ψ misbound to appearance-management; switch availability may emerge where parity surface is preserved while Ω becomes selectively activatable; typical companions: Φ-high, Λ-retained, Α-protocolized."
+    operators: ["□", "Ω", "Σ", "Ψ", "Θ", "Φ", "Λ", "Α"]
+    ref: "PMS-EDEN §9.1; §9.3.3"
     buffer_note: >
       Within PMS–EDEN, pseudo-symmetry may function as a bounded temporary buffer
       only insofar as it reopens Σ and Ψ under named Ω rather than permanently
-      substituting for them.
+      substituting for them. Switch availability is viable only where asymmetry
+      activation is marked, bounded, and re-bound into Σ/Ψ.
 
   PFO_regime_signature:
     label: "PFO — regime operator form"
@@ -604,48 +758,55 @@ reduced_signatures:
     paper_internal_label: true
     non_group_label: true
     non_ideology_claim: true
-    raw: "PFO = □ enforces Ω-illegibility/taboo + comparison metric; Φ repair high; Λ kept open; Σ suppressed; Ψ displaced/misbound → Α protocol stabilization across Θ."
-    operators: ["□", "Ω", "Φ", "Λ", "Α", "Σ", "Ψ", "Θ"]
-    ref: "PMS-EDEN §10.7"
-    note: "Paper-internal regime label; compact formalization in §10.7; operator-behavioral regime hypothesis only."
+    raw: "PFO = □ enforces Ω-illegibility/taboo + comparison metric + permanentized exception-switch availability; Φ repair high; Λ kept open; Σ suppressed; Ψ displaced/misbound → Α protocol stabilization across Θ; drift branches include asymmetry activation as standing lever, parity-to-exit, and responsibility-to-authority."
+    operators: ["□", "Ω", "Φ", "Λ", "Α", "Σ", "Ψ", "Θ", "Χ"]
+    ref: "PMS-EDEN §10.3; §10.8"
+    note: "Paper-internal regime label; compact formalization in §10.8; operator-behavioral regime hypothesis only. Switch branches are paper-internal non-operators."
 
   reciprocity_loss_signature:
     label: "Reciprocity loss — reduced"
     reduced: true
-    raw: "RECIPROCITY_LOSS = Θ-erosion of Σ/Ψ-carried coordination under real Ω with chronic Λ and stabilized Α; devaluation/humiliation substitute for coordination."
-    operators: ["Ω", "Θ", "Λ", "Α", "Σ", "Ψ"]
+    raw: "RECIPROCITY_LOSS = Θ-erosion of Σ/Ψ-carried coordination under real Ω with chronic Λ and stabilized Α; switch drift forms include unmarked asymmetry activation, parity-to-exit, and responsibility-to-authority; devaluation/humiliation substitute for coordination."
+    operators: ["Ω", "Θ", "Λ", "Α", "Σ", "Ψ", "□", "Χ"]
     ref: "PMS-EDEN §11"
-    note: "Describes reciprocity as structurally compromised under PMS criteria as used in this paper."
+    note: "Describes reciprocity as structurally compromised under PMS criteria as used in this paper; switch labels are non-operator drift profiles."
 
   meta_signature_self_control_over_other_control:
     label: "Meta-signature: self-control > other-control"
     reduced: true
-    raw: "META = self-control: (Ψ ∘ Χ) applied to Ω-handling (D constraint) > other-control: Ψ→Other demands with □/Φ/Λ/Α substitutes. # D=Dignity-in-practice"
-    operators: ["Χ", "Σ", "Ψ"]
+    raw: "META = self-control: (Ψ ∘ Χ) applied to Ω-handling (D constraint), including marked/bounded/re-bound asymmetry activation and no parity-to-exit or responsibility-to-authority, > other-control: Ψ→Other demands with □/Φ/Λ/Α substitutes. # D=Dignity-in-practice"
+    operators: ["Χ", "Σ", "Ψ", "Ω", "□"]
     basis_axes: ["D"] # D = Dignity-in-practice
-    ref: "PMS-EDEN §13.9"
+    ref: "PMS-EDEN §9.6; §13.9"
 
   counter_proposals:
     note: "Non-prescriptive viability profiles (PMS-EDEN §14.3)."
     G1_functional_asymmetry_coordination:
       label: "G1 — Functional asymmetry coordination"
       reduced: true
-      raw: "G1 = Ω legible + Σ active + Ψ anchored + Χ present across Θ (coordinate gradients as interfaces, not verdicts)."
+      raw: "G1 = Ω legible + asymmetry activation marked/bounded/re-bound + Σ active + Ψ anchored + Χ present across Θ (coordinate gradients as interfaces, not verdicts)."
       operators: ["Ω", "Σ", "Ψ", "Χ", "Θ"]
       ref: "PMS-EDEN §14.3 (G1)"
     G2_symmetry_as_reciprocity_binding:
       label: "G2 — Symmetry as reciprocity-binding (not equivalence)"
       reduced: true
-      raw: "G2 = 'symmetry' as reciprocity-binding: Ψ anchored to Σ under named Ω across Θ, constrained by D=(Ψ ∘ Χ) on Ω-handling (no coercive Ψ→Other). # D=Dignity-in-practice"
+      raw: "G2 = 'symmetry' as reciprocity-binding: Ψ anchored to Σ under named Ω across Θ, constrained by D=(Ψ ∘ Χ) on Ω-handling; no parity-to-exit, no responsibility-to-authority, no coercive Ψ→Other. # D=Dignity-in-practice"
       operators: ["Ψ", "Χ", "Σ", "Ω", "Θ"]
       basis_axes: ["D"] # D = Dignity-in-practice
       ref: "PMS-EDEN §14.3 (G2)"
     G3_frame_recontextualization:
       label: "G3 — Frame recontextualization (value-relation → praxis-relation)"
       reduced: true
-      raw: "G3 = Φ shifts □ from value-relation back to praxis-relation; Ω becomes speakable/coordinate-able; Λ converted into Σ-work across Θ."
+      raw: "G3 = Φ shifts □ from value-relation back to praxis-relation; Ω becomes speakable/coordinate-able; asymmetry activation becomes a marked structural event rather than a standing regime option; Λ converted into Σ-work across Θ."
       operators: ["Φ", "□", "Ω", "Σ", "Λ", "Θ"]
       ref: "PMS-EDEN §14.3 (G3)"
+    G4_adult_reciprocity_non_externalization:
+      label: "G4 — Adult reciprocity as non-externalization of unequal burdens"
+      reduced: true
+      raw: "G4 = Ω/Θ cost topology explicit + asymmetry activation marked/re-bound + no parity-to-exit + no responsibility-to-authority + Σ active + Ψ role-specific self-binding + Χ restraint."
+      operators: ["Ω", "Θ", "Σ", "Ψ", "Χ", "□"]
+      basis_axes: ["D"]
+      ref: "PMS-EDEN §14.3 (G4)"
 
 # -----------------------------------------------------------------------------
 # Drift catalogue (handles + minimal refs; full text stays in paper)
@@ -653,11 +814,11 @@ reduced_signatures:
 drift_catalogue:
   master_trace:
     note: "Consolidated trace (paper-wide). Minimal operator handle included for standalone use."
-    ref: "PMS-EDEN §10.0; §14 (Figure 1)"
-    handle: "EDEN → THRESHOLD → NRK → □comparison → PS → residual_stabilization(Λ/Φ/Α) → (DEVALUATION|HUMILIATION) → RECIPROCITY_LOSS"
+    ref: "PMS-EDEN §10; §14 (Figure 1)"
+    handle: "EDEN → THRESHOLD → NRK → □comparison → PS → ASYMMETRY_SWITCH_AVAILABILITY → PFO/PERMANENTIZED_EXCEPTION → (PARITY_TO_EXIT|RESPONSIBILITY_TO_AUTHORITY) → residual_stabilization(Λ/Φ/Α) → (DEVALUATION|HUMILIATION) → RECIPROCITY_LOSS"
     operators: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
-    trace_10_0: "Pipeline statement in §10.0 (paper text)."
-    trace_14_figure_1: "Figure 1 caption/pipeline in §14 (paper text), with residual stabilization kept explicit."
+    trace_10: "Pipeline statement in §10 (paper text)."
+    trace_14_figure_1: "Figure 1 caption/pipeline in §14 (paper text), with switch drift and residual stabilization kept explicit."
 
   chapter_6_false_comparison_pivot:
     note: "Pivot into comparison-dominant □ under Ω."
@@ -703,47 +864,58 @@ drift_catalogue:
       - "cost-bearing vs cost-producing separation (Σ/Ψ carriage vs substitution)"
 
   chapter_9_pseudo_symmetry_regime:
-    note: "PS as dominant drift; protocol substitution."
+    note: "PS as dominant drift; protocol substitution; prepares PFO by creating asymmetry-switch availability."
     ref: "PMS-EDEN §9"
     operators: ["□", "Ω", "Σ", "Ψ", "Φ", "Λ", "Α", "Θ", "Χ"]
     handle: "PS"
     minimal_definition: >
-      Rhetorical parity inside □comparison under real Ω: Ω is denied/tabooed; Σ is
-      blocked/simulated; Ψ binds to appearance-management; Φ repairs narratives,
-      Λ remains open, and Α protocolizes the loop across Θ.
+      Rhetorical parity inside □comparison under real Ω: Ω is denied/tabooed; switch
+      availability may emerge because parity remains the surface while Ω becomes
+      selectively activatable; Σ is blocked/simulated; Ψ binds to
+      appearance-management; Φ repairs narratives, Λ remains open, and Α
+      protocolizes the loop across Θ.
     markers:
       - "Ω-speech punished (taboo), while Ω still governs consequences"
+      - "parity surface remains while asymmetry activation becomes selectively available"
       - "closure-by-agreement statements; no Σ interface change"
       - "Λ leveraged ('you still haven't...'); repeatable scripts (Α)"
 
   chapter_10_PFO_regime:
-    note: "PFO as paper-internal regime-level meta-frame making drift repeatable."
+    note: "PFO as paper-internal regime-level meta-frame making drift repeatable; permanentizes exception-switch availability."
     ref: "PMS-EDEN §10"
-    operators: ["□", "Ω", "Φ", "Λ", "Α", "Σ", "Ψ", "Θ"]
+    operators: ["□", "Ω", "Φ", "Λ", "Α", "Σ", "Ψ", "Θ", "Χ"]
     handle: "PFO"
     paper_internal_label: true
     minimal_definition: >
       Paper-internal regime label for a configuration where □ enforces Ω-illegibility
-      + comparison metric; Φ is the primary stabilization surface; Λ is held open;
-      Σ consolidation is suppressed; Ψ is displaced/misbound; Α stabilizes indirect
-      control across Θ.
+      + comparison metric + permanentized exception-switch availability; Φ is the
+      primary stabilization surface; Λ is held open; Σ consolidation is suppressed;
+      Ψ is displaced/misbound; Α stabilizes indirect control across Θ. Drift branches
+      include unmarked asymmetry activation as standing lever, parity-to-exit, and
+      responsibility-to-authority.
     markers:
       - "explicit coordination talk penalized (Σ-work punished)"
+      - "asymmetry activation becomes standing lever under parity surface"
+      - "parity-to-exit or responsibility-to-authority displaces responsibility"
       - "Φ dominates (recontextualization as repair substitute)"
       - "persistent Λ + protocol repetition (Α) with low Σ/Ψ"
 
   chapter_11_reciprocity_loss:
-    note: "Reciprocity loss as tragedy / channel erosion under Θ."
+    note: "Reciprocity loss as tragedy / channel erosion under Θ, including switch-drift forms."
     ref: "PMS-EDEN §11"
     operators: ["Ω", "Θ", "Λ", "Α", "Σ", "Ψ", "□", "Χ"]
     handle: "RECIPROCITY_LOSS"
     minimal_definition: >
       Reciprocity (Σ under Ω, bound by Ψ, limited by Χ) collapses when □comparison
-      + Ω-taboo block functional Ω-coordination; Σ/Ψ remain displaced; Λ becomes
+      + Ω-taboo block functional Ω-coordination, or when Ω remains selectively
+      activatable without re-binding. Σ/Ψ remain displaced; parity can become exit,
+      asymmetry can become leverage, responsibility can become authority; Λ becomes
       chronic; Α stabilizes devaluation/humiliation substitutes; Θ turns this into
       an erosion trajectory in which reciprocity becomes structurally compromised.
     markers:
       - "coordination replaced by status regulation (devaluation/humiliation as stabilizer)"
+      - "unmarked asymmetry activation without Σ/Ψ re-binding"
+      - "parity-to-exit or responsibility-to-authority"
       - "Ψ shifts to avoidance/appearance; Σ stays low/blocked"
       - "Θ accumulation: repeated unresolved episodes reduce channels (erosion)"
 
@@ -780,9 +952,9 @@ pattern_library:
       and cases of genuine non-capture.
     rival_framing_note: >
       Other frameworks may redescribe some of these patterns in terms of symbolic order,
-      recognition struggle, attachment distortion, institutional asymmetry, or phenomenological
-      alienation. PMS–EDEN does not claim to abolish such readings; it claims to render one
-      structural layer especially visible.
+      recognition struggle, attachment distortion, institutional asymmetry, phenomenological
+      alienation, switch-drift, or responsibility externalization. PMS–EDEN does not claim
+      to abolish such readings; it claims to render one structural layer especially visible.
 
   # Minimal, paper-independent fill so this YAML can operate with PMS.yaml:
   # - Keep everything descriptive.
@@ -896,15 +1068,15 @@ pattern_library:
 
   meta_signature_13_9:
     label: "Meta-signature: self-control > other-control"
-    operator_signature_readable: "Prefer Ψ→Self + Χ (reversibility) + D constraints on Ω-handling to enable Σ under named Ω inside □."
+    operator_signature_readable: "Prefer Ψ→Self + Χ (reversibility) + D constraints on Ω-handling to enable Σ under named Ω inside □; where switch drift is present, asymmetry activation must be marked/bounded/re-bound, parity must not become exit, and responsibility must not become authority."
     operators: ["Ψ", "Χ", "Σ", "Ω", "□", "Θ"]
     basis_axes: ["D"]
     ref: "PMS-EDEN §13.9"
 
   chapter_closure_13_10:
-    structural_result: "Pattern library is a portable recognition layer using C5 (Trigger/Stabilizer/Failure) to keep drift legible without person-diagnosis; stabilization under real Ω with Σ/Ψ blocked tends to reroute through Φ/Λ/Α."
-    cost_distribution: "Makes cost placement visible (monitoring/repair/residue/standing/time costs) without moralization; costs compound under Θ when Λ remains open and Α stabilizes scripts."
-    rational_response_envelope: "Use descriptively for mapping; refuse automatic prescriptions; target missing/misused operators (often Σ/Ψ/Χ/D) rather than persons; prefer Ψ→Self over Ψ→Other as recovery pivot."
+    structural_result: "Pattern library is a portable recognition layer using C5 (Trigger/Stabilizer/Failure) to keep drift legible without person-diagnosis; stabilization under real Ω with Σ/Ψ blocked tends to reroute through Φ/Λ/Α and may include switch-drift affordances."
+    cost_distribution: "Makes cost placement visible (monitoring/repair/residue/standing/time/switch costs) without moralization; costs compound under Θ when Λ remains open and Α stabilizes scripts."
+    rational_response_envelope: "Use descriptively for mapping; refuse automatic prescriptions; target missing/misused operators (often Σ/Ψ/Χ/D) rather than persons; prefer Ψ→Self over Ψ→Other as recovery pivot; block parity-to-exit and responsibility-to-authority as drift handles, not person verdicts."
     reader_guard: "Recognition ≠ diagnosis ≠ enforcement; any binding use is valid only under §12 gate (Χ + reversibility + D)."
     ref: "PMS-EDEN §13.10"
 
@@ -977,23 +1149,23 @@ viability:
     chapter_9_7:
       ref: "PMS-EDEN §9.7"
       viability_readout:
-        window: "Pseudo-symmetry regime — rhetorical parity in comparison-□ while real Ω remains operative in consequences."
-        failure_mode: "Ω-legibility taboo + Σ bypassed; Ψ misbound to appearance-management; Φ patches discrepancies; Λ retained as residue/leverage; Α protocolizes scripts."
-        cost_marker: "Short-term conflict cost drops, but coordination costs relocate into continuous Φ-repair + Λ-retention + Α-maintenance across Θ; long-run PS becomes structurally non-viable under PMS criteria as used in this paper unless Σ/Ψ are reopened under named Ω with Χ/D constraints."
+        window: "Pseudo-symmetry regime — rhetorical parity in comparison-□ while real Ω remains operative in consequences; may generate asymmetry-switch availability."
+        failure_mode: "Ω-legibility taboo + Σ bypassed; Ψ misbound to appearance-management; Φ patches discrepancies; Λ retained as residue/leverage; Α protocolizes scripts; asymmetry activation can become available without marking, bounding, or re-binding."
+        cost_marker: "Short-term conflict cost drops, but coordination costs relocate into continuous Φ-repair + Λ-retention + Α-maintenance across Θ; switch costs arise where parity avoids naming Ω while asymmetry can be activated without re-binding; long-run PS becomes structurally non-viable under PMS criteria as used in this paper unless Σ/Ψ are reopened under named Ω with Χ/D constraints."
 
-    chapter_10_8:
-      ref: "PMS-EDEN §10.8"
+    chapter_10_9:
+      ref: "PMS-EDEN §10.9"
       viability_readout:
-        window: "Regime stabilization (PFO) — paper-internal meta-frame that makes the local drift sequence repeatable without Σ/Ψ consolidation."
-        failure_mode: "□ enforces Ω-illegibility (taboo) while still using comparison; Φ becomes continuous repair surface; Λ is held open as standing remainder; Σ suppressed and Ψ misbound/displaced; Α protocolizes denial/indirect control/devaluation."
-        cost_marker: "Short-term de-escalation via Ω-suppression, long-term chronic maintenance: Φ-repair + Λ-retention + Α-protocols substitute for coordination; standing/exposure costs concentrate on salient Ω-carriers; trajectory erosion compounds under Θ."
+        window: "Regime stabilization (PFO) — paper-internal meta-frame that makes the local drift sequence repeatable without Σ/Ψ consolidation and permanentizes exception-switch availability."
+        failure_mode: "□ enforces Ω-illegibility (taboo) while still using comparison; asymmetry activation becomes standing lever; parity-to-exit and responsibility-to-authority displace responsibility; Φ becomes continuous repair surface; Λ is held open as standing remainder; Σ suppressed and Ψ misbound/displaced; Α protocolizes denial/indirect control/devaluation."
+        cost_marker: "Short-term de-escalation via Ω-suppression and switch affordances, long-term chronic maintenance: Φ-repair + Λ-retention + Α-protocols substitute for coordination; standing/exposure/switch/exit/authority-conversion costs concentrate asymmetrically; trajectory erosion compounds under Θ."
 
     chapter_11_5:
       ref: "PMS-EDEN §11.5"
       viability_readout:
-        window: "Reciprocity loss — channel erosion: Σ under real Ω stabilized by Ψ across Θ (with Χ limits) collapses into substitution dynamics."
-        failure_mode: "comparison-□ + Ω-taboo blocks functional gradient coordination; Σ cannot consolidate; Ψ shifts into externalization/appearance/avoidance; Λ remains chronically open; Α stabilizes devaluation as residual control mode."
-        cost_marker: "Coordination and commitment costs relocate into chronic erosion: recurring interface mismatch under Θ, persistent Λ residue, standing regulation as low-cost stabilizer; costs distribute by exposure/repair/standing risk proximity rather than by intent."
+        window: "Reciprocity loss — channel erosion: Σ under real Ω stabilized by Ψ across Θ (with Χ limits) collapses into substitution dynamics, including switch-drift forms."
+        failure_mode: "comparison-□ + Ω-taboo blocks functional gradient coordination; Ω may become selectively activatable without coordination; Σ cannot consolidate; Ψ shifts into externalization/appearance/avoidance; parity-to-exit and responsibility-to-authority displace responsibility; Λ remains chronically open; Α stabilizes devaluation as residual control mode."
+        cost_marker: "Coordination and commitment costs relocate into chronic erosion: recurring interface mismatch under Θ, persistent Λ residue, standing regulation as low-cost stabilizer, unmarked asymmetry activation, parity-to-exit, and responsibility-to-authority; costs distribute by exposure/repair/standing risk proximity and switch/exit/authority-conversion affordances rather than by intent."
 
     chapter_12_5:
       ref: "PMS-EDEN §12.5"
@@ -1004,7 +1176,7 @@ viability:
 
   paper_cost_marker_16_25:
     ref: "PMS-EDEN §16.25"
-    handle: "Structural drift cost marker (cross-paper): repeated co-occurrence of Ω-illegibility / Σ low or simulated / Ψ→Other externalization / chronic Λ / stabilized Α indicates drift sustained by asymmetric cost carriage under PMS criteria as used in this paper."
+    handle: "Structural drift cost marker (cross-paper): repeated co-occurrence of Ω-illegibility or unmarked Ω activation / Σ low or simulated / Ψ→Other externalization / parity-to-exit / responsibility-to-authority / chronic Λ / stabilized Α indicates drift sustained by asymmetric cost carriage under PMS criteria as used in this paper."
 
 # -----------------------------------------------------------------------------
 # EDEN-MAP (Method appendix) — operational schema placeholders (machine-useful)
@@ -1032,6 +1204,7 @@ eden_map:
     Mapping may remain purely descriptive. The moment it is used to prescribe, bind, obligate, or demand, PMS-valid application requires Χ (distance) + reversibility + D (dignity-in-practice constraints on Ω-handling); bypassing these conditions is formally invalid as PMS application.
     EDEN-MAP provides mapping prompts and recording templates only; it does not authorize sanctions, coercion, or use against roles or persons.
     Repeated mappings that show persistent cost externalization across scenes indicate a tendency toward structural non-viability under PMS criteria as used here unless costs are re-internalized at the role-position where they arise; chronic one-sided cost bearing across Θ is therefore a drift-regime indicator.
+    Switch-drift handles (asymmetry-switch availability, parity-to-exit, responsibility-to-authority) may be recorded only as scene-bound structural profiles. They are not person labels, motive claims, clinical categories, or dignity rankings.
 
   minimal_unit_scene_packet_15_2:
     note: "Schema for minimal analysis unit (Scene Packet)."
@@ -1046,17 +1219,18 @@ eden_map:
       Αstabilizers = [<repeatable scripts/protocols visible>]
       Ωreal = {capacity: <gradient>, exposure: <gradient>, obligation: <gradient>, leverage: <gradient>}
       Ψmap = {declared: <claimed commitments>, enacted: <carried across Θ>, enforced: <how maintained>, externalized: <Ψ→Other demands>}
+      SwitchDrift = {asymmetry_activation?: <marked|unmarked|absent>, parity_to_exit?: <yes|no|unclear>, responsibility_to_authority?: <yes|no|unclear>, re_binding?: <Σ/Ψ present|absent|partial>}
 
-      Discipline: realization/enactment ≠ E unless Σ carries the act; binding outsourced as Ψ→Other is recorded explicitly (not treated as integration).
+      Discipline: realization/enactment ≠ E unless Σ carries the act; binding outsourced as Ψ→Other is recorded explicitly (not treated as integration). Switch labels are recorded as scene-bound drift handles, not as person diagnoses.
 
   core_questions_required_15_3: |
-    EDEN-MAP requires Q1–Q6 in order, producing explicit operator statements:
+    EDEN-MAP requires Q1–Q7 in order, producing explicit operator statements:
 
     Q1 (□): Which frame dominates (or hybrid), and what it permits/forbids as relevant/speakable/punishable?
       Output: □dominant = <praxis|comparison|moral|scarcity|security|narrative|hybrid> + 1–2 sentences.
 
-    Q2 (Ω): What asymmetry is real in consequences (capacity/exposure/obligation/leverage), and is Ω legible or taboo inside □?
-      Output: Ωreal = {capacity: …, exposure: …, obligation: …, leverage: …} + Ω-legible? yes/no.
+    Q2 (Ω): What asymmetry is real in consequences (capacity/exposure/obligation/leverage), is Ω legible or taboo inside □, and is Ω being coordinated or selectively activated?
+      Output: Ωreal = {capacity: …, exposure: …, obligation: …, leverage: …} + Ω-legible? yes/no + Ω-handling = <coordinated|taboo|selectively_activated|weaponized|unclear>.
 
     Q3 (Λ): Which non-event/non-closure is active, how is it handled (denial/minimization/moralization/displacement/pseudo-closure), and what persists across Θ?
       Output: Λactive = …; Λhandling = …; Λremainder = ….
@@ -1070,10 +1244,13 @@ eden_map:
     Q6 (Ψ): Who self-binds (Ψ→Self), who externalizes binding (Ψ→Other demands), and how is binding enforced (self-restraint vs frame/leverage coercion)?
       Output: Ψself = …; Ψexternal = …; Ψrepair = <shift toward self-control preserving reversibility and D>.
 
+    Q7 (switch drift): Is asymmetry activation marked, bounded, and re-bound into Σ/Ψ, or does switch drift appear as unmarked asymmetry activation, parity-to-exit, or responsibility-to-authority?
+      Output: switch_drift = {asymmetry_activation: <marked|unmarked|absent>, parity_to_exit: <yes|no|unclear>, responsibility_to_authority: <yes|no|unclear>, re_binding: <present|partial|absent>}.
+
   synthesis_output_one_page_15_4: |
     One-page synthesis is operator-readable, non-diagnostic:
 
-    Drift = □dominant → Λhandling → Αstabilizer → Ωmanagement → Σstatus → Ψpattern
+    Drift = □dominant → Λhandling → Αstabilizer → Ωmanagement/switch_drift → Σstatus → Ψpattern
     Αprimary = <the repeatable script that keeps the configuration stable>
     Costs = {A: …, C: …, R: …, E: …, D: …}
       A-costs: monitoring/option-visibility load under Θ/□/Δ
@@ -1085,18 +1262,21 @@ eden_map:
     LowestCostCorrection (descriptive viability signature; not a prescription):
       {Χstep: <restore reversible distance without erasing Ω>,
        Λ→Σstep: <convert one Λ remainder into one Σ interface move>,
+       switch_step: <mark/bound/re-bind asymmetry activation; block parity-to-exit and responsibility-to-authority>,
        Ψshift: <move from Ψ→Other to Ψ→Self, preserving reversibility and D>}
 
   diagnostics_to_action_firewall_15_5: |
     The restrictions in this section apply to PMS-valid application, not to all possible discourse about persons, scenes, or institutions.
     Mandatory guardrail: EDEN-MAP is not a person-evaluation tool.
-    Allowed: scene-bound structural mapping (roles/frames/non-events/binding), drift-risk and cost geometry, reversible dignity-preserving viability signatures (Χ + reversibility + D).
-    Not allowed: global person labels, inferred inner traits/states/clinical categories, coercive prescriptions justified by PMS vocabulary (Ψ→Other) under suppressed Χ.
+    Allowed: scene-bound structural mapping (roles/frames/non-events/binding), drift-risk and cost geometry, reversible dignity-preserving viability signatures (Χ + reversibility + D), and scene-bound switch-drift handles where clearly marked as non-diagnostic.
+    Not allowed: global person labels, inferred inner traits/states/clinical categories, coercive prescriptions justified by PMS vocabulary (Ψ→Other) under suppressed Χ, or converting responsibility into authority over another role-position.
 
   meta_notes_operational_constraints_15_6: |
     Operational constraints:
     - Clarity ≠ humiliation: operator naming can be precise without degrading standing (D remains an application constraint).
     - Naming ≠ moralizing: Ω/Λ/□ can be specified functionally without verdict logic.
+    - Switch naming ≠ person verdict: asymmetry activation, parity-to-exit, and responsibility-to-authority are scene-bound drift handles, not diagnoses.
+    - Responsibility ≠ authority: additional Ψ/Χ burden under asymmetry does not authorize control, frame ownership, or protection-by-command.
     - Firmness ≠ dignity break: boundaries can be enacted with Χ and reversibility; hardness becomes dignity-violating only when D is suspended.
 
 # -----------------------------------------------------------------------------
@@ -1116,32 +1296,32 @@ glossary_index:
       Crosslinks: §3 (chain interruption), §5 (NRK not-E), §15.2 (Scene Packet Echeck).
     "16.11_PS": |
       Pseudo-Symmetry (PS) — rhetorical parity inside comparison-dominant □ under real Ω.
-      Handle: PS = parity-claim + Ω persists + Σ bypassed/simulated + Ψ misbound to appearance-management; often Φ/Λ/Α as stabilizers.
-      Crosslinks: §9 (PS regime), §7 (false equivalence compulsion), §6 (false comparison pivot).
+      Handle: PS = parity-claim + Ω persists + switch availability may emerge + Σ bypassed/simulated + Ψ misbound to appearance-management; often Φ/Λ/Α as stabilizers.
+      Crosslinks: §9 (PS regime), §9.3.3 (switch availability), §7 (false equivalence compulsion), §6 (false comparison pivot).
     "16.12_PFO": |
       Postfeminist Over-Steering / Override (PFO) — paper-internal regime label defined by operator behavior.
-      Handle: □ enforces Ω-illegibility/taboo + Φ high + Λ retained + Σ suppressed + Ψ displaced/misbound; stabilizes via Α protocolization.
+      Handle: □ enforces Ω-illegibility/taboo + comparison + permanentized exception-switch availability + Φ high + Λ retained + Σ suppressed + Ψ displaced/misbound; stabilizes via Α protocolization.
       Discipline: not a group label, not an ideology claim, and not a person-level diagnosis.
-      Crosslinks: §10 (PFO as regime), §12 (application gate), §15 (firewall).
+      Crosslinks: §10 (PFO as regime), §10.3 (permanentized exception), §12 (application gate), §15 (firewall).
     "16.13_HUMILIATION": |
       Humiliation — paper-internal structural term: status regulation via devaluation as residual stabilization when Σ/Ψ coordination under named Ω is blocked.
-      Handle: humiliation = devaluation-script stabilization (Α) inside comparison/value □ under Ω-taboo, often using Λ as standing remainder.
-      Crosslinks: §10.3 (residual mode), §11.3.3 (stability via devaluation), §16.22 (devaluation).
+      Handle: humiliation = devaluation-script stabilization (Α) inside comparison/value □ under Ω-taboo and permanentized exception-switch conditions, often using Λ as standing remainder.
+      Crosslinks: §10.4 (residual mode), §11.3.3 (stability via devaluation), §16.22 (devaluation).
     "16.20_NRK": |
       Negative Responsibility Kernel (NRK) — paper-internal composite/pattern label (not a PMS operator).
       Handle: enactment under ∇ within □ while A=[Θ,□,Δ] is available and options exist, with Σ not carrying and/or Ψ absent/aborted/externalized/displaced/simulated; Ω effective; Θ trajectory-bearing.
       Crosslinks: §5 (formal NRK), §3 (breach profile), §4 (legibility management), §15 (Scene Packet triggers).
     "16.21_RECIPROCITY": |
       Reciprocity — coordinated asymmetry, not symmetry.
-      Handle: reciprocity = Σ under real Ω, bound by Ψ across Θ, limited by Χ (and constrained by D in application).
-      Crosslinks: §11 (reciprocity loss), §12 (binding validity), §0.6 (R/D axes).
+      Handle: reciprocity = Σ under real Ω, bound by Ψ across Θ, limited by Χ (and constrained by D in application). Adult reciprocity does not require equal burdens; it requires non-externalization of unequal burdens.
+      Crosslinks: §10.3.2 (adult reciprocity under asymmetric drift affordances), §11 (reciprocity loss), §12 (binding validity), §14.3 G4, §0.6 (R/D axes).
     "16.22_DEVALUATION": |
       Devaluation — paper-internal label for lowering standing-in-practice as a control move substituting for coordination when Σ/Ψ cannot consolidate under named Ω.
-      Handle: devaluation operates inside □ (often □comparison/□moral), commonly stabilized via Α and maintained via Λ residues.
+      Handle: devaluation operates inside □ (often □comparison/□moral), commonly stabilized via Α and maintained via Λ residues; under permanentized exception-switch conditions, switch-naming itself may become a devaluation surface.
       Crosslinks: §9 (PS drift), §10 (PFO residual stabilization), §11 (channel erosion), §16.13 (humiliation).
     "16.25_COST_MARKER": |
       Structural Drift Cost Marker — paper-wide warning handle for drift regimes sustained by cost externalization.
-      Handle: recurrent pattern where integration/binding work is displaced (Σ low/simulated, Ψ→Other externalized or Ψ misbound), Ω-legibility suppressed, Λ retained, Α protocolized, costs accumulate under Θ.
+      Handle: recurrent pattern where integration/binding work is displaced (Σ low/simulated, Ψ→Other externalized or Ψ misbound), Ω-legibility suppressed or Ω activated without re-binding, parity-to-exit or responsibility-to-authority present, Λ retained, Α protocolized, costs accumulate under Θ.
       Crosslinks: closure cost markers in §3–§12, EDEN-MAP §15.1 (mapping-level cost marker), PMS-EDEN §16.25 (authoritative marker).
 
 # -----------------------------------------------------------------------------
@@ -1205,6 +1385,18 @@ alternative_explanations:
       exclusion_note: "The primary driver need not be an internally stabilized regime or pair-dynamic comparison spiral."
       discipline_note: "Structural sufficiency only; preserves openness to institutional rather than locally regime-driven explanations."
 
+    AE5_switch_drift_without_full_PFO:
+      label: "Switch drift without full PFO"
+      handle: "AE5"
+      sufficient_configuration:
+        - "Ω real and action-relevant in consequences"
+        - "parity language remains locally available"
+        - "asymmetry activation appears intermittently but is not yet regime-stabilized"
+        - "Σ/Ψ re-binding is partial, weak, or delayed"
+        - "parity-to-exit or responsibility-to-authority appears locally but does not yet form a durable meta-frame"
+      exclusion_note: "Asymmetry-switch drift can appear as a local drift affordance without the stronger regime form of PFO."
+      discipline_note: "Scene-bound switch profile only; no person label, maturity ranking, or essence claim."
+
   methodological_guard:
     scope: "Prevents monocausal or regime-exclusive readings."
     rules:
@@ -1213,6 +1405,7 @@ alternative_explanations:
       - "Use role/gradient language (Ω-capacity/exposure/leverage), not group labels."
       - "Treat AEs as alternative generators of similar observables."
       - "Keep all AE use scene-bound and structurally revisable."
+      - "Treat switch-drift handles as profiles of scene-organization, not as traits, motives, or person-level defects."
 
 # -----------------------------------------------------------------------------
 # Boundary conditions (Chapter 18) — operator-readable constraints (index only)
@@ -1224,28 +1417,28 @@ boundary_conditions:
     "18.1_Omega_minimal_or_absent":
       handle: "BC1"
       description: "Ω (asymmetry) minimal, absent, or not action-relevant in consequences."
-      effect_on_drift: "Asymmetry-driven mechanisms weaken; comparison pressure, pseudo-symmetry, and devaluation lose their primary generator."
+      effect_on_drift: "Asymmetry-driven mechanisms weaken; comparison pressure, pseudo-symmetry, switch availability, and devaluation lose their primary generator."
       applicability: "PMS–EDEN applies only partially to Ω-driven traces."
       discipline_note: "Limits explanatory force, not viability criteria."
 
     "18.2_Frame_not_comparison_based":
       handle: "BC2"
       description: "Dominant □ (frame) remains praxis-coordination rather than comparison/tribunal."
-      effect_on_drift: "False equivalence and pseudo-symmetry attractors are less likely to stabilize; Σ-work remains accessible."
+      effect_on_drift: "False equivalence, pseudo-symmetry, switch-availability, and devaluation attractors are less likely to stabilize; Σ-work remains accessible."
       applicability: "Dissatisfaction-as-system-cost from false comparison is reduced."
       discipline_note: "Frame grammar constrains drift likelihood."
 
     "18.3_Sigma_Psi_established_early":
       handle: "BC3"
       description: "Σ (integration) and Ψ (self-binding) established early and robustly, before chronic Λ accumulates across Θ."
-      effect_on_drift: "Upstream interruption of the drift sequence; reciprocity can stabilize under real Ω."
+      effect_on_drift: "Upstream interruption of the drift sequence; reciprocity can stabilize under real Ω, and asymmetry activation can be marked/bounded/re-bound rather than becoming switch drift."
       applicability: "Pseudo-symmetry need not form as stabilizer."
       discipline_note: "Timing of Σ/Ψ carriage is decisive."
 
     "18.4_External_institutions_stabilize_roles":
       handle: "BC4"
       description: "External institutions stabilize roles, interfaces, and obligations."
-      effect_on_drift: "External scaffolding constrains □, supports Ψ, and enables Σ via predefined interfaces."
+      effect_on_drift: "External scaffolding constrains □, supports Ψ, and enables Σ via predefined interfaces; this can reduce local PFO formation and switch-drift stabilization."
       applicability: "Regime-like drift becomes less likely; coordination does not depend exclusively on local narrative control."
       discipline_note: "Institutional scaffolds substitute for missing internal stabilization."
 
@@ -1258,6 +1451,7 @@ boundary_conditions:
         - "institutional asymmetry with weak dyadic coding"
         - "historical or theological anthropology"
         - "phenomenological alienation without comparison-dominant drift"
+        - "local switch drift where PFO is not the best regime-level description"
       implication: "PMS–EDEN may still offer partial structural legibility, but should not be treated there as automatically primary or more discriminative."
       discipline_note: "Rival-framing openness limits overclaim and preserves discriminative adequacy."
 
@@ -1269,6 +1463,7 @@ boundary_conditions:
         - "non-sexed reciprocity collapse"
         - "coordination failure without comparison as dominant mediator"
         - "scenes where devaluation is absent but coordination still fails"
+        - "scenes where asymmetry activation is clearly marked, bounded, and re-bound into Σ/Ψ"
         - "scenes where PMS translation smooths over distinctions that a rival framing preserves more sharply"
       implication: "In such cases, PMS–EDEN must remain revisable, narrowed, or suspended rather than extended by default."
       discipline_note: "Non-capture limits extension pressure and preserves rival-framing openness."
@@ -1279,6 +1474,7 @@ boundary_conditions:
       strongest_applicability_when:
         - "Ω action-relevant and legible in consequences"
         - "□ becomes comparison-dominant and constrains Ω speakability"
+        - "asymmetry-switch availability, parity-to-exit, or responsibility-to-authority is present or structurally plausible"
         - "Σ remains low, blocked, or suppressed"
         - "Ψ is absent, misbound, or externalized"
         - "Λ becomes chronic across Θ"
@@ -1321,12 +1517,16 @@ appendices:
     core_identity_summary:
       description: >
         "PMS–EDEN is a praxeological operator grammar for describing drift:
-        Eden → threshold → NRK → consequence legibility (Ω/Θ/Λ) → frame drift (□ praxis → □ value-relation)
-        → pseudo-symmetry as substitution regime → reciprocity erosion via Σ/Ψ failure under real Ω across Θ with chronic Λ."
+        Eden → threshold → NRK → consequence legibility (Ω/Θ/Λ) → frame drift
+        (□ praxis → □ value-relation) → pseudo-symmetry as substitution regime
+        → asymmetry-switch availability → PFO/permanentized exception →
+        parity-to-exit / responsibility-to-authority drift → reciprocity erosion
+        via Σ/Ψ failure under real Ω across Θ with chronic Λ."
       exclusions:
         - "Psychological interiority explanations"
         - "Moral verdict logic"
         - "Automatic prescriptive authority"
+        - "Person-level interpretation of switch-drift handles"
 
     adjacent_frameworks:
       practice_theory:
@@ -1342,7 +1542,7 @@ appendices:
         overlap:
           - "Structure–practice coupling"
         non_equivalence:
-          - "Explicit drift mechanics via Ω/Θ/Λ legibility and frame conversion"
+          - "Explicit drift mechanics via Ω/Θ/Λ legibility, frame conversion, and switch-drift profiles"
           - "Formal separation of description vs binding"
 
       ethnomethodology:
@@ -1358,6 +1558,7 @@ appendices:
         non_equivalence:
           - "Praxeological and role-position oriented (Ω gradients)"
           - "Explicit dignity-in-practice (D) as viability boundary without moralization"
+          - "Switch-drift labels kept as non-operator regime/profile handles"
 
       pragmatic_sociology:
         overlap:
@@ -1365,12 +1566,14 @@ appendices:
         non_equivalence:
           - "Drift modeled as operator carriage failure under Ω/Θ/Λ"
           - "Dissatisfaction framed as system maintenance cost, not deficit"
+          - "Parity-to-exit distinguished from reciprocity-binding symmetry"
 
       theological_contrast:
         role: "Contrast class only"
         non_equivalence:
           - "Eden as minimal structural test scene, not doctrine or moral anthropology"
           - "Tragedy defined structurally, not as desert"
+          - "Asymmetry-switch drift treated as paper-internal structure, not sin taxonomy"
 
     comparative_grid:
       focus: "Repository-facing snapshot"
@@ -1378,17 +1581,20 @@ appendices:
         - "Anti-mentalism via operator grammar"
         - "Description vs application firewall (binding gate)"
         - "Frame drift as pivot"
-        - "Drift/regime mechanics (NRK → PS → Φ/Λ/Α)"
+        - "Drift/regime mechanics (NRK → PS → switch availability → PFO → Φ/Λ/Α)"
         - "Asymmetry (Ω) as base condition without normativity"
         - "Temporality (Θ) and irreversibility via Λ accumulation"
         - "False equivalence costs as system maintenance"
         - "Externalized binding (Ψ→Other) as coercion signature"
+        - "Parity-to-exit and responsibility-to-authority as non-operator drift profiles"
+        - "Adult reciprocity as non-externalization of unequal burdens"
         - "Eden as minimal drift test scene"
 
     label_and_classification_risk:
       risk: "External politicization of paper-internal labels"
       handling:
         - "Labels are operator-defined handles, not group or ideology claims"
+        - "Switch-drift labels are scene-bound structural profiles, not person labels"
         - "Renaming permitted to reduce classification entropy while preserving operator definitions"
 
     related_work_spine:
@@ -1403,6 +1609,7 @@ appendices:
         - "Explicit operator grammar for drift signatures"
         - "Trigger/Stabilizer/Failure pattern discipline"
         - "Formal application firewall (binding gate)"
+        - "Paper-internal switch-drift profiles without operator expansion"
 
     final_guard:
       claim:
@@ -1424,6 +1631,7 @@ example_suite_schema:
     - "Drift position in master trace (optional; 1 line)"
     - "Cost layout (Ω under Θ; consequence interfaces)"
     - "Pattern markers (max 2–3; from pattern_library)"
+    - "Switch-drift markers if present (asymmetry activation, parity-to-exit, responsibility-to-authority; scene-bound and non-diagnostic)"
     - "Validity gate reminder (Χ + reversibility + D)"
     - "Readable structural closure (2–5 sentences)"
 
