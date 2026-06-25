@@ -34,7 +34,7 @@ PMS–EDEN should therefore be read as:
 * **focused on scene-bound structural legibility, responsibility tracing, cost distribution, counter-scene testing, and non-coercive description**, and
 * **explicitly guarded against diagnosis, person-typing, sex ranking, maturity ranking, dignity hierarchy, ideology attribution, coercive authorization, or advice derived from asymmetry**.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18186812.svg)](https://doi.org/10.5281/zenodo.18186812)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20853589.svg)](https://doi.org/10.5281/zenodo.20853589)
 
 ---
 
