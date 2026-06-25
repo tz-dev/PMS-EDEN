@@ -1,29 +1,38 @@
 # PMS–EDEN
 
-## Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss
+## A Praxeological Grammar of Adult Reciprocity and Its Loss through False-Coordinated Real Asymmetry
 
-**PMS–EDEN is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, distance, integration, and self-binding.
+**PMS–EDEN is a formal application of the [Praxeological Meta-Structure (PMS)](https://github.com/tz-dev/Praxeological-Meta-Structure-Theory)** — a generative operator framework (Δ–Ψ) for modelling praxis, asymmetry, temporality, distance, integration, responsibility, and self-binding.
 
-While PMS provides the **canonical operator grammar** for analysing action and non-action, PMS–EDEN reconstructs a widely moralized story as a **strictly structural drift trace**: how a praxis-ordered configuration collapses into comparison, how asymmetry becomes status-legible, how pseudo-symmetry stabilizes short-term while dissolving reciprocity long-term, and how unmarked asymmetry activation can become a repeatable drift surface.
+PMS–EDEN uses PMS as its structural grammar and develops a scene-bound account of **Adult Reciprocity** and **Reciprocity Loss**. Its central concern is not Eden as origin, comparison as first cause, pseudo-symmetry as master mechanism, or PFO as center. Its central concern is how **real asymmetry (real Ω)** can be either truthfully coordinated or falsely coordinated inside concrete praxis scenes.
 
-Building explicitly on PMS as its structural foundation, this project does **not modify, extend, reinterpret, or replace the PMS operator set**, but uses it **strictly as specified** to show:
+The core orientation is:
 
-* why “loss of Eden” is not an epistemic event but a **praxis breach under available awareness (A)**,
-* how a **comparison-dominant frame (□)** turns difference (Δ) and asymmetry (Ω) into ranking tokens,
-* why false equivalence yields compulsive monitoring (continuous comparison, continuous correction, and chronic dissatisfaction),
-* how **Pseudo-Symmetry (PS)** stabilizes drift by substituting **Φ / Λ / Α** for **Σ / Ψ** under real **Ω**,
-* how **asymmetry-switch availability** emerges when parity remains rhetorically preserved while Ω can be situationally activated,
-* how **PFO / permanentized exception** stabilizes unmarked asymmetry activation as a standing regime option,
-* how **parity-to-exit** and **responsibility-to-authority** erode reciprocity by replacing self-binding with exit, leverage, or frame authority,
-* and how reciprocity collapses when **coordinated asymmetry** fails under **Θ**-extended residue fields (Λ).
+```text
+Adult Reciprocity ≠ symmetry.
+Adult Reciprocity = truthful coordination of real Ω.
+Reciprocity Loss = false coordination of real Ω.
+```
+
+The main structural trace is:
+
+```text
+coordinated Ω
+→ false-coordinated real Ω
+→ displaced R
+→ blocked Σ/Ψ
+→ reciprocity loss
+```
+
+PMS–EDEN does **not** modify, extend, reinterpret, or replace the PMS operator set. EDEN-specific labels are paper-internal structural composites and mapping aids, not additional PMS operators.
 
 PMS–EDEN should therefore be read as:
 
 * **conceptually dependent on PMS**,
 * **formally consistent with the PMS operator grammar**,
 * **strictly subordinate to the canonical PMS specification**,
-* **focused on the structural discipline of drift legibility, scene-bound mapping, and non-coercive analysis**, and
-* **explicitly guarded against person-typing, diagnosis, maturity ranking, dignity hierarchy, ideology attribution, or authority claims derived from asymmetry**.
+* **focused on scene-bound structural legibility, responsibility tracing, cost distribution, counter-scene testing, and non-coercive description**, and
+* **explicitly guarded against diagnosis, person-typing, sex ranking, maturity ranking, dignity hierarchy, ideology attribution, coercive authorization, or advice derived from asymmetry**.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18186812.svg)](https://doi.org/10.5281/zenodo.18186812)
 
@@ -33,28 +42,32 @@ PMS–EDEN should therefore be read as:
 
 PMS–EDEN is:
 
-* a **structural theory of drift** (not a moral doctrine),
+* a **praxeological grammar of Adult Reciprocity and Reciprocity Loss**,
 * a **PMS-conform application profile** of the operator grammar (Δ–Ψ),
-* a framework for analysing:
-  * **frame drift (□)** from praxis-relation to value-relation,
-  * **asymmetry legibility (Ω)** and its conversion into status signals,
-  * **non-event residue (Λ)** as chronic remainder / leverage surface,
-  * the stabilizing roles and misuse risks of **Φ** and **Α**,
-  * the failure modes of **integration (Σ)** and **self-binding (Ψ)** under **Θ**,
-  * **pseudo-symmetry**, **asymmetry-switch availability**, **permanentized exception**, **residual stabilization**, and **reciprocity loss** as scene-bound structural configurations,
-  * **parity-to-exit** as the use of parity rhetoric to deny additional responsibility under unequal Ω/Θ consequences,
-  * **responsibility-to-authority** as the conversion of required self-binding under asymmetry into control, frame authority, protection entitlement, or governance,
-* a viability model that evaluates drift by:
-  * **operator carriage** (what carries coordination vs. what substitutes for it),
-  * **marked / bounded / re-bound asymmetry activation** where real Ω/Θ burden requires asymmetry handling,
-  * **reversibility and restraint** (Χ / D constraints when applied),
-  * **structural costs** (comparison load, residue accumulation, switch drift, responsibility displacement, reciprocity decay),
-  * rather than moral “who is right.”
+* a framework for analysing how real Ω is coordinated or falsely coordinated in bounded scenes,
+* a structural account of responsibility, cost, recognition, protection, integration, self-binding, and correctability under asymmetry,
+* a method for mapping scene-bound configurations without converting description into verdict, diagnosis, prescription, or application authority.
+
+PMS–EDEN analyses:
+
+* **Adult Reciprocity** as truthful coordination of real Ω,
+* **Reciprocity Loss** as false coordination of real Ω,
+* **False-Coordinated Real Asymmetry** as the central mechanism,
+* **False Comparison** as attractor / amplifier / stabilizer, not first cause,
+* **Pseudo-Symmetry** as one Switch Family form, not the master mechanism,
+* **No Passive Praxis** as the restricted condition under which non-action becomes scene-structuring,
+* **Responsibility** as following real structuring effect under legibility, capacity, alternative possibility, Θ trajectory, and Ω cost/exposure conditions,
+* **Immunization, Overexposure, and Asymmetric Explanatory Poverty** as coupled drift risks,
+* **Recognition-without-Responsibility / Pseudo-Augenhöhe** as recognition drift,
+* **PFO** as one downstream regime form in which reciprocity loss may stabilize,
+* **Eden / NRK / Fig Leaves** as a late test scene for the grammar, not the origin of the paper,
+* **EDEN-MAP** as a scene-bound mapping protocol, not a verdict machine.
 
 **Guiding formula:**
 
-> **Non-moral in description /  
-> Criterial in operator carriage /  
+> **Structural in description /  
+> Scene-bound in mapping /  
+> Counter-scene exposed /  
 > Guardrailed in application /  
 > No authority from asymmetry**
 
@@ -66,96 +79,138 @@ PMS–EDEN is not:
 
 * a theology, sermon, or moral ranking system,
 * a psychological theory of traits, motives, or diagnoses,
-* a therapy framework, mediation manual, or advice system,
-* a framework for person-evaluation, blame allocation, or sanctioning,
-* a justification tool for coercion, humiliation, or irreversible binding demands,
+* a therapy framework, mediation manual, repair protocol, or advice system,
+* a framework for person-evaluation, blame allocation, sanctioning, or irreversible labeling,
+* a justification tool for coercion, humiliation, confrontation, or binding demands,
 * a universal theory of gender, reciprocity, or relational breakdown,
-* a replacement for theology, symbolic anthropology, phenomenology, discourse history, or political theory.
+* a sex-truth theory,
+* a culture-war frame,
+* an empirical typology or prevalence claim,
+* a replacement for theology, symbolic anthropology, phenomenology, sociology, feminist theory, discourse history, psychology, systems theory, or political theory.
 
-PMS–EDEN treats “Eden” as a **praxeological configuration** —  
-not as a virtue state, innocence claim, or metaphysical anthropology.
+PMS–EDEN treats “Eden” as a **test scene for an already built grammar** — not as the paper’s origin, not as a universal history, not as a proof path, and not as a sexed anthropology.
 
 ---
 
 ## Core Thesis
 
-PMS–EDEN argues that:
+PMS–EDEN argues that reciprocity is not symmetry. Reciprocity does not require sameness, equal burden, formal equality, harmony, or the abolition of asymmetry. It requires truthful coordination of real asymmetry.
 
-* the decisive shift is not “knowledge,” but a **praxis breach** under available  
-  **A = [Θ, □, Δ]** with failed **Σ / Ψ** carriage,
-* post-breach, **Ω (asymmetry)** becomes consequence-legible under **Θ**, and **□** tends to drift into a **value-relation** (comparison/ranking),
-* treating structurally different configurations (Δ) as equivalent inside a comparison frame forces a **compulsion loop**:
-  * permanent comparison,
-  * permanent correction,
-  * permanent dissatisfaction — as *system cost*, not deficit,
-* **Pseudo-Symmetry (PS)** is a stable substitution regime within this reconstruction:
-  * rhetorical parity inside **□comparison** under real **Ω**,
-  * **Φ / Λ / Α** substitute for **Σ / Ψ**,
-  * parity remains rhetorically preserved while asymmetry can become selectively activatable,
-* the **asymmetry switch** is not illegitimate as such:
-  * it is structurally valid where real asymmetry cannot be carried symmetrically,
-  * provided activation is **marked, bounded, and re-bound into Σ / Ψ**,
-  * and becomes drift where it is unmarked, repeatable, and responsibility-shifting,
-* **PFO / permanentized exception** names the regime-drift in which exception activation becomes a standing lever,
-* **parity-to-exit** and **responsibility-to-authority** name two major reciprocity failures:
-  * parity becomes an exit from re-internalizing costs,
-  * responsibility becomes authorization rather than self-binding.
+```text
+Adult Reciprocity ≠ symmetry.
+Adult Reciprocity = truthful coordination of real Ω.
+```
 
-> Eden is not “lost by insight” —  
-> it is lost when coordination (Σ) and binding (Ψ) fail under legible consequence trajectories (Θ), and when asymmetry is either suppressed, selectively activated, or converted into authority instead of coordinated.
+Adult Reciprocity names a scene condition in which:
+
+```text
+real Ω remains visible
++ D is preserved
++ R follows real structuring effect
++ Σ integrates costs and effects
++ Ψ binds relevant actors to their own effect
++ Χ keeps revision possible.
+```
+
+Reciprocity Loss begins where this coordination fails:
+
+```text
+Reciprocity Loss = false coordination of real Ω.
+```
+
+The failure is not that asymmetry exists. The failure is that real asymmetry is denied, flattened, ranked, immunized, overexposed, displaced, or coordinated through a frame that prevents responsibility, integration, self-binding, and correction from following the scene’s real structuring effects.
+
+```text
+Asymmetry is not the failure.
+False coordination of asymmetry is the failure.
+```
+
+The central mechanism is:
+
+```text
+real Ω
++ false coordination frame
++ displaced R
++ blocked Σ/Ψ
+= false-coordinated real Ω
+```
+
+The asymmetry is not necessarily false. The coordination is false.
 
 ---
 
 ## Relation to PMS
 
-PMS–EDEN is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in  
-[`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml)  
-(schema_version: `PMS_1.3`).
+PMS–EDEN is built directly on the **canonical PMS operator grammar (Δ–Ψ)** as defined in [`PMS.yaml`](https://raw.githubusercontent.com/tz-dev/Praxeological-Meta-Structure-Theory/refs/heads/main/model/PMS.yaml).
 
-* no new operators are introduced,
-* no operator is redefined,
-* no dependency relations are modified,
-* all dependency rules are respected,
-* all derived axes (**A, C, R, E, D**) remain canonical PMS structures,
-* Eden, breach, and drift are analysed strictly as **operator configurations**, **paper-internal composites**, and **derived-axis consequences**.
+PMS–EDEN:
 
-Where PMS provides the **structural grammar of praxis**,  
-PMS–EDEN shows what follows when that grammar is applied to:
+* introduces no new PMS operators,
+* redefines no PMS operators,
+* modifies no PMS dependency relations,
+* preserves PMS-derived axes (**A, C, R, E, D**) as PMS structures,
+* treats EDEN terms as paper-internal composites, mechanisms, benchmarks, profiles, protocols, or scene tests,
+* keeps all application uses subject to the PMS entry condition: **Χ + reversibility + D**.
 
-* differentiation without ranking (Δ under □praxis),
-* consequence-legibility under irreversibility (Ω / Θ),
-* non-event residue fields (Λ),
-* pseudo-symmetry as stabilization substitute (PS),
-* comparison-driven dissatisfaction as maintenance cost,
-* and reciprocity loss as channel erosion under time (Θ).
+The PMS operator set remains:
+
+```text
+Δ  Difference
+∇  Impulse
+□  Frame
+Λ  Non-Event
+Α  Attractor
+Ω  Asymmetry
+Θ  Temporality
+Φ  Recontextualization
+Χ  Distance
+Σ  Integration
+Ψ  Self-Binding
+```
+
+The derived PMS axes remain:
+
+```text
+A = Θ ∘ □ ∘ Δ
+C = Θ ∘ Λ ∘ □ ∘ ∇
+R = Ψ ∘ Φ ∘ Θ ∘ Ω
+E = Σ ∘ Θ ∘ ∇
+D = Ψ ∘ Χ ∘ Ω
+```
+
+EDEN uses these structures to model scene-bound configurations of reciprocity, false coordination, responsibility displacement, integration blockage, self-binding failure, and correctability loss.
 
 ---
 
 ## Schema Status and Application Character
 
-PMS–EDEN is formalized as a **paper-specific application profile (overlay)**.
+PMS–EDEN is formalized as a **paper-specific application profile / overlay**.
 
 That means:
 
 * it is **not** a fork of PMS,
 * it is **not** an extension of PMS,
 * it is **not** a second operator system,
+* it is **not** an application authority,
 * and it must always be read **against the canonical PMS base model**.
 
-The current overlay is aligned to **PMS-EDEN_1.2** and formalizes, among other things:
+The current overlay formalizes, among other things:
 
-* reduced operator signatures,
-* paper-internal constructs such as **NRK**, **PS**, **PFO**, **asymmetry switch**, **permanentized exception switch**, **parity-to-exit**, and **responsibility-to-authority**,
-* the updated **master drift trace**:
-  * **EDEN → THRESHOLD → NRK → □comparison → PS → asymmetry-switch availability → PFO / permanentized exception → parity-to-exit / responsibility-to-authority → residual stabilization (Λ/Φ/Α) → devaluation / humiliation → reciprocity loss**,
-* **EDEN-MAP** as scene-bound mapping protocol with **Q1–Q7**, including the switch-drift scan,
-* a **pattern library** of paper-internal drift composites,
-* viability criteria and structural cost markers,
-* alternative explanations and boundary conditions,
-* example-suite schemas with switch-drift markers where relevant,
-* and explicit non-goals for application.
+* Adult Reciprocity as the positive benchmark,
+* Reciprocity Loss as false coordination of real Ω,
+* False-Coordinated Real Asymmetry as central mechanism,
+* Responsibility Principle and Action-Power mapping,
+* No Passive Praxis and Non-Binding / Ψ-load shift,
+* Switch Family forms including Pseudo-Symmetry,
+* Immunization / Overexposure / AEP,
+* Recognition-without-Responsibility / Pseudo-Augenhöhe,
+* PFO as downstream regime stabilization,
+* Eden / NRK / Fig Leaves as late test scene,
+* Boundary Conditions, Counter-Scenes, and Falsifiers,
+* EDEN-MAP as scene-bound mapping protocol,
+* case-example schemas and human-readable case renderings.
 
-Named labels in PMS–EDEN are **paper-internal structural composites**, not ontological object-types, not diagnoses, not maturity rankings, not ideology claims, and not additional PMS operators.
+Named labels in PMS–EDEN are **paper-internal structural terms**, not ontological object-types, not diagnoses, not maturity rankings, not ideology claims, and not additional PMS operators.
 
 ---
 
@@ -163,62 +218,75 @@ Named labels in PMS–EDEN are **paper-internal structural composites**, not ont
 
 Any valid use of PMS–EDEN as a PMS application presupposes the canonical PMS entry condition:
 
-* **Χ (Distance):** a maintained meta-position and stop-capability; no fusion into verdict, urgency, ideology, or role authority
-* **Reversibility:** all readings remain scene-bound, revisable, and configuration-specific; no global person labels or irreversible interpretive claims
-* **D (Dignity-in-Practice):** no shaming, ranking, humiliation, or ontological person evaluation; critique is restricted to enacted structures, cost handling, and asymmetry coordination under Ω and Θ
+* **Χ (Distance):** maintained reflective distance; no fusion into verdict, urgency, enforcement, ideology, or role authority.
+* **Reversibility:** all readings remain scene-bound, revisable, and non-final; no global person labels or irreversible interpretive claims.
+* **D (Dignity-in-Practice):** no shaming, ranking, humiliation, sex ranking, ontological person evaluation, or degradation by analysis.
 
-This gate constrains **application only**.  
-PMS itself may be criticized, rejected, or ignored without satisfying it.
+This gate constrains **application only**. PMS and PMS–EDEN may be criticized, rejected, revised, or ignored without satisfying it.
+
+The application firewall is strict:
+
+```text
+Description may name structure.
+Application requires Χ, reversibility, D, and contextual responsibility.
+Description does not authorize binding.
+```
+
+EDEN-MAP supplies no independent application authority.
 
 ---
 
 ## Methodological Restraint
 
-PMS–EDEN does **not** claim monopoly over Eden interpretation, gendered asymmetry analysis, reciprocity theory, or relational breakdown analysis.
+PMS–EDEN begins with structure, not psychology.
 
-Its stronger and narrower claim is this:
+Its first question is not what a person secretly wants, fears, avoids, resents, or intends. Its first question is how a scene is structured:
 
-* within the PMS grammar, Eden can be reconstructed as a **structurally highly specified praxis scene**,
-* breach can be reconstructed as **operator-chain interruption without epistemic surplus**,
-* and post-breach comparison drift, pseudo-symmetry, and reciprocity erosion can become **unusually legible** in operator terms.
+* which frame (□) organizes the scene,
+* which real asymmetries (Ω) are operative,
+* which non-events or absences (Λ) matter,
+* which trajectory (Θ) makes earlier/later effects relevant,
+* which recontextualizations (Φ) legitimate or displace responsibility,
+* where distance (Χ) remains or collapses,
+* whether costs and effects can be integrated (Σ),
+* and whether relevant role-positions remain self-bound (Ψ) to what they structure.
 
-Other framings may remain stronger where the primary explanatory burden lies elsewhere, for example in:
+Psychological, theological, symbolic, sociological, historical, or political readings may remain stronger where their explanatory object is different. PMS–EDEN isolates one structural dimension: how real asymmetry can be falsely coordinated such that responsibility is displaced, integration and self-binding are blocked, and shared correctability erodes.
 
-* theology or exegesis,
-* symbolic anthropology,
-* phenomenology,
-* trauma or attachment structure,
-* discourse history,
-* institutional analysis beyond dyadic coding,
-* or political theory.
-
-PMS–EDEN does not abolish such readings.  
-It isolates a structural dimension they may leave implicit, overmoralize, or formulate under incompatible primitives.
+PMS–EDEN does not claim monopoly over Eden interpretation, reciprocity theory, sexed praxis analysis, or relational breakdown. It offers a disciplined structural grammar whose readings must remain scene-bound, counter-scene exposed, and open to non-capture.
 
 ---
 
 ## Discriminative Adequacy and Non-Capture
 
-The strength of a PMS–EDEN reconstruction is not measured only by how much material it can translate into operator terms. It is measured by whether that translation **preserves or increases differentiating force** relative to rival framings.
+The strength of a PMS–EDEN reconstruction is not measured by how much material it can absorb into EDEN vocabulary. It is measured by whether the reconstruction **preserves or increases differentiating force**.
 
-A reconstruction becomes methodologically weaker where it:
+PMS–EDEN becomes methodologically weaker where it:
 
-* absorbs divergent material too smoothly,
-* flattens distinctions that rival models keep explanatorially sharp,
-* or treats all resistance as already internal to its own grammar.
+* explains every case equally well,
+* treats all asymmetry as drift,
+* treats all comparison as false,
+* treats all vulnerability as immunization,
+* treats all protection as responsibility evasion,
+* treats all non-action as praxis,
+* treats all disagreement as failed correctability,
+* treats all resistance as confirmation,
+* or treats EDEN-MAP as a verdict machine.
 
-PMS–EDEN therefore leaves open the possibility of **genuine non-capture**.  
-Some cases may resist its grammar, apply only partially, or remain better described by rival frameworks.
+PMS–EDEN therefore leaves open the possibility of **genuine non-capture**. Some scenes may resist the grammar, fit only partially, or remain better described by rival frameworks.
 
 Showing that a configuration is operatorically coherent does **not** by itself show that it is:
 
 * empirically dominant,
 * historically typical,
+* psychologically explanatory,
+* morally decisive,
 * or explanatorily primary across contexts.
 
 PMS–EDEN distinguishes between:
 
 * **structural legibility**,
+* **scene-bound support**,
 * **recurrent drift tendency**,
 * and **empirical prevalence**.
 
@@ -226,221 +294,311 @@ PMS–EDEN distinguishes between:
 
 ## Structural Contributions
 
-### 1. Eden Reframed as Ground State
+### 1. Adult Reciprocity as Coordinated Real Ω
 
-PMS–EDEN reconstructs Eden as a **praxeological ground state within the PMS grammar**:
+Adult Reciprocity is not symmetry, sameness, harmony, or equal burden. It is the truthful coordination of real Ω.
 
-* A-availability is already present,
-* the option field is already structurally legible,
-* differentiation is available without ranking,
-* and tragedy is not yet pressure-bearing.
+```text
+Adult Reciprocity =
+real Ω visible
++ D preserved
++ R follows real structuring effect
++ Σ integrates costs and effects
++ Ψ binds relevant actors to their own effect
++ Χ keeps revision possible.
+```
 
-### 2. Threshold and Breach Discipline
+Adult reciprocity does not require equal burdens. It requires non-externalization of unequal burdens.
 
-The threshold marker does not add knowledge.  
-The breach does not create epistemic gain.  
-Within PMS–EDEN, breach yields:
+### 2. False-Coordinated Real Asymmetry
 
-* consequence-legibility,
-* irreversibility,
-* residue,
-* and altered asymmetry conditions.
+False-coordinated real Ω is the central EDEN mechanism.
 
-### 3. NRK as Paper-Internal Composite
+```text
+real Ω
++ false coordination frame
++ displaced R
++ blocked Σ/Ψ
+= false-coordinated real Ω
+```
 
-PMS–EDEN introduces **NRK (Negative Responsibility Kernel)** as a compact paper-internal composite for:
+This does not mean that the asymmetry is unreal. It means that a real asymmetry is organized through a frame that displaces responsibility and blocks integration/self-binding.
 
-* enactment under available awareness,
-* failed Σ-carriage,
-* failed or displaced Ψ,
-* effective Ω,
-* and trajectory-bearing Θ.
+### 3. Responsibility Principle
 
-NRK is **not** a PMS operator.
+Responsibility is not guilt, blame, moral worth, person condemnation, visible action alone, formal role alone, or outcome liability alone.
 
-### 4. False Comparison and Dissatisfaction
+```text
+R follows real structuring effect
+under available legibility,
+capacity,
+alternative possibility,
+Θ trajectory,
+and Ω cost/exposure conditions.
+```
 
-PMS–EDEN formalizes how a praxis frame can drift into **comparison-dominant □**:
+Responsibility may be real without malicious intent. Responsibility may also be limited where legibility, capacity, alternatives, or field conditions are limited.
 
-* Δ becomes rank-token,
-* Ω becomes verdict-surface,
-* Σ/Ψ coordination carriers are suppressed,
-* dissatisfaction becomes a **system-maintenance cost** rather than a reliable sign of objective lack.
+### 4. No Passive Praxis
 
-### 5. Pseudo-Symmetry as Substitution Regime
+PMS–EDEN does not claim that every non-action is action.
 
-PS is reconstructed as:
+```text
+No Passive Praxis ≠ every non-action is action.
+Non-action becomes praxis only when it structures a scene under □/Λ/Ω/Θ.
+```
 
-* rhetorical parity under real Ω,
-* low or simulated Σ,
-* Ψ misbound to appearance-management,
-* with Φ / Λ / Α acting as substitute stabilizers,
-* and with asymmetry-switch availability emerging where parity remains the surface grammar while Ω can be selectively activated.
+Mere absence, restraint, incapacity, genuine uncertainty, boundary, non-involvement, or legitimate openness may defeat a No Passive Praxis reading.
 
-### 6. Asymmetry Switch and Permanentized Exception
+### 5. Ψ-Load Shift and Non-Binding
 
-PMS–EDEN distinguishes legitimate asymmetry activation from drift.
+Non-binding is not automatically evasion. It may be legitimate openness. It becomes structurally relevant where one side’s low self-binding increases the binding load on another role-position.
 
-The **asymmetry switch** is structurally valid where real asymmetry cannot be carried symmetrically, provided activation is:
+```text
+low Ψ on one side
+→ increased Ψ-load on the other.
+```
 
-* marked,
-* bounded,
-* linked to real Ω/Θ burden,
-* and re-bound into Σ/Ψ.
+Naming shifted Ψ-load does not authorize compelled clarity, commitment, disclosure, reassurance, availability, or continued engagement.
 
-It becomes drift where it is:
+### 6. False Comparison and Switch Family
 
-* unmarked,
-* repeatable,
-* responsibility-shifting,
-* and preserved under a rhetorical parity surface.
+False Comparison is important, but it is not the origin of reciprocity loss.
 
-The **permanentized exception switch** names the PFO drift form in which exception activation ceases to be emergency-bound and becomes a standing regime option.
+```text
+False Comparison = attractor / amplifier / stabilizer, not first cause.
+```
 
-### 7. Parity-to-Exit and Responsibility-to-Authority
+Comparison is not false because it compares. Comparison becomes false where it substitutes for truthful coordination of real Ω.
 
-PMS–EDEN formalizes two major switch-drift branches:
+Pseudo-Symmetry is one Switch Family form: formal parity while real Ω remains unintegrated and R/Σ/Ψ are falsely distributed. It is not the master mechanism.
 
-* **Parity-to-exit:** parity rhetoric is used to deny additional responsibility under unequal Ω/Θ consequences.
-* **Responsibility-to-authority:** required Ψ/Χ self-binding under asymmetry is converted into control, frame authority, protection entitlement, or governance.
+### 7. Immunization, Overexposure, and AEP
 
-Both are **paper-internal structural drift profiles**, not person labels.
+PMS–EDEN maps coupled drift in which some role-positions may be protected from full responsibility for their structuring effect, while others become exposed to responsibility without full legibility, language, or protection.
 
-### 8. Reciprocity as Coordinated Asymmetry
+AEP is not innocence and not diagnosis. It is a scene-bound signal cluster:
 
-A central PMS–EDEN thesis is:
+```text
+AEP = high exposure
++ low legitimate language
++ critique-to-threat switch
++ responsibility overload
+```
 
-> **Reciprocity is not symmetry.  
-> Reciprocity is coordinated asymmetry.**
+Profiles are scene-bound drift patterns, not sex truths.
 
-Reciprocity requires:
+### 8. Recognition-without-Responsibility / Pseudo-Augenhöhe
 
-* Ω to remain nameable as functional gradient,
-* Σ to coordinate real burdens and interfaces,
-* Ψ to remain self-binding rather than outwardly imposed,
-* Χ to limit escalation and preserve reversibility,
-* and D to prevent asymmetry handling from becoming humiliation, ranking, or authority.
+PMS–EDEN distinguishes equal standing from formal parity. Recognition without answerability is not equal standing.
 
-Adult reciprocity does not require equal burdens.  
-It requires **non-externalization of unequal burdens**.
+```text
+Equal standing = recognition
++ answerability
++ criticizability
++ consequence attribution
++ correctability.
+```
 
-### 9. Pattern Library and Drift Recognition
+Recognition may not become immunity. Responsibility may not become degradation.
 
-The overlay organizes a pattern library of **paper-internal drift composites** such as:
+### 9. PFO as Downstream Regime Stabilization
 
-* Ω → covert authority,
-* Λ → denial / suppression,
-* Ψ → externalization,
-* Σ-simulation,
-* moral frame capture.
+PFO is not the origin of reciprocity loss. It is one regime form in which reciprocity loss may stabilize after real Ω has already been falsely coordinated.
 
-These are **scene-bound recognition aids**, not diagnoses and not enforcement licenses.
+```text
+PFO is downstream.
+PFO is not EDEN’s center.
+PFO is not a person label, sex label, ideology diagnosis, or detector.
+```
 
-### 10. EDEN-MAP
+### 10. Eden as Test Scene
 
-PMS–EDEN includes **EDEN-MAP**, a structural mapping protocol for bounded scenes.
+Eden is not the paper’s origin. Eden enters late as a minimal test scene for a grammar already built without it.
 
-EDEN-MAP:
+```text
+Eden is not the paper’s origin.
+Eden is a test scene for the paper’s grammar.
+```
 
-* maps operator constellations (Δ–Ψ),
-* keeps roles, frames, non-events, cost geometry, and switch drift explicit,
-* separates description from application,
-* includes a Q7 switch-drift scan,
-* and forbids person-evaluation, diagnosis, maturity ranking, dignity hierarchy, and coercive prescription.
+The Eden scene tests whether boundary, breach, consequence activation, exposure shift, legibility management, and responsibility tracing can be mapped without turning the scene into theology-first explanation, sexed blame, moral origin story, or universal historical claim.
+
+### 11. Reciprocity Loss as Tragedy
+
+Reciprocity loss is not merely conflict, inequality, hurt, incompatibility, or failed communication.
+
+```text
+Reciprocity loss is the erosion of shared correctability under real asymmetry.
+```
+
+It is tragic rather than tribunal: structure, not verdict; loss, not accusation.
+
+### 12. Boundary Conditions and EDEN-MAP
+
+PMS–EDEN requires counter-scenes and falsifiers. A counter-scene must be able to change the reading; otherwise it is decorative, not methodological.
+
+EDEN-MAP maps scenes. It does not diagnose persons, rank sexes, authorize coercive action, or replace counter-scene testing.
 
 ---
 
-## Safety & Formal Guardrails (Mandatory)
+## EDEN-MAP
+
+EDEN-MAP is the repository’s scene-bound mapping protocol for PMS–EDEN examples and applications.
+
+It asks for:
+
+1. **Scene Packet Summary** — bounded scene, role-positions, temporal boundary, evidence limits.
+2. **Real Ω Mapping** — operative asymmetries of capacity, exposure, cost, protection, access, timing, dependency, language, or responsibility.
+3. **Dominant False-Coordination Frame** — candidate frame and whether it falsely coordinates real Ω.
+4. **Responsibility and Action-Power Distribution** — whether R follows real structuring effect and how action/non-action/framing/timing/access distribute praxis power.
+5. **Σ/Ψ Status** — whether integration and self-binding remain open, simulated, blocked, weakened, avoided, or externalized.
+6. **Cost Distribution** — visibility, explanation, reaction, waiting, binding, protection, speech, repair, dignity, exposure, recognition, legibility, Χ, and option-loss costs.
+7. **Non-Action and Non-Binding** — whether absence, delay, silence, refusal, or openness is mere absence, structuring non-event, integrated abstention, legitimate openness, Ψ-load shift, or avoidance.
+8. **Immunization / Overexposure / AEP** — whether responsibility is shielded, exposure is overloaded, or legitimate language is reduced.
+9. **Counter-Scene and Falsifier** — what would narrow, revise, suspend, or defeat the reading.
+10. **Description / Application Status** — whether the output remains description-only or is separately authorized and fully gated.
+11. **Revision Point or Open Question** — the concrete point that keeps the map revisable.
+
+EDEN-MAP is descriptive by default. It supplies no independent application authority.
+
+---
+
+## Boundary Conditions and Falsifiers
+
+An EDEN reading must narrow, suspend, or fail where the scene lacks the required structure.
+
+Principal falsifiers include:
+
+* real Ω is minimal or absent,
+* no bounded scene is specified,
+* the alleged non-action does not structure costs, options, exposure, timing, or binding load,
+* responsibility remains properly attached to structuring effect,
+* Σ/Ψ remain open and self-bound,
+* critique remains possible and dignity-preserving,
+* protection is bounded and responsibility-compatible,
+* hierarchy is bounded and functional,
+* functional comparison explains the scene better than false comparison,
+* legitimate uncertainty, incapacity, restraint, boundary, or openness explains better,
+* rival institutional, logistical, theological, symbolic, psychological, sociological, or political explanation is stronger,
+* no counter-scene can be named.
+
+If no falsifier can be named, the EDEN reading is methodologically unsafe.
+
+---
+
+## Example Suite
+
+The repository includes a reusable PMS–EDEN case template and example cases. The examples are designed as bounded, scene-specific mappings rather than applications, verdicts, or advice.
+
+Current examples include:
+
+* **Example 1 — Pseudo-Symmetry under Real Cost Asymmetry**
+* **Example 2 — Mediation Termination vs Mediation**
+* **Example 3 — Teaches Nothing vs. the Learning or Transgression Myth**
+* **Example 4 — Legibility Management Without Psychology**
+* **Example 5 — Who Goes First as Trajectory Origin, Not Moral Rank**
+
+Each case is expected to preserve:
+
+* scene-boundedness,
+* role-position language,
+* real Ω mapping,
+* responsibility trace,
+* Σ/Ψ status,
+* cost distribution,
+* counter-scene and falsifier logic,
+* Description-to-Action Firewall,
+* and the final guardrail:
+
+```text
+This remains a scene-bound description, not a diagnosis, verdict, or prescription.
+```
+
+---
+
+## PMS–EDEN YAML and Human-Readable Specification
+
+This repository includes **PMS–EDEN.yaml** as the machine-readable overlay/profile.
+
+The model bundle may include:
+
+* `model/PMS-EDEN.yaml` — canonical overlay/profile in machine-readable form,
+* `model/Model Specification.html` — human-readable technical specification,
+* `examples/` — case YAML files,
+* `examples/html/` — optional human-readable HTML renderings of case files,
+* `README.md` — repository orientation,
+* release notes — version-specific change history.
+
+The README states the current conceptual orientation. Version-specific change history belongs in release notes.
+
+---
+
+## Safety & Formal Guardrails
 
 PMS–EDEN is valid as a PMS application only under the standard entry condition:
 
-* **Χ (distance) preserved:** analysis maintains meta-position and stop-capability; no fusion with role perspectives
-* **Reversibility preserved:** claims remain scene-bound and revisable; no person labels
-* **D (dignity-in-practice) preserved:** critique avoids shaming; humiliation is never justified as “analysis”
+```text
+Χ + reversibility + D
+```
 
-> If you cannot keep **Χ + reversibility + D**, you cannot claim PMS-valid application.
+This means:
 
----
+* **Distance preserved:** analysis maintains a meta-position and stop-capability; no fusion with verdict, urgency, accusation, role authority, or enforcement.
+* **Reversibility preserved:** claims remain scene-bound, revisable, and configuration-specific; no person labels or irreversible interpretive claims.
+* **Dignity-in-Practice preserved:** critique avoids shaming, ranking, humiliation, sex ranking, or ontological person evaluation.
 
-## What You Can Do With PMS.yaml + PMS–EDEN.yaml  
-*(That PMS Alone Does Not Provide)*
-
-PMS.yaml gives you the **canonical operator system** (Δ–Ψ), dependency hygiene, derived structures, and the PMS entry condition.
-
-**PMS–EDEN.yaml** adds a **domain-specific application profile** for structural drift from praxis to comparison that makes several things explicitly reusable across analyses and tools:
-
-### 1) Master trace (drift corridor)
-
-PMS–EDEN defines a canonical **master trace**:
-
-> **EDEN → THRESHOLD → NRK → □comparison → PS → ASYMMETRY_SWITCH_AVAILABILITY → PFO / PERMANENTIZED_EXCEPTION → (PARITY_TO_EXIT | RESPONSIBILITY_TO_AUTHORITY) → residual stabilization (Λ/Φ/Α) → (DEVALUATION | HUMILIATION) → RECIPROCITY_LOSS**
-
-This provides a stable orientation spine for locating scenes *without* collapsing into narrative, moral explanation, diagnosis, maturity ranking, or person-level attribution.
-
-### 2) EDEN-MAP (scene-bound mapping protocol)
-
-A strict, question-driven protocol for mapping operator configurations in a scene:
-
-* dominant frame (□),
-* real asymmetries (Ω),
-* active non-events (Λ),
-* distance failures or instrumentalization (Χ),
-* integration status (Σ),
-* binding and externalization patterns (Ψ),
-* switch drift:
-  * asymmetry activation,
-  * parity-to-exit,
-  * responsibility-to-authority,
-  * re-binding into Σ/Ψ.
-
-EDEN-MAP is **descriptive only** and includes a mandatory application firewall.
-
-### 3) Drift catalogue (structural regimes, not labels)
-
-PMS–EDEN formalizes predictable drift signatures, including:
-
-* NRK,
-* false comparison,
-* pseudo-symmetry,
-* asymmetry-switch availability,
-* permanentized exception switch,
-* parity-to-exit,
-* responsibility-to-authority,
-* dissatisfaction as system cost,
-* PFO as paper-internal regime hypothesis,
-* reciprocity loss as Σ / Ψ erosion under Θ.
-
-These are **configuration statements**, not diagnoses, ideology claims, maturity verdicts, dignity rankings, or person-claims.
-
-### 4) Boundary conditions & alternative explanations
-
-The model explicitly specifies when the EDEN pipeline applies weakly or only partially
-(e.g. minimal Ω, praxis-dominant □, early Σ / Ψ, institutional scaffolding, genuine rival-framework capture),
-and lists **alternative sufficient generators** to prevent over-claiming.
-
-### 5) Example-suite schema
-
-A strict vignette format for repository examples that enforces:
-
-* scene-boundedness,
-* operator mapping,
-* drift position in the updated master trace,
-* cost layout (Ω under Θ),
-* limited pattern markers,
-* switch-drift markers where relevant,
-* explicit validity gate reminder,
-* readable structural closure (no advice, no prescriptions).
+If you cannot keep Χ + reversibility + D, you cannot claim PMS-valid application.
 
 ---
 
-## PMS–EDEN YAML (Overlay Specification) + Model Spec (Human-Readable)
+## Minimal Use Discipline
 
-This repository includes **PMS–EDEN.yaml** as a machine-readable application profile.
+When using PMS–EDEN, keep these constraints active:
 
-Additionally, a **model specification bundle** is provided under `model/`:
+```text
+No EDEN reading without real Ω.
+No EDEN reading without scene.
+No EDEN reading without structuring effect.
+No EDEN reading without counter-scene.
+No description-to-action conversion without Χ, reversibility, D, contextual responsibility, and independent application authority.
+```
 
-* `model/PMS-EDEN.yaml` — canonical overlay/profile (machine-readable)
-* `model/Model Specification.html` — human-readable technical specification
+Prefer:
+
+```text
+scene
+role-position
+real Ω
+structuring effect
+operator-traceable configuration
+counter-scene
+falsifier
+revisable reading
+dignity-in-practice
+description
+application firewall
+revision point
+open question
+```
+
+Avoid:
+
+```text
+diagnosis
+person type
+sex truth
+moral tribunal
+relationship manual
+therapy protocol
+repair protocol
+intervention protocol
+recommendation engine
+coercive authorization
+policy / enforcement tool
+verdict machine
+```
+
+PMS–EDEN may name structure sharply. It does not authorize humiliation, coercion, binding, accusation, or application by label.
 
 **Recommended reading order:**
 

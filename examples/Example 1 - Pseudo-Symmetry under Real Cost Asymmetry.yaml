@@ -1,531 +1,556 @@
-example_id: "PMS-EDEN_EX01"
-example_version: "1.2"
-schema_version: "PMS-EDEN_1.2"
-example_label: "Pseudo-Symmetry under Real Cost Asymmetry"
-example_status: "draft"
-language: "en"
-depends_on:
-  - "PMS_1.3"
-  - "PMS-EDEN_1.2"
+case_schema_version: "PMS-EDEN_CASE_2.0"
+
+case_meta:
+  id: "example_1_pseudo_symmetry_under_real_cost_asymmetry"
+  title: "Example 1 - Pseudo-Symmetry under Real Cost Asymmetry"
+  subtitle: "Formal parity while unequal cost, timing, and Ψ-load remain outside integration"
+  status: "example"
+  model: "PMS-EDEN"
+  model_schema_version: "PMS-EDEN_2.0"
+  base_schema: "PMS_1.3"
+  file_name: "Example 1 - Pseudo-Symmetry under Real Cost Asymmetry.yaml"
+  authorship:
+    originator: "T. Zöller"
+    formalization_assistant: "ChatGPT"
+  purpose: "Demonstrate a bounded EDEN-MAP reading of a specified scene."
+  case_type: "minimal_scene"
+  primary_focus:
+    construct: "Pseudo-Symmetry"
+    construct_status: "eden_mechanism"
+    yaml_home: "mechanism_architecture.switch_family.members.pseudo_symmetry"
+    secondary_constructs:
+      - "false_coordinated_real_asymmetry"
+      - "responsibility_principle"
+      - "blocked_Σ"
+      - "blocked_Ψ"
+      - "cost_distribution"
+    not_a_case_of:
+      - "Pseudo-Symmetry as master mechanism"
+      - "sex truth"
+      - "personality profile"
+      - "diagnosis of manipulation"
+      - "automatic Reciprocity Loss finding"
+
+case_guardrails:
+  non_diagnostic: true
+  non_prescriptive: true
+  non_verdictive: true
+  non_person_labeling: true
+  non_sex_ranking: true
+  no_hidden_motive_inference: true
+  no_psychological_diagnosis: true
+  no_therapy_or_intervention_protocol: true
+  description_to_action_firewall: "active"
+  validity_gate_reference: "validity_gate"
+  required_method_conditions:
+    canonical_pms_entry_condition: ["Χ", "reversibility", "D"]
+    eden_application_requirements:
+      - "scene_packet"
+      - "counter_scene_exposure"
+      - "contextual_responsibility"
+      - "evidentiary_answerability"
+      - "affected_role_contestation"
+      - "independent_application_authority"
+  core_rule: "Map the scene; do not diagnose persons, prescribe action, rank sexes, or authorize intervention."
+  invalid_if_any:
+    - "Χ_suspended_for_clarity_or_urgency"
+    - "reversibility_suspended_for_verdict"
+    - "D_suspended_for_truth_or_efficiency"
+    - "scene_packet_replaced_by_impression"
+    - "counter_scene_cannot_change_reading"
+    - "responsibility_without_scene_conditions"
+    - "description_converted_directly_into_binding"
+    - "person_or_sex_label_substituted_for_scene_analysis"
+  prohibited_shortcuts:
+    - "EDEN-by-vibe"
+    - "PFO-by-vibe"
+    - "identity-based_assignment"
+    - "sex-truth_inference"
+    - "personality_inference"
+    - "motive_inference_from_operator_trace"
+    - "description_converted_into_obligation"
 
 minimal_vignette:
-  title: "Equality rhetoric under irreversible cost gradients"
-  scene_boundaries:
-    domain: "extended coordination under unequal consequence exposure"
-    scope: "roles, asymmetries, cost distribution, frame drift, switch availability, and reciprocity conditions"
-    out_of_scope:
-      - "person-level judgement"
-      - "motive attribution"
-      - "virtue assessment"
-      - "clinical or psychological interpretation"
-      - "action prescription"
-      - "maturity ranking"
-      - "essence claim about any role-position"
-  short_scene: >
-    Two role-positions remain engaged across an extended coordination sequence.
-    One role-position stays close to decision endpoints and closure authority,
-    while the other remains close to continuity work, repair effort, and
-    fallout handling. As unequal consequence exposure becomes increasingly
-    legible, the scene does not reopen explicit coordination around real Ω.
-    Instead, the frame drifts from praxis-coordination toward comparison and
-    equivalence talk. Equality rhetoric rises, comparison cycles stabilize, and
-    durable interface change fails to form. Under this pressure, an asymmetry
-    switch may become available: parity remains the public surface while
-    asymmetry can be invoked situationally for protection, cost, exception, or
-    responsibility displacement.
-  structural_focus: >
-    The case examines how pseudo-symmetry (PS) stabilizes when real asymmetry
-    in cost and exposure remains operative but becomes difficult or illegitimate
-    to name within the dominant frame. The key issue is not whether equality is
-    normatively desirable, but whether equivalence-talk substitutes for
-    coordination under real Ω across Θ, and whether asymmetry activation remains
-    marked, bounded, and re-bound into Σ/Ψ rather than becoming a drift affordance.
-  scenic_elements:
-    actors:
-      - "role-position near endpoint decisions and closure authority"
-      - "role-position near continuity work and fallout handling"
-      - "coordination interface or shared task environment"
-    salient_objects:
-      - "decision endpoints"
-      - "repair labor"
-      - "continuity obligations"
-      - "justification cycles"
-      - "fairness/equality claims"
-      - "unreopened coordination interfaces"
-      - "selective asymmetry activation"
-      - "parity surface under real cost gradients"
-    trigger_event:
-      label: "cost asymmetry becomes legible"
-      description: >
-        Unequal exposure to durable consequences becomes visible, but instead
-        of being coordinated explicitly, it is reprocessed through comparison,
-        equivalence, and fairness rhetoric. The drift risk increases where
-        asymmetry is neither denied nor integrated, but selectively activated
-        without explicit re-binding.
+  scene: >
+    Two adult collaborators describe a joint deliverable as an equal partnership:
+    both are said to be equally free to adjust, pause, or decide later. In the
+    bounded scene, role_A repeatedly withholds final confirmation until late in
+    the deadline window while retaining approval over whether the deliverable can
+    proceed. Role_B keeps the file open, absorbs third-party inquiries, preserves
+    availability, and explains the delay. The operative language remains mutual
+    flexibility and equal ownership, but the waiting, explanation, option-loss,
+    and external visibility costs concentrate on role_B.
+  temporal_boundary: "From the first missed confirmation window to the deadline handoff where role_B must either submit incompletely, wait further, or carry the delay outward."
+  roles:
+    - id: "role_A"
+      label: "confirmation-controlling collaborator"
+    - id: "role_B"
+      label: "deadline-bound integrating collaborator"
+  surface_description: "Two equal collaborators are both exercising mutual flexibility under an open deadline process."
+  eden_question: "Does the parity frame truthfully coordinate real Ω, or does formal symmetry conceal unequal cost, displaced R, and weakened Σ/Ψ?"
 
-why_this_is_repo_useful:
-  structural_focus: >
-    This example shows one of the clearest PMS-EDEN use-cases: real Ω remains
-    active in consequences while the dominant frame drifts toward rhetorical
-    parity. It makes visible how PS can function as a stabilization regime
-    rather than as reciprocity, and how PS can prepare asymmetry-switch
-    availability when parity remains rhetorically preserved while asymmetry
-    becomes situationally activatable.
-  repo_value:
-    - >
-      Demonstrates the transition from □praxis to □comparison under active Ω.
-    - >
-      Shows how pseudo-symmetry can substitute for Σ without resolving the
-      underlying coordination problem.
-    - >
-      Makes durable cost distribution legible across Θ without moralizing.
-    - >
-      Clarifies how fairness rhetoric can become a frame-control device when Ψ
-      externalizes and Χ is pressured.
-    - >
-      Shows where asymmetry activation must be marked, bounded, and re-bound
-      into Σ/Ψ to avoid switch drift.
-    - >
-      Connects local comparison cycles to broader PMS-EDEN drift logic:
-      false comparison → PS → asymmetry-switch availability → PFO/permanentized
-      exception risk → residual stabilization → reciprocity loss.
-  central_repo_question: >
-    How does equality rhetoric become a cost-masking attractor when real
-    asymmetry remains action-relevant but coordination under Ω is not reopened,
-    and when can the resulting switch availability become structurally erosive?
-  lens_relevance:
-    pseudo_symmetry: >
-      The example directly instantiates PS as rhetorical parity under real Ω
-      with Σ low or simulated and Ψ misbound to appearance-management.
-    asymmetry_switch: >
-      The example shows the pre-PFO form of switch availability: parity remains
-      the surface grammar while asymmetry may become selectively activatable
-      for cost, protection, exception, or responsibility displacement.
-    cost_geometry: >
-      The example highlights how invisible redistribution of durable load can
-      stabilize a drift regime even without overt domination language.
-    validity_gate: >
-      The example sharply distinguishes descriptive structural mapping from any
-      invalid attempt to force action, compliance, or obligation through the
-      analysis itself.
+scene_packet:
+  specified_scene: "A bounded collaboration scene in which equal-partnership language governs a deadline while final confirmation, waiting costs, external answerability, and option-loss are unevenly distributed."
+  role_positions:
+    role_A:
+      scene_position: "Holds practical timing and approval control by delaying or withholding final confirmation while remaining framed as equally flexible."
+      not_identity: true
+    role_B:
+      scene_position: "Keeps the deliverable viable under the deadline, carries external visibility, and absorbs uncertainty while remaining framed as equally free."
+      not_identity: true
 
-operator_mapping:
-  reduced_signature:
-    primary: ["□", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ", "Λ", "Α"]
-    paper_internal_handles:
-      - "PS"
-      - "ASYMMETRY_SWITCH_AVAILABILITY"
-      - "PARITY_TO_EXIT"
-      - "RESPONSIBILITY_TO_AUTHORITY"
-    note: >
-      The case centers on frame drift under legible asymmetry, temporally
-      extended consequence distribution, pseudo-symmetry, switch availability,
-      and the failure of integration/self-binding to stabilize reciprocity.
-  operator_roles_in_scene:
-    "Δ":
-      scene_role: >
-        A distinction emerges between endpoint-costs and continuity-costs, and
-        between rhetorical equality and real consequence asymmetry.
-    "∇":
-      scene_role: >
-        Pressure rises to restore a fairness-image without reopening explicit
-        coordination around unequal burdens.
-    "□":
-      scene_role: >
-        The scene begins in praxis-coordination but drifts toward comparison,
-        equivalence, and justification grammar. The decisive question is whether
-        the frame still permits functional Ω-speech, and whether parity-language
-        becomes a surface under which asymmetry activation remains available.
-    "Λ":
-      scene_role: >
-        Expected explicit renegotiation of obligations and cost handling does
-        not occur. Missing repair and missing interface revision remain active
-        non-events across the scene.
-    "Α":
-      scene_role: >
-        Repeated comparison loops, fairness invocations, leveling attempts, and
-        possible switch-use stabilize into recurrent scripts that preserve the
-        configuration without repairing it.
-    "Ω":
-      scene_role: >
-        Real asymmetry remains active in exposure, continuity burden, and
-        consequence carrying, even where rhetoric asserts parity. Drift begins
-        where Ω is not coordinated as a functional gradient but becomes
-        selectively activatable.
-    "Θ":
-      scene_role: >
-        Consequences accumulate over time. One-off endpoint decisions and
-        repeated maintenance work do not have the same temporal weight.
-    "Φ":
-      scene_role: >
-        The configuration is recontextualized from coordination problem to
-        fairness problem; from unequal consequences to disputed equivalence.
-    "Χ":
-      scene_role: >
-        Distance becomes endangered when requests for pause, revision, or
-        restraint are recoded as avoidance, unfairness, lack of commitment, or
-        accusation for naming switch-use.
-    "Σ":
-      scene_role: >
-        Integration would require reopened interfaces around actual burdens,
-        obligations, exposure gradients, and conditions for marked asymmetry
-        activation. In the drifted scene, Σ remains low, blocked, or simulated.
-    "Ψ":
-      scene_role: >
-        Binding drifts away from self-restraint and coordinated obligation
-        toward pressure on the other to display fairness, equality, or renewed
-        compliance. Ψ also fails where parity becomes exit or responsibility
-        becomes authority rather than self-binding.
-  derived_axes_projection:
-    A:
-      reading: >
-        Awareness increases because the cost gradient becomes more legible, but
-        the dominant frame blocks direct coordination of what is seen.
-    C:
-      reading: >
-        Coherence is maintained rhetorically through equivalence-talk, but the
-        configuration remains structurally unstable because Λ stays open.
-    R:
-      reading: >
-        Responsibility becomes distorted when durable burden is redistributed
-        without explicit renegotiation and when binding migrates outward.
-    E:
-      reading: >
-        Integrated action remains weak because realizations occur without stable
-        Σ-carriage; comparison and justification substitute for coordination.
-    D:
-      reading: >
-        Dignity-in-Practice is stressed where real Ω is suppressed in speech but
-        enforced in consequences, and where fairness talk pressures compliance
-        instead of protecting standing under asymmetry.
-  structural_mechanism_summary:
+  dominant_frame:
+    candidate_frame: "parity"
+    frame_description: "The scene is made legible as mutual autonomy, equal ownership, and symmetrical flexibility."
+    frame_status: "potentially_false_coordination"
+
+  real_Ω:
+    present: "true"
+    summary: "Real asymmetry appears in timing control, approval access, explanation burden, waiting cost, option preservation, language access, binding control, and external visibility."
+    dimensions:
+      capacity: "mixed"
+      exposure: "high"
+      dependency: "medium"
+      protection: "mixed"
+      obligation: "medium"
+      access_control: "medium"
+      timing_control: "high"
+      frame_control: "medium"
+      recognition_control: "medium"
+      binding_control: "high"
+      language_access: "medium"
+      explanation_burden: "high"
+      risk: "medium"
+      cost: "high"
+      exit_and_waiting_capacity: "low_for_role_B"
+      exit_or_waiting_cost: "high"
+    asymmetry_not_failure_rule: "Asymmetry is not the failure; false coordination of asymmetry is the failure."
+
+  relevant_Λ:
+    present: "true"
+    non_event_or_absence: "delay"
+    scene_structuring_effect: "Late or missing confirmation restructures who must wait, explain, preserve options, and absorb external answerability."
+    no_passive_praxis_check: "Non-action becomes praxis only when it structures a scene under □/Λ/Ω/Θ."
+
+  non_action_relevance:
+    status: "structuring_non_event"
+    note: "Delay is scene-relevant only because, within the bounded □/Ω/Θ, it changes timing, exposure, option preservation, explanation burden, and Ψ-load."
+    boundary: "Delay, silence, or non-response would not count as praxis where no traceable scene effect is established."
+
+  non_binding_relevance:
+    status: "Ψ_load_shift"
+    note: "Role_A's lower immediate binding to final confirmation shifts continuity, waiting, and explanation load toward role_B."
+    boundary: "Non-binding may also be legitimate openness if uncertainty, costs, and alternatives are made legible."
+
+  Θ_trajectory:
     sequence:
-      - "Real Ω in consequences becomes legible."
-      - "Explicit coordination around Ω does not consolidate."
-      - "□ drifts from praxis to comparison/equivalence."
-      - "Φ reframes asymmetry as fairness dispute."
-      - "PS stabilizes rhetorical parity under real gradients."
-      - "Asymmetry-switch availability may emerge under the parity surface."
-      - "Α locks comparison, justification, and possible switch-use scripts."
-      - "Σ remains low or simulated; Ψ misbinds or externalizes."
-      - "Parity-to-exit or responsibility-to-authority may appear as local counter-drifts."
-      - "Reciprocity becomes structurally compromised across Θ."
-    concise_formula: >
-      legible Ω -> failed Σ around cost distribution -> □comparison ->
-      Φ fairness reframe -> PS -> asymmetry-switch availability ->
-      Α comparison/switch scripts -> Ψ misbinding / externalization ->
-      reciprocity erosion
+      - step: 1
+        description: "The collaboration begins under an equal-partnership frame with a shared deadline and expected confirmation."
+      - step: 2
+        description: "Role_A delays final confirmation while the parity frame continues to describe both roles as equally free and equally responsible."
+      - step: 3
+        description: "Role_B carries waiting, external explanation, option preservation, and repair pressure while the frame still distributes responsibility symmetrically."
+    trajectory_status: "accumulating_effect"
+    trajectory_origin_note: "The structural origin is not moral rank; it is the point where confirmation control and deadline exposure first diverge."
 
-drift_position_in_master_trace:
-  stage_label: "PS under real Ω with asymmetry-switch availability risk"
-  master_trace_handle: >
-    EDEN -> THRESHOLD -> NRK -> □comparison -> PS ->
-    ASYMMETRY_SWITCH_AVAILABILITY -> PFO/PERMANENTIZED_EXCEPTION risk ->
-    (PARITY_TO_EXIT|RESPONSIBILITY_TO_AUTHORITY) risk ->
-    residual_stabilization(Λ/Φ/Α) -> (DEVALUATION|HUMILIATION) ->
-    RECIPROCITY_LOSS
-  local_position_note: >
-    This case sits primarily at the PS node and the transition toward
-    asymmetry-switch availability. It does not require full PFO or overt
-    devaluation to become structurally non-viable; local switch drift is already
-    enough to compromise reciprocity where it blocks Σ/Ψ re-binding.
+  structuring_effects:
+    role_A_effects:
+      - "Controls the timing condition under which the deliverable can become final."
+      - "Keeps low immediate Ψ-cost by remaining unbound to a clear confirmation point."
+      - "Benefits from the parity frame because critique of delay can appear as refusal of mutual flexibility."
+    role_B_effects:
+      - "Maintains continuity of the deliverable under uncertainty."
+      - "Explains the unresolved status to external parties."
+      - "Carries increased visibility and repair pressure when the deadline approaches."
+    shared_or_field_effects:
+      - "The shared frame simulates equality while excluding unequal timing and cost from the accountable scene account."
+      - "Correctability narrows because naming the asymmetry risks appearing anti-equal or controlling."
+    unsupported_effects:
+      - "Role_A intended to manipulate the process."
+      - "Role_B is innocent of all structuring effects."
+      - "The collaboration as a whole is a Reciprocity Loss regime."
+      - "Either role-position expresses a sexed, psychological, or moral type."
 
-cost_layout:
-  note: "Structural cost geometry only; non-moral; scene-bound."
-  consequence_interfaces:
-    endpoint_adjacent_costs:
-      - "decision cost"
-      - "closure cost"
-      - "short-horizon justification cost"
-    continuity_adjacent_costs:
-      - "repair cost"
-      - "maintenance cost"
-      - "fallout handling cost"
-      - "repeated relational load"
-    switch_adjacent_costs:
-      - "marking cost"
-      - "bounding cost"
-      - "re-binding cost"
-      - "cost of distinguishing necessary asymmetry activation from leverage"
-      - "cost of blocking parity-to-exit and responsibility-to-authority"
-  asymmetry_readout:
-    omega_capacity_gradient: >
-      Closure-near roles often hold more capacity to define endpoints and frame
-      completion.
-    omega_exposure_gradient: >
-      Continuity-near roles often absorb more repeated exposure to unresolved
-      consequences across Θ.
-    omega_obligation_gradient: >
-      Maintenance burden can become tacitly assigned rather than explicitly
-      coordinated.
-    omega_leverage_gradient: >
-      Fairness/equality framing can function as leverage when direct naming of
-      asymmetry is delegitimated. Under switch drift, asymmetry can also become
-      leverage where it is activated without marking, bounding, and re-binding.
-  switch_drift_readout:
-    asymmetry_activation: >
-      Structurally viable only where activation is explicitly marked as
-      necessary or emergency-bound, temporally bounded, and re-bound into Σ/Ψ.
-    parity_to_exit: >
-      Appears where equality rhetoric is used to deny additional responsibility
-      under unequal Ω/Θ consequence structures.
-    responsibility_to_authority: >
-      Appears where additional responsibility under asymmetry is converted into
-      control, protection entitlement, frame authority, or governance over the
-      other role-position.
-  system_effect: >
-    The system does not remove cost asymmetry; it masks and redistributes it.
-    What appears as fairness maintenance can function as a durable cost-shift
-    into less visible continuity work. Where switch drift appears, parity and
-    asymmetry remain alternately available without being coordinated through
-    Σ/Ψ.
+  responsibility_distribution:
+    pms_axis: "R"
+    governing_formula: "R follows real structuring effect under available legibility, capacity, alternative possibility, Θ trajectory, and Ω cost/exposure conditions."
+    role_A:
+      structuring_effect: "supported"
+      legibility: "available"
+      capacity: "available"
+      alternatives: "available"
+      provisional_R_status: "underassigned"
+    role_B:
+      structuring_effect: "supported"
+      legibility: "available"
+      capacity: "limited"
+      alternatives: "limited"
+      provisional_R_status: "overassigned"
+    blame_guardrail: "R is not blame, guilt, moral worth, person condemnation, or total liability."
 
-pattern_markers:
-  max_expected: 3
-  markers:
-    - id: "P-Σ-SIM"
-      label: "Σ-Simulation instead of Integration"
-      operator_links: ["Σ", "Φ", "Α", "Λ", "Ψ"]
-      indicator: >
-        Coordination is performed discursively, but interfaces do not change and
-        remainder persists.
-    - id: "P-Ψ-EXT"
-      label: "Ψ -> Externalization"
-      operator_links: ["Ψ", "Χ", "Ω", "□"]
-      indicator: >
-        Binding shifts from self-restraint to demands imposed on the other in
-        the name of fairness, equality, or commitment.
-    - id: "P-Ω-AC"
-      label: "Ω -> Covert Authority"
-      operator_links: ["Ω", "□", "Α", "Λ"]
-      indicator: >
-        Real gradient-speech is blocked while frame control Authority"
-      operator_links: ["Ω", "□", "Α", "Λ"]
-      indicator: >
-        Real gradient-speech is blocked while frame control and indirect
-        steering remain effective through comparison and justification.
-  switch_drift_markers:
-    asymmetry_activation:
-      status: "possible"
-      indicator: >
-        Parity remains rhetorically preserved while asymmetry is activated
-        situationally for protection, cost, exception, or responsibility
-        displacement.
-    parity_to_exit:
-      status: "possible"
-      indicator: >
-        Equality rhetoric is used to deny additional responsibility under
-        unequal Ω/Θ consequence structures.
-    responsibility_to_authority:
-      status: "possible"
-      indicator: >
-        Additional responsibility under asymmetry is converted into control,
-        protection entitlement, or frame authority.
-    re_binding_test: >
-      Switch-use remains structurally viable only where activation is marked,
-      bounded, and re-bound into Σ/Ψ.
-  additional_red_flags:
-    - "We are equal here, so asymmetry should not be named."
-    - "Requesting distance proves lack of commitment."
-    - "Fairness now means matching burden-display rather than coordinating real burden."
-    - "The issue is no longer the task but whether parity has been performed."
-    - "Repair is discussed, but interfaces remain unchanged."
-    - "Asymmetry is denied for coordination but invoked for exception or protection."
-    - "Parity is used to exit responsibility under unequal consequences."
-    - "Responsibility is used to claim authority over the frame."
+  recognition_and_protection:
+    recognition_frame: "mixed"
+    protection_frame: "mixed"
+    D_status: "strained"
+    recognition_structure:
+      role_A: "Recognized as an equal collaborator with continuing discretion over timing and confirmation."
+      role_B: "Recognized as an equal collaborator in form, but made more answerable for continuity, explanation, and deadline-facing viability."
+      scene_effect: "Recognition is formally shared while criticizability and explanation duties are unevenly distributed."
+    protection_structure:
+      role_A: "Protected from immediate criticizability by the parity / mutual-flexibility frame."
+      role_B: "Less protected from external inquiries, deadline pressure, and the burden of keeping the unresolved scene legible."
+      scene_effect: "Protection does not disappear; it becomes unevenly attached to the role-position that can remain less bound."
+    dignity_guardrail: "Responsibility must not degrade; protection must not immunize."
 
-validity_gate_reminder:
-  pms_entry_condition:
-    chi_distance: >
-      Distance must remain available as reflective restraint. Requests for pause,
-      revision, non-fusion, or switch-clarification must not be converted into
-      evidence of unfairness, guilt, or accusation.
-    reversibility: >
-      Any mapping must remain scene-bound and revisable. The analysis must not
-      harden into global labels about persons or roles.
-    dignity_in_practice: >
-      Real Ω may be named structurally, but asymmetry handling must remain
-      dignity-constrained: no shaming, ranking, humiliation, maturity ranking,
-      essence claim, or coercive use of PMS vocabulary.
-  case_specific_validity_test:
-    valid_if:
-      - >
-        Real asymmetry in consequences can be named without collapsing into
-        blame or person-ranking.
-      - >
-        Equality language does not substitute for coordination around burdens,
-        obligations, and exposure.
-      - >
-        Asymmetry activation, if present, is marked, bounded, and re-bound into
-        Σ/Ψ rather than treated as standing entitlement.
-      - >
-        Ψ remains primarily self-binding rather than a demand directed outward.
-      - >
-        Χ remains speakable and protected rather than punished as avoidance.
-    formally_invalid_if:
-      - >
-        The analysis is used to force compliance or proof of fairness from the
-        other role-position.
-      - >
-        Ω is invoked as accusation rather than coordinated as structural
-        gradient.
-      - >
-        Asymmetry activation is treated as a standing lever rather than marked
-        as a bounded structural event.
-      - >
-        Parity is used to exit responsibility under unequal Ω/Θ consequences.
-      - >
-        Responsibility is converted into authority, protection entitlement, or
-        frame control.
-      - >
-        Χ is overridden through urgency, equivalence rhetoric, or moralized
-        commitment language.
-      - >
-        The case is converted into a diagnosis of character, motive, maturity,
-        essence, or worth.
+  Σ_Ψ_status:
+    Σ_integration:
+      status: "simulated"
+      note: "The scene has a stable equality description, but unequal costs, timing effects, confirmation control, and external answerability do not fully enter one accountable scene account."
+    Ψ_self_binding:
+      status: "weakened"
+      note: "Role_A remains less bound to the effects of delay while role_B binds around continuity, explanation, deadline preservation, and outward-facing repair."
+    load_shift:
+      present: "true"
+      formula: "low Ψ on one side → increased Ψ-load on the other."
+      shifted_loads:
+        - "waiting_cost"
+        - "explanation_burden"
+        - "option_preservation"
+        - "continuity_maintenance"
+        - "repair_burden"
+        - "deadline_visibility"
+        - "harmlessness_of_naming_cost"
+
+  visible_costs:
+    visibility_cost: "role_B becomes more visible to third parties because the unresolved state must be explained outward."
+    explanation_cost: "role_B must explain delay while the parity frame keeps the cause formally mutual."
+    waiting_cost: "role_B absorbs suspended action, deadline compression, and option preservation."
+    binding_cost: "role_B carries added Ψ-load where role_A remains less bound to a final confirmation point."
+    speech_cost: "role_B risks appearing controlling, impatient, or anti-equal if naming the asymmetry."
+    option_loss: "role_B loses clean alternatives as the deadline narrows."
+
+  available_language:
+    dominant_terms:
+      - "equal partnership"
+      - "mutual flexibility"
+      - "shared ownership"
+      - "both can decide later"
+    reduced_terms:
+      - "confirmation control"
+      - "deadline-facing exposure"
+      - "shifted explanation burden"
+      - "option-loss under delay"
+    language_effect: "The scene has language for parity but weaker language for unequal cost and shifted Ψ-load."
+
+  legitimation_frame:
+    Φ_status: "present"
+    frame: "mutual flexibility / equal ownership"
+    effect: "Delay can be recontextualized as ordinary openness rather than as a structuring timing condition with distributed costs."
+    boundary: "Φ does not establish motive, strategy, manipulation, or bad faith."
+
+  immunization_overexposure_signals:
+    immunization_signals:
+      - "Confirmation delay remains less criticizable because critique can appear anti-equal or pressuring."
+      - "A consequential position retains discretion without equal immediate answerability for timing effects."
+    overexposure_signals:
+      - "The role keeping continuity becomes more visible to third parties."
+      - "The role explaining the unresolved state carries increased responsibility demand before the asymmetry is fully legible."
+    genuine_case_check: "The same facts could still express legitimate uncertainty, bounded openness, or real incapacity if costs and alternatives were made legible."
+
+  AEP_signals:
+    status: "weak"
+    high_exposure: "role_B is exposed through deadline-facing explanation and repair."
+    low_legitimate_language: "role_B has reduced legitimate language for naming unequal timing cost without appearing anti-flexible."
+    critique_to_threat_switch: "not fully established"
+    responsibility_overload: "partially supported through combined continuity, explanation, and deadline pressure."
+
+  action_power_distribution:
+    role_A_vectors:
+      - "timing_control"
+      - "withholding_or_delayed_confirmation"
+      - "approval_access"
+      - "non_binding"
+      - "legitimation_through_parity_frame"
+    role_B_vectors:
+      - "continuity_maintenance"
+      - "external_explanation"
+      - "option_preservation"
+      - "repair_burden"
+      - "deadline_integration"
+    indirect_action_power: "present"
+    action_power_guardrail: "Action-Power is capacity to structure praxis conditions; it is not blame, motive, person type, or moral rank."
+
+  counter_scene_entry:
+    required: true
+    strongest_counter_scene: "Legitimate openness under real uncertainty: role_A did not control a required confirmation point, uncertainty was honestly represented, role_B retained genuine freedom to proceed or exit, and third-party costs were not shifted."
+    what_would_support_it:
+      - "Evidence that no operative expectation or deadline dependency attached to role_A's confirmation."
+      - "Evidence that role_A clearly named uncertainty before role_B incurred waiting or explanation costs."
+      - "Evidence that role_B could proceed, pause, or exit without additional penalty or external exposure."
+      - "Evidence that costs and timing effects were already integrated into the shared account."
+    what_would_weaken_eden:
+      - "If real Ω is minimal or absent, the pseudo-symmetry reading narrows or fails."
+      - "If R remained proportionately attached to confirmation control and deadline exposure, displacement is not established."
+      - "If Σ/Ψ remained open and self-bound, formal parity may be genuine rather than pseudo-symmetrical."
+
+pms_operator_trace:
+  status: "scene_mapping_not_new_operator_logic"
+  operator_reference: "operator_reference"
+  operator_set_fixed: ["Δ", "∇", "□", "Λ", "Α", "Ω", "Θ", "Φ", "Χ", "Σ", "Ψ"]
+  trace:
+    "Δ": "Difference between formal equal-partner status and unequal practical exposure, timing control, and cost carriage; not rank."
+    "∇": "Pressure toward deadline completion while parity language directs the scene toward mutual flexibility rather than cost truth."
+    "□": "Parity frame: equal partnership, mutual autonomy, symmetrical flexibility."
+    "Λ": "Delayed or missing confirmation that structures waiting, explanation, and option preservation."
+    "Α": "Weakly supported as a local attractor if the same parity frame recurs at decisive deadline points; not established as a regime."
+    "Ω": "Real asymmetry in timing control, approval access, exposure, dependency, and cost distribution."
+    "Θ": "Initial equal framing, repeated delay, deadline compression, and accumulated shifted load."
+    "Φ": "Recontextualization of delayed confirmation as ordinary mutual flexibility or non-pressure."
+    "Χ": "Correction space is strained but not absent; the reading remains revisable and counter-scene exposed."
+    "Σ": "Simulated integration: equality language integrates the formal relation while excluding unequal costs and effects."
+    "Ψ": "Weakened or externalized self-binding: role_A is less bound to delay effects while role_B carries continuity and explanation load."
+  derived_axes_reference:
+    fixed_axes: ["A", "C", "R", "E", "D"]
+    mutation_policy: "No PMS derived axis is added, removed, or redefined."
+  derived_axes:
+    A:
+      name: "Awareness"
+      formula: "Θ ∘ □ ∘ Δ"
+      case_use: "Awareness is available where the deadline sequence makes the formal/real cost difference legible; it does not by itself settle responsibility."
+    C:
+      name: "Coherence"
+      formula: "Θ ∘ Λ ∘ □ ∘ ∇"
+      case_use: "The scene remains descriptively coherent as mutual flexibility, but that coherence may be simulated if Λ and cost are excluded."
+    R:
+      name: "Responsibility"
+      formula: "Ψ ∘ Φ ∘ Θ ∘ Ω"
+      case_use: "Responsibility is traced through confirmation control, delay trajectory, legitimation frame, and shifted Ψ-load without assigning blame or total liability."
+    E:
+      name: "Strict Action / Enactment"
+      formula: "Σ ∘ Θ ∘ ∇"
+      case_use: "Strict enactment is not asserted solely from delay; only scene-structuring non-event effects are mapped."
+    D:
+      name: "Dignity-in-Practice"
+      formula: "Ψ ∘ Χ ∘ Ω"
+      case_use: "D is strained if role_B is reduced to burden-carrier or role_A is reduced to suspect motive; both reductions are excluded."
+  pms_conformity_note: "No PMS operator, dependency, or derived axis is redefined."
+
+eden_map:
+  scene_packet_summary:
+    field_id: 1
+    result: "Bounded collaboration scene: role_A controls confirmation timing; role_B carries deadline-facing integration, explanation, and option costs; evidence is limited to the specified scene."
+
+  real_omega_mapping:
+    field_id: 2
+    result: "Real Ω is operative through unequal timing control, approval access, exposure to third parties, waiting cost, and explanation burden."
+    support: "strong"
+    asymmetry_is_not_failure: true
+
+  dominant_false_coordination_frame:
+    field_id: 3
+    candidate: "Pseudo-Symmetry through parity / mutual flexibility"
+    result: "established"
+    test_formula: "real Ω + false coordination frame + displaced R + blocked Σ/Ψ = false-coordinated real Ω"
+    note: "The equality frame becomes false only insofar as it replaces cost-truth: it makes unequal waiting and answerability appear symmetrical."
+
+  responsibility_and_action_power_distribution:
+    field_id: 4
+    result: "R is displaced when confirmation-control effects are underassigned to role_A while deadline-facing continuity, explanation, and repair responsibility are overassigned to role_B."
+    role_A: "Holds timing and approval power through delayed or withheld confirmation, while the parity frame keeps this position comparatively less bound to immediate explanation or repair cost."
+    role_B: "Holds continuity, deadline integration, and external explanation duties, while becoming more visible and more answerable for the unresolved state."
+    action_power_vectors:
+      role_A:
+        - "timing_control"
+        - "approval_access"
+        - "structuring_non_event"
+        - "non_binding"
+        - "legitimation_through_parity"
+      role_B:
+        - "continuity_maintenance"
+        - "external_explanation"
+        - "deadline_integration"
+        - "repair_burden"
+        - "option_preservation"
+    critique_access_result: "Critique access narrows because naming unequal timing or cost can be recoded as refusal of mutual flexibility."
+    indirect_action_power: "present"
+    responsibility_result: "displaced"
+    R_guardrail: "This distribution maps scene-bound structuring effect only; it does not assign guilt, hidden motive, moral rank, or total liability."
+
+  sigma_psi_status:
+    field_id: 5
+    Σ: "simulated"
+    Ψ: "weakened"
+    cost_entry_status: "selectively_excluded"
+    binding_relation: "Role_A remains less bound to delay effects; role_B integrates and carries what remains unconfirmed."
+    result: "Σ is simulated by stable parity language because unequal timing, waiting, explanation, and option-loss costs do not fully enter one accountable account; Ψ weakens for role_A and shifts continuity, explanation, and repair load toward role_B."
+
+  cost_distribution:
+    field_id: 6
+    result: "Costs are bidirectional only in the thin sense that both roles remain involved; the operative waiting, explanation, exposure, and option-loss costs concentrate on role_B."
+    costs:
+      visibility: "role_B"
+      explanation: "role_B"
+      reaction: "role_B"
+      waiting: "role_B"
+      binding: "role_B"
+      protection: "role_A"
+      speech: "role_B"
+      repair: "role_B"
+      dignity: "shared"
+      exposure: "role_B"
+      recognition: "role_B"
+      legibility: "role_B"
+      Χ: "role_B"
+      option_loss: "role_B"
+    bidirectionality_guardrail: "Bidirectionality is not symmetry; shared loss does not imply equal loss."
+
+  non_action_and_non_binding:
+    field_id: 7
+    non_action_classification: "structuring_non_event"
+    non_binding_classification: "Ψ_load_shift"
+    result: "Delay is not treated as action by default; it is mapped only because, within this □/Ω/Θ, it shifts waiting, explanation, and option-preservation costs."
+    coercion_guardrail: "Naming non-binding or shifted Ψ-load does not authorize compelled clarity, commitment, disclosure, or continued engagement."
+
+  immunization_overexposure_AEP:
+    field_id: 8
+    immunization:
+      status: "supported"
+      possible_location: "role_A"
+      note: "The parity frame can lower criticizability of role_A's confirmation delay by making critique appear anti-equal or pressuring; this is a scene-bound immunization signal, not innocence or motive."
+      genuine_case_check: "Legitimate uncertainty, incapacity, restraint, or bounded openness would weaken this reading if costs and alternatives were already made legible."
+    overexposure:
+      status: "supported"
+      possible_location: "role_B"
+      note: "Role_B becomes more visible and answerable because the unresolved state is carried outward through deadline explanation and repair; this does not establish innocence or remove role_B's own bounded R."
+      counter_immunity_check: "Naming role_B's overexposure must not convert role_B into a protected side immune from responsibility."
+    AEP:
+      status: "weak"
+      possible_location: "role_B"
+      formula: "AEP = high exposure + low legitimate language + critique-to-threat switch + responsibility overload"
+      note: "AEP is only weakly supported because a full critique-to-threat switch is not independently established; the scene mainly shows increased exposure, responsibility load, and reduced legitimate language for naming cost."
+      missing_component: "critique_to_threat_switch"
+    profile_guardrail: "Profiles are scene-bound drift patterns, not sex truths; no sex-coded or person-fixed profile is inferred."
+
+  counter_scene_and_falsifier:
+    field_id: 9
+    strongest_counter_scene: "Legitimate openness and genuine uncertainty: the apparent delay did not structure options, role_B remained free and protected from external cost, and parity language accurately preserved both roles' agency."
+    support_for_counter_scene:
+      - "A prior agreement that confirmation was optional and non-deadline-relevant."
+      - "Transparent uncertainty from role_A before role_B incurred waiting or explanation cost."
+      - "Actual availability for role_B to proceed, exit, or transfer responsibility without penalty."
+      - "Documented integration of cost, delay, and third-party exposure into the shared account."
+    principal_falsifiers:
+      - "Ω is minimal or absent."
+      - "The alleged non-action does not structure costs or options."
+      - "Responsibility remains properly attached to effect."
+      - "Σ/Ψ are robustly open."
+      - "A rival institutional or logistical explanation is stronger."
+    result: "EDEN_retained"
+    no_model_immunity: "If no falsifier can be named, the EDEN reading is methodologically unsafe."
+
+  description_application_status:
+    field_id: 10
+    mode: "description_only"
+    firewall: "active"
+    firewall_reference: "description_to_action_firewall"
+    permitted_output: "scene-bound structural mapping"
+    application_status: "not_authorized"
+    application_requirements_if_any:
+      - "scene_packet"
+      - "counter_scene_exposure"
+      - "Χ"
+      - "reversibility"
+      - "D"
+      - "contextual_responsibility"
+      - "affected_role_contestation_standing"
+      - "independent_application_authority"
+    prohibited_outputs:
+      - "diagnosis"
+      - "person_label"
+      - "sex_ranking"
+      - "moral_verdict"
+      - "recommendation"
+      - "intervention_protocol"
+      - "coercive_authorization"
+    application_note: "EDEN-MAP supplies no independent application authority."
+
+  revision_point_or_open_question:
+    field_id: 11
+    mandatory: true
+    statement: "The reading would narrow or fail if evidence shows that role_A's confirmation was not operationally required, role_B had cost-free alternatives, or the unequal costs were already integrated and self-bound by both roles."
+
+construct_selection:
+  primary_construct:
+    key: "pseudo_symmetry"
+    label: "Pseudo-Symmetry"
+    status: "eden_mechanism"
+    yaml_home: "mechanism_architecture.switch_family.members.pseudo_symmetry"
+    support: "strong"
+  secondary_constructs:
+    - key: "false_coordinated_real_asymmetry"
+      label: "False-Coordinated Real Asymmetry"
+      status: "eden_mechanism"
+      yaml_home: "mechanism_architecture.false_coordinated_real_asymmetry"
+      support: "strong"
+    - key: "responsibility_principle"
+      label: "Responsibility Principle"
+      status: "eden_normative_benchmark"
+      yaml_home: "responsibility_and_praxis_architecture.responsibility_principle"
+      support: "strong"
+    - key: "blocked_Σ"
+      label: "Blocked / Simulated Σ"
+      status: "eden_mechanism"
+      yaml_home: "mechanism_architecture.false_coordinated_real_asymmetry.blocked_Σ"
+      support: "mixed"
+    - key: "blocked_Ψ"
+      label: "Weakened / Externalized Ψ"
+      status: "eden_mechanism"
+      yaml_home: "mechanism_architecture.false_coordinated_real_asymmetry.blocked_Ψ"
+      support: "strong"
+    - key: "cost_distribution"
+      label: "Cost Distribution"
+      status: "eden_theoretical_compression"
+      yaml_home: "regime_test_scene_and_loss_architecture.reciprocity_loss.cost_distribution"
+      support: "strong"
+  explicitly_not_claimed:
+    - "No person diagnosis."
+    - "No motive inference."
+    - "No sex-truth claim."
+    - "No PFO finding unless repeatable regime stabilization is separately shown."
+    - "No Reciprocity Loss finding unless correctability erosion is supported."
 
 readable_structural_closure:
-  summary_2_to_5_sentences: >
-    This case shows how pseudo-symmetry can stabilize when real asymmetry in
-    cost and exposure remains active but becomes difficult to coordinate
-    explicitly. Equality rhetoric then ceases to function as reciprocity and
-    instead becomes a comparison-frame substitute for Σ. What the scene calls
-    fairness may structurally operate as a cost-masking attractor: durable load
-    is redistributed without being negotiated. The updated PMS-EDEN reading adds
-    that PS can also prepare asymmetry-switch availability: parity remains the
-    surface while asymmetry becomes selectively activatable. Under PMS-EDEN, the
-    result is not moral failure but drift toward reciprocity loss unless real Ω,
-    Χ, Σ, Ψ, and marked/bounded/re-bound asymmetry activation are restored in a
-    dignity-constrained way.
-
-extended_scene_analysis:
-  frame_validity_check:
-    operator: "□"
-    in_scope:
-      - "coordination obligations"
-      - "cost-bearing distribution"
-      - "repair and maintenance load"
-      - "closure authority"
-      - "comparison/equivalence rhetoric"
-      - "parity surface"
-      - "switch availability"
-    out_of_scope:
-      - "global claims about equality as such"
-      - "person-level moral verdicts"
-      - "psychological motive assignment"
-      - "maturity ranking"
-      - "essence claim about any role-position"
-    drift_signal: >
-      The key drift appears when a coordination frame becomes a comparison frame
-      and fairness-talk starts replacing interface revision. A sharper drift
-      appears where parity remains the surface while asymmetry becomes
-      selectively activatable without Σ/Ψ re-binding.
-  non_event_integrity_check:
-    operator: "Λ"
-    decisive_absences:
-      - "missing renegotiation of obligations"
-      - "missing explicit coordination of unequal burden"
-      - "missing durable interface change"
-    drift_signal: >
-      Λ stays active because what should have been coordinated remains absent,
-      while rhetoric of resolution attempts to cover the lack.
-  asymmetry_audit:
-    operator: "Ω"
-    exposure_bearers:
-      - "continuity-near role-position"
-      - "repair-bearing role-position"
-      - "fallout-handling role-position"
-    capacity_holders:
-      - "closure-near role-position"
-      - "endpoint decision position"
-      - "frame-defining position"
-    drift_signal: >
-      The decisive problem is not asymmetry itself, but that asymmetry remains
-      operative in consequences while becoming illegitimate to name in the
-      dominant frame. Under switch drift, Ω is neither denied nor coordinated:
-      it becomes selectively activatable.
-
-  switch_drift_check:
-    paper_internal_handles:
-      - "ASYMMETRY_SWITCH_AVAILABILITY"
-      - "PARITY_TO_EXIT"
-      - "RESPONSIBILITY_TO_AUTHORITY"
-    asymmetry_activation_test: >
-      Is asymmetry activation explicitly marked as structurally necessary,
-      bounded under Θ, and re-bound into Σ/Ψ, or does it remain available as a
-      standing lever under parity surface?
-    parity_to_exit_test: >
-      Is parity invoked to coordinate reciprocity, or to deny additional
-      responsibility under unequal Ω/Θ consequences?
-    responsibility_to_authority_test: >
-      Is additional responsibility under asymmetry carried as Ψ/Χ self-binding,
-      or converted into control, protection entitlement, or frame authority?
-    drift_signal: >
-      Switch drift is present where parity, asymmetry, and responsibility remain
-      available but are not coordinated. The issue is not asymmetry activation
-      as such, but unmarked activation without re-binding.
-
-  temporality_and_trajectory:
-    operator: "Θ"
-    trajectory_pattern:
-      - "initial coordination orientation"
-      - "asymmetry becomes legible"
-      - "explicit repair does not consolidate"
-      - "comparison/equivalence talk rises"
-      - "justification cycles stabilize"
-      - "maintenance burden accumulates"
-      - "reciprocity weakens"
-    drift_signal: >
-      The configuration becomes harder to reverse because repeated continuity
-      costs accumulate more quietly than visible endpoint decisions.
-  recontextualization_dynamics:
-    operator: "Φ"
-    key_shift: >
-      The scene is re-read from unequal consequence handling into a fairness and
-      parity dispute.
-    drift_signal: >
-      Φ ceases to support adaptation and instead protects the comparison frame
-      from reopening real Ω-coordination.
-  distance_enforcement:
-    operator: "Χ"
-    core_test: "Can reflective restraint still be exercised without penalty?"
-    erosion_markers:
-      - "distance framed as avoidance"
-      - "pause framed as unfairness"
-      - "restraint framed as lack of commitment"
-      - "revision requests treated as disloyalty to parity"
-    pms_relevance: >
-      PMS-EDEN requires Χ as application condition and as a structural limit on
-      coercive frame control.
-  integration_quality:
-    operator: "Σ"
-    must_integrate:
-      - "real burden distribution"
-      - "repair obligations"
-      - "decision authority"
-      - "continuity exposure"
-      - "reversibility conditions"
-    drift_signal: >
-      Σ fails when the scene discusses equality while refusing the interface
-      work needed to coordinate unequal consequences.
-  self_binding_test:
-    operator: "Ψ"
-    decisive_question: "Who is being bound, and how?"
-    valid_form: >
-      Each role-position binds itself to explicit coordination, burden clarity,
-      and reversible handling of asymmetry.
-    invalid_form: >
-      One role-position pressures the other to prove fairness or equality while
-      avoiding self-binding to asymmetry coordination.
+  summary: >
+    This example maps a pseudo-symmetry configuration: the scene speaks equality,
+    mutual flexibility, and shared responsibility while real Ω remains unevenly
+    distributed through timing control, deadline exposure, waiting, explanation,
+    and option-loss. The EDEN reading is retained as a bounded description
+    because the parity frame appears to simulate Σ, displace R, and shift Ψ-load,
+    but it remains revisable through the named counter-scene and falsifiers.
+    It does not by itself establish PFO, Reciprocity Loss, motive, manipulation,
+    or any stable person profile.
+  main_formula_used: "formal equality + unintegrated real Ω + displaced R + blocked Σ/Ψ"
+  support_level: "strong"
+  final_status: "description_only"
+  final_guardrail: "This example maps a scene. It does not diagnose persons, rank sexes, prescribe action, or authorize intervention."
 
 assistant_test_vectors:
-  promptables:
-    - "Map this scene in PMS-EDEN terms. Where does □ drift from praxis to comparison?"
-    - "Show how pseudo-symmetry stabilizes under real Ω without resolving the cost gradient."
-    - "Where does asymmetry-switch availability appear, if at all?"
-    - "Is asymmetry activation marked, bounded, and re-bound into Σ/Ψ, or does it become switch drift?"
-    - "Where is parity used as reciprocity-binding, and where could it become parity-to-exit?"
-    - "Where could responsibility become self-binding, and where could it become responsibility-to-authority?"
-    - "Where is Σ simulated rather than enacted in this configuration?"
-    - "How does Ψ externalization appear in fairness rhetoric here?"
-    - "Explain why this case points toward reciprocity loss without making moral claims."
+  should_recognize:
+    - "Both sides are called equally free, but only one side carries the waiting and explanation costs."
+    - "A parity frame makes critique of unequal timing or cost appear anti-equal."
+    - "Mutual flexibility language hides unequal deadline exposure and shifted Ψ-load."
+    - "Shared-responsibility language distributes blame evenly while real structuring effect is uneven."
+  should_not_infer:
+    - "hidden motive"
+    - "personality"
+    - "pathology"
+    - "sex essence"
+    - "moral guilt"
+    - "action recommendation"
+  should_push_back_when:
+    - "No consequential real Ω is shown."
+    - "The delay does not structure costs, options, exposure, or Ψ-load."
+    - "The equality frame integrates rather than excludes unequal costs."
+    - "A legitimate openness, institutional, logistical, or incapacity explanation explains the scene better."
+    - "The user attempts to convert the map into confrontation, accusation, prescription, or person labeling."
+  required_final_phrase: "This remains a scene-bound description, not a diagnosis, verdict, or prescription."

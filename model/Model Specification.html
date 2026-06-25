@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>PMS-EDEN – Model Specification</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PMS-EDEN — Model Specification</title>
     <style>
       :root {
         --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -189,1040 +189,582 @@
         }
       }
     </style>
-  </head>
-  <body>
-    <div class="page">
-      <header>
-        <h1>PMS-EDEN – Model Specification</h1>
-        <div class="subtitle">
-          A PMS-conform application profile (overlay) for structural drift in praxis:
-          Eden → threshold → NRK → comparison-frame dominance → pseudo-symmetry →
-          asymmetry-switch availability → PFO / permanentized exception →
-          parity-to-exit / responsibility-to-authority → residual stabilization
-          (Λ/Φ/Α) → devaluation/humiliation → reciprocity loss, with strict
-          separation between descriptive mapping and PMS-valid binding application
-          (Χ + reversibility + D). No person-typing, diagnosis, ideology attribution,
-          maturity ranking, or how-to guidance.
-        </div>
-        <div class="meta">
-          Version: <span class="code-inline">PMS-EDEN_1.2</span> &middot;
-          Spec basis: <span class="code-inline">PMS-EDEN.yaml</span><br />
-          Author: T. Zöller &middot; Formalisation assistance: ChatGPT (GPT-5.4 Thinking)<br />
-          Language: EN &middot; Status: Model spec (aligned with <span class="code-inline">schema_meta.status = "draft"</span>)<br />
-          Last updated: <span class="code-inline">2026-05-24</span><br />
-          Depends on: <span class="code-inline">PMS.yaml</span> (<span class="code-inline">schema_version = "PMS_1.3"</span>)<br />
-          Repo: <span class="code-inline">https://github.com/tz-dev/PMS-EDEN</span>
-        </div>
-      </header>
-
-      <!-- 1. Purpose & scope -->
-      <section id="purpose-scope">
-        <h2>1. Purpose and scope of this specification</h2>
-
-        <p>
-          This document specifies the <em>PMS-EDEN</em> layer in a concise, technical form.
-          It is based on the YAML profile <span class="code-inline">PMS-EDEN.yaml</span>
-          (with <span class="code-inline">schema_version = "PMS-EDEN_1.2"</span>)
-          and renders its structure, constraints, and semantics explicit for human readers
-          and computational systems.
-        </p>
-
-        <p>
-          PMS-EDEN is an <strong>application profile</strong> (overlay) of the
-          Praxeological Meta-Structure (PMS; Δ–Ψ). It does <strong>not</strong> redefine PMS
-          operators, dependencies, layers, or derived axes. Instead, it formalizes an
-          <strong>Eden drift lens</strong>: a structurally minimal grammar for how a praxis
-          configuration can drift into comparison governance, pseudo-symmetry,
-          asymmetry-switch availability, permanentized exception, responsibility displacement,
-          residual stabilization, devaluation or humiliation, and reciprocity loss—read
-          strictly as operator configurations (Δ–Ψ) under asymmetry (Ω), temporality (Θ),
-          distance (Χ), integration (Σ), and self-binding (Ψ).
-        </p>
-
-        <p>
-          All PMS-EDEN labels remain <strong>paper-internal, descriptive, scene-bound,
-          revisable, and non-totalizing</strong>. They are not PMS operators, not diagnoses,
-          not ideology labels, not person categories, not essence claims, and not authority
-          claims.
-        </p>
-
-        <p>The specification covers, in particular:</p>
-        <ul>
-          <li>the <strong>schema_meta</strong> block (identity, status, authorship, dependency on PMS_1.3, authoritative source-paper role);</li>
-          <li>the <strong>validity_gate</strong> enforcing Χ (Distance), reversibility, and D (Dignity-in-Practice) for PMS-valid application only;</li>
-          <li><strong>paper-internal terms</strong> from §0.7: asymmetry switch, permanentized exception switch, parity-to-exit, and responsibility-to-authority;</li>
-          <li><strong>paper constructs</strong> (NRK, PS, PFO, reciprocity, devaluation, humiliation, adult reciprocity as non-externalization) as non-operators;</li>
-          <li><strong>reduced_signatures</strong> and the <strong>drift_catalogue</strong>, including the updated master trace with explicit switch drift and residual stabilization;</li>
-          <li><strong>viability</strong> as paper-bound cost/coordination readout under PMS criteria as used in this paper;</li>
-          <li><strong>EDEN-MAP</strong> as scene-bound mapping protocol with Q1–Q7, including switch-drift scan and diagnostics-to-action firewall;</li>
-          <li><strong>pattern_library</strong> with pattern-status clarification and paper-internal composite discipline;</li>
-          <li><strong>glossary handles</strong> (stable refs; canonical text remains in the paper);</li>
-          <li><strong>alternative explanations</strong> (methodological discipline box; sufficiency, no ranking, including AE4 external institutional stress);</li>
-          <li><strong>boundary conditions</strong> (scope discipline, rival-framework openness, genuine non-capture, strongest-applicability summary);</li>
-          <li><strong>appendix positioning</strong> (adjacent frameworks, non-goals, classification risk controls, theory-adjacent stance);</li>
-          <li><strong>example-suite schema</strong> (repo vignettes; scene-bound, non-instructional, dignity-preserving, switch-drift-aware).</li>
-        </ul>
-
-        <div class="box">
-          <div class="box-title">
-            <span>Core idea</span> <span class="pill">drift as operator-carriage</span>
-          </div>
-          <p class="small">
-            PMS-EDEN treats “Eden” as a minimal structural testbed: a praxis-first scene where drift becomes legible by tracking
-            what operators carry, fail to carry, displace, or simulate. The overlay’s job is to keep the analysis structural,
-            scene-bound, auditable, revisable, rival-framing-open, and dignity-preserving while making switch drift, cost geometry,
-            and reciprocity loss inspectable.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 2. High-level YAML structure -->
-      <section id="structure">
-        <h2>2. High-level structure of the YAML model</h2>
-
-        <h3>2.1 Top-level keys (conceptual map)</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Key</th>
-              <th>Description</th>
-              <th>Role in the model</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="code-inline">schema_version</span></td>
-              <td>Version identifier (<span class="code-inline">"PMS-EDEN_1.2"</span>).</td>
-              <td>Compatibility and citation</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">schema_meta</span></td>
-              <td>Model identity, authors, status, dependency on PMS_1.3, repo references, source-paper metadata.</td>
-              <td>Meta-information / inheritance statement</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">abbrev_legend</span></td>
-              <td>Named abbreviations and paper-internal label discipline, including AS, PES, PTE, RTA, PS, PFO, NRK, and EDEN-MAP.</td>
-              <td>Terminology normalization</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">validity_gate</span></td>
-              <td>Application-only validity clause: Χ + reversibility + D.</td>
-              <td>Formal application firewall</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">operator_reference</span></td>
-              <td>Canonical PMS operator source, fixed set, and dependency hygiene note.</td>
-              <td>PMS conformance anchor</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">references</span></td>
-              <td>Repository and model references.</td>
-              <td>Traceability / linking</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">paper_frontmatter_min</span></td>
-              <td>Load-bearing claims, PMS conformance, ACRED references, minimal paper terms.</td>
-              <td>Frontmatter compression layer</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">paper_internal_terms_index</span></td>
-              <td>Stable §0.7 handles for asymmetry switch, permanentized exception switch, parity-to-exit, and responsibility-to-authority.</td>
-              <td>Update-specific term discipline</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">overlays</span></td>
-              <td>Reserved overlay namespace; currently empty in the profile.</td>
-              <td>Future-safe structural namespace</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">paper_constructs</span></td>
-              <td>Paper-internal constructs (EDEN, threshold, breach, fig leaves, NRK, PS, AS, PES, PTE, RTA, PFO, reciprocity, devaluation, humiliation) as non-operators.</td>
-              <td>Structural construct layer</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">reduced_signatures</span></td>
-              <td>Reduced operator-readable signatures, compact traces, viability proposals.</td>
-              <td>Orientation and shorthand layer</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">drift_catalogue</span></td>
-              <td>Consolidated corridors, regimes, and chapter-level drift handles, including updated master trace and switch drift branches.</td>
-              <td>Drift legibility layer</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">pattern_library</span></td>
-              <td>Paper-internal composites with C5 pattern discipline and revisability notes.</td>
-              <td>Portable recognition layer</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">viability</span></td>
-              <td>Minimal viability/cost windows; structural cost marker 16.25.</td>
-              <td>Cost-bearing coordination discipline</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">eden_map</span></td>
-              <td>Scene-bound mapping protocol: cartographic status, scene packet, Q1–Q7, synthesis, firewall.</td>
-              <td>Operational method scaffold</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">glossary_index</span></td>
-              <td>Stable paper-internal handles/refs for glossary entries; avoids duplicating full paper text.</td>
-              <td>Terminology discipline + retrieval keys</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">alternative_explanations</span></td>
-              <td>Methodological discipline: multiple sufficient generators; no ranking; includes AE4 external institutional stress.</td>
-              <td>Anti-overclaim guard</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">boundary_conditions</span></td>
-              <td>Conditions where drift weakens, changes, or rival frameworks/non-capture limit applicability.</td>
-              <td>Scope discipline</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">appendices</span></td>
-              <td>Positioning layer: adjacent frameworks, non-goals, classification risk controls.</td>
-              <td>Repository-facing interpretability</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">example_suite_schema</span></td>
-              <td>Repo vignette blocks: minimal scene, mapping, costs, pattern markers, switch-drift markers, gate reminder, closure.</td>
-              <td>Example library format</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">paper_structure_map</span></td>
-              <td>Coverage index for complete paper-to-YAML section mapping.</td>
-              <td>Coverage / auditability layer</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">
-            <span>Conceptual separation</span> <span class="pill">PMS vs PMS-EDEN</span>
-          </div>
-          <p class="small">
-            PMS defines the operator grammar (Δ–Ψ) and derived axes (A, C, R, E, D).
-            PMS-EDEN defines a drift-reading discipline: Eden sequences, frames, non-events, regimes, switch availability,
-            costs, reciprocity loss, and mapping protocol—without introducing new operators, new axioms, or person-level explanations.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 3. Validity gate -->
-      <section id="validity">
-        <h2>3. Validity gate and scope constraints</h2>
-
-        <h3>3.1 PMS-valid application gate</h3>
-        <ul>
-          <li><strong>Χ (Distance):</strong> maintain meta-position and reflective stop-capability; no fusion into verdict, urgency, enforcement, role, accusation, or person-level attribution.</li>
-          <li><strong>Reversibility:</strong> all readings remain scene-bound, revisable, non-final, and configuration-specific; no global person labels or irreversible interpretive capture.</li>
-          <li><strong>D (Dignity-in-Practice):</strong> no shaming, ranking, humiliation, diagnosis, maturity hierarchy, dignity hierarchy, or ontological person evaluation; critique targets enacted structures and cost handling only.</li>
-        </ul>
-
-        <h3>3.2 Explicit non-goals (overlay discipline)</h3>
-        <ul>
-          <li>no clinical, therapeutic, or forensic use;</li>
-          <li>no personality typing, motive theory, or inner-state claims;</li>
-          <li>no prescriptive “how-to” or coercive action demands;</li>
-          <li>no moral ranking of persons; no ontological dignity judgments;</li>
-          <li>no ideology-based attribution: regimes are defined by operator behavior only;</li>
-          <li>no automatic extension into scenes better captured by rival frameworks or genuine non-capture cases;</li>
-          <li>no conversion of asymmetry switch into authority;</li>
-          <li>no use of parity-to-exit as reciprocity;</li>
-          <li>no use of responsibility-to-authority as care, protection, or adult responsibility.</li>
-        </ul>
-
-        <div class="box">
-          <div class="box-title">
-            <span>Key firewall</span> <span class="pill">description vs PMS-valid application</span>
-          </div>
-          <p class="small">
-            PMS-EDEN allows sharp descriptive mapping: operators, costs, drift signatures, switch handles, and regime configurations.
-            The moment the mapping is used to bind, obligate, prescribe, enforce, rank, diagnose, or authorize control, the validity gate is active.
-            Bypassing Χ, reversibility, or D makes the move formally invalid as PMS application—even if the descriptive analysis is accurate.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 4. PMS-EDEN as structural configuration -->
-      <section id="eden-core">
-        <h2>4. PMS-EDEN as a structural configuration (spine, master trace, regimes)</h2>
-
-        <h3>4.1 Canonical PMS spine (orientation)</h3>
-        <div class="box small">
-          <span class="code-inline">Δ → ∇ → □ → Λ → Α → Ω → Θ → Φ → Χ → Σ → Ψ</span>
-        </div>
-
-        <h3>4.2 Master trace (Eden drift corridor)</h3>
-        <div class="box">
-          <div class="box-title">Core corridor (operator-readable; non-moral)</div>
-          <p class="small">
-            <span class="code-inline">Eden → Threshold → NRK → □comparison → PS → ASYMMETRY_SWITCH_AVAILABILITY → PFO/PERMANENTIZED_EXCEPTION → (PARITY_TO_EXIT | RESPONSIBILITY_TO_AUTHORITY) → residual_stabilization(Λ/Φ/Α) → (DEVALUATION | HUMILIATION) → RECIPROCITY_LOSS</span>
-            <br />
-            PMS-EDEN treats this as a repeatable structural corridor within this reconstruction: a sequence that can stabilize as scripts (Α),
-            especially when Ω becomes legible in consequences but illegible in speech under the dominant □. Switch availability and residual
-            stabilization (Λ/Φ/Α) are kept explicit rather than compressed away.
-          </p>
-        </div>
-
-        <h3>4.3 Paper-internal composites (non-operators)</h3>
-        <div class="grid">
-          <div class="box">
-            <div class="box-title">NRK (Negative Responsibility Kernel)</div>
-            <p class="small">
-              Breach-type label: enactment occurs while awareness options are available, yet Σ/Ψ do not carry the enactment.
-              NRK is a paper-internal composite descriptor, not a PMS operator.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">PS (Pseudo-Symmetry)</div>
-            <p class="small">
-              Rhetorical equality inside a comparison-dominant □ under real Ω in consequences,
-              with Σ blocked or simulated and Ψ misbound to appearance-management. In the updated profile,
-              PS also prepares switch availability when parity remains the surface grammar while Ω becomes selectively activatable.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">AS / Asymmetry switch</div>
-            <p class="small">
-              Paper-internal label for the shift from parity claim to asymmetry activation under real or invoked Ω/Θ pressure.
-              Valid only where activation is marked, bounded, and re-bound into Σ/Ψ; drifting where unmarked, repeatable,
-              and responsibility-shifting.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">PES / Permanentized exception switch</div>
-            <p class="small">
-              PFO drift form in which asymmetry activation ceases to be emergency-bound and becomes a standing lever while
-              parity remains rhetorically preserved and Σ/Ψ coordination remains blocked.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">PTE / Parity-to-exit</div>
-            <p class="small">
-              Drift pattern in which parity or symmetry language is used not to coordinate reciprocity, but to deny additional
-              responsibility under unequal Ω/Θ consequences.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">RTA / Responsibility-to-authority</div>
-            <p class="small">
-              Drift pattern in which required self-binding under asymmetry is converted into control, protection entitlement,
-              frame authority, or governance. Greater responsibility under asymmetry does not generate authority.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">PFO (Postfeminist Override / Over-steering)</div>
-            <p class="small">
-              Paper-internal regime label for a regime-level meta-frame: □ is configured as comparison metric + Ω-taboo +
-              permanentized exception-switch availability. Φ/Λ/Α stabilize while Σ is suppressed and Ψ is displaced or misbound.
-              Defined only by operator behavior; not ideological; not a group label.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">Humiliation / devaluation (structural use)</div>
-            <p class="small">
-              Paper-internal meaning: status regulation via devaluation as residual stabilization when explicit Ω-coordination
-              via Σ/Ψ is blocked. This is a structural consequence claim, not an intent, motive, trait, or moral verdict.
-            </p>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="box-title">Adult reciprocity principle</div>
-          <p class="small">
-            PMS-EDEN defines reciprocity as coordinated asymmetry, not symmetry:
-            <span class="code-inline">Σ under Ω, bound by Ψ across Θ, limited by Χ, constrained by D</span>.
-            Adult reciprocity does not require equal burdens; it requires non-externalization of unequal burdens.
-          </p>
-        </div>
-
-        <div class="box">
-          <div class="box-title">Non-promissory stance</div>
-          <p class="small">
-            PMS-EDEN is descriptive and criterial: it makes drift, switch mechanics, and cost geometry inspectable.
-            It does not offer optimization, therapy, instruction, or authority claims. Where “correction signatures” are mentioned,
-            they are viability descriptions only and remain subject to the validity gate.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 5. EDEN-MAP (method appendix) -->
-      <section id="eden-map">
-        <h2>5. EDEN-MAP (method appendix): scene-bound mapping protocol</h2>
-
-        <p>
-          EDEN-MAP is a structural mapping protocol for PMS-EDEN analyses. It identifies operator configurations
-          (Δ–Ψ) in a given scene <strong>without diagnosing persons</strong>. It is question-driven and includes a mandatory
-          diagnostics-to-action firewall.
-        </p>
-
-        <div class="box">
-          <div class="box-title">
-            <span>Cartographic status</span> <span class="pill">not a closed ontology</span>
-          </div>
-          <p class="small">
-            EDEN-MAP is not a closed ontology of relational breakdown. It is a
-            cartographic compression of the structural patterns reconstructed in PMS-EDEN.
-            Its purpose is to increase portability, comparability, and auditability,
-            not to claim that every relevant case is already exhausted by its map-space.
-          </p>
-          <p class="small">
-            The map remains revisable, scene-dependent in application, and open to rival framings and genuine non-capture.
-            The more portable the map becomes, the greater the risk that compression is mistaken for structural completeness.
-          </p>
-        </div>
-
-        <h3>5.1 Minimal unit: Scene Packet (15.2)</h3>
-        <div class="box small">
-          <div><strong>SceneID:</strong> <span class="code-inline">{Θwindow, □anchor, roles}</span></div>
-          <div class="hr"></div>
-          <div><strong>Trigger:</strong> <span class="code-inline">{Δ, ∇}</span> &middot; <strong>Λ candidates:</strong> <span class="code-inline">[...]</span></div>
-          <div class="hr"></div>
-          <div><strong>Realizations:</strong> <span class="code-inline">{observed, omissions, escalations}</span></div>
-          <div class="hr"></div>
-          <div><strong>E-check:</strong> <span class="code-inline">{E_present?, Σcarrier?, notes}</span> (discipline: realization ≠ E without Σ-carriage)</div>
-          <div class="hr"></div>
-          <div><strong>Α stabilizers:</strong> <span class="code-inline">[...]</span> &middot; <strong>Ω real:</strong> <span class="code-inline">{capacity, exposure, obligation, leverage}</span></div>
-          <div class="hr"></div>
-          <div><strong>Ψ map:</strong> <span class="code-inline">{declared, enacted, enforced, externalized}</span> (incl. Ψ→Other demands)</div>
-          <div class="hr"></div>
-          <div><strong>Switch map:</strong> <span class="code-inline">{asymmetry_activation, parity_to_exit, responsibility_to_authority, re_binding}</span></div>
-        </div>
-
-        <h3>5.2 Core questions Q1–Q7 (15.3)</h3>
-        <details open>
-          <summary>Q1 — Which frame (□) dominates?</summary>
-          <p class="small">
-            Identify the dominant relevance grammar (□praxis, □comparison, □moral, □security, □scarcity, □narrative, or hybrid).
-            Output: <span class="code-inline">□dominant = &lt;type/hybrid&gt;</span> + what is permitted, forbidden, speakable, or punishable.
-          </p>
-        </details>
-        <details>
-          <summary>Q2 — What asymmetry (Ω) is real, and how is it handled?</summary>
-          <p class="small">
-            Map gradients: capacity, exposure, obligation, leverage. Record whether Ω is nameable/coordinable, taboo, selectively activated,
-            weaponized, or unclear under □.
-            Output: <span class="code-inline">Ωreal = {capacity, exposure, obligation, leverage}</span> +
-            <span class="code-inline">Ω-handling = &lt;coordinated|taboo|selectively_activated|weaponized|unclear&gt;</span>.
-          </p>
-        </details>
-        <details>
-          <summary>Q3 — Which Λ is active and how is it handled?</summary>
-          <p class="small">
-            Identify the active non-event (reply/repair/recognition/coordination/commitment missing) and closure mode
-            (denial, minimization, moralization, displacement, pseudo-closure). Output:
-            <span class="code-inline">Λactive / Λhandling / Λremainder</span>.
-          </p>
-        </details>
-        <details>
-          <summary>Q4 — Where is Χ missing or instrumentalized?</summary>
-          <p class="small">
-            Identify where distance is absent or punished and where “distance” is used as control
-            (erasing Λ, avoiding Σ while keeping leverage, protecting a switch surface).
-            Output: <span class="code-inline">Χabsent / Χinstrumental / Χrestoration</span>.
-          </p>
-        </details>
-        <details>
-          <summary>Q5 — Where is Σ low, failed, suppressed, or simulated?</summary>
-          <p class="small">
-            Record integration status and blockers (□/Ω/Λ/Θ). Output:
-            <span class="code-inline">Σstatus / Σblockers / Σminimum</span>.
-          </p>
-        </details>
-        <details>
-          <summary>Q6 — Who self-binds (Ψ), and who externalizes binding (Ψ→Other)?</summary>
-          <p class="small">
-            Map declared vs enacted vs enforced binding; identify Ψ→Other demands.
-            Output: <span class="code-inline">Ψself / Ψexternal / Ψrepair</span>
-            (repair = shift from other-control to self-binding under D).
-          </p>
-        </details>
-        <details>
-          <summary>Q7 — Does switch drift appear?</summary>
-          <p class="small">
-            Test whether asymmetry activation is marked, bounded, and re-bound into Σ/Ψ, or whether drift appears as unmarked asymmetry activation,
-            parity-to-exit, or responsibility-to-authority. Output:
-            <span class="code-inline">switch_drift = {asymmetry_activation, parity_to_exit, responsibility_to_authority, re_binding}</span>.
-          </p>
-        </details>
-
-        <div class="pagebreak"></div>
-
-        <h3>5.3 One-page synthesis (15.4)</h3>
-        <div class="box">
-          <div class="box-title">Required synthesis fields</div>
-          <p class="small">
-            <span class="code-inline">Drift = □dominant → Λhandling → Αstabilizer → Ωmanagement/switch_drift → Σstatus → Ψpattern</span><br />
-            <span class="code-inline">Αprimary</span> (what repetition stabilizes the configuration)<br />
-            <span class="code-inline">Costs = {A, C, R, E, D}</span> (system costs; non-moral)<br />
-            <span class="code-inline">LowestCostCorrection = {Χstep, Λ→Σstep, switch_step, Ψshift}</span>
-            (descriptive viability signature; not a prescription)
-          </p>
-        </div>
-
-        <div class="box">
-          <div class="box-title">Switch step in synthesis</div>
-          <p class="small">
-            <span class="code-inline">switch_step</span> means: mark, bound, and re-bind asymmetry activation; block parity-to-exit and
-            responsibility-to-authority; preserve Χ, reversibility, and D. It is a viability signature, not an instruction or enforcement license.
-          </p>
-        </div>
-
-        <div class="box">
-          <div class="box-title">Mandatory firewall (15.5)</div>
-          <p class="small">
-            The restrictions in this section apply to PMS-valid application, not to all possible discourse about persons, scenes, or institutions.
-            EDEN-MAP is not a person-evaluation tool. It permits scene-bound structural mapping, drift-risk and cost geometry,
-            scene-bound switch-drift handles, and reversible dignity-preserving viability signatures. It forbids global person labels,
-            inner-state claims, clinical categories, coercive prescriptions justified by PMS vocabulary, or converting responsibility into authority
-            over another role-position.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 6. Glossary / terminology -->
-      <section id="glossary">
-        <h2>6. Terminology discipline (paper-internal handles and glossary)</h2>
-
-        <p>
-          PMS-EDEN uses paper-internal structural terms as operator-conform composites or strict definitions
-          (non-psychological, non-diagnostic). The YAML stores stable <em>handles</em> and refs rather than duplicating
-          the full paper text.
-        </p>
-
-        <h3>6.1 §0.7 paper-internal term handles</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Handle</th>
-              <th>Meaning (structural; summary)</th>
-              <th>Discipline</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="code-inline">0.7_ASYMMETRY_SWITCH</span></td>
-              <td>Shift from parity claim to asymmetry activation under real or invoked Ω/Θ pressure.</td>
-              <td>Valid only where marked, bounded, and re-bound into Σ/Ψ; drift where unmarked, repeatable, and responsibility-shifting.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">0.7_PERMANENTIZED_EXCEPTION_SWITCH</span></td>
-              <td>PFO drift form in which asymmetry activation ceases to be emergency-bound and becomes a standing lever under preserved parity surface.</td>
-              <td>Not a person label; describes regime availability of unmarked activation.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">0.7_PARITY_TO_EXIT</span></td>
-              <td>Drift pattern in which parity rhetoric is used to deny additional responsibility under unequal Ω/Θ consequences.</td>
-              <td>Responsibility-displacement pattern, not a person label.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">0.7_RESPONSIBILITY_TO_AUTHORITY</span></td>
-              <td>Drift pattern in which required self-binding under asymmetry is converted into control, frame authority, protection entitlement, or governance.</td>
-              <td>No authority follows from responsibility; not a person label.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>6.2 §16 glossary handles</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Handle</th>
-              <th>Meaning (structural; summary)</th>
-              <th>Operator anchor</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="code-inline">A</span> (Awareness)</td>
-              <td>Sustained, framed differentiation across time (availability, not phenomenology).</td>
-              <td><span class="code-inline">[Θ, □, Δ]</span></td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">E</span> (Action)</td>
-              <td>Integrated enactment; realization ≠ E unless Σ carries it.</td>
-              <td><span class="code-inline">[Σ, Θ, ∇]</span></td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">PS</span> (Pseudo-Symmetry)</td>
-              <td>Rhetorical parity under real Ω; switch availability may emerge; Σ bypassed or simulated; Ψ misbound to appearance-management.</td>
-              <td><span class="code-inline">□comparison + Ω + Σ low + Ψ misbound</span></td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">PFO</span> (paper-internal regime label)</td>
-              <td>Ω-illegibility / Ω-taboo regime with comparison, permanentized exception-switch availability, high Φ, retained Λ, suppressed Σ, displaced or misbound Ψ, and Α protocolization.</td>
-              <td><span class="code-inline">□(Ω-taboo + comparison + switch) + Φ + Λ + Α; Σ/Ψ suppressed</span></td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">NRK</span> (Composite)</td>
-              <td>Breach type: enactment under available awareness where Σ/Ψ do not carry.</td>
-              <td><span class="code-inline">A available; Σ/Ψ failed/aborted/externalized/displaced/simulated</span></td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">Reciprocity</span></td>
-              <td>Coordinated asymmetry, not symmetry. Adult reciprocity does not require equal burdens; it requires non-externalization of unequal burdens.</td>
-              <td><span class="code-inline">Σ under Ω; Ψ across Θ; Χ; D</span></td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">Devaluation</span></td>
-              <td>Lowering standing-in-practice as control move substituting for coordination when Σ/Ψ cannot consolidate under named Ω.</td>
-              <td><span class="code-inline">□ + Α + Λ under blocked Σ/Ψ</span></td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">Structural Drift Cost Marker</span></td>
-              <td>Warning handle for drift regimes sustained by cost externalization: low/simulated Σ, displaced or externalized Ψ, suppressed Ω-legibility or Ω activated without re-binding, parity-to-exit, responsibility-to-authority, retained Λ, protocolized Α, accumulated Θ costs.</td>
-              <td><span class="code-inline">Ω ↔ Θ with chronic Λ; Σ/Ψ displaced; costs accumulate</span></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Scope note</div>
-          <p class="small">
-            Everyday connotations (“maturity,” “humiliation,” “responsibility,” “authority,” etc.) are explicitly overridden:
-            PMS-EDEN uses these as paper-internal structural terms about in-scene consequence handling, not about inner states,
-            traits, motives, ideology, moral worth, or person status.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 7. Drift catalogue -->
-      <section id="drift">
-        <h2>7. Drift catalogue (corridors, regimes, switch drift, reciprocity loss)</h2>
-
-        <p>
-          Drift markers are configuration statements (“in this scene, the following operators are carrying / failing to carry…”),
-          not person labels. The catalogue consolidates predictable consequences of operator constellations under repetition and time.
-        </p>
-
-        <h3>7.1 Core drift corridor (compressed)</h3>
-        <div class="box small">
-          <span class="code-inline">
-            Eden → Threshold → NRK → □comparison → PS → ASYMMETRY_SWITCH_AVAILABILITY → PFO/PERMANENTIZED_EXCEPTION → (PARITY_TO_EXIT | RESPONSIBILITY_TO_AUTHORITY) → residual_stabilization(Λ/Φ/Α) → (DEVALUATION | HUMILIATION) → RECIPROCITY_LOSS
-          </span>
-        </div>
-
-        <h3>7.2 Regime-level repeatability (PFO as meta-frame)</h3>
-        <details open>
-          <summary>PFO — paper-internal regime label; repeatability without ideology attribution</summary>
-          <p class="small">
-            PFO denotes a dominant □ configured as Ω-illegibility / Ω-taboo + comparison metric + permanentized exception-switch availability,
-            with high Φ (continuous recontextualization), persistent Λ (non-closure as remainder or leverage), and stabilized Α scripts.
-            Σ and Ψ remain suppressed, displaced, or misbound, so reciprocity cannot consolidate. This is defined only by operator behavior,
-            not political identity, ideology, group membership, or person type.
-          </p>
-        </details>
-
-        <h3>7.3 Switch drift branches</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Branch</th>
-              <th>Drift form</th>
-              <th>Validity condition / failure point</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="code-inline">ASYMMETRY_SWITCH</span></td>
-              <td>Asymmetry is activated under real or invoked Ω/Θ pressure.</td>
-              <td>Valid where marked, bounded, and re-bound into Σ/Ψ; drift where unmarked, repeatable, and responsibility-shifting.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">PERMANENTIZED_EXCEPTION</span></td>
-              <td>Exception-switch becomes standing regime availability under parity surface.</td>
-              <td>Fails where asymmetry activation is no longer emergency-bound or coordinatively re-bound.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">PARITY_TO_EXIT</span></td>
-              <td>Parity or equality language exits responsibility under unequal Ω/Θ consequences.</td>
-              <td>Fails where equality-language replaces cost re-internalization.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">RESPONSIBILITY_TO_AUTHORITY</span></td>
-              <td>Required Ψ/Χ responsibility is converted into authority, protection entitlement, control, or governance.</td>
-              <td>Fails where responsibility stops being self-binding and becomes authorization.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>7.4 Reciprocity loss (tragedy, not guilt)</h3>
-        <details>
-          <summary>Reciprocity = coordinated asymmetry (PMS-EDEN definition)</summary>
-          <p class="small">
-            <span class="code-inline">Reciprocity = Σ under Ω, bound by Ψ across Θ, limited by Χ</span>.
-            Loss of reciprocity is readable as collapse of these carriers under comparison-dominant □ plus chronic Λ across Θ.
-            Under the switch extension, reciprocity also fails where parity becomes exit, asymmetry becomes leverage, or responsibility becomes authority.
-          </p>
-        </details>
-
-        <div class="box">
-          <div class="box-title">Cost marker (non-moral)</div>
-          <p class="small">
-            Where mappings repeatedly show suppressed Ω-legibility, unmarked Ω activation without re-binding, low or simulated Σ,
-            Ψ→Other externalization or Ψ misbinding, parity-to-exit, responsibility-to-authority, chronic Λ, and stabilized Α scripts,
-            PMS-EDEN treats the configuration as a drift regime sustained by asymmetric cost carriage. This is a structural non-viability
-            signal under PMS criteria as used in this paper, not a moral verdict.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 8. Pattern library -->
-      <section id="patterns">
-        <h2>8. Pattern library (portable recognition, not diagnosis)</h2>
-
-        <p>
-          The pattern library collects paper-internal composites that bundle recurrent operator constellations into portable analytical forms.
-          Patterns are recognition aids. They are not independent ontological entities, not diagnostic categories, not person labels, and not
-          enforcement licenses.
-        </p>
-
-        <h3>8.1 C5 pattern schema</h3>
-        <div class="box small">
-          <span class="code-inline">Trigger configuration</span> &middot;
-          <span class="code-inline">Primary stabilizer</span> &middot;
-          <span class="code-inline">Primary failure</span>
-        </div>
-
-        <h3>8.2 Pattern index</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Pattern</th>
-              <th>Name</th>
-              <th>Compressed reading</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="code-inline">P-Ω-AC</span></td>
-              <td>Ω → Covert Authority</td>
-              <td>Real Ω is not coordinated as functional gradient and becomes covert authority via □-control and Α steering.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">P-Λ-DN</span></td>
-              <td>Λ → Denial / Suppression</td>
-              <td>Remainder is treated as non-existent; Φ supplies pseudo-closure; Α stabilizes avoidance while Λ persists.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">P-Σ-TOT</span></td>
-              <td>Σ → Totalization</td>
-              <td>Closure demand turns Σ-language into final-answer script; Χ is suppressed and D is endangered.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">P-Ψ-EXT</span></td>
-              <td>Ψ → Externalization</td>
-              <td>Binding is displaced onto another role-position instead of carried as Ψ→Self under Χ and D.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">P-□-MOR</span></td>
-              <td>□ → Moral Frame Capture</td>
-              <td>Frame shifts into moral adjudication; operator-reading collapses into verdict, guilt, rank, or person capture.</td>
-            </tr>
-            <tr>
-              <td><span class="code-inline">P-Σ-SIM</span></td>
-              <td>Σ-Simulation instead of Integration</td>
-              <td>Coordination is performed discursively while interfaces do not change and remainder persists.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Revisability note</div>
-          <p class="small">
-            The pattern library does not claim formal completeness. It organizes the major drift patterns reconstructed in the paper
-            and remains revisable under counter-scenes, rival framings, and cases of genuine non-capture.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 9. Alternative explanations & boundary conditions -->
-      <section id="scope-discipline">
-        <h2>9. Scope discipline: alternative explanations and boundary conditions</h2>
-
-        <h3>9.1 Alternative explanations (methodological discipline)</h3>
-        <p class="small">
-          PMS-EDEN explicitly lists alternative sufficient generators to prevent over-claiming. No refutation is attempted; no ranking is implied.
-          Alternatives are phrased in role/gradient language (Ω-capacity/exposure/leverage positions), not group labels. All AE use remains scene-bound
-          and structurally revisable.
-        </p>
-        <div class="grid">
-          <div class="box">
-            <div class="box-title">AE1 — Drift without regime</div>
-            <p class="small">
-              Pair-dynamics under stable □comparison can generate monitoring, pseudo-symmetry, chronic Λ, and Α scripts without a regime layer.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">AE2 — Drift via Ω overextension</div>
-            <p class="small">
-              Drift can begin when the most Ω-salient position mis-handles leverage without Χ/D, triggering counter-control and frame shift.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">AE3 — Drift without humiliation</div>
-            <p class="small">
-              Stabilization can occur via withdrawal, exit, or isolation rather than humiliation: Χ increases as withdrawal; Θ locks separation.
-            </p>
-          </div>
-          <div class="box">
-            <div class="box-title">AE4 — External institutional stress</div>
-            <p class="small">
-              Drift can be driven by institutional scarcity, compliance, sanction logics, throughput pressure, or administrative overload rather than
-              by a locally stabilized regime logic; Α then stabilizes procedural survival scripts.
-            </p>
-          </div>
-        </div>
-
-        <h3>9.2 Boundary conditions (where the pipeline weakens)</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Boundary condition</th>
-              <th>Effect on PMS-EDEN drift claims</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Ω minimal or absent</strong></td>
-              <td>Asymmetry-driven drift mechanisms lose their primary generator; applicability becomes partial.</td>
-            </tr>
-            <tr>
-              <td><strong>□ not comparison-based</strong></td>
-              <td>Praxis frame remains dominant; Σ-work remains accessible; pseudo-symmetry less likely to stabilize.</td>
-            </tr>
-            <tr>
-              <td><strong>Σ/Ψ established early</strong></td>
-              <td>Upstream interruption: reciprocity can stabilize before chronic Λ accumulates under Θ.</td>
-            </tr>
-            <tr>
-              <td><strong>External institutions stabilize roles</strong></td>
-              <td>Contracts, norms, or institutional interfaces may scaffold Σ/Ψ and constrain □; regime-like drift becomes less likely.</td>
-            </tr>
-            <tr>
-              <td><strong>Switch activation marked, bounded, and re-bound</strong></td>
-              <td>Asymmetry activation may remain viable and dignity-preserving when it is explicitly tied to real Ω/Θ burden and re-bound into Σ/Ψ.</td>
-            </tr>
-            <tr>
-              <td><strong>Rival frameworks retain explanatory force</strong></td>
-              <td>In some scenes, trauma, attachment, symbolic recognition, institutional asymmetry, theological anthropology, or phenomenological alienation may remain more discriminative than PMS-EDEN.</td>
-            </tr>
-            <tr>
-              <td><strong>Genuine non-capture cases</strong></td>
-              <td>Where PMS-EDEN would smooth over distinctions better preserved elsewhere, the model should be narrowed, suspended, or treated as partial.</td>
-            </tr>
-            <tr>
-              <td><strong>Strongest applicability condition</strong></td>
-              <td>Highest discriminative force occurs when Ω is action-relevant, □ becomes comparison-dominant, Σ stays low, Ψ is absent/misbound/externalized, Λ becomes chronic, Α stabilizes scripts, and switch drift is available or already active.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Non-normalization clause</div>
-          <p class="small">
-            Reduced applicability limits explanatory reach, not viability criteria. Persistent cost externalization remains structurally non-viable
-            under PMS criteria as used in this paper regardless of genesis path.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 10. Appendix positioning (adjacent frameworks) -->
-      <section id="positioning">
-        <h2>10. Positioning within adjacent frameworks (appendix layer)</h2>
-
-        <p>
-          This section is repository-facing: it situates PMS-EDEN relative to adjacent theoretical programs, clarifies non-goals,
-          reduces predictable misclassification (psychological, theological, ideological, normative), and preserves rival-framing openness
-          without replacement or superiority claims.
-        </p>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Neighbor</th>
-              <th>Overlap</th>
-              <th>Non-equivalence / boundary value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Practice theory</td>
-              <td>Anti-mentalism; situated enactment; structured conditions.</td>
-              <td>More operator-minimal + explicit validity gate for application.</td>
-            </tr>
-            <tr>
-              <td>Structuration</td>
-              <td>Structure ↔ practice coupling; reproduction and constraint.</td>
-              <td>Explicit drift pivot (□ praxis → □ value-relation) + Ω/Θ/Λ consequence legibility.</td>
-            </tr>
-            <tr>
-              <td>Ethnomethodology</td>
-              <td>Order production; accountability surfaces.</td>
-              <td>More schematic/generative; designed for cross-scene comparability.</td>
-            </tr>
-            <tr>
-              <td>Systems theory</td>
-              <td>Drift, stabilization, regime reproduction.</td>
-              <td>Praxeological and role-position oriented (Ω gradients); explicit Dignity-in-Practice (D) as viability boundary without moralization.</td>
-            </tr>
-            <tr>
-              <td>Pragmatic sociology</td>
-              <td>Value frames and justification grammars.</td>
-              <td>Drift modeled as operator carriage failure under Ω/Θ/Λ; dissatisfaction framed as system maintenance cost, not deficit.</td>
-            </tr>
-            <tr>
-              <td>Theological contrast</td>
-              <td>Contrast class only.</td>
-              <td>Eden as minimal structural test scene, not doctrine or moral anthropology; tragedy defined structurally, not as desert.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Label risk control</div>
-          <p class="small">
-            If a regime label is predictably politicized or misread, the preferred fix is lower-entropy renaming
-            while preserving the operator definition, paper-internal label discipline, and non-ideological stance.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 11. Example suite -->
-      <section id="examples">
-        <h2>11. Example-suite schema (repo vignettes; non-instructional)</h2>
-
-        <p>
-          PMS-EDEN example files are scene-bound demonstrations that follow a fixed schema.
-          They must remain non-coercive, non-diagnostic, and avoid irreversible exposure.
-        </p>
-
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Required block</th>
-              <th>Purpose</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Minimal vignette (scene-bound)</td>
-              <td>Concrete configuration snapshot (roles/frames), no person-typing.</td>
-            </tr>
-            <tr>
-              <td>Why repo-useful (structural focus)</td>
-              <td>What operator distinction the example demonstrates.</td>
-            </tr>
-            <tr>
-              <td>Operator mapping (reduced signature)</td>
-              <td>Compact operator trace for retrieval/orientation.</td>
-            </tr>
-            <tr>
-              <td>Drift position in master trace (optional; 1 line)</td>
-              <td>Placement in the updated corridor, including switch availability or downstream switch drift where relevant.</td>
-            </tr>
-            <tr>
-              <td>Cost layout (Ω under Θ)</td>
-              <td>Gradients + trajectories; consequence interfaces; asymmetric cost carriage.</td>
-            </tr>
-            <tr>
-              <td>Pattern markers (max 2–3)</td>
-              <td>Selected markers from the pattern library; non-moral.</td>
-            </tr>
-            <tr>
-              <td>Switch-drift markers if present</td>
-              <td>Asymmetry activation, parity-to-exit, responsibility-to-authority; scene-bound and non-diagnostic.</td>
-            </tr>
-            <tr>
-              <td>Validity gate reminder</td>
-              <td>Χ + reversibility + D.</td>
-            </tr>
-            <tr>
-              <td>Readable structural closure (2–5 sentences)</td>
-              <td>Human-readable summary; no advice, no prescriptions.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="box">
-          <div class="box-title">Non-instruction constraint</div>
-          <p class="small">
-            Examples are structural demonstrations, not guides. They must not become optimization, step-by-step “relationship management,”
-            therapy surrogates, or coercive diagnosis-by-template.
-          </p>
-        </div>
-      </section>
-
-      <div class="pagebreak"></div>
-
-      <!-- 12. Implementation & citation -->
-      <section id="implementation">
-        <h2>12. Implementation notes and citation</h2>
-
-        <p>
-          The authoritative overlay specification is <span class="code-inline">PMS-EDEN.yaml</span>,
-          intended to be loaded after <span class="code-inline">PMS.yaml</span> (PMS_1.3).
-        </p>
-
-        <div class="box small">
-          <span class="code-inline">PMS.yaml</span> → <span class="code-inline">PMS-EDEN.yaml</span>
-        </div>
-
-        <p class="small">
-          <strong>Technical reference:</strong><br />
-          <em>PMS-EDEN.yaml – PMS-EDEN Application Profile (Overlay) Specification</em>
-          (<span class="code-inline">PMS-EDEN_1.2</span>)
-        </p>
-
-        <p class="small">
-          <strong>Base dependency:</strong><br />
-          <em>PMS.yaml – Praxeological Meta-Structure (PMS_1.3)</em>
-        </p>
-
-        <p class="small">
-          <strong>Source-paper basis:</strong><br />
-          <em>PMS-EDEN – Structural Drift from Praxis to Comparison, Pseudo-Symmetry, and Reciprocity Loss</em>
-          (<span class="code-inline">PMS-EDEN_1.2</span>; authoritative overlay source)
-        </p>
-
-        <p>
-          <strong>License:</strong><br />
-          Governed by the license declared in the distribution repository.
-        </p>
-
-        <div class="box">
-          <div class="box-title">Final guard sentence</div>
-          <p class="small">
-            PMS-EDEN does not replace decisions, responsibility, or tragedy.
-            It makes drift and cost geometry legible: where frames convert into comparison, where non-events become steering surfaces,
-            how asymmetry becomes unspeakable yet operative, where asymmetry activation must be marked and re-bound, how parity can become exit,
-            how responsibility can become authority, and why reciprocity can fail structurally without requiring malice.
-          </p>
-        </div>
-      </section>
-    </div>
-  </body>
+</head>
+<body>
+<div class="page">
+<header>
+  <h1>PMS-EDEN — Model Specification</h1>
+  <p class="subtitle">A PMS-conform paper-specific overlay for Adult Reciprocity, false-coordinated real Ω, scene-bound responsibility, EDEN-MAP, and Reciprocity Loss.</p>
+  <div class="meta">
+    <strong>Schema:</strong> <span class="code-inline">PMS-EDEN_2.0</span><br />
+    <strong>Spec basis:</strong> <span class="code-inline">PMS-EDEN.yaml</span> · <strong>Base dependency:</strong> <span class="code-inline">PMS_1.3</span> / <span class="code-inline">PMS.yaml</span><br />
+    <strong>Status:</strong> working_production · <strong>Repository role:</strong> paper_specific_overlay · <strong>Last updated:</strong> 2026-06-24<br />
+    <strong>Author:</strong> T. Zöller · <strong>Formalization assistance:</strong> ChatGPT (GPT-5.5 Thinking)
+  </div>
+</header>
+
+<section id="purpose-scope">
+<h2>1. Purpose and scope</h2>
+<p>PMS-EDEN is a paper-specific application schema for the Praxeological Meta-Structure. It is an overlay, not a fork, replacement, extension, or second operator system. It formalizes the paper's argument in a machine-readable and human-auditable way while remaining subordinate to the canonical PMS operator grammar.</p>
+<p>The specification's positive starting point is Adult Reciprocity: truthful coordination of real Ω. Its central mechanism is False-Coordinated Real Asymmetry. Its culminating loss is Reciprocity Loss, defined as the erosion of shared correctability under real asymmetry.</p>
+<div class="box">
+  <h3>Scope in one sentence</h3>
+  <p>Tests whether real Ω is truthfully coordinated through R, Σ, Ψ, Χ, D, and correctability or falsely coordinated through displaced R and blocked Σ/Ψ.</p>
+</div>
+<h3>Non-goals</h3>
+<ul><li>comprehensive_social_theory</li>
+<li>psychology_or_personality_theory</li>
+<li>clinical_or_therapeutic_model</li>
+<li>theology_or_exegesis</li>
+<li>sex_metaphysics</li>
+<li>sex_truth_claims</li>
+<li>culture_war_framework</li>
+<li>general_ideology_diagnosis</li>
+<li>empirical_prevalence_study</li>
+<li>relationship_manual</li>
+<li>intervention_protocol</li>
+<li>political_program</li>
+<li>verdict_or_recommendation_engine</li></ul>
+<h3>Prohibited inferences</h3>
+<ul><li>operator_configuration_to_mental_state</li>
+<li>scene_pattern_to_personality</li>
+<li>role_position_to_ontological_worth</li>
+<li>sexed_scene_to_sex_essence</li>
+<li>structuring_effect_to_malice</li>
+<li>vulnerability_to_immunity</li>
+<li>capacity_to_total_guilt</li>
+<li>difference_to_rank</li>
+<li>non_action_to_automatic_praxis</li>
+<li>description_to_action_authority</li></ul>
+</section>
+<div class="pagebreak"></div>
+<section id="schema-map">
+<h2>2. High-level YAML structure</h2>
+<p>The YAML is organized as a layered schema: base PMS reference, construct registry, validity and firewall, paper lens, core thesis, mechanism modules, responsibility modules, regime/test/loss modules, and boundary/application modules.</p>
+<table class="table">
+<thead><tr><th>Top-level key</th><th>Size / value</th><th>Specification role</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">schema_version</span></td><td>PMS-EDEN_2.0</td><td>Schema identifier and compatibility marker.</td></tr>
+<tr><td><span class="code-inline">schema_meta</span></td><td>11 subkeys</td><td>Model identity, status, authorship, paper role, PMS dependency, and epistemic restraint.</td></tr>
+<tr><td><span class="code-inline">operator_reference</span></td><td>9 subkeys</td><td>Fixed PMS operator reference. This is an anchor, not an editable EDEN operator system.</td></tr>
+<tr><td><span class="code-inline">derived_axes_reference</span></td><td>4 subkeys</td><td>Canonical PMS-derived axes A, C, R, E, D and mutation policy.</td></tr>
+<tr><td><span class="code-inline">construct_status_registry</span></td><td>4 subkeys</td><td>Allowed statuses for EDEN constructs and their non-PMS-modifying role.</td></tr>
+<tr><td><span class="code-inline">validity_gate</span></td><td>6 subkeys</td><td>Application-only gate: Χ, reversibility, D, plus EDEN-specific application requirements.</td></tr>
+<tr><td><span class="code-inline">description_to_action_firewall</span></td><td>4 subkeys</td><td>Non-negotiable separation between structural description and binding use.</td></tr>
+<tr><td><span class="code-inline">paper_lens</span></td><td>8 subkeys</td><td>The high-level lens: Adult Reciprocity and Reciprocity Loss under real Ω.</td></tr>
+<tr><td><span class="code-inline">paper_structure_map</span></td><td>4 subkeys</td><td>Ownership index for chapters and appendices; not prose duplication.</td></tr>
+<tr><td><span class="code-inline">core_thesis</span></td><td>10 subkeys</td><td>Positive baseline, negative counterpart, master trace, central mechanism preview, demotions, and guardrails.</td></tr>
+<tr><td><span class="code-inline">architecture_invariants</span></td><td>6 subkeys</td><td>Global architecture constraints that prevent old master chains and wrong centers from returning.</td></tr>
+<tr><td><span class="code-inline">method_and_positive_baseline</span></td><td>6 subkeys</td><td>Method discipline, Adult Reciprocity, Garden, Limited Legibility, False Comparison.</td></tr>
+<tr><td><span class="code-inline">mechanism_architecture</span></td><td>6 subkeys</td><td>Real sexed praxis relation, misframing, false-coordinated real asymmetry, Switch Family.</td></tr>
+<tr><td><span class="code-inline">responsibility_and_praxis_architecture</span></td><td>6 subkeys</td><td>No Passive Praxis, Responsibility Principle, Immunization / Overexposure / AEP, Recognition Drift.</td></tr>
+<tr><td><span class="code-inline">regime_test_scene_and_loss_architecture</span></td><td>5 subkeys</td><td>PFO as downstream stabilization, Eden as test scene, Reciprocity Loss as payoff.</td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture</span></td><td>11 subkeys</td><td>Boundary conditions, rival explanations, falsifiers, counter-scenes, EDEN-MAP, adjacent frameworks.</td></tr>
+</tbody>
+</table>
+</section>
+<div class="pagebreak"></div>
+<section id="pms-conformance">
+<h2>3. PMS conformance</h2>
+<p>PMS-EDEN does not introduce, remove, reorder, or redefine PMS operators. EDEN terms remain overlay constructs, mechanisms, benchmarks, compressions, application protocols, falsifiers, or shorthand labels. They are not PMS primitives.</p>
+<h3>Fixed PMS operator order</h3>
+<div class="box"><p><span class="code-inline">Δ</span> → <span class="code-inline">∇</span> → <span class="code-inline">□</span> → <span class="code-inline">Λ</span> → <span class="code-inline">Α</span> → <span class="code-inline">Ω</span> → <span class="code-inline">Θ</span> → <span class="code-inline">Φ</span> → <span class="code-inline">Χ</span> → <span class="code-inline">Σ</span> → <span class="code-inline">Ψ</span></p></div>
+<table class="table">
+<thead><tr><th>Operator</th><th>Depends on</th><th>Semantic invariant</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">Δ</span></td><td>—</td><td>Difference; not rank.</td></tr>
+<tr><td><span class="code-inline">∇</span></td><td>Δ</td><td>Directional impulse; not completed action.</td></tr>
+<tr><td><span class="code-inline">□</span></td><td>Δ, ∇</td><td>Contextual frame; not proof of falsehood.</td></tr>
+<tr><td><span class="code-inline">Λ</span></td><td>□</td><td>Structured absence within □; not mere absence.</td></tr>
+<tr><td><span class="code-inline">Α</span></td><td>Δ, ∇, □, Λ</td><td>Recurrent attractor/stabilization; not an EDEN protocol.</td></tr>
+<tr><td><span class="code-inline">Ω</span></td><td>Α</td><td>Structural asymmetry; not inferiority, guilt, or domination by definition.</td></tr>
+<tr><td><span class="code-inline">Θ</span></td><td>Ω, Α</td><td>Temporal trajectory; not unsupported chronology.</td></tr>
+<tr><td><span class="code-inline">Φ</span></td><td>Θ, Ω, □</td><td>Recontextualization; not inferred motive or deception.</td></tr>
+<tr><td><span class="code-inline">Χ</span></td><td>Φ, Θ, □</td><td>Reflective distance/inhibition; not truth authority.</td></tr>
+<tr><td><span class="code-inline">Σ</span></td><td>Χ, Φ</td><td>Integration; not agreement, peace, legitimation, or continuation.</td></tr>
+<tr><td><span class="code-inline">Ψ</span></td><td>Σ, Θ, Χ</td><td>Self-binding; not obedience, confession, guilt, or imposed binding.</td></tr>
+</tbody>
+</table>
+<h3>Derived axes</h3>
+<table class="table">
+<thead><tr><th>Axis</th><th>Name</th><th>Formula</th><th>EDEN note</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">A</span></td><td>Awareness</td><td><span class="code-inline">Θ ∘ □ ∘ Δ</span></td><td>Canonical PMS-derived axis; EDEN does not redefine it.</td></tr>
+<tr><td><span class="code-inline">C</span></td><td>Coherence</td><td><span class="code-inline">Θ ∘ Λ ∘ □ ∘ ∇</span></td><td>Canonical PMS-derived axis; EDEN does not redefine it.</td></tr>
+<tr><td><span class="code-inline">R</span></td><td>Responsibility</td><td><span class="code-inline">Ψ ∘ Φ ∘ Θ ∘ Ω</span></td><td>EDEN's normative Responsibility Principle does not redefine or follow automatically from R.</td></tr>
+<tr><td><span class="code-inline">E</span></td><td>Strict Action / Enactment</td><td><span class="code-inline">Σ ∘ Θ ∘ ∇</span></td><td>Praxis is broader; scene relevance does not automatically establish E.</td></tr>
+<tr><td><span class="code-inline">D</span></td><td>Dignity-in-Practice</td><td><span class="code-inline">Ψ ∘ Χ ∘ Ω</span></td><td>EDEN adopts preservation of D as benchmark/application condition without redefining D.</td></tr>
+</tbody>
+</table>
+<h3>Prohibited PMS changes</h3>
+<ul><li>redefine_any_pms_operator</li>
+<li>add_meta_axioms</li>
+<li>alter_canonical_operator_order</li>
+<li>alter_canonical_dependencies</li>
+<li>promote_overlay_constructs_to_pms_operators</li>
+<li>promote_eden_benchmarks_to_pms_derived_axes</li>
+<li>treat_reduced_signatures_as_alternative_dependency_paths</li></ul>
+</section>
+<div class="pagebreak"></div>
+<section id="construct-statuses">
+<h2>4. Construct status registry</h2>
+<p>The registry prevents EDEN labels from being mistaken for operators, diagnoses, identities, or verdicts. Every construct status is non-PMS-modifying.</p>
+<table class="table">
+<thead><tr><th>Status</th><th>Meaning</th><th>May modify PMS?</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">pms_operator_reference</span></td><td>Fixed PMS operator reference.</td><td>false</td></tr>
+<tr><td><span class="code-inline">pms_derived_axis_reference</span></td><td>Canonical PMS-derived axis reference.</td><td>false</td></tr>
+<tr><td><span class="code-inline">eden_normative_benchmark</span></td><td>Explicit EDEN standard; not PMS-derived natural law.</td><td>false</td></tr>
+<tr><td><span class="code-inline">eden_theoretical_compression</span></td><td>Paper compression; not operator or axis.</td><td>false</td></tr>
+<tr><td><span class="code-inline">eden_mechanism</span></td><td>Conditional scene mechanism using PMS vocabulary.</td><td>false</td></tr>
+<tr><td><span class="code-inline">overlay_construct</span></td><td>Paper construct subordinate to PMS.</td><td>false</td></tr>
+<tr><td><span class="code-inline">paper_internal_shorthand</span></td><td>Local abbreviation without operator/axis/diagnostic status.</td><td>false</td></tr>
+<tr><td><span class="code-inline">scene_bound_profile</span></td><td>Conditional scene drift; not identity or sex truth.</td><td>false</td></tr>
+<tr><td><span class="code-inline">regime_stabilization</span></td><td>Repeatable stabilization; not belief/person/ideology label.</td><td>false</td></tr>
+<tr><td><span class="code-inline">boundary_condition</span></td><td>Condition narrowing, suspending, or defeating a reading.</td><td>false</td></tr>
+<tr><td><span class="code-inline">falsifier</span></td><td>Condition under which a claim weakens or fails.</td><td>false</td></tr>
+<tr><td><span class="code-inline">application_protocol</span></td><td>Mapping order without mechanism or independent authority.</td><td>false</td></tr>
+<tr><td><span class="code-inline">viability_signature</span></td><td>Structural possibility; not repair protocol.</td><td>false</td></tr>
+</tbody>
+</table>
+</section>
+<div class="pagebreak"></div>
+<section id="validity-firewall">
+<h2>5. Validity gate and Description-to-Action Firewall</h2>
+<p>The PMS entry condition applies to application, not to critique, refusal, rejection, revision proposals, or rival formalization. EDEN adds application requirements because its scenes are high-risk: they concern real Ω, responsibility, protection, recognition, cost, exposure, and correctability.</p>
+<h3>Canonical PMS entry condition</h3>
+<ul><li>Χ: Reflective stop-capability; no fusion into urgency, verdict, enforcement, ideology, or person attribution.</li>
+<li>reversibility: Reading remains scene-bound, revisable, narrowable, suspendable, and defeasible.</li>
+<li>D: No shaming, ranking, humiliation, ontological evaluation, sex ranking, or degradation.</li></ul>
+<h3>EDEN application requirements</h3>
+<ul><li>scene_packet: Specified scene, role-positions, real Ω, effects, costs, Θ, and Σ/Ψ relevance.</li>
+<li>counter_scene_exposure: A plausible materially different scene can change the reading.</li>
+<li>contextual_responsibility: R attribution tracks effect under legibility, capacity, alternatives, Θ, and Ω cost/exposure.</li>
+<li>evidentiary_answerability: No concept, pattern, frame, role code, or label replaces evidence.</li>
+<li>affected_role_contestation: Affected roles may contest packet, evidence, frame, R trace, or application without confirming EDEN by disagreement.</li>
+<li>independent_application_authority: EDEN-MAP supplies no authority to confront, accuse, prescribe, intervene, punish, or enforce.</li></ul>
+<h3>Invalid if any</h3>
+<ul><li>Χ_suspended_for_clarity_or_urgency</li>
+<li>reversibility_suspended_for_verdict</li>
+<li>D_suspended_for_truth_or_efficiency</li>
+<li>scene_packet_replaced_by_impression</li>
+<li>counter_scene_cannot_change_reading</li>
+<li>responsibility_without_scene_conditions</li>
+<li>description_converted_directly_into_binding</li>
+<li>person_or_sex_label_substituted_for_scene_analysis</li></ul>
+<h3>Description versus application</h3>
+<div class="box">
+  <p><strong>Description:</strong> Operator-traceable scene mapping without obligation.</p>
+  <p><strong>Application:</strong> Mapping used to steer, bind, obligate, prescribe, confront, accuse, intervene, punish, or enforce.</p>
+</div>
+<h3>Permitted descriptive outputs</h3>
+<ul><li>name_real_asymmetry</li>
+<li>trace_structuring_effect</li>
+<li>identify_possible_responsibility_displacement</li>
+<li>identify_possible_integration_or_self_binding_blockage</li>
+<li>record_counter_scenes_and_falsifiers</li></ul>
+<h3>Forbidden conversions from description</h3>
+<ul><li>binding</li>
+<li>obligation</li>
+<li>confrontation</li>
+<li>accusation</li>
+<li>prescription</li>
+<li>intervention</li>
+<li>punishment</li>
+<li>enforcement</li></ul>
+<h3>Core firewall formulas</h3>
+<ul><li>Description may name structure.</li>
+<li>Application requires Χ, reversibility, D, and contextual responsibility.</li>
+<li>Description does not authorize binding.</li></ul>
+</section>
+<div class="pagebreak"></div>
+<section id="core-thesis">
+<h2>6. Core thesis and architecture invariants</h2>
+<p>Adult Reciprocity is truthful coordination of real Ω; Reciprocity Loss begins where real Ω is falsely coordinated, R displaced, Σ/Ψ blocked, and shared correctability eroded.</p>
+<h3>Positive baseline</h3>
+<ul><li>Adult Reciprocity ≠ symmetry.</li>
+<li>Adult Reciprocity = truthful coordination of real Ω.</li></ul>
+<p>Explicit EDEN benchmark; not total access, metaphysical truth, empirical universal, or automatic application.</p>
+<h3>Negative counterpart</h3>
+<ul><li>Reciprocity Loss = false coordination of real Ω.</li>
+<li>Reciprocity Loss is the erosion of shared correctability under real asymmetry.</li></ul>
+<h3>Governing distinction</h3>
+<ul><li>Asymmetry is not the failure.</li>
+<li>False coordination of asymmetry is the failure.</li></ul>
+<h3>Master trace</h3>
+<div class="box"><p>coordinated Ω → false-coordinated real Ω → displaced R → blocked Σ/Ψ → reciprocity loss</p></div>
+<p>Structural trace; not chronology, deterministic cause, PMS dependency, or universal sequence.</p>
+<h3>Central mechanism preview</h3>
+<div class="box"><p>real Ω + false coordination frame + displaced R + blocked Σ/Ψ = false-coordinated real Ω</p></div>
+<ul><li>The asymmetry need not be false; the coordination is false.</li>
+<li>Partial framing alone is insufficient.</li>
+<li>Scene evidence must establish effect, displaced R, and Σ/Ψ relevance.</li></ul>
+<h3>Architecture demotions</h3>
+<table class="table">
+<thead><tr><th>Construct</th><th>Status</th><th>Rule / formula</th><th>Forbidden role(s)</th><th>Home</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">false_comparison</span></td><td>eden_mechanism</td><td>Attractor/amplifier/stabilizer, not first cause.</td><td>origin_or_master_mechanism</td><td><span class="code-inline">method_and_positive_baseline.false_comparison</span></td></tr>
+<tr><td><span class="code-inline">pseudo_symmetry</span></td><td>overlay_construct</td><td>One Switch Family form.</td><td>master_mechanism</td><td><span class="code-inline">mechanism_architecture.switch_family.members.pseudo_symmetry</span></td></tr>
+<tr><td><span class="code-inline">pfo</span></td><td>regime_stabilization</td><td>PFO is not the origin of reciprocity loss.; PFO is one regime form in which reciprocity loss stabilizes.</td><td>origin, center, person_type, sex_truth, ideology_diagnosis, political_insult, all_modern_gender_order</td><td><span class="code-inline">regime_test_scene_and_loss_architecture.pfo</span></td></tr>
+<tr><td><span class="code-inline">eden_scene</span></td><td>overlay_construct</td><td>Eden is not the paper&#x27;s origin.; Eden is a test scene for the paper&#x27;s grammar.; Eden is not foundation; Eden is demonstration.</td><td>paper_origin, proof_path, sex_truth_source, theological_dependency, master_history_of_reciprocity_loss</td><td><span class="code-inline">regime_test_scene_and_loss_architecture.eden_scene</span></td></tr>
+</tbody>
+</table>
+<h3>Forbidden master chains</h3>
+<ul><li>Eden → Fall → comparison → PFO → reciprocity loss</li>
+<li>False Comparison as first cause</li>
+<li>PFO as origin or center</li>
+<li>Pseudo-Symmetry as master mechanism</li></ul>
+</section>
+<div class="pagebreak"></div>
+<section id="module-map">
+<h2>7. Module map: method, mechanisms, responsibility, regime, test, loss</h2>
+<p>The schema is divided into local homes. A construct may be previewed elsewhere, but full development belongs to its home. This prevents Eden-first, PFO-first, comparison-first, or pseudo-symmetry-as-master architecture from returning.</p>
+<table class="table">
+<thead><tr><th>YAML home</th><th>Status</th><th>Definition / purpose</th><th>Formula(s)</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">method_and_positive_baseline.<br>method_and_pms_discipline</span></td><td>overlay_construct</td><td></td><td></td></tr>
+<tr><td><span class="code-inline">method_and_positive_baseline.<br>adult_reciprocity</span></td><td>eden_normative_benchmark</td><td>Truthful coordination of real Ω; &#x27;Adult&#x27; stipulates structural answerability, not age, psychological maturity, moral superiority, advice, or typology.</td><td>Adult Reciprocity ≠ symmetry.; Adult Reciprocity = truthful coordination of real Ω.</td></tr>
+<tr><td><span class="code-inline">method_and_positive_baseline.<br>garden</span></td><td>eden_theoretical_compression</td><td>Learned legibility-field shaping what can be seen, named, trusted, feared, protected, exposed, corrected, and carried; theoretical socialization reconstruction, not empirical developmental sequence.</td><td>Garden = learned legibility-field.</td></tr>
+<tr><td><span class="code-inline">method_and_positive_baseline.<br>limited_legibility</span></td><td>eden_theoretical_compression</td><td>Role-position participates without complete access to all effects, histories, costs, alternatives, Ω, or R.</td><td></td></tr>
+<tr><td><span class="code-inline">method_and_positive_baseline.<br>false_comparison</span></td><td>eden_mechanism</td><td>Comparison captured by □ so rank, value, suspicion, idealization, threat, or defect displaces truthful coordination of real Ω.</td><td></td></tr>
+<tr><td><span class="code-inline">mechanism_architecture.<br>real_sexed_praxis_relation_under_Ω</span></td><td>overlay_construct</td><td>Possible embodied, socially framed, historically stabilized, asymmetrically exposed, responsibility-relevant relation among sexed role-positions; states what positioning structures, not what a sex is.</td><td></td></tr>
+<tr><td><span class="code-inline">mechanism_architecture.<br>inferiority_and_superiority_misframing</span></td><td>eden_mechanism</td><td>Rank conversion of a situated condition under real Ω into generalized lower/higher standing, agency, authority, priority, immunity, or worth; difference may be real, ranking/coordination is artifact.</td><td></td></tr>
+<tr><td><span class="code-inline">mechanism_architecture.<br>false_coordinated_real_asymmetry</span></td><td>eden_mechanism</td><td>Real Ω remains operative but a frame displaces R, blocks Σ, weakens/externalizes Ψ, and erodes Adult Reciprocity/correctability; asymmetry need not be false, coordination is false.</td><td>real Ω + false coordination frame + displaced R + blocked Σ/Ψ = false-coordinated real Ω</td></tr>
+<tr><td><span class="code-inline">mechanism_architecture.<br>switch_family</span></td><td>eden_mechanism</td><td>Frame-shift family: real Ω persists while operative frame, R distribution, critique access, and Σ/Ψ status change.</td><td>Switch = real Ω remains + operative frame changes + responsibility distribution changes + critique access changes + Σ/Ψ status changes</td></tr>
+<tr><td><span class="code-inline">responsibility_and_praxis_architecture<br>.no_passive_praxis</span></td><td>eden_normative_benchmark</td><td>Visible action does not exhaust scene-structuring praxis. Non-action becomes praxis-relevant only as a meaningful framed non-event affecting real asymmetry across time and traceably changing another role-position&#x27;s action conditions, costs, exposure, R, integration, self-binding, or correctability.</td><td></td></tr>
+<tr><td><span class="code-inline">responsibility_and_praxis_architecture.<br>responsibility_principle</span></td><td>eden_normative_benchmark</td><td>Answerability follows real structuring effect under scene conditions; it is not guilt, blame, moral worth, visibility alone, outcome liability alone, or person condemnation.</td><td>R follows real structuring effect under available legibility, capacity, alternative possibility, Θ trajectory, and Ω cost/exposure conditions.</td></tr>
+<tr><td><span class="code-inline">responsibility_and_praxis_architecture.<br>immunization_overexposure_and_AEP</span></td><td>eden_mechanism</td><td>Coupled drift family in which one side of a scene may carry effect without full responsibility, another may carry responsibility without full legibility/protection, and explanatory language may be asymmetrically unavailable.</td><td>Immunization = effect without full responsibility. Overexposure = responsibility without full legibility / protection. AEP = high exposure + low legitimate language + critique-to-threat switch + responsibility overload.</td></tr>
+<tr><td><span class="code-inline">responsibility_and_praxis_architecture.<br>recognition_drift</span></td><td>eden_mechanism</td><td>Recognition, dignity, voice, protection, moral standing, or equal status detaches from criticizability, consequence attribution, self-binding, correction, and R for real structuring effect.</td><td>Recognition without answerability is not equal standing. Equal standing = recognition + answerability + criticizability + consequence attribution + correctability.</td></tr>
+<tr><td><span class="code-inline">regime_test_scene_and_loss_architecture.<br>pfo</span></td><td>regime_stabilization</td><td>One downstream regime form where false-coordinated real asymmetry, displaced R, blocked Σ/Ψ, and established drift mechanisms stabilize through repeatable recognition, protection, parity, or exception frames.</td><td></td></tr>
+<tr><td><span class="code-inline">regime_test_scene_and_loss_architecture.<br>eden_scene</span></td><td>overlay_construct</td><td>Late compact demonstration of existing grammar: coordinated asymmetry, meaningful boundary, breach, consequence, exposure, legibility management, and R trace without theoretical, moral, theological, sexed, or historical origin claim.</td><td></td></tr>
+<tr><td><span class="code-inline">regime_test_scene_and_loss_architecture.<br>reciprocity_loss</span></td><td>eden_theoretical_compression</td><td>Structural loss where real Ω persists while R is displaced, Σ blocked, Ψ weakened/externalized, Χ reduced, D damaged, and shared capacity for proportionate correction erodes or disappears.</td><td></td></tr>
+</tbody>
+</table>
+</section>
+<div class="pagebreak"></div>
+<section id="adult-reciprocity">
+<h2>8. Adult Reciprocity and positive baseline</h2>
+<p>Truthful coordination of real Ω; &#x27;Adult&#x27; stipulates structural answerability, not age, psychological maturity, moral superiority, advice, or typology.</p>
+<div class="box"><p>real Ω visible + D preserved + R follows real structuring effect + Σ integrates costs and effects + Ψ binds relevant actors to their own effect + Χ keeps revision possible</p></div>
+<h3>Adult Reciprocity is not equivalent to</h3>
+<ul><li>symmetry</li>
+<li>sameness</li>
+<li>harmony</li>
+<li>equal_burden</li>
+<li>formal_equality</li>
+<li>conflict_absence</li>
+<li>abolition_of_asymmetry</li></ul>
+<h3>Failure threshold</h3>
+<p>Where real Ω structures the scene but D cannot be preserved, R cannot follow real structuring effect, Σ cannot integrate costs and effects, Ψ cannot bind role-positions to their own effects, and Χ cannot keep revision possible, Adult Reciprocity begins to fail.</p>
+</section>
+<div class="pagebreak"></div>
+<section id="central-mechanism">
+<h2>9. False-Coordinated Real Asymmetry and Switch Family</h2>
+<p>Real Ω remains operative but a frame displaces R, blocks Σ, weakens/externalizes Ψ, and erodes Adult Reciprocity/correctability; asymmetry need not be false, coordination is false.</p>
+<div class="box"><p>real Ω + false coordination frame + displaced R + blocked Σ/Ψ = false-coordinated real Ω</p></div>
+<h3>Required components</h3>
+<ul><li>real_omega</li>
+<li>false_coordination_frame</li>
+<li>displaced_responsibility</li>
+<li>blocked_integration_or_self_binding</li></ul>
+<h3>False coordination frames</h3>
+<p>Partiality is not falsity. A frame becomes false-coordinating only where partial truth prevents proportionate entry of effect, cost, R, Σ, Ψ, or correction.</p>
+<table class="table">
+<thead><tr><th>Frame family</th><th>Valid function</th><th>False-coordination risk</th></tr></thead>
+<tbody>
+<tr><td>comparison</td><td>Clarifies differences, costs, burdens, capacities, or R.</td><td>Rank/value replaces effect tracing.</td></tr>
+<tr><td>parity</td><td>Corrects domination, condescension, or illegitimate hierarchy.</td><td>Formal equality flattens exposure, dependency, cost, or R.</td></tr>
+<tr><td>protection</td><td>Shelters vulnerability, dependency, exposure, or danger.</td><td>Protection reassigns adulthood or removes criticizability/R.</td></tr>
+<tr><td>recognition</td><td>Preserves D, voice, visibility, standing, and protection from degradation.</td><td>Recognition removes criticizability or opposes answerability to D.</td></tr>
+<tr><td>responsibility</td><td>Connects answerability to effect, role, duty, or consequence.</td><td>R is underassigned, overassigned, misassigned, moralized, totalized, or attached to visibility/outcome.</td></tr>
+<tr><td>vulnerability</td><td>Names injury, exposure, need, sensitivity, or protection relevance.</td><td>Vulnerability becomes immunity or is denied because capacity exists.</td></tr>
+<tr><td>superiority</td><td>Names local capacity, knowledge, authority, resilience, or R.</td><td>Local advantage becomes rank, priority, exemption, or command.</td></tr>
+<tr><td>non-action / neutrality</td><td>Preserves restraint, distance, boundary, or genuine non-involvement.</td><td>Structuring Λ stays illegible while shifting cost, timing, access, or Ψ-load.</td></tr>
+<tr><td>legitimation</td><td>Makes lawful, functional, protective, fair, or necessary arrangements intelligible.</td><td>Φ makes displacement appear normal, fair, necessary, autonomous, equal, responsible, or inevitable.</td></tr>
+</tbody>
+</table>
+<p>Frames may combine. Presence alone proves nothing; the reading must trace displaced R and blocked/weakened/simulated/avoided/externalized Σ/Ψ.</p>
+<h3>Not equivalent to</h3>
+<ul><li>false_asymmetry</li>
+<li>asymmetry_itself</li>
+<li>asymmetry_misrepresentation_only</li>
+<li>False_Comparison_only</li>
+<li>rank_artifact_only</li>
+<li>Pseudo_Symmetry</li>
+<li>PFO</li>
+<li>mere_error</li>
+<li>conflict</li>
+<li>inequality</li></ul>
+<h3>Switch Family</h3>
+<p>Frame-shift family: real Ω persists while operative frame, R distribution, critique access, and Σ/Ψ status change.</p>
+<div class="box"><p>Switch = real Ω remains + operative frame changes + responsibility distribution changes + critique access changes + Σ/Ψ status changes</p></div>
+<h3>Switch Family members</h3>
+<ul><li>pseudo_symmetry</li>
+<li>pseudo_subordination</li>
+<li>pseudo_superiority</li>
+<li>exception_switch</li>
+<li>responsibility_to_authority</li>
+<li>parity_to_exit</li></ul>
+</section>
+<div class="pagebreak"></div>
+<section id="responsibility-praxis">
+<h2>10. Responsibility and praxis architecture</h2>
+
+<h3>No Passive Praxis</h3>
+<p>Visible action does not exhaust scene-structuring praxis. Non-action becomes praxis-relevant only as a meaningful framed non-event affecting real asymmetry across time and traceably changing another role-position's action conditions, costs, exposure, R, integration, self-binding, or correctability.</p>
+<ul>
+<li>No Passive Praxis ≠ every non-action is action.</li>
+<li>Non-action becomes praxis only when it structures a scene under □/Λ/Ω/Θ.</li>
+<li>Praxis ≠ strict Action E.</li>
+<li>Strict Action / Enactment E = Σ ∘ Θ ∘ ∇.</li>
+</ul>
+<p>The stop criterion is strict: no traceable change in another role-position's options, costs, exposure, timing, binding load, integration, or correctability means no No Passive Praxis reading.</p>
+<table class="table">
+<thead><tr><th>Level</th><th>Meaning</th><th>Boundary</th></tr></thead>
+<tbody>
+<tr><td>Mere absence</td><td>Nothing relevant happens, or no scene-structuring effect is traceable.</td><td>No praxis finding by absence alone.</td></tr>
+<tr><td>Structuring non-event</td><td>A framed non-event changes options, costs, timing, exposure, R, Σ, Ψ, or correctability under real Ω.</td><td>Scene effect must be shown; no motive follows.</td></tr>
+<tr><td>Integrated abstention</td><td>Non-action is bounded, legible, responsibility-compatible, and integrated into Σ/Ψ.</td><td>Restraint, distance, incapacity, boundary, and legitimate non-involvement remain possible.</td></tr>
+</tbody>
+</table>
+
+<h3>Responsibility Principle</h3>
+<p>R follows real structuring effect under available legibility, capacity, alternative possibility, Θ trajectory, and Ω cost/exposure conditions.</p>
+<p>This principle connects answerability to what a role-position materially structures in options, timing, access, exposure, protection, recognition, language, cost, criticizability, integration, binding, or correction.</p>
+<ul>
+<li>R is not blame.</li>
+<li>R is not guilt.</li>
+<li>R is not moral worth.</li>
+<li>R is not person condemnation.</li>
+<li>R is not mere causality.</li>
+<li>R is not outcome-liability alone.</li>
+<li>Responsibility may remain real without malice.</li>
+<li>Responsibility remains limited by legibility, capacity, alternatives, Θ, and Ω.</li>
+</ul>
+
+<h3>Responsibility and Action-Power</h3>
+<ul>
+<li>Visible action is one responsibility vector.</li>
+<li>Structuring non-action is another responsibility vector.</li>
+<li>Action may create responsibility, but responsibility is not identical with action.</li>
+<li>Non-action may create responsibility-relevant effects, but non-action is not automatically responsibility.</li>
+</ul>
+<p>Relevant vectors include direct action, indirect Action-Power, framing, timing control, withholding, recognition allocation, protection allocation, access control, cost distribution, legitimation, non-binding, and structuring non-action. Each vector must separately pass real effect, legibility, capacity, alternatives, temporality, and asymmetrical-cost tests.</p>
+
+<h3>Non-binding as Ψ-load shift</h3>
+<ul>
+<li>low Ψ on one side → increased Ψ-load on the other.</li>
+<li>I do not bind myself, but you must organize yourself around my non-binding.</li>
+</ul>
+<p>Possible shifted loads include waiting, option preservation, timing management, interpretation, explanation, continuity, self-regulation, critique restraint, and repair. Naming a Ψ-load shift does not authorize compelled clarity, commitment, reassurance, availability, disclosure, confession, or continued engagement.</p>
+
+<h3>Immunization / Overexposure / AEP</h3>
+<ul>
+<li>Immunization = effect without full responsibility.</li>
+<li>Overexposure = responsibility without full legibility / protection.</li>
+<li>AEP = high exposure + low legitimate language + critique-to-threat switch + responsibility overload.</li>
+</ul>
+<p>AEP does not mean stupidity, incapacity, moral inferiority, lack of articulation, sex defect, innocence, or cancellation of R. It must be tested under legibility, capacity, alternatives, Θ, Ω, and counter-scene exposure.</p>
+<p>Profiles remain scene-bound drift patterns, not sex truths. Naming overexposure does not immunize the overexposed role-position from bounded R; naming immunization does not authorize degradation of the immunized role-position.</p>
+
+<h3>Recognition Drift</h3>
+<p>Recognition, dignity, voice, protection, moral standing, or equal status detaches from criticizability, consequence attribution, self-binding, correction, and R for real structuring effect.</p>
+<ul>
+<li>Recognition without answerability is not equal standing.</li>
+<li>Equal standing = recognition + answerability + criticizability + consequence attribution + correctability.</li>
+<li>Dignity is not immunity.</li>
+<li>Responsibility is not degradation.</li>
+<li>Protection from degradation ≠ protection from responsibility.</li>
+<li>Structure critique ≠ person threat.</li>
+</ul>
+</section>
+<div class="pagebreak"></div>
+<section id="regime-test-loss">
+<h2>11. PFO, Eden scene, and Reciprocity Loss</h2>
+<h3>PFO</h3>
+<p>One downstream regime form where false-coordinated real asymmetry, displaced R, blocked Σ/Ψ, and established drift mechanisms stabilize through repeatable recognition, protection, parity, or exception frames.</p>
+<ul><li>PFO is not the origin of reciprocity loss.</li>
+<li>PFO is one regime form in which reciprocity loss stabilizes.</li>
+<li>PFO is downstream regime stabilization.</li>
+<li>PFO = regime stabilization of false-coordinated real Ω under recognition / protection / parity / exception frames with displaced R and blocked Σ/Ψ.</li>
+<li>PFO is repeatable frame availability under real Ω.</li></ul>
+<h3>Eden scene</h3>
+<p>Late compact demonstration of existing grammar: coordinated asymmetry, meaningful boundary, breach, consequence, exposure, legibility management, and R trace without theoretical, moral, theological, sexed, or historical origin claim.</p>
+<ul><li>Eden is not the paper&#x27;s origin.</li>
+<li>Eden is a test scene for the paper&#x27;s grammar.</li>
+<li>Eden is not foundation.</li>
+<li>Eden is demonstration.</li>
+<li>Eden supports the paper's late-test-scene discipline.</li>
+<li>It does not replace the architecture.</li></ul>
+<h3>Reciprocity Loss</h3>
+<p>Structural loss where real Ω persists while R is displaced, Σ blocked, Ψ weakened/externalized, Χ reduced, D damaged, and shared capacity for proportionate correction erodes or disappears.</p>
+<ul><li>Reciprocity Loss = false coordination of real Ω.</li>
+<li>Reciprocity Loss is the erosion of shared correctability under real asymmetry.</li>
+<li>Reciprocity loss is not merely conflict.</li>
+<li>Conflict can remain compatible with reciprocity.</li>
+<li>Reciprocity loss begins when correction itself becomes illegible, unsafe, one-sided, humiliating, immunized, or impossible.</li>
+<li>Asymmetry is not the failure.</li>
+<li>False coordination of asymmetry is the failure.</li></ul>
+</section>
+<div class="pagebreak"></div>
+<section id="boundary-application">
+<h2>12. Boundary and application architecture</h2>
+<p>Boundary architecture prevents EDEN from becoming a verdict machine. Genuine vulnerability, protection, hierarchy, superiority, non-action, openness, neutrality, coercion, institutional pressure, psychological conditions, and rival explanations remain possible.</p>
+<table class="table">
+<thead><tr><th>YAML home</th><th>Status</th><th>Definition / rule</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>boundary_conditions</span></td><td>boundary_condition</td><td>Specify where an EDEN reading holds, weakens, narrows, becomes secondary, must be suspended, or fails; boundaries provide discriminative force, not apologies or hidden accusations.</td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>genuine_vulnerability_and_protection</span></td><td>boundary_condition</td><td></td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>genuine_superiority_and_hierarchy</span></td><td>boundary_condition</td><td></td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>genuine_non_action_openness_and_neutrality</span></td><td>boundary_condition</td><td></td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>rival_explanations</span></td><td>boundary_condition</td><td></td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>counter_scene_protocol</span></td><td>application_protocol</td><td></td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>falsifiers</span></td><td>falsifier</td><td>Specified condition materially weakening, narrowing, or defeating an EDEN reading rather than merely adding uncertainty.</td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>eden_map</span></td><td>application_protocol</td><td>Order established scene-bound questions to test support, uncertainty, narrowing, secondary status, or defeat of false-coordinated real Ω, displaced R, blocked Σ/Ψ, and drift mechanisms; adds no operator, mechanism, diagnosis, verdict, or authority.</td></tr>
+<tr><td><span class="code-inline">boundary_and_application_architecture.<br>adjacent_frameworks</span></td><td>overlay_construct</td><td>Scholarly orientation and competition; adjacent frameworks may overlap, differ in level/mechanism, and explain better without becoming EDEN foundations, confirmations, or incomplete versions.</td></tr>
+</tbody>
+</table>
+<h3>Falsifier categories</h3>
+<ul><li>Ω is minimal or absent.</li>
+<li>The alleged non-action does not structure costs or options.</li>
+<li>Responsibility remains properly attached to effect.</li>
+<li>Critique remains possible.</li>
+<li>Σ/Ψ are robustly open.</li>
+<li>Protection is bounded and responsibility-compatible.</li>
+<li>Vulnerability remains criticizable without degradation.</li>
+<li>Hierarchy is bounded and functional.</li>
+<li>A rival explanation is stronger.</li>
+<li>The alleged pattern is not repeated or consequential.</li>
+<li>A counter-scene explains the scene better.</li></ul>
+<h3>Counter-scene protocol</h3>
+<p>Every strong EDEN reading must test at least one counter-scene where the same facts do not imply false-coordinated real Ω.</p>
+<ul><li>A counter-scene must be able to change the reading.</li>
+<li>Otherwise it is decorative, not methodological.</li>
+<li>Counter-scene is not politeness.</li>
+<li>Counter-scene is a methodological exposure to non-capture.</li></ul>
+</section>
+<div class="pagebreak"></div>
+<section id="eden-map">
+<h2>13. EDEN-MAP</h2>
+<p>EDEN-MAP orders scene-bound questions to test support, uncertainty, narrowing, secondary status, or defeat of false-coordinated real Ω, displaced R, blocked Σ/Ψ, and drift mechanisms. It adds no operator, mechanism, diagnosis, verdict, or authority.</p>
+<ul>
+<li>EDEN-MAP maps scenes.</li>
+<li>It maps what may be structurally happening.</li>
+<li>It does not tell what should be done.</li>
+<li>It does not diagnose persons.</li>
+<li>It does not rank sexes.</li>
+<li>It does not authorize coercive action.</li>
+<li>It does not replace counter-scene testing.</li>
+</ul>
+<h3>Input limits</h3>
+<ul><li>No isolated-sentence diagnosis.</li>
+<li>No identity-based application.</li>
+<li>No EDEN-by-vibe.</li>
+<li>No application by label.</li>
+<li>No application by impression.</li>
+<li>No theory label in place of a scene.</li>
+<li>No frame-only reading without effects and costs.</li>
+<li>No actor-only reading without asymmetry and temporality.</li></ul>
+<h3>Scene packet required fields</h3>
+<table class="table">
+<thead><tr><th>Required field</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">specified_scene_and_temporal_limits</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">actors_role_positions</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">dominant_□</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">real_Ω</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">relevant_Λ</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">Θ_trajectory</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">traceable_structuring_effects</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">visible_costs</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">available_language</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">recognition_structure</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">protection_structure</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">responsibility_distribution</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">Σ_Ψ_status</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">non_action_relevance</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">non_binding_relevance</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">legitimation_frame</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">immunization_overexposure_signals</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">AEP_signals</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">action_power_distribution</span></td><td>Required scene-packet field.</td></tr>
+<tr><td><span class="code-inline">counter_scene_possibility</span></td><td>Required scene-packet field.</td></tr>
+</tbody>
+</table>
+<h3>Protocol order</h3>
+<ol><li>scene_packet</li>
+<li>real_omega_mapping</li>
+<li>false_coordination_frame</li>
+<li>responsibility_and_action_power</li>
+<li>sigma_psi_and_cost_distribution</li>
+<li>non_passivity_and_non_binding</li>
+<li>immunization_overexposure_and_AEP</li>
+<li>counter_scene_and_falsifier</li>
+<li>description_to_action_status</li>
+<li>revision_point_or_open_question</li></ol>
+<h3>Output schema</h3>
+<table class="table">
+<thead><tr><th>ID</th><th>Field</th><th>Requirement</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Scene packet summary</td><td>Bounded scene, role-positions, temporal limits, principal effects, and evidentiary constraints.</td></tr>
+<tr><td>2</td><td>Real Ω</td><td>Consequential multidimensional asymmetries and what each changes.</td></tr>
+<tr><td>3</td><td>Dominant false-coordination frame</td><td>Frame only if displaced R and blocked Σ/Ψ are supported; otherwise record not established.</td></tr>
+<tr><td>4</td><td>Responsibility / Action-Power distribution</td><td>Structuring effects and attribution limits under the Responsibility Principle.</td></tr>
+<tr><td>5</td><td>Σ / Ψ status</td><td>Integration and self-binding openness, blockage, simulation, externalization, or uncertainty.</td></tr>
+<tr><td>6</td><td>Cost distribution</td><td>Differentiated costs without suffering rank or equal-responsibility inference.</td></tr>
+<tr><td>7</td><td>Non-action / non-binding relevance</td><td>Mere absence, structuring non-event, integrated abstention, legitimate openness, or indeterminate.</td></tr>
+<tr><td>8</td><td>Immunization / overexposure / AEP result</td><td>Scene-bound coupled result with genuine-case and counter-immunity checks.</td></tr>
+<tr><td>9</td><td>Counter-scene / falsifier result</td><td>Strongest alternative, supporting evidence, defeat condition, and effect on the reading.</td></tr>
+<tr><td>10</td><td>Description / Application status</td><td>Non-binding description or separately authorized and fully gated application; record contestation.</td></tr>
+<tr><td>11</td><td>Revision point / open question</td><td>Evidence, changed condition, unresolved distinction, or counter-scene capable of altering the map.</td></tr>
+</tbody>
+</table>
+<h3>Closure guardrails</h3>
+<ul><li>No sealed output.</li>
+<li>No final verdict.</li>
+<li>No case closure.</li>
+<li>No diagnosis.</li>
+<li>No recommendation.</li></ul>
+</section>
+<div class="pagebreak"></div>
+<section id="chapter-ownership">
+<h2>14. Chapter and appendix ownership</h2>
+<p>The structure map records canonical homes. It is an ownership index, not manuscript prose and not a glossary substitute.</p>
+<h3>Chapters</h3>
+<table class="table">
+<thead><tr><th>Chapter(s)</th><th>Home(s)</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">1</span></td><td>core_thesis, method_and_positive_baseline.adult_reciprocity, responsibility_and_praxis_architecture.recognition_drift.equal_standing_positive_standard, regime_test_scene_and_loss_architecture.reciprocity_loss</td></tr>
+<tr><td><span class="code-inline">2-6</span></td><td>method_and_positive_baseline</td></tr>
+<tr><td><span class="code-inline">7-10</span></td><td>mechanism_architecture</td></tr>
+<tr><td><span class="code-inline">11-14</span></td><td>responsibility_and_praxis_architecture</td></tr>
+<tr><td><span class="code-inline">15-17</span></td><td>regime_test_scene_and_loss_architecture</td></tr>
+<tr><td><span class="code-inline">18-19</span></td><td>boundary_and_application_architecture</td></tr>
+<tr><td><span class="code-inline">20</span></td><td>core_thesis, method_and_positive_baseline.adult_reciprocity.full_positive_structure, method_and_positive_baseline.garden, method_and_positive_baseline.limited_legibility, regime_test_scene_and_loss_architecture.reciprocity_loss, architecture_invariants.reflexive_self_binding, boundary_and_application_architecture.falsifiers</td></tr>
+</tbody>
+</table>
+<h3>Appendices</h3>
+<table class="table">
+<thead><tr><th>Appendix</th><th>Title</th><th>Home(s)</th></tr></thead>
+<tbody>
+<tr><td><span class="code-inline">A</span></td><td>Structural Glossary</td><td>construct_status_registry, operator_reference, derived_axes_reference, core_thesis, mechanism_architecture, responsibility_and_praxis_architecture, regime_test_scene_and_loss_architecture, boundary_and_application_architecture, description_to_action_firewall</td></tr>
+<tr><td><span class="code-inline">B</span></td><td>Adjacent Frameworks</td><td>boundary_and_application_architecture.adjacent_frameworks</td></tr>
+</tbody>
+</table>
+</section>
+<div class="pagebreak"></div>
+<section id="implementation-notes">
+<h2>15. Implementation and use notes</h2>
+<ul>
+  <li>Load PMS-EDEN only as an overlay after the canonical PMS base file.</li>
+  <li>Do not treat EDEN labels as operators, psychological labels, ideology labels, person labels, or sex-truth claims.</li>
+  <li>Do not infer application authority from structural coherence.</li>
+  <li>End EDEN-MAP outputs with a revision point or open question.</li>
+  <li>Keep examples scene-bound, counter-scene exposed, non-diagnostic, non-prescriptive, and dignity-preserving.</li>
+</ul>
+<div class="box"><p><strong>Final guard:</strong> PMS-EDEN maps scenes. It does not diagnose persons, rank sexes, authorize coercive action, replace counter-scene testing, or convert description into binding.</p></div>
+</section>
+
+</div>
+</body>
 </html>
