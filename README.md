@@ -620,10 +620,7 @@ PMS–EDEN/
 ├── css/
 │   └── main.css
 ├── img/
-│   ├── cover.png
-│   ├── diagram01.png
-│   ├── diagram02.png
-│   └── diagram03.png
+│   └── cover.png
 ├── model/
 │   ├── PMS-EDEN.yaml
 │   └── Model Specification.html
@@ -778,7 +775,7 @@ If you cite the overlay directly, you may additionally reference:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, critiques, and structural questions are welcome.
 Please open an issue or submit a pull request.
