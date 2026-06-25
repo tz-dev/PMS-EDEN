@@ -808,33 +808,3 @@ Unless otherwise stated, all documentation in this repository is governed by the
 * `LICENSE`
 
 Please refer to that file for the repository’s licensing terms.
-
----
-
-## Final Note
-
-PMS–EDEN does not tell you who is guilty.
-
-It explains how drift becomes structurally stable when:
-
-* comparison captures the frame (□),
-* asymmetry becomes status-legible (Ω),
-* residues stay open (Λ),
-* scripts repeat (Α),
-* coordination/binding (Σ / Ψ) are replaced by substitutes,
-* parity is preserved rhetorically while asymmetry is selectively activated,
-* parity becomes an exit from responsibility,
-* or responsibility becomes authority instead of self-binding.
-
-It also insists that this legibility remains strongest only where the model stays:
-
-* scene-bound,
-* revisable,
-* non-moralizing,
-* non-diagnostic,
-* non-person-ranking,
-* dignity-preserving,
-* and accountable to counter-scenes and rival framings.
-
-> Eden is not repaired by verdicts —
-> it is repaired, if at all, by reopening coordination under real asymmetry, marking and bounding necessary asymmetry activation, and re-binding responsibility into Σ / Ψ without converting it into authority.
